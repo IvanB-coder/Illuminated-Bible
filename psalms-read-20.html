@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Psalms 20 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Psalms chapter 20 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
+</head>
+<body class="read-page book-psalms">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
+<a href="index.html#old-testament">Old Testament</a>
+<a href="index.html#new-testament">New Testament</a>
+<a href="index.html#about">About</a>
+</nav>
+</header>
+<main id="main">
+<div class="read-header">
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Psalms <span class="chnum">&middot; Chapter 20</span></h1>
+<p class="chapter-position">Chapter 20 of 150</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
+</div>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+</div>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-19.html" rel="prev" aria-label="Previous chapter: Psalms 19">&larr; Previous: Chapter 19</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-21.html" rel="next" aria-label="Next chapter: Psalms 21">Next: Chapter 21 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">T</span>he LORD hear thee in the day of trouble; the name of the God of Jacob defend thee;</p>
+            <p><sup>2</sup>Send thee help from the sanctuary, and strengthen thee out of Zion;</p>
+            <p><sup>3</sup>Remember all thy offerings, and accept thy burnt sacrifice; Selah.</p>
+            <p><sup>4</sup>Grant thee according to thine own heart, and fulfil all thy counsel.</p>
+            <p><sup>5</sup>We will rejoice in thy salvation, and in the name of our God we will set up our banners: the LORD fulfil all thy petitions.</p>
+            <p><sup>6</sup>Now know I that the LORD saveth his anointed; he will hear him from his holy heaven with the saving strength of his right hand.</p>
+            <p><sup>7</sup>Some trust in chariots, and some in horses: but we will remember the name of the LORD our God.</p>
+            <p><sup>8</sup>They are brought down and fallen: but we are risen, and stand upright.</p>
+            <p><sup>9</sup>Save, LORD: let the king hear us when we call.</p>
+</div>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">M</span>ay Yahweh answer you in the day of trouble. May the name of the God of Jacob set you up on high,</p>
+            <p><sup>2</sup>send you help from the sanctuary, grant you support from Zion,</p>
+            <p><sup>3</sup>remember all your offerings, and accept your burned sacrifice. Selah.</p>
+            <p><sup>4</sup>May he grant you your heart's desire, and fulfill all your counsel.</p>
+            <p><sup>5</sup>We will triumph in your salvation. In the name of our God, we will set up our banners. May Yahweh grant all your requests.</p>
+            <p><sup>6</sup>Now I know that Yahweh saves his anointed. He will answer him from his holy heaven, with the saving strength of his right hand.</p>
+            <p><sup>7</sup>Some trust in chariots, and some in horses, but we trust in the name of Yahweh our God.</p>
+            <p><sup>8</sup>They are bowed down and fallen, but we rise up, and stand upright.</p>
+            <p><sup>9</sup>Save, Yahweh! Let the King answer us when we call!</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-19.html" rel="prev" aria-label="Previous chapter: Psalms 19">&larr; Previous: Chapter 19</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-21.html" rel="next" aria-label="Next chapter: Psalms 21">Next: Chapter 21 &rarr;</a>
+</div>
+</main>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
+</body>
+</html>

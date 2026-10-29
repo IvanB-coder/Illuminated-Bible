@@ -1,0 +1,15 @@
+{
+  "changed_runtime_files": [
+    "index.html",
+    "scripture-search.css"
+  ],
+  "corner_radius_px": 14,
+  "about_clause_removed": true,
+  "css_parse_errors": 0,
+  "homepage_ids_and_search_markup_unchanged": true,
+  "overlay_runtime_hashes_verified": 1266,
+  "active_manifest_entries": 1331,
+  "javascript_and_data_unchanged": true,
+  "live_browser_test": false,
+  "published": false
+}

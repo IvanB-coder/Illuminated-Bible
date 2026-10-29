@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Psalms 2 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Psalms chapter 2 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
+</head>
+<body class="read-page book-psalms">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
+<a href="index.html#old-testament">Old Testament</a>
+<a href="index.html#new-testament">New Testament</a>
+<a href="index.html#about">About</a>
+</nav>
+</header>
+<main id="main">
+<div class="read-header">
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Psalms <span class="chnum">&middot; Chapter 2</span></h1>
+<p class="chapter-position">Chapter 2 of 150</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
+</div>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+</div>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="psalms-read.html" rel="prev" aria-label="Previous chapter: Psalms 1">&larr; Previous: Chapter 1</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-3.html" rel="next" aria-label="Next chapter: Psalms 3">Next: Chapter 3 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">W</span>hy do the heathen rage, and the people imagine a vain thing?</p>
+            <p><sup>2</sup>The kings of the earth set themselves, and the rulers take counsel together, against the LORD, and against his anointed, saying,</p>
+            <p><sup>3</sup>Let us break their bands asunder, and cast away their cords from us.</p>
+            <p><sup>4</sup>He that sitteth in the heavens shall laugh: the Lord shall have them in derision.</p>
+            <p><sup>5</sup>Then shall he speak unto them in his wrath, and vex them in his sore displeasure.</p>
+            <p><sup>6</sup>Yet have I set my king upon my holy hill of Zion.</p>
+            <p><sup>7</sup>I will declare the decree: the LORD hath said unto me, Thou art my Son; this day have I begotten thee.</p>
+            <p><sup>8</sup>Ask of me, and I shall give thee the heathen for thine inheritance, and the uttermost parts of the earth for thy possession.</p>
+            <p><sup>9</sup>Thou shalt break them with a rod of iron; thou shalt dash them in pieces like a potter's vessel.</p>
+            <p><sup>10</sup>Be wise now therefore, O ye kings: be instructed, ye judges of the earth.</p>
+            <p><sup>11</sup>Serve the LORD with fear, and rejoice with trembling.</p>
+            <p><sup>12</sup>Kiss the Son, lest he be angry, and ye perish from the way, when his wrath is kindled but a little. Blessed are all they that put their trust in him.</p>
+</div>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">W</span>hy do the nations rage, and the peoples plot a vain thing?</p>
+            <p><sup>2</sup>The kings of the earth take a stand, and the rulers take counsel together, against Yahweh, and against his Anointed, saying,</p>
+            <p><sup>3</sup>"Let's break their bonds apart, and cast their cords from us."</p>
+            <p><sup>4</sup>He who sits in the heavens will laugh. The Lord will have them in derision.</p>
+            <p><sup>5</sup>Then he will speak to them in his anger, and terrify them in his wrath:</p>
+            <p><sup>6</sup>"Yet I have set my King on my holy hill of Zion."</p>
+            <p><sup>7</sup>I will tell of the decree: Yahweh said to me, "You are my son. Today I have become your father.</p>
+            <p><sup>8</sup>Ask of me, and I will give the nations for your inheritance, the uttermost parts of the earth for your possession.</p>
+            <p><sup>9</sup>You shall break them with a rod of iron. You shall dash them in pieces like a potter's vessel."</p>
+            <p><sup>10</sup>Now therefore be wise, you kings. Be instructed, you judges of the earth.</p>
+            <p><sup>11</sup>Serve Yahweh with fear, and rejoice with trembling.</p>
+            <p><sup>12</sup>Give sincere homage to the Son, lest he be angry, and you perish on the way, for his wrath will soon be kindled. Blessed are all those who take refuge in him. A Psalm by David, when he fled from Absalom his son.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="psalms-read.html" rel="prev" aria-label="Previous chapter: Psalms 1">&larr; Previous: Chapter 1</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-3.html" rel="next" aria-label="Next chapter: Psalms 3">Next: Chapter 3 &rarr;</a>
+</div>
+</main>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
+</body>
+</html>

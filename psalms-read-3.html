@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Psalms 3 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Psalms chapter 3 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
+</head>
+<body class="read-page book-psalms">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
+<a href="index.html#old-testament">Old Testament</a>
+<a href="index.html#new-testament">New Testament</a>
+<a href="index.html#about">About</a>
+</nav>
+</header>
+<main id="main">
+<div class="read-header">
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Psalms <span class="chnum">&middot; Chapter 3</span></h1>
+<p class="chapter-position">Chapter 3 of 150</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
+</div>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+</div>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-2.html" rel="prev" aria-label="Previous chapter: Psalms 2">&larr; Previous: Chapter 2</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-4.html" rel="next" aria-label="Next chapter: Psalms 4">Next: Chapter 4 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">L</span>ORD, how are they increased that trouble me! many are they that rise up against me.</p>
+            <p><sup>2</sup>Many there be which say of my soul, There is no help for him in God. Selah.</p>
+            <p><sup>3</sup>But thou, O LORD, art a shield for me; my glory, and the lifter up of mine head.</p>
+            <p><sup>4</sup>I cried unto the LORD with my voice, and he heard me out of his holy hill. Selah.</p>
+            <p><sup>5</sup>I laid me down and slept; I awaked; for the LORD sustained me.</p>
+            <p><sup>6</sup>I will not be afraid of ten thousands of people, that have set themselves against me round about.</p>
+            <p><sup>7</sup>Arise, O LORD; save me, O my God: for thou hast smitten all mine enemies upon the cheek bone; thou hast broken the teeth of the ungodly.</p>
+            <p><sup>8</sup>Salvation belongeth unto the LORD: thy blessing is upon thy people. Selah.</p>
+</div>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">Y</span>ahweh, how my adversaries have increased! Many are those who rise up against me.</p>
+            <p><sup>2</sup>Many there are who say of my soul, "There is no help for him in God." Selah.</p>
+            <p><sup>3</sup>But you, Yahweh, are a shield around me, my glory, and the one who lifts up my head.</p>
+            <p><sup>4</sup>I cry to Yahweh with my voice, and he answers me out of his holy hill. Selah.</p>
+            <p><sup>5</sup>I laid myself down and slept. I awakened, for Yahweh sustains me.</p>
+            <p><sup>6</sup>I will not be afraid of tens of thousands of people who have set themselves against me on every side.</p>
+            <p><sup>7</sup>Arise, Yahweh! Save me, my God! For you have struck all of my enemies on the cheek bone. You have broken the teeth of the wicked.</p>
+            <p><sup>8</sup>Salvation belongs to Yahweh. May your blessing be on your people. Selah. For the Chief Musician; on stringed instruments. A Psalm by David.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-2.html" rel="prev" aria-label="Previous chapter: Psalms 2">&larr; Previous: Chapter 2</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-4.html" rel="next" aria-label="Next chapter: Psalms 4">Next: Chapter 4 &rarr;</a>
+</div>
+</main>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
+</body>
+</html>

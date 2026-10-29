@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Psalms 12 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Psalms chapter 12 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
+</head>
+<body class="read-page book-psalms">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
+<a href="index.html#old-testament">Old Testament</a>
+<a href="index.html#new-testament">New Testament</a>
+<a href="index.html#about">About</a>
+</nav>
+</header>
+<main id="main">
+<div class="read-header">
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Psalms <span class="chnum">&middot; Chapter 12</span></h1>
+<p class="chapter-position">Chapter 12 of 150</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
+</div>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+</div>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-11.html" rel="prev" aria-label="Previous chapter: Psalms 11">&larr; Previous: Chapter 11</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-13.html" rel="next" aria-label="Next chapter: Psalms 13">Next: Chapter 13 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">H</span>elp, LORD; for the godly man ceaseth; for the faithful fail from among the children of men.</p>
+            <p><sup>2</sup>They speak vanity every one with his neighbour: with flattering lips and with a double heart do they speak.</p>
+            <p><sup>3</sup>The LORD shall cut off all flattering lips, and the tongue that speaketh proud things:</p>
+            <p><sup>4</sup>Who have said, With our tongue will we prevail; our lips are our own: who is lord over us?</p>
+            <p><sup>5</sup>For the oppression of the poor, for the sighing of the needy, now will I arise, saith the LORD; I will set him in safety from him that puffeth at him.</p>
+            <p><sup>6</sup>The words of the LORD are pure words: as silver tried in a furnace of earth, purified seven times.</p>
+            <p><sup>7</sup>Thou shalt keep them, O LORD, thou shalt preserve them from this generation for ever.</p>
+            <p><sup>8</sup>The wicked walk on every side, when the vilest men are exalted.</p>
+</div>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">H</span>elp, Yahweh; for the godly man ceases. For the faithful fail from among the children of men.</p>
+            <p><sup>2</sup>Everyone lies to his neighbor. They speak with flattering lips, and with a double heart.</p>
+            <p><sup>3</sup>May Yahweh cut off all flattering lips, and the tongue that boasts,</p>
+            <p><sup>4</sup>who have said, "With our tongue we will prevail. Our lips are our own. Who is lord over us?"</p>
+            <p><sup>5</sup>"Because of the oppression of the weak and because of the groaning of the needy, I will now arise," says Yahweh; "I will set him in safety from those who malign him."</p>
+            <p><sup>6</sup>Yahweh's words are flawless words, as silver refined in a clay furnace, purified seven times.</p>
+            <p><sup>7</sup>You will keep them, Yahweh. You will preserve them from this generation forever.</p>
+            <p><sup>8</sup>The wicked walk on every side, when what is vile is exalted among the sons of men. For the Chief Musician. A Psalm by David.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-11.html" rel="prev" aria-label="Previous chapter: Psalms 11">&larr; Previous: Chapter 11</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-13.html" rel="next" aria-label="Next chapter: Psalms 13">Next: Chapter 13 &rarr;</a>
+</div>
+</main>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
+</body>
+</html>

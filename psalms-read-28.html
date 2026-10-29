@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Psalms 28 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Psalms chapter 28 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
+</head>
+<body class="read-page book-psalms">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
+<a href="index.html#old-testament">Old Testament</a>
+<a href="index.html#new-testament">New Testament</a>
+<a href="index.html#about">About</a>
+</nav>
+</header>
+<main id="main">
+<div class="read-header">
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Psalms <span class="chnum">&middot; Chapter 28</span></h1>
+<p class="chapter-position">Chapter 28 of 150</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
+</div>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+</div>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-27.html" rel="prev" aria-label="Previous chapter: Psalms 27">&larr; Previous: Chapter 27</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-29.html" rel="next" aria-label="Next chapter: Psalms 29">Next: Chapter 29 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">U</span>nto thee will I cry, O LORD my rock; be not silent to me: lest, if thou be silent to me, I become like them that go down into the pit.</p>
+            <p><sup>2</sup>Hear the voice of my supplications, when I cry unto thee, when I lift up my hands toward thy holy oracle.</p>
+            <p><sup>3</sup>Draw me not away with the wicked, and with the workers of iniquity, which speak peace to their neighbours, but mischief is in their hearts.</p>
+            <p><sup>4</sup>Give them according to their deeds, and according to the wickedness of their endeavours: give them after the work of their hands; render to them their desert.</p>
+            <p><sup>5</sup>Because they regard not the works of the LORD, nor the operation of his hands, he shall destroy them, and not build them up.</p>
+            <p><sup>6</sup>Blessed be the LORD, because he hath heard the voice of my supplications.</p>
+            <p><sup>7</sup>The LORD is my strength and my shield; my heart trusted in him, and I am helped: therefore my heart greatly rejoiceth; and with my song will I praise him.</p>
+            <p><sup>8</sup>The LORD is their strength, and he is the saving strength of his anointed.</p>
+            <p><sup>9</sup>Save thy people, and bless thine inheritance: feed them also, and lift them up for ever.</p>
+</div>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">T</span>o you, Yahweh, I call. My rock, don't be deaf to me, lest, if you are silent to me, I would become like those who go down into the pit.</p>
+            <p><sup>2</sup>Hear the voice of my petitions, when I cry to you, when I lift up my hands toward your Most Holy Place.</p>
+            <p><sup>3</sup>Don't draw me away with the wicked, with the workers of iniquity who speak peace with their neighbors, but mischief is in their hearts.</p>
+            <p><sup>4</sup>Give them according to their work, and according to the wickedness of their doings. Give them according to the operation of their hands. Bring back on them what they deserve.</p>
+            <p><sup>5</sup>Because they don't respect the works of Yahweh, nor the operation of his hands, he will break them down and not build them up.</p>
+            <p><sup>6</sup>Blessed be Yahweh, because he has heard the voice of my petitions.</p>
+            <p><sup>7</sup>Yahweh is my strength and my shield. My heart has trusted in him, and I am helped. Therefore my heart greatly rejoices. With my song I will thank him.</p>
+            <p><sup>8</sup>Yahweh is their strength. He is a stronghold of salvation to his anointed.</p>
+            <p><sup>9</sup>Save your people, and bless your inheritance. Be their shepherd also, and bear them up forever. A Psalm by David.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-27.html" rel="prev" aria-label="Previous chapter: Psalms 27">&larr; Previous: Chapter 27</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-29.html" rel="next" aria-label="Next chapter: Psalms 29">Next: Chapter 29 &rarr;</a>
+</div>
+</main>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
+</body>
+</html>
