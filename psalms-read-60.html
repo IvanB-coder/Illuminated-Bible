@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Psalms 60 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Psalms chapter 60 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
+</head>
+<body class="read-page book-psalms">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
+<a href="index.html#old-testament">Old Testament</a>
+<a href="index.html#new-testament">New Testament</a>
+<a href="index.html#about">About</a>
+</nav>
+</header>
+<main id="main">
+<div class="read-header">
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Psalms <span class="chnum">&middot; Chapter 60</span></h1>
+<p class="chapter-position">Chapter 60 of 150</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
+</div>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+</div>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-59.html" rel="prev" aria-label="Previous chapter: Psalms 59">&larr; Previous: Chapter 59</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-61.html" rel="next" aria-label="Next chapter: Psalms 61">Next: Chapter 61 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">O</span> God, thou hast cast us off, thou hast scattered us, thou hast been displeased; O turn thyself to us again.</p>
+            <p><sup>2</sup>Thou hast made the earth to tremble; thou hast broken it: heal the breaches thereof; for it shaketh.</p>
+            <p><sup>3</sup>Thou hast shewed thy people hard things: thou hast made us to drink the wine of astonishment.</p>
+            <p><sup>4</sup>Thou hast given a banner to them that fear thee, that it may be displayed because of the truth. Selah.</p>
+            <p><sup>5</sup>That thy beloved may be delivered; save with thy right hand, and hear me.</p>
+            <p><sup>6</sup>God hath spoken in his holiness; I will rejoice, I will divide Shechem, and mete out the valley of Succoth.</p>
+            <p><sup>7</sup>Gilead is mine, and Manasseh is mine; Ephraim also is the strength of mine head; Judah is my lawgiver;</p>
+            <p><sup>8</sup>Moab is my washpot; over Edom will I cast out my shoe: Philistia, triumph thou because of me.</p>
+            <p><sup>9</sup>Who will bring me into the strong city? who will lead me into Edom?</p>
+            <p><sup>10</sup>Wilt not thou, O God, which hadst cast us off? and thou, O God, which didst not go out with our armies?</p>
+            <p><sup>11</sup>Give us help from trouble: for vain is the help of man.</p>
+            <p><sup>12</sup>Through God we shall do valiantly: for he it is that shall tread down our enemies.</p>
+</div>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">G</span>od, you have rejected us. You have broken us down. You have been angry. Restore us, again.</p>
+            <p><sup>2</sup>You have made the land tremble. You have torn it. Mend its fractures, for it quakes.</p>
+            <p><sup>3</sup>You have shown your people hard things. You have made us drink the wine that makes us stagger.</p>
+            <p><sup>4</sup>You have given a banner to those who fear you, that it may be displayed because of the truth. Selah.</p>
+            <p><sup>5</sup>So that your beloved may be delivered, save with your right hand, and answer us.</p>
+            <p><sup>6</sup>God has spoken from his sanctuary: "I will triumph. I will divide Shechem, and measure out the valley of Succoth.</p>
+            <p><sup>7</sup>Gilead is mine, and Manasseh is mine. Ephraim also is the defense of my head. Judah is my scepter.</p>
+            <p><sup>8</sup>Moab is my wash basin. I will throw my sandal on Edom. I shout in triumph over Philistia."</p>
+            <p><sup>9</sup>Who will bring me into the strong city? Who has led me to Edom?</p>
+            <p><sup>10</sup>Haven't you, God, rejected us? You don't go out with our armies, God.</p>
+            <p><sup>11</sup>Give us help against the adversary, for the help of man is vain.</p>
+            <p><sup>12</sup>Through God we will do valiantly, for it is he who will tread down our adversaries.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-59.html" rel="prev" aria-label="Previous chapter: Psalms 59">&larr; Previous: Chapter 59</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-61.html" rel="next" aria-label="Next chapter: Psalms 61">Next: Chapter 61 &rarr;</a>
+</div>
+</main>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
+</body>
+</html>

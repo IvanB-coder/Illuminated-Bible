@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Psalms 122 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Psalms chapter 122 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
+</head>
+<body class="read-page book-psalms">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
+<a href="index.html#old-testament">Old Testament</a>
+<a href="index.html#new-testament">New Testament</a>
+<a href="index.html#about">About</a>
+</nav>
+</header>
+<main id="main">
+<div class="read-header">
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Psalms <span class="chnum">&middot; Chapter 122</span></h1>
+<p class="chapter-position">Chapter 122 of 150</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
+</div>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+</div>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-121.html" rel="prev" aria-label="Previous chapter: Psalms 121">&larr; Previous: Chapter 121</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-123.html" rel="next" aria-label="Next chapter: Psalms 123">Next: Chapter 123 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">I</span> was glad when they said unto me, Let us go into the house of the LORD.</p>
+            <p><sup>2</sup>Our feet shall stand within thy gates, O Jerusalem.</p>
+            <p><sup>3</sup>Jerusalem is builded as a city that is compact together:</p>
+            <p><sup>4</sup>Whither the tribes go up, the tribes of the LORD, unto the testimony of Israel, to give thanks unto the name of the LORD.</p>
+            <p><sup>5</sup>For there are set thrones of judgment, the thrones of the house of David.</p>
+            <p><sup>6</sup>Pray for the peace of Jerusalem: they shall prosper that love thee.</p>
+            <p><sup>7</sup>Peace be within thy walls, and prosperity within thy palaces.</p>
+            <p><sup>8</sup>For my brethren and companions' sakes, I will now say, Peace be within thee.</p>
+            <p><sup>9</sup>Because of the house of the LORD our God I will seek thy good.</p>
+</div>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">I</span> was glad when they said to me, "Let's go to Yahweh's house!"</p>
+            <p><sup>2</sup>Our feet are standing within your gates, Jerusalem!</p>
+            <p><sup>3</sup>Jerusalem is built as a city that is compact together,</p>
+            <p><sup>4</sup>where the tribes go up, even Yah's tribes, according to an ordinance for Israel, to give thanks to Yahweh's name.</p>
+            <p><sup>5</sup>For there are set thrones for judgment, the thrones of David's house.</p>
+            <p><sup>6</sup>Pray for the peace of Jerusalem. Those who love you will prosper.</p>
+            <p><sup>7</sup>Peace be within your walls, and prosperity within your palaces.</p>
+            <p><sup>8</sup>For my brothers' and companions' sakes, I will now say, "Peace be within you."</p>
+            <p><sup>9</sup>For the sake of the house of Yahweh our God, I will seek your good. A Song of Ascents.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-121.html" rel="prev" aria-label="Previous chapter: Psalms 121">&larr; Previous: Chapter 121</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-123.html" rel="next" aria-label="Next chapter: Psalms 123">Next: Chapter 123 &rarr;</a>
+</div>
+</main>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
+</body>
+</html>

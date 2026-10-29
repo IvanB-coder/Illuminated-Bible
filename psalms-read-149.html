@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Psalms 149 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Psalms chapter 149 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
+</head>
+<body class="read-page ot-book">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
+<a href="index.html#old-testament">Old Testament</a>
+<a href="index.html#new-testament">New Testament</a>
+<a href="index.html#about">About</a>
+</nav>
+</header>
+<main id="main">
+<div class="read-header">
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Psalms <span class="chnum">&middot; Chapter 149</span></h1>
+<p class="chapter-position">Chapter 149 of 150</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
+</div>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+</div>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-148.html" rel="prev" aria-label="Previous chapter: Psalms 148">&larr; Previous: Chapter 148</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-150.html" rel="next" aria-label="Next chapter: Psalms 150">Next: Chapter 150 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">P</span>raise ye the LORD. Sing unto the LORD a new song, and his praise in the congregation of saints.</p>
+            <p><sup>2</sup>Let Israel rejoice in him that made him: let the children of Zion be joyful in their King.</p>
+            <p><sup>3</sup>Let them praise his name in the dance: let them sing praises unto him with the timbrel and harp.</p>
+            <p><sup>4</sup>For the LORD taketh pleasure in his people: he will beautify the meek with salvation.</p>
+            <p><sup>5</sup>Let the saints be joyful in glory: let them sing aloud upon their beds.</p>
+            <p><sup>6</sup>Let the high praises of God be in their mouth, and a twoedged sword in their hand;</p>
+            <p><sup>7</sup>To execute vengeance upon the heathen, and punishments upon the people;</p>
+            <p><sup>8</sup>To bind their kings with chains, and their nobles with fetters of iron;</p>
+            <p><sup>9</sup>To execute upon them the judgment written: this honour have all his saints. Praise ye the LORD.</p>
+</div>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">P</span>raise Yahweh! Sing to Yahweh a new song, his praise in the assembly of the saints.</p>
+            <p><sup>2</sup>Let Israel rejoice in him who made them. Let the children of Zion be joyful in their King.</p>
+            <p><sup>3</sup>Let them praise his name in the dance! Let them sing praises to him with tambourine and harp!</p>
+            <p><sup>4</sup>For Yahweh takes pleasure in his people. He crowns the humble with salvation.</p>
+            <p><sup>5</sup>Let the saints rejoice in honor. Let them sing for joy on their beds.</p>
+            <p><sup>6</sup>May the high praises of God be in their mouths, and a two-edged sword in their hand,</p>
+            <p><sup>7</sup>to execute vengeance on the nations, and punishments on the peoples;</p>
+            <p><sup>8</sup>to bind their kings with chains, and their nobles with fetters of iron;</p>
+            <p><sup>9</sup>to execute on them the written judgment. All his saints have this honor. Praise Yah!</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-148.html" rel="prev" aria-label="Previous chapter: Psalms 148">&larr; Previous: Chapter 148</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-150.html" rel="next" aria-label="Next chapter: Psalms 150">Next: Chapter 150 &rarr;</a>
+</div>
+</main>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
+</body>
+</html>

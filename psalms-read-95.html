@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Psalms 95 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Psalms chapter 95 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
+</head>
+<body class="read-page book-psalms">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
+<a href="index.html#old-testament">Old Testament</a>
+<a href="index.html#new-testament">New Testament</a>
+<a href="index.html#about">About</a>
+</nav>
+</header>
+<main id="main">
+<div class="read-header">
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Psalms <span class="chnum">&middot; Chapter 95</span></h1>
+<p class="chapter-position">Chapter 95 of 150</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
+</div>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+</div>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-94.html" rel="prev" aria-label="Previous chapter: Psalms 94">&larr; Previous: Chapter 94</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-96.html" rel="next" aria-label="Next chapter: Psalms 96">Next: Chapter 96 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">O</span> come, let us sing unto the LORD: let us make a joyful noise to the rock of our salvation.</p>
+            <p><sup>2</sup>Let us come before his presence with thanksgiving, and make a joyful noise unto him with psalms.</p>
+            <p><sup>3</sup>For the LORD is a great God, and a great King above all gods.</p>
+            <p><sup>4</sup>In his hand are the deep places of the earth: the strength of the hills is his also.</p>
+            <p><sup>5</sup>The sea is his, and he made it: and his hands formed the dry land.</p>
+            <p><sup>6</sup>O come, let us worship and bow down: let us kneel before the LORD our maker.</p>
+            <p><sup>7</sup>For he is our God; and we are the people of his pasture, and the sheep of his hand. To day if ye will hear his voice,</p>
+            <p><sup>8</sup>Harden not your heart, as in the provocation, and as in the day of temptation in the wilderness:</p>
+            <p><sup>9</sup>When your fathers tempted me, proved me, and saw my work.</p>
+            <p><sup>10</sup>Forty years long was I grieved with this generation, and said, It is a people that do err in their heart, and they have not known my ways:</p>
+            <p><sup>11</sup>Unto whom I sware in my wrath that they should not enter into my rest.</p>
+</div>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">O</span>h come, let's sing to Yahweh. Let's shout aloud to the rock of our salvation!</p>
+            <p><sup>2</sup>Let's come before his presence with thanksgiving. Let's extol him with songs!</p>
+            <p><sup>3</sup>For Yahweh is a great God, a great King above all gods.</p>
+            <p><sup>4</sup>In his hand are the deep places of the earth. The heights of the mountains are also his.</p>
+            <p><sup>5</sup>The sea is his, and he made it. His hands formed the dry land.</p>
+            <p><sup>6</sup>Oh come, let's worship and bow down. Let's kneel before Yahweh, our Maker,</p>
+            <p><sup>7</sup>for he is our God. We are the people of his pasture, and the sheep in his care. Today, oh that you would hear his voice!</p>
+            <p><sup>8</sup>Don't harden your heart, as at Meribah, as in the day of Massah in the wilderness,</p>
+            <p><sup>9</sup>when your fathers tempted me, tested me, and saw my work.</p>
+            <p><sup>10</sup>Forty long years I was grieved with that generation, and said, "They are a people who err in their heart. They have not known my ways."</p>
+            <p><sup>11</sup>Therefore I swore in my wrath, "They won't enter into my rest."</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-94.html" rel="prev" aria-label="Previous chapter: Psalms 94">&larr; Previous: Chapter 94</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-96.html" rel="next" aria-label="Next chapter: Psalms 96">Next: Chapter 96 &rarr;</a>
+</div>
+</main>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
+</body>
+</html>

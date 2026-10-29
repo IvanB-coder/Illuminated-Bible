@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Psalms 76 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Psalms chapter 76 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
+</head>
+<body class="read-page book-psalms">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
+<a href="index.html#old-testament">Old Testament</a>
+<a href="index.html#new-testament">New Testament</a>
+<a href="index.html#about">About</a>
+</nav>
+</header>
+<main id="main">
+<div class="read-header">
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Psalms <span class="chnum">&middot; Chapter 76</span></h1>
+<p class="chapter-position">Chapter 76 of 150</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
+</div>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+</div>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-75.html" rel="prev" aria-label="Previous chapter: Psalms 75">&larr; Previous: Chapter 75</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-77.html" rel="next" aria-label="Next chapter: Psalms 77">Next: Chapter 77 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">I</span>n Judah is God known: his name is great in Israel.</p>
+            <p><sup>2</sup>In Salem also is his tabernacle, and his dwelling place in Zion.</p>
+            <p><sup>3</sup>There brake he the arrows of the bow, the shield, and the sword, and the battle. Selah.</p>
+            <p><sup>4</sup>Thou art more glorious and excellent than the mountains of prey.</p>
+            <p><sup>5</sup>The stouthearted are spoiled, they have slept their sleep: and none of the men of might have found their hands.</p>
+            <p><sup>6</sup>At thy rebuke, O God of Jacob, both the chariot and horse are cast into a dead sleep.</p>
+            <p><sup>7</sup>Thou, even thou, art to be feared: and who may stand in thy sight when once thou art angry?</p>
+            <p><sup>8</sup>Thou didst cause judgment to be heard from heaven; the earth feared, and was still,</p>
+            <p><sup>9</sup>When God arose to judgment, to save all the meek of the earth. Selah.</p>
+            <p><sup>10</sup>Surely the wrath of man shall praise thee: the remainder of wrath shalt thou restrain.</p>
+            <p><sup>11</sup>Vow, and pay unto the LORD your God: let all that be round about him bring presents unto him that ought to be feared.</p>
+            <p><sup>12</sup>He shall cut off the spirit of princes: he is terrible to the kings of the earth.</p>
+</div>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">I</span>n Judah, God is known. His name is great in Israel.</p>
+            <p><sup>2</sup>His tabernacle is also in Salem. His dwelling place in Zion.</p>
+            <p><sup>3</sup>There he broke the flaming arrows of the bow, the shield, and the sword, and the weapons of war. Selah.</p>
+            <p><sup>4</sup>Glorious are you, and excellent, more than mountains of game.</p>
+            <p><sup>5</sup>Valiant men lie plundered, they have slept their last sleep. None of the men of war can lift their hands.</p>
+            <p><sup>6</sup>At your rebuke, God of Jacob, both chariot and horse are cast into a dead sleep.</p>
+            <p><sup>7</sup>You, even you, are to be feared. Who can stand in your sight when you are angry?</p>
+            <p><sup>8</sup>You pronounced judgment from heaven. The earth feared, and was silent,</p>
+            <p><sup>9</sup>when God arose to judgment, to save all the afflicted ones of the earth. Selah.</p>
+            <p><sup>10</sup>Surely the wrath of man praises you. The survivors of your wrath are restrained.</p>
+            <p><sup>11</sup>Make vows to Yahweh your God, and fulfill them! Let all of his neighbors bring presents to him who is to be feared.</p>
+            <p><sup>12</sup>He will cut off the spirit of princes. He is feared by the kings of the earth.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-75.html" rel="prev" aria-label="Previous chapter: Psalms 75">&larr; Previous: Chapter 75</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-77.html" rel="next" aria-label="Next chapter: Psalms 77">Next: Chapter 77 &rarr;</a>
+</div>
+</main>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Psalms 63 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Psalms chapter 63 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
+</head>
+<body class="read-page book-psalms">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
+<a href="index.html#old-testament">Old Testament</a>
+<a href="index.html#new-testament">New Testament</a>
+<a href="index.html#about">About</a>
+</nav>
+</header>
+<main id="main">
+<div class="read-header">
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Psalms <span class="chnum">&middot; Chapter 63</span></h1>
+<p class="chapter-position">Chapter 63 of 150</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
+</div>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+</div>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-62.html" rel="prev" aria-label="Previous chapter: Psalms 62">&larr; Previous: Chapter 62</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-64.html" rel="next" aria-label="Next chapter: Psalms 64">Next: Chapter 64 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">O</span> God, thou art my God; early will I seek thee: my soul thirsteth for thee, my flesh longeth for thee in a dry and thirsty land, where no water is;</p>
+            <p><sup>2</sup>To see thy power and thy glory, so as I have seen thee in the sanctuary.</p>
+            <p><sup>3</sup>Because thy lovingkindness is better than life, my lips shall praise thee.</p>
+            <p><sup>4</sup>Thus will I bless thee while I live: I will lift up my hands in thy name.</p>
+            <p><sup>5</sup>My soul shall be satisfied as with marrow and fatness; and my mouth shall praise thee with joyful lips:</p>
+            <p><sup>6</sup>When I remember thee upon my bed, and meditate on thee in the night watches.</p>
+            <p><sup>7</sup>Because thou hast been my help, therefore in the shadow of thy wings will I rejoice.</p>
+            <p><sup>8</sup>My soul followeth hard after thee: thy right hand upholdeth me.</p>
+            <p><sup>9</sup>But those that seek my soul, to destroy it, shall go into the lower parts of the earth.</p>
+            <p><sup>10</sup>They shall fall by the sword: they shall be a portion for foxes.</p>
+            <p><sup>11</sup>But the king shall rejoice in God; every one that sweareth by him shall glory: but the mouth of them that speak lies shall be stopped.</p>
+</div>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">G</span>od, you are my God. I will earnestly seek you. My soul thirsts for you. My flesh longs for you, in a dry and weary land, where there is no water.</p>
+            <p><sup>2</sup>So I have seen you in the sanctuary, watching your power and your glory.</p>
+            <p><sup>3</sup>Because your loving kindness is better than life, my lips shall praise you.</p>
+            <p><sup>4</sup>So I will bless you while I live. I will lift up my hands in your name.</p>
+            <p><sup>5</sup>My soul shall be satisfied as with the richest food. My mouth shall praise you with joyful lips,</p>
+            <p><sup>6</sup>when I remember you on my bed, and think about you in the night watches.</p>
+            <p><sup>7</sup>For you have been my help. I will rejoice in the shadow of your wings.</p>
+            <p><sup>8</sup>My soul stays close to you. Your right hand holds me up.</p>
+            <p><sup>9</sup>But those who seek my soul to destroy it shall go into the lower parts of the earth.</p>
+            <p><sup>10</sup>They shall be given over to the power of the sword. They shall be jackal food.</p>
+            <p><sup>11</sup>But the king shall rejoice in God. Everyone who swears by him will praise him, for the mouth of those who speak lies shall be silenced.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-62.html" rel="prev" aria-label="Previous chapter: Psalms 62">&larr; Previous: Chapter 62</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-64.html" rel="next" aria-label="Next chapter: Psalms 64">Next: Chapter 64 &rarr;</a>
+</div>
+</main>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
+</body>
+</html>

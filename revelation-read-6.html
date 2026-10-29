@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Revelation 6 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Revelation chapter 6 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Revelation 6 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Revelation chapter 6 in the King James Version or World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-revelation">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Revelation <span style="color:var(--burgundy);">&middot; Chapter 6</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">New Testament &middot; Chapter 6 of 22</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Revelation <span class="chnum">&middot; Chapter 6</span></h1>
+<p class="chapter-position">Chapter 6 of 22</p>
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="revelation-read-5.html">&larr; Chapter 5</a>
-<span class="chapter-indicator">Chapter 6 of 22</span>
-<a class="btn btn-primary shimmer" href="revelation-read-7.html">Chapter 7 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="revelation-read-5.html" rel="prev" aria-label="Previous chapter: Revelation 5">&larr; Previous: Chapter 5</a>
+<a class="btn btn-ghost" href="revelation.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="revelation-read-7.html" rel="next" aria-label="Next chapter: Revelation 7">Next: Chapter 7 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd I saw when the Lamb opened one of the seals, and I heard, as it were the noise of thunder, one of the four beasts saying, Come and see.</p>
             <p><sup>2</sup>And I saw, and behold a white horse: and he that sat on him had a bow; and a crown was given unto him: and he went forth conquering, and to conquer.</p>
             <p><sup>3</sup>And when he had opened the second seal, I heard the second beast say, Come and see.</p>
@@ -47,12 +54,60 @@
             <p><sup>16</sup>And said to the mountains and rocks, Fall on us, and hide us from the face of him that sitteth on the throne, and from the wrath of the Lamb:</p>
             <p><sup>17</sup>For the great day of his wrath is come; and who shall be able to stand?</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="revelation-read-5.html">&larr; Chapter 5</a>
-<a href="revelation.html">&uarr; Revelation summary</a>
-<a class="btn btn-primary shimmer" href="revelation-read-7.html">Chapter 7 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+<p><sup>1</sup>I saw that the Lamb opened one of the seven seals, and I heard one of the four living creatures saying, as with a voice of thunder, "Come and see!"</p>
+<p><sup>2</sup>Then a white horse appeared, and he who sat on it had a bow. A crown was given to him, and he came out conquering, and to conquer.</p>
+<p><sup>3</sup>When he opened the second seal, I heard the second living creature saying, "Come!"</p>
+<p><sup>4</sup>Another came out, a red horse. To him who sat on it was given power to take peace from the earth, and that they should kill one another. There was given to him a great sword.</p>
+<p><sup>5</sup>When he opened the third seal, I heard the third living creature saying, "Come and see!" And behold, a black horse, and he who sat on it had a balance in his hand.</p>
+<p><sup>6</sup>I heard a voice in the middle of the four living creatures saying, "A choenix of wheat for a denarius, and three choenix of barley for a denarius! Don't damage the oil and the wine!"</p>
+<p><sup>7</sup>When he opened the fourth seal, I heard the fourth living creature saying, "Come and see!"</p>
+<p><sup>8</sup>And behold, a pale horse, and the name of he who sat on it was Death. Hades followed with him. Authority over one fourth of the earth, to kill with the sword, with famine, with death, and by the wild animals of the earth was given to him.</p>
+<p><sup>9</sup>When he opened the fifth seal, I saw underneath the altar the souls of those who had been killed for the Word of God, and for the testimony of the Lamb which they had.</p>
+<p><sup>10</sup>They cried with a loud voice, saying, "How long, Master, the holy and true, until you judge and avenge our blood on those who dwell on the earth?"</p>
+<p><sup>11</sup>A long white robe was given to each of them. They were told that they should rest yet for a while, until their fellow servants and their brothers, who would also be killed even as they were, should complete their course.</p>
+<p><sup>12</sup>I saw when he opened the sixth seal, and there was a great earthquake. The sun became black as sackcloth made of hair, and the whole moon became as blood.</p>
+<p><sup>13</sup>The stars of the sky fell to the earth, like a fig tree dropping its unripe figs when it is shaken by a great wind.</p>
+<p><sup>14</sup>The sky was removed like a scroll when it is rolled up. Every mountain and island was moved out of its place.</p>
+<p><sup>15</sup>The kings of the earth, the princes, the commanding officers, the rich, the strong, and every slave and free person, hid themselves in the caves and in the rocks of the mountains.</p>
+<p><sup>16</sup>They told the mountains and the rocks, "Fall on us, and hide us from the face of him who sits on the throne, and from the wrath of the Lamb,</p>
+<p><sup>17</sup>for the great day of his wrath has come, and who is able to stand?"</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="revelation-read-5.html" rel="prev" aria-label="Previous chapter: Revelation 5">&larr; Previous: Chapter 5</a>
+<a class="btn btn-ghost" href="revelation.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="revelation-read-7.html" rel="next" aria-label="Next chapter: Revelation 7">Next: Chapter 7 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

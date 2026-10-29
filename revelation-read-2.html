@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Revelation 2 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Revelation chapter 2 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Revelation 2 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Revelation chapter 2 in the King James Version or World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-revelation">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Revelation <span style="color:var(--burgundy);">&middot; Chapter 2</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">New Testament &middot; Chapter 2 of 22</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Revelation <span class="chnum">&middot; Chapter 2</span></h1>
+<p class="chapter-position">Chapter 2 of 22</p>
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="revelation-read.html">&larr; Chapter 1</a>
-<span class="chapter-indicator">Chapter 2 of 22</span>
-<a class="btn btn-primary shimmer" href="revelation-read-3.html">Chapter 3 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="revelation-read.html" rel="prev" aria-label="Previous chapter: Revelation 1">&larr; Previous: Chapter 1</a>
+<a class="btn btn-ghost" href="revelation.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="revelation-read-3.html" rel="next" aria-label="Next chapter: Revelation 3">Next: Chapter 3 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">U</span>nto the angel of the church of Ephesus write; These things saith he that holdeth the seven stars in his right hand, who walketh in the midst of the seven golden candlesticks;</p>
             <p><sup>2</sup>I know thy works, and thy labour, and thy patience, and how thou canst not bear them which are evil: and thou hast tried them which say they are apostles, and are not, and hast found them liars:</p>
             <p><sup>3</sup>And hast borne, and hast patience, and for my name's sake hast laboured, and hast not fainted.</p>
@@ -59,12 +66,72 @@
             <p><sup>28</sup>And I will give him the morning star.</p>
             <p><sup>29</sup>He that hath an ear, let him hear what the Spirit saith unto the churches.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="revelation-read.html">&larr; Chapter 1</a>
-<a href="revelation.html">&uarr; Revelation summary</a>
-<a class="btn btn-primary shimmer" href="revelation-read-3.html">Chapter 3 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+<p><sup>1</sup>"To the angel of the assembly in Ephesus write: He who holds the seven stars in his right hand, he who walks among the seven golden lamp stands says these things:</p>
+<p><sup>2</sup>I know your works, and your toil and perseverance, and that you can't tolerate evil men, and have tested those who call themselves apostles, and they are not, and found them false.</p>
+<p><sup>3</sup>You have perseverance and have endured for my name's sake, and have not grown weary.</p>
+<p><sup>4</sup>But I have this against you, that you left your first love.</p>
+<p><sup>5</sup>Remember therefore from where you have fallen, and repent and do the first works; or else I am coming to you swiftly, and will move your lamp stand out of its place, unless you repent.</p>
+<p><sup>6</sup>But this you have, that you hate the works of the Nicolaitans, which I also hate.</p>
+<p><sup>7</sup>He who has an ear, let him hear what the Spirit says to the assemblies. To him who overcomes I will give to eat from the tree of life, which is in the Paradise of my God.</p>
+<p><sup>8</sup>"To the angel of the assembly in Smyrna write: The first and the last, who was dead, and has come to life says these things:</p>
+<p><sup>9</sup>I know your works, oppression, and your poverty (but you are rich), and the blasphemy of those who say they are Jews, and they are not, but are a synagogue of Satan.</p>
+<p><sup>10</sup>Don't be afraid of the things which you are about to suffer. Behold, the devil is about to throw some of you into prison, that you may be tested; and you will have oppression for ten days. Be faithful to death, and I will give you the crown of life.</p>
+<p><sup>11</sup>He who has an ear, let him hear what the Spirit says to the assemblies. He who overcomes won't be harmed by the second death.</p>
+<p><sup>12</sup>"To the angel of the assembly in Pergamum write: He who has the sharp two-edged sword says these things:</p>
+<p><sup>13</sup>I know your works and where you dwell, where Satan's throne is. You hold firmly to my name, and didn't deny my faith in the days of Antipas my witness, my faithful one, who was killed among you, where Satan dwells.</p>
+<p><sup>14</sup>But I have a few things against you, because you have there some who hold the teaching of Balaam, who taught Balak to throw a stumbling block before the children of Israel, to eat things sacrificed to idols, and to commit sexual immorality.</p>
+<p><sup>15</sup>So also you likewise have some who hold to the teaching of the Nicolaitans.</p>
+<p><sup>16</sup>Repent therefore, or else I am coming to you quickly and I will make war against them with the sword of my mouth.</p>
+<p><sup>17</sup>He who has an ear, let him hear what the Spirit says to the assemblies. To him who overcomes, to him I will give of the hidden manna, and I will give him a white stone, and on the stone a new name written which no one knows but he who receives it.</p>
+<p><sup>18</sup>"To the angel of the assembly in Thyatira write: The Son of God, who has his eyes like a flame of fire, and his feet are like burnished brass, says these things:</p>
+<p><sup>19</sup>I know your works, your love, faith, service, patient endurance, and that your last works are more than the first.</p>
+<p><sup>20</sup>But I have this against you, that you tolerate your woman Jezebel, who calls herself a prophetess. She teaches and seduces my servants to commit sexual immorality and to eat things sacrificed to idols.</p>
+<p><sup>21</sup>I gave her time to repent, but she refuses to repent of her sexual immorality.</p>
+<p><sup>22</sup>Behold, I will throw her and those who commit adultery with her into a bed of great oppression, unless they repent of her works.</p>
+<p><sup>23</sup>I will kill her children with Death, and all the assemblies will know that I am he who searches the minds and hearts. I will give to each one of you according to your deeds.</p>
+<p><sup>24</sup>But to you I say, to the rest who are in Thyatira--as many as don't have this teaching, who don't know what some call 'the deep things of Satan'--to you I say, I am not putting any other burden on you.</p>
+<p><sup>25</sup>Nevertheless, hold that which you have firmly until I come.</p>
+<p><sup>26</sup>He who overcomes, and he who keeps my works to the end, to him I will give authority over the nations.</p>
+<p><sup>27</sup>He will rule them with a rod of iron, shattering them like clay pots, as I also have received of my Father;</p>
+<p><sup>28</sup>and I will give him the morning star.</p>
+<p><sup>29</sup>He who has an ear, let him hear what the Spirit says to the assemblies.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="revelation-read.html" rel="prev" aria-label="Previous chapter: Revelation 1">&larr; Previous: Chapter 1</a>
+<a class="btn btn-ghost" href="revelation.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="revelation-read-3.html" rel="next" aria-label="Next chapter: Revelation 3">Next: Chapter 3 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

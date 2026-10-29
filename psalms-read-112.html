@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Psalms 112 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Psalms chapter 112 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
+</head>
+<body class="read-page book-psalms">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
+<a href="index.html#old-testament">Old Testament</a>
+<a href="index.html#new-testament">New Testament</a>
+<a href="index.html#about">About</a>
+</nav>
+</header>
+<main id="main">
+<div class="read-header">
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Psalms <span class="chnum">&middot; Chapter 112</span></h1>
+<p class="chapter-position">Chapter 112 of 150</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
+</div>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+</div>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-111.html" rel="prev" aria-label="Previous chapter: Psalms 111">&larr; Previous: Chapter 111</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-113.html" rel="next" aria-label="Next chapter: Psalms 113">Next: Chapter 113 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">P</span>raise ye the LORD. Blessed is the man that feareth the LORD, that delighteth greatly in his commandments.</p>
+            <p><sup>2</sup>His seed shall be mighty upon earth: the generation of the upright shall be blessed.</p>
+            <p><sup>3</sup>Wealth and riches shall be in his house: and his righteousness endureth for ever.</p>
+            <p><sup>4</sup>Unto the upright there ariseth light in the darkness: he is gracious, and full of compassion, and righteous.</p>
+            <p><sup>5</sup>A good man sheweth favour, and lendeth: he will guide his affairs with discretion.</p>
+            <p><sup>6</sup>Surely he shall not be moved for ever: the righteous shall be in everlasting remembrance.</p>
+            <p><sup>7</sup>He shall not be afraid of evil tidings: his heart is fixed, trusting in the LORD.</p>
+            <p><sup>8</sup>His heart is established, he shall not be afraid, until he see his desire upon his enemies.</p>
+            <p><sup>9</sup>He hath dispersed, he hath given to the poor; his righteousness endureth for ever; his horn shall be exalted with honour.</p>
+            <p><sup>10</sup>The wicked shall see it, and be grieved; he shall gnash with his teeth, and melt away: the desire of the wicked shall perish.</p>
+</div>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">P</span>raise Yah! Blessed is the man who fears Yahweh, who delights greatly in his commandments.</p>
+            <p><sup>2</sup>His offspring will be mighty in the land. The generation of the upright will be blessed.</p>
+            <p><sup>3</sup>Wealth and riches are in his house. His righteousness endures forever.</p>
+            <p><sup>4</sup>Light dawns in the darkness for the upright, gracious, merciful, and righteous.</p>
+            <p><sup>5</sup>It is well with the man who deals graciously and lends. He will maintain his cause in judgment.</p>
+            <p><sup>6</sup>For he will never be shaken. The righteous will be remembered forever.</p>
+            <p><sup>7</sup>He will not be afraid of evil news. His heart is steadfast, trusting in Yahweh.</p>
+            <p><sup>8</sup>His heart is established. He will not be afraid in the end when he sees his adversaries.</p>
+            <p><sup>9</sup>He has dispersed, he has given to the poor. His righteousness endures forever. His horn will be exalted with honor.</p>
+            <p><sup>10</sup>The wicked will see it, and be grieved. He shall gnash with his teeth, and melt away. The desire of the wicked will perish.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-111.html" rel="prev" aria-label="Previous chapter: Psalms 111">&larr; Previous: Chapter 111</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-113.html" rel="next" aria-label="Next chapter: Psalms 113">Next: Chapter 113 &rarr;</a>
+</div>
+</main>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
+</body>
+</html>

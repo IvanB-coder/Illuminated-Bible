@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Psalms 75 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Psalms chapter 75 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
+</head>
+<body class="read-page book-psalms">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
+<a href="index.html#old-testament">Old Testament</a>
+<a href="index.html#new-testament">New Testament</a>
+<a href="index.html#about">About</a>
+</nav>
+</header>
+<main id="main">
+<div class="read-header">
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Psalms <span class="chnum">&middot; Chapter 75</span></h1>
+<p class="chapter-position">Chapter 75 of 150</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
+</div>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+</div>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-74.html" rel="prev" aria-label="Previous chapter: Psalms 74">&larr; Previous: Chapter 74</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-76.html" rel="next" aria-label="Next chapter: Psalms 76">Next: Chapter 76 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">U</span>nto thee, O God, do we give thanks, unto thee do we give thanks: for that thy name is near thy wondrous works declare.</p>
+            <p><sup>2</sup>When I shall receive the congregation I will judge uprightly.</p>
+            <p><sup>3</sup>The earth and all the inhabitants thereof are dissolved: I bear up the pillars of it. Selah.</p>
+            <p><sup>4</sup>I said unto the fools, Deal not foolishly: and to the wicked, Lift not up the horn:</p>
+            <p><sup>5</sup>Lift not up your horn on high: speak not with a stiff neck.</p>
+            <p><sup>6</sup>For promotion cometh neither from the east, nor from the west, nor from the south.</p>
+            <p><sup>7</sup>But God is the judge: he putteth down one, and setteth up another.</p>
+            <p><sup>8</sup>For in the hand of the LORD there is a cup, and the wine is red; it is full of mixture; and he poureth out of the same: but the dregs thereof, all the wicked of the earth shall wring them out, and drink them.</p>
+            <p><sup>9</sup>But I will declare for ever; I will sing praises to the God of Jacob.</p>
+            <p><sup>10</sup>All the horns of the wicked also will I cut off; but the horns of the righteous shall be exalted.</p>
+</div>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">W</span>e give thanks to you, God. We give thanks, for your Name is near. Men tell about your wondrous works.</p>
+            <p><sup>2</sup>When I choose the appointed time, I will judge blamelessly.</p>
+            <p><sup>3</sup>The earth and all its inhabitants quake. I firmly hold its pillars. Selah.</p>
+            <p><sup>4</sup>I said to the arrogant, "Don't boast!" I said to the wicked, "Don't lift up the horn.</p>
+            <p><sup>5</sup>Don't lift up your horn on high. Don't speak with a stiff neck."</p>
+            <p><sup>6</sup>For neither from the east, nor from the west, nor yet from the south, comes exaltation.</p>
+            <p><sup>7</sup>But God is the judge. He puts down one, and lifts up another.</p>
+            <p><sup>8</sup>For in Yahweh's hand there is a cup, full of foaming wine mixed with spices. He pours it out. Indeed the wicked of the earth drink and drink it to its very dregs.</p>
+            <p><sup>9</sup>But I will declare this forever: I will sing praises to the God of Jacob.</p>
+            <p><sup>10</sup>I will cut off all the horns of the wicked, but the horns of the righteous shall be lifted up.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-74.html" rel="prev" aria-label="Previous chapter: Psalms 74">&larr; Previous: Chapter 74</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-76.html" rel="next" aria-label="Next chapter: Psalms 76">Next: Chapter 76 &rarr;</a>
+</div>
+</main>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
+</body>
+</html>

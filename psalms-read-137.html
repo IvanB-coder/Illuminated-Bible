@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Psalms 137 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Psalms chapter 137 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
+</head>
+<body class="read-page book-psalms">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
+<a href="index.html#old-testament">Old Testament</a>
+<a href="index.html#new-testament">New Testament</a>
+<a href="index.html#about">About</a>
+</nav>
+</header>
+<main id="main">
+<div class="read-header">
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Psalms <span class="chnum">&middot; Chapter 137</span></h1>
+<p class="chapter-position">Chapter 137 of 150</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
+</div>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+</div>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-136.html" rel="prev" aria-label="Previous chapter: Psalms 136">&larr; Previous: Chapter 136</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-138.html" rel="next" aria-label="Next chapter: Psalms 138">Next: Chapter 138 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">B</span>y the rivers of Babylon, there we sat down, yea, we wept, when we remembered Zion.</p>
+            <p><sup>2</sup>We hanged our harps upon the willows in the midst thereof.</p>
+            <p><sup>3</sup>For there they that carried us away captive required of us a song; and they that wasted us required of us mirth, saying, Sing us one of the songs of Zion.</p>
+            <p><sup>4</sup>How shall we sing the LORD'S song in a strange land?</p>
+            <p><sup>5</sup>If I forget thee, O Jerusalem, let my right hand forget her cunning.</p>
+            <p><sup>6</sup>If I do not remember thee, let my tongue cleave to the roof of my mouth; if I prefer not Jerusalem above my chief joy.</p>
+            <p><sup>7</sup>Remember, O LORD, the children of Edom in the day of Jerusalem; who said, Rase it, rase it, even to the foundation thereof.</p>
+            <p><sup>8</sup>O daughter of Babylon, who art to be destroyed; happy shall he be, that rewardeth thee as thou hast served us.</p>
+            <p><sup>9</sup>Happy shall he be, that taketh and dasheth thy little ones against the stones.</p>
+</div>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">B</span>y the rivers of Babylon, there we sat down. Yes, we wept, when we remembered Zion.</p>
+            <p><sup>2</sup>On the willows in that land, we hung up our harps.</p>
+            <p><sup>3</sup>For there, those who led us captive asked us for songs. Those who tormented us demanded songs of joy: "Sing us one of the songs of Zion!"</p>
+            <p><sup>4</sup>How can we sing Yahweh's song in a foreign land?</p>
+            <p><sup>5</sup>If I forget you, Jerusalem, let my right hand forget its skill.</p>
+            <p><sup>6</sup>Let my tongue stick to the roof of my mouth if I don't remember you, if I don't prefer Jerusalem above my chief joy.</p>
+            <p><sup>7</sup>Remember, Yahweh, against the children of Edom in the day of Jerusalem, who said, "Raze it! Raze it even to its foundation!"</p>
+            <p><sup>8</sup>Daughter of Babylon, doomed to destruction, he will be happy who repays you, as you have done to us.</p>
+            <p><sup>9</sup>Happy shall he be, who takes and dashes your little ones against the rock. By David.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="psalms-read-136.html" rel="prev" aria-label="Previous chapter: Psalms 136">&larr; Previous: Chapter 136</a>
+<a class="btn btn-ghost" href="psalms.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="psalms-read-138.html" rel="next" aria-label="Next chapter: Psalms 138">Next: Chapter 138 &rarr;</a>
+</div>
+</main>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
+</body>
+</html>
