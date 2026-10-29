@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Exodus 27 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Exodus chapter 27 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Exodus 27 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Exodus chapter 27 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-exodus">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Exodus <span style="color:var(--burgundy);">&middot; Chapter 27</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 27 of 40</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Exodus <span class="chnum">&middot; Chapter 27</span></h1>
+<p class="chapter-position">Chapter 27 of 40</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="exodus-read-26.html">&larr; Chapter 26</a>
-<span class="chapter-indicator">Chapter 27 of 40</span>
-<a class="btn btn-primary shimmer" href="exodus-read-28.html">Chapter 28 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>And thou shalt make an altar of shittim wood, five cubits long, and five cubits broad; the altar shall be foursquare: and the height thereof shall be three cubits.</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="exodus-read-26.html" rel="prev" aria-label="Previous chapter: Exodus 26">&larr; Previous: Chapter 26</a>
+<a class="btn btn-ghost" href="exodus.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="exodus-read-28.html" rel="next" aria-label="Next chapter: Exodus 28">Next: Chapter 28 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">A</span>nd thou shalt make an altar of shittim wood, five cubits long, and five cubits broad; the altar shall be foursquare: and the height thereof shall be three cubits.</p>
             <p><sup>2</sup>And thou shalt make the horns of it upon the four corners thereof: his horns shall be of the same: and thou shalt overlay it with brass.</p>
             <p><sup>3</sup>And thou shalt make his pans to receive his ashes, and his shovels, and his basons, and his fleshhooks, and his firepans: all the vessels thereof thou shalt make of brass.</p>
             <p><sup>4</sup>And thou shalt make for it a grate of network of brass; and upon the net shalt thou make four brasen rings in the four corners thereof.</p>
@@ -51,12 +58,64 @@
             <p><sup>20</sup>And thou shalt command the children of Israel, that they bring thee pure oil olive beaten for the light, to cause the lamp to burn always.</p>
             <p><sup>21</sup>In the tabernacle of the congregation without the vail, which is before the testimony, Aaron and his sons shall order it from evening to morning before the LORD: it shall be a statute for ever unto their generations on the behalf of the children of Israel.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="exodus-read-26.html">&larr; Chapter 26</a>
-<a href="exodus.html">&uarr; Exodus summary</a>
-<a class="btn btn-primary shimmer" href="exodus-read-28.html">Chapter 28 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">"</span>You shall make the altar of acacia wood, five cubits long, and five cubits wide. The altar shall be square. Its height shall be three cubits.</p>
+            <p><sup>2</sup>You shall make its horns on its four corners. Its horns shall be of one piece with it. You shall overlay it with bronze.</p>
+            <p><sup>3</sup>You shall make its pots to take away its ashes; and its shovels, its basins, its meat hooks, and its fire pans. You shall make all its vessels of bronze.</p>
+            <p><sup>4</sup>You shall make a grating for it of network of bronze. On the net you shall make four bronze rings in its four corners.</p>
+            <p><sup>5</sup>You shall put it under the ledge around the altar beneath, that the net may reach halfway up the altar.</p>
+            <p><sup>6</sup>You shall make poles for the altar, poles of acacia wood, and overlay them with bronze.</p>
+            <p><sup>7</sup>Its poles shall be put into the rings, and the poles shall be on the two sides of the altar when carrying it.</p>
+            <p><sup>8</sup>You shall make it hollow with planks. They shall make it as it has been shown you on the mountain.</p>
+            <p><sup>9</sup>"You shall make the court of the tabernacle: for the south side southward there shall be hangings for the court of fine twined linen one hundred cubits long for one side.</p>
+            <p><sup>10</sup>Its pillars shall be twenty, and their sockets twenty, of bronze. The hooks of the pillars and their fillets shall be of silver.</p>
+            <p><sup>11</sup>Likewise for the length of the north side, there shall be hangings one hundred cubits long, and its pillars twenty, and their sockets twenty, of bronze; the hooks of the pillars, and their fillets, of silver.</p>
+            <p><sup>12</sup>For the width of the court on the west side shall be hangings of fifty cubits; their pillars ten, and their sockets ten.</p>
+            <p><sup>13</sup>The width of the court on the east side eastward shall be fifty cubits.</p>
+            <p><sup>14</sup>The hangings for the one side of the gate shall be fifteen cubits; their pillars three, and their sockets three.</p>
+            <p><sup>15</sup>For the other side shall be hangings of fifteen cubits; their pillars three, and their sockets three.</p>
+            <p><sup>16</sup>For the gate of the court shall be a screen of twenty cubits, of blue, and purple, and scarlet, and fine twined linen, the work of the embroiderer; their pillars four, and their sockets four.</p>
+            <p><sup>17</sup>All the pillars of the court around shall be filleted with silver; their hooks of silver, and their sockets of bronze.</p>
+            <p><sup>18</sup>The length of the court shall be one hundred cubits, and the width fifty throughout, and the height five cubits, of fine twined linen, and their sockets of bronze.</p>
+            <p><sup>19</sup>All the instruments of the tabernacle in all its service, and all its pins, and all the pins of the court, shall be of bronze.</p>
+            <p><sup>20</sup>"You shall command the children of Israel, that they bring to you pure olive oil beaten for the light, to cause a lamp to burn continually.</p>
+            <p><sup>21</sup>In the Tent of Meeting, outside the veil which is before the covenant, Aaron and his sons shall keep it in order from evening to morning before Yahweh: it shall be a statute forever throughout their generations on the behalf of the children of Israel.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="exodus-read-26.html" rel="prev" aria-label="Previous chapter: Exodus 26">&larr; Previous: Chapter 26</a>
+<a class="btn btn-ghost" href="exodus.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="exodus-read-28.html" rel="next" aria-label="Next chapter: Exodus 28">Next: Chapter 28 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

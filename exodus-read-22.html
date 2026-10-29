@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Exodus 22 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Exodus chapter 22 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Exodus 22 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Exodus chapter 22 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-exodus">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Exodus <span style="color:var(--burgundy);">&middot; Chapter 22</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 22 of 40</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Exodus <span class="chnum">&middot; Chapter 22</span></h1>
+<p class="chapter-position">Chapter 22 of 40</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="exodus-read-21.html">&larr; Chapter 21</a>
-<span class="chapter-indicator">Chapter 22 of 40</span>
-<a class="btn btn-primary shimmer" href="exodus-read-23.html">Chapter 23 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>If a man shall steal an ox, or a sheep, and kill it, or sell it; he shall restore five oxen for an ox, and four sheep for a sheep.</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="exodus-read-21.html" rel="prev" aria-label="Previous chapter: Exodus 21">&larr; Previous: Chapter 21</a>
+<a class="btn btn-ghost" href="exodus.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="exodus-read-23.html" rel="next" aria-label="Next chapter: Exodus 23">Next: Chapter 23 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">I</span>f a man shall steal an ox, or a sheep, and kill it, or sell it; he shall restore five oxen for an ox, and four sheep for a sheep.</p>
             <p><sup>2</sup>If a thief be found breaking up, and be smitten that he die, there shall no blood be shed for him.</p>
             <p><sup>3</sup>If the sun be risen upon him, there shall be blood shed for him; for he should make full restitution; if he have nothing, then he shall be sold for his theft.</p>
             <p><sup>4</sup>If the theft be certainly found in his hand alive, whether it be ox, or ass, or sheep; he shall restore double.</p>
@@ -61,12 +68,74 @@
             <p><sup>30</sup>Likewise shalt thou do with thine oxen, and with thy sheep: seven days it shall be with his dam; on the eighth day thou shalt give it me.</p>
             <p><sup>31</sup>And ye shall be holy men unto me: neither shall ye eat any flesh that is torn of beasts in the field; ye shall cast it to the dogs.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="exodus-read-21.html">&larr; Chapter 21</a>
-<a href="exodus.html">&uarr; Exodus summary</a>
-<a class="btn btn-primary shimmer" href="exodus-read-23.html">Chapter 23 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">"</span>If a man steals an ox or a sheep, and kills it or sells it, he shall pay five oxen for an ox, and four sheep for a sheep.</p>
+            <p><sup>2</sup>If the thief is found breaking in, and is struck so that he dies, there shall be no guilt of bloodshed for him.</p>
+            <p><sup>3</sup>If the sun has risen on him, he is guilty of bloodshed. He shall make restitution. If he has nothing, then he shall be sold for his theft.</p>
+            <p><sup>4</sup>If the stolen property is found in his hand alive, whether it is ox, donkey, or sheep, he shall pay double.</p>
+            <p><sup>5</sup>"If a man causes a field or vineyard to be eaten by letting his animal loose, and it grazes in another man's field, he shall make restitution from the best of his own field, and from the best of his own vineyard.</p>
+            <p><sup>6</sup>"If fire breaks out, and catches in thorns so that the shocks of grain, or the standing grain, or the field are consumed; he who kindled the fire shall surely make restitution.</p>
+            <p><sup>7</sup>"If a man delivers to his neighbor money or stuff to keep, and it is stolen out of the man's house, if the thief is found, he shall pay double.</p>
+            <p><sup>8</sup>If the thief isn't found, then the master of the house shall come near to God, to find out whether or not he has put his hand on his neighbor's goods.</p>
+            <p><sup>9</sup>For every matter of trespass, whether it is for ox, for donkey, for sheep, for clothing, or for any kind of lost thing, about which one says, 'This is mine,' the cause of both parties shall come before God. He whom God condemns shall pay double to his neighbor.</p>
+            <p><sup>10</sup>"If a man delivers to his neighbor a donkey, an ox, a sheep, or any animal to keep, and it dies or is injured, or driven away, no man seeing it;</p>
+            <p><sup>11</sup>the oath of Yahweh shall be between them both, he has not put his hand on his neighbor's goods; and its owner shall accept it, and he shall not make restitution.</p>
+            <p><sup>12</sup>But if it is stolen from him, the one who stole shall make restitution to its owner.</p>
+            <p><sup>13</sup>If it is torn in pieces, let him bring it for evidence. He shall not make good that which was torn.</p>
+            <p><sup>14</sup>"If a man borrows anything of his neighbor's, and it is injured, or dies, its owner not being with it, he shall surely make restitution.</p>
+            <p><sup>15</sup>If its owner is with it, he shall not make it good. If it is a leased thing, it came for its lease.</p>
+            <p><sup>16</sup>"If a man entices a virgin who isn't pledged to be married, and lies with her, he shall surely pay a dowry for her to be his wife.</p>
+            <p><sup>17</sup>If her father utterly refuses to give her to him, he shall pay money according to the dowry of virgins.</p>
+            <p><sup>18</sup>"You shall not allow a sorceress to live.</p>
+            <p><sup>19</sup>"Whoever has sex with an animal shall surely be put to death.</p>
+            <p><sup>20</sup>"He who sacrifices to any god, except to Yahweh only, shall be utterly destroyed.</p>
+            <p><sup>21</sup>"You shall not wrong an alien or oppress him, for you were aliens in the land of Egypt.</p>
+            <p><sup>22</sup>"You shall not take advantage of any widow or fatherless child.</p>
+            <p><sup>23</sup>If you take advantage of them at all, and they cry at all to me, I will surely hear their cry;</p>
+            <p><sup>24</sup>and my wrath will grow hot, and I will kill you with the sword; and your wives shall be widows, and your children fatherless.</p>
+            <p><sup>25</sup>"If you lend money to any of my people with you who is poor, you shall not be to him as a creditor. You shall not charge him interest.</p>
+            <p><sup>26</sup>If you take your neighbor's garment as collateral, you shall restore it to him before the sun goes down,</p>
+            <p><sup>27</sup>for that is his only covering, it is his garment for his skin. What would he sleep in? It will happen, when he cries to me, that I will hear, for I am gracious.</p>
+            <p><sup>28</sup>"You shall not blaspheme God, nor curse a ruler of your people.</p>
+            <p><sup>29</sup>"You shall not delay to offer from your harvest and from the outflow of your presses. "You shall give the firstborn of your sons to me.</p>
+            <p><sup>30</sup>You shall do likewise with your cattle and with your sheep. It shall be with its mother seven days, then on the eighth day you shall give it to me.</p>
+            <p><sup>31</sup>"You shall be holy men to me, therefore you shall not eat any meat that is torn by animals in the field. You shall cast it to the dogs.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="exodus-read-21.html" rel="prev" aria-label="Previous chapter: Exodus 21">&larr; Previous: Chapter 21</a>
+<a class="btn btn-ghost" href="exodus.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="exodus-read-23.html" rel="next" aria-label="Next chapter: Exodus 23">Next: Chapter 23 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

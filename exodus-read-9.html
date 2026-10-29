@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Exodus 9 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Exodus chapter 9 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Exodus 9 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Exodus chapter 9 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-exodus">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Exodus <span style="color:var(--burgundy);">&middot; Chapter 9</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 9 of 40</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Exodus <span class="chnum">&middot; Chapter 9</span></h1>
+<p class="chapter-position">Chapter 9 of 40</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="exodus-read-8.html">&larr; Chapter 8</a>
-<span class="chapter-indicator">Chapter 9 of 40</span>
-<a class="btn btn-primary shimmer" href="exodus-read-10.html">Chapter 10 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>Then the LORD said unto Moses, Go in unto Pharaoh, and tell him, Thus saith the LORD God of the Hebrews, Let my people go, that they may serve me.</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="exodus-read-8.html" rel="prev" aria-label="Previous chapter: Exodus 8">&larr; Previous: Chapter 8</a>
+<a class="btn btn-ghost" href="exodus.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="exodus-read-10.html" rel="next" aria-label="Next chapter: Exodus 10">Next: Chapter 10 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">T</span>hen the LORD said unto Moses, Go in unto Pharaoh, and tell him, Thus saith the LORD God of the Hebrews, Let my people go, that they may serve me.</p>
             <p><sup>2</sup>For if thou refuse to let them go, and wilt hold them still,</p>
             <p><sup>3</sup>Behold, the hand of the LORD is upon thy cattle which is in the field, upon the horses, upon the asses, upon the camels, upon the oxen, and upon the sheep: there shall be a very grievous murrain.</p>
             <p><sup>4</sup>And the LORD shall sever between the cattle of Israel and the cattle of Egypt: and there shall nothing die of all that is the children's of Israel.</p>
@@ -65,12 +72,78 @@
             <p><sup>34</sup>And when Pharaoh saw that the rain and the hail and the thunders were ceased, he sinned yet more, and hardened his heart, he and his servants.</p>
             <p><sup>35</sup>And the heart of Pharaoh was hardened, neither would he let the children of Israel go; as the LORD had spoken by Moses.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="exodus-read-8.html">&larr; Chapter 8</a>
-<a href="exodus.html">&uarr; Exodus summary</a>
-<a class="btn btn-primary shimmer" href="exodus-read-10.html">Chapter 10 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">T</span>hen Yahweh said to Moses, "Go in to Pharaoh, and tell him, 'This is what Yahweh, the God of the Hebrews, says: "Let my people go, that they may serve me.</p>
+            <p><sup>2</sup>For if you refuse to let them go, and hold them still,</p>
+            <p><sup>3</sup>behold, Yahweh's hand is on your livestock which are in the field, on the horses, on the donkeys, on the camels, on the herds, and on the flocks with a very grievous pestilence.</p>
+            <p><sup>4</sup>Yahweh will make a distinction between the livestock of Israel and the livestock of Egypt; and nothing shall die of all that belongs to the children of Israel."'"</p>
+            <p><sup>5</sup>Yahweh appointed a set time, saying, "Tomorrow Yahweh shall do this thing in the land."</p>
+            <p><sup>6</sup>Yahweh did that thing on the next day; and all the livestock of Egypt died, but of the livestock of the children of Israel, not one died.</p>
+            <p><sup>7</sup>Pharaoh sent, and, behold, there was not so much as one of the livestock of the Israelites dead. But the heart of Pharaoh was stubborn, and he didn't let the people go.</p>
+            <p><sup>8</sup>Yahweh said to Moses and to Aaron, "Take handfuls of ashes of the furnace, and let Moses sprinkle it toward the sky in the sight of Pharaoh.</p>
+            <p><sup>9</sup>It shall become small dust over all the land of Egypt, and shall be boils and blisters breaking out on man and on animal, throughout all the land of Egypt."</p>
+            <p><sup>10</sup>They took ashes of the furnace, and stood before Pharaoh; and Moses sprinkled it up toward the sky; and it became boils and blisters breaking out on man and on animal.</p>
+            <p><sup>11</sup>The magicians couldn't stand before Moses because of the boils; for the boils were on the magicians and on all the Egyptians.</p>
+            <p><sup>12</sup>Yahweh hardened the heart of Pharaoh, and he didn't listen to them, as Yahweh had spoken to Moses.</p>
+            <p><sup>13</sup>Yahweh said to Moses, "Rise up early in the morning, and stand before Pharaoh, and tell him, 'This is what Yahweh, the God of the Hebrews, says: "Let my people go, that they may serve me.</p>
+            <p><sup>14</sup>For this time I will send all my plagues against your heart, against your officials, and against your people; that you may know that there is no one like me in all the earth.</p>
+            <p><sup>15</sup>For now I would have stretched out my hand, and struck you and your people with pestilence, and you would have been cut off from the earth;</p>
+            <p><sup>16</sup>but indeed for this cause I have made you stand: to show you my power, and that my name may be declared throughout all the earth,</p>
+            <p><sup>17</sup>because you still exalt yourself against my people, that you won't let them go.</p>
+            <p><sup>18</sup>Behold, tomorrow about this time I will cause it to rain a very grievous hail, such as has not been in Egypt since the day it was founded even until now.</p>
+            <p><sup>19</sup>Now therefore command that all of your livestock and all that you have in the field be brought into shelter. The hail will come down on every man and animal that is found in the field, and isn't brought home, and they will die."'"</p>
+            <p><sup>20</sup>Those who feared Yahweh's word among the servants of Pharaoh made their servants and their livestock flee into the houses.</p>
+            <p><sup>21</sup>Whoever didn't respect Yahweh's word left his servants and his livestock in the field.</p>
+            <p><sup>22</sup>Yahweh said to Moses, "Stretch out your hand toward the sky, that there may be hail in all the land of Egypt, on man, and on animal, and on every herb of the field, throughout the land of Egypt."</p>
+            <p><sup>23</sup>Moses stretched out his rod toward the heavens, and Yahweh sent thunder and hail; and lightning flashed down to the earth. Yahweh rained hail on the land of Egypt.</p>
+            <p><sup>24</sup>So there was very severe hail, and lightning mixed with the hail, such as had not been in all the land of Egypt since it became a nation.</p>
+            <p><sup>25</sup>The hail struck throughout all the land of Egypt all that was in the field, both man and animal; and the hail struck every herb of the field, and broke every tree of the field.</p>
+            <p><sup>26</sup>Only in the land of Goshen, where the children of Israel were, there was no hail.</p>
+            <p><sup>27</sup>Pharaoh sent and called for Moses and Aaron, and said to them, "I have sinned this time. Yahweh is righteous, and I and my people are wicked.</p>
+            <p><sup>28</sup>Pray to Yahweh; for there has been enough of mighty thunderings and hail. I will let you go, and you shall stay no longer."</p>
+            <p><sup>29</sup>Moses said to him, "As soon as I have gone out of the city, I will spread out my hands to Yahweh. The thunders shall cease, and there will not be any more hail; that you may know that the earth is Yahweh's.</p>
+            <p><sup>30</sup>But as for you and your servants, I know that you don't yet fear Yahweh God."</p>
+            <p><sup>31</sup>The flax and the barley were struck, for the barley had ripened and the flax was blooming.</p>
+            <p><sup>32</sup>But the wheat and the spelt were not struck, for they had not grown up.</p>
+            <p><sup>33</sup>Moses went out of the city from Pharaoh, and spread out his hands to Yahweh; and the thunders and hail ceased, and the rain was not poured on the earth.</p>
+            <p><sup>34</sup>When Pharaoh saw that the rain and the hail and the thunders had ceased, he sinned yet more, and hardened his heart, he and his servants.</p>
+            <p><sup>35</sup>The heart of Pharaoh was hardened, and he didn't let the children of Israel go, just as Yahweh had spoken through Moses.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="exodus-read-8.html" rel="prev" aria-label="Previous chapter: Exodus 8">&larr; Previous: Chapter 8</a>
+<a class="btn btn-ghost" href="exodus.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="exodus-read-10.html" rel="next" aria-label="Next chapter: Exodus 10">Next: Chapter 10 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Exodus 20 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Exodus chapter 20 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Exodus 20 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Exodus chapter 20 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-exodus">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Exodus <span style="color:var(--burgundy);">&middot; Chapter 20</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 20 of 40</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Exodus <span class="chnum">&middot; Chapter 20</span></h1>
+<p class="chapter-position">Chapter 20 of 40</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="exodus-read-19.html">&larr; Chapter 19</a>
-<span class="chapter-indicator">Chapter 20 of 40</span>
-<a class="btn btn-primary shimmer" href="exodus-read-21.html">Chapter 21 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>And God spake all these words, saying,</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="exodus-read-19.html" rel="prev" aria-label="Previous chapter: Exodus 19">&larr; Previous: Chapter 19</a>
+<a class="btn btn-ghost" href="exodus.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="exodus-read-21.html" rel="next" aria-label="Next chapter: Exodus 21">Next: Chapter 21 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">A</span>nd God spake all these words, saying,</p>
             <p><sup>2</sup>I am the LORD thy God, which have brought thee out of the land of Egypt, out of the house of bondage.</p>
             <p><sup>3</sup>Thou shalt have no other gods before me.</p>
             <p><sup>4</sup>Thou shalt not make unto thee any graven image, or any likeness of any thing that is in heaven above, or that is in the earth beneath, or that is in the water under the earth:</p>
@@ -56,12 +63,69 @@
             <p><sup>25</sup>And if thou wilt make me an altar of stone, thou shalt not build it of hewn stone: for if thou lift up thy tool upon it, thou hast polluted it.</p>
             <p><sup>26</sup>Neither shalt thou go up by steps unto mine altar, that thy nakedness be not discovered thereon.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="exodus-read-19.html">&larr; Chapter 19</a>
-<a href="exodus.html">&uarr; Exodus summary</a>
-<a class="btn btn-primary shimmer" href="exodus-read-21.html">Chapter 21 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">G</span>od spoke all these words, saying,</p>
+            <p><sup>2</sup>"I am Yahweh your God, who brought you out of the land of Egypt, out of the house of bondage.</p>
+            <p><sup>3</sup>"You shall have no other gods before me.</p>
+            <p><sup>4</sup>"You shall not make for yourselves an idol, nor any image of anything that is in the heavens above, or that is in the earth beneath, or that is in the water under the earth:</p>
+            <p><sup>5</sup>you shall not bow yourself down to them, nor serve them, for I, Yahweh your God, am a jealous God, visiting the iniquity of the fathers on the children, on the third and on the fourth generation of those who hate me,</p>
+            <p><sup>6</sup>and showing loving kindness to thousands of those who love me and keep my commandments.</p>
+            <p><sup>7</sup>"You shall not misuse the name of Yahweh your God, for Yahweh will not hold him guiltless who misuses his name.</p>
+            <p><sup>8</sup>"Remember the Sabbath day, to keep it holy.</p>
+            <p><sup>9</sup>You shall labor six days, and do all your work,</p>
+            <p><sup>10</sup>but the seventh day is a Sabbath to Yahweh your God. You shall not do any work in it, you, nor your son, nor your daughter, your male servant, nor your female servant, nor your livestock, nor your stranger who is within your gates;</p>
+            <p><sup>11</sup>for in six days Yahweh made heaven and earth, the sea, and all that is in them, and rested the seventh day; therefore Yahweh blessed the Sabbath day, and made it holy.</p>
+            <p><sup>12</sup>"Honor your father and your mother, that your days may be long in the land which Yahweh your God gives you.</p>
+            <p><sup>13</sup>"You shall not murder.</p>
+            <p><sup>14</sup>"You shall not commit adultery.</p>
+            <p><sup>15</sup>"You shall not steal.</p>
+            <p><sup>16</sup>"You shall not give false testimony against your neighbor.</p>
+            <p><sup>17</sup>"You shall not covet your neighbor's house. You shall not covet your neighbor's wife, nor his male servant, nor his female servant, nor his ox, nor his donkey, nor anything that is your neighbor's."</p>
+            <p><sup>18</sup>All the people perceived the thunderings, the lightnings, the sound of the trumpet, and the mountain smoking. When the people saw it, they trembled, and stayed at a distance.</p>
+            <p><sup>19</sup>They said to Moses, "Speak with us yourself, and we will listen; but don't let God speak with us, lest we die."</p>
+            <p><sup>20</sup>Moses said to the people, "Don't be afraid, for God has come to test you, and that his fear may be before you, that you won't sin."</p>
+            <p><sup>21</sup>The people stayed at a distance, and Moses came near to the thick darkness where God was.</p>
+            <p><sup>22</sup>Yahweh said to Moses, "This is what you shall tell the children of Israel: 'You yourselves have seen that I have talked with you from heaven.</p>
+            <p><sup>23</sup>You shall most certainly not make gods of silver or gods of gold for yourselves to be alongside me.</p>
+            <p><sup>24</sup>You shall make an altar of earth for me, and shall sacrifice on it your burnt offerings and your peace offerings, your sheep and your cattle. In every place where I record my name I will come to you and I will bless you.</p>
+            <p><sup>25</sup>If you make me an altar of stone, you shall not build it of cut stones; for if you lift up your tool on it, you have polluted it.</p>
+            <p><sup>26</sup>You shall not go up by steps to my altar, that your nakedness may not be exposed to it.'</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="exodus-read-19.html" rel="prev" aria-label="Previous chapter: Exodus 19">&larr; Previous: Chapter 19</a>
+<a class="btn btn-ghost" href="exodus.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="exodus-read-21.html" rel="next" aria-label="Next chapter: Exodus 21">Next: Chapter 21 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ezekiel 15 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Ezekiel chapter 15 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
+</head>
+<body class="read-page book-ezekiel">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
+<a href="index.html#old-testament">Old Testament</a>
+<a href="index.html#new-testament">New Testament</a>
+<a href="index.html#about">About</a>
+</nav>
+</header>
+<main id="main">
+<div class="read-header">
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Ezekiel <span class="chnum">&middot; Chapter 15</span></h1>
+<p class="chapter-position">Chapter 15 of 48</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
+</div>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+</div>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="ezekiel-read-14.html" rel="prev" aria-label="Previous chapter: Ezekiel 14">&larr; Previous: Chapter 14</a>
+<a class="btn btn-ghost" href="ezekiel.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="ezekiel-read-16.html" rel="next" aria-label="Next chapter: Ezekiel 16">Next: Chapter 16 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">A</span>nd the word of the LORD came unto me, saying,</p>
+            <p><sup>2</sup>Son of man, What is the vine tree more than any tree, or than a branch which is among the trees of the forest?</p>
+            <p><sup>3</sup>Shall wood be taken thereof to do any work? or will men take a pin of it to hang any vessel thereon?</p>
+            <p><sup>4</sup>Behold, it is cast into the fire for fuel; the fire devoureth both the ends of it, and the midst of it is burned. Is it meet for any work?</p>
+            <p><sup>5</sup>Behold, when it was whole, it was meet for no work: how much less shall it be meet yet for any work, when the fire hath devoured it, and it is burned?</p>
+            <p><sup>6</sup>Therefore thus saith the Lord GOD; As the vine tree among the trees of the forest, which I have given to the fire for fuel, so will I give the inhabitants of Jerusalem.</p>
+            <p><sup>7</sup>And I will set my face against them; they shall go out from one fire, and another fire shall devour them; and ye shall know that I am the LORD, when I set my face against them.</p>
+            <p><sup>8</sup>And I will make the land desolate, because they have committed a trespass, saith the Lord GOD.</p>
+</div>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">Y</span>ahweh’s word came to me, saying,</p>
+            <p><sup>2</sup>“Son of man, what is the vine tree more than any tree, the vine branch which is among the trees of the forest?</p>
+            <p><sup>3</sup>Will wood be taken of it to make anything? Will men take a pin of it to hang any vessel on it?</p>
+            <p><sup>4</sup>Behold, it is cast into the fire for fuel; the fire has devoured both its ends, and the middle of it is burned. Is it profitable for any work?</p>
+            <p><sup>5</sup>Behold, when it was whole, it was suitable for no work. How much less, when the fire has devoured it, and it has been burned, will it yet be suitable for any work?”</p>
+            <p><sup>6</sup>Therefore the Lord Yahweh says: “As the vine wood among the trees of the forest, which I have given to the fire for fuel, so I will give the inhabitants of Jerusalem.</p>
+            <p><sup>7</sup>I will set my face against them. They will go out from the fire, but the fire will still devour them. Then you will know that I am Yahweh, when I set my face against them.</p>
+            <p><sup>8</sup>I will make the land desolate, because they have acted unfaithfully,” says the Lord Yahweh.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="ezekiel-read-14.html" rel="prev" aria-label="Previous chapter: Ezekiel 14">&larr; Previous: Chapter 14</a>
+<a class="btn btn-ghost" href="ezekiel.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="ezekiel-read-16.html" rel="next" aria-label="Next chapter: Ezekiel 16">Next: Chapter 16 &rarr;</a>
+</div>
+</main>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
+</body>
+</html>

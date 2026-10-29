@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Exodus 23 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Exodus chapter 23 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Exodus 23 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Exodus chapter 23 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-exodus">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Exodus <span style="color:var(--burgundy);">&middot; Chapter 23</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 23 of 40</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Exodus <span class="chnum">&middot; Chapter 23</span></h1>
+<p class="chapter-position">Chapter 23 of 40</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="exodus-read-22.html">&larr; Chapter 22</a>
-<span class="chapter-indicator">Chapter 23 of 40</span>
-<a class="btn btn-primary shimmer" href="exodus-read-24.html">Chapter 24 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>Thou shalt not raise a false report: put not thine hand with the wicked to be an unrighteous witness.</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="exodus-read-22.html" rel="prev" aria-label="Previous chapter: Exodus 22">&larr; Previous: Chapter 22</a>
+<a class="btn btn-ghost" href="exodus.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="exodus-read-24.html" rel="next" aria-label="Next chapter: Exodus 24">Next: Chapter 24 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">T</span>hou shalt not raise a false report: put not thine hand with the wicked to be an unrighteous witness.</p>
             <p><sup>2</sup>Thou shalt not follow a multitude to do evil; neither shalt thou speak in a cause to decline after many to wrest judgment:</p>
             <p><sup>3</sup>Neither shalt thou countenance a poor man in his cause.</p>
             <p><sup>4</sup>If thou meet thine enemy's ox or his ass going astray, thou shalt surely bring it back to him again.</p>
@@ -63,12 +70,76 @@
             <p><sup>32</sup>Thou shalt make no covenant with them, nor with their gods.</p>
             <p><sup>33</sup>They shall not dwell in thy land, lest they make thee sin against me: for if thou serve their gods, it will surely be a snare unto thee.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="exodus-read-22.html">&larr; Chapter 22</a>
-<a href="exodus.html">&uarr; Exodus summary</a>
-<a class="btn btn-primary shimmer" href="exodus-read-24.html">Chapter 24 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">"</span>You shall not spread a false report. Don't join your hand with the wicked to be a malicious witness.</p>
+            <p><sup>2</sup>"You shall not follow a crowd to do evil. You shall not testify in court to side with a multitude to pervert justice.</p>
+            <p><sup>3</sup>You shall not favor a poor man in his cause.</p>
+            <p><sup>4</sup>"If you meet your enemy's ox or his donkey going astray, you shall surely bring it back to him again.</p>
+            <p><sup>5</sup>If you see the donkey of him who hates you fallen down under his burden, don't leave him. You shall surely help him with it.</p>
+            <p><sup>6</sup>"You shall not deny justice to your poor people in their lawsuits.</p>
+            <p><sup>7</sup>"Keep far from a false charge, and don't kill the innocent and righteous; for I will not justify the wicked.</p>
+            <p><sup>8</sup>"You shall take no bribe, for a bribe blinds those who have sight and perverts the words of the righteous.</p>
+            <p><sup>9</sup>"You shall not oppress an alien, for you know the heart of an alien, since you were aliens in the land of Egypt.</p>
+            <p><sup>10</sup>"For six years you shall sow your land, and shall gather in its increase,</p>
+            <p><sup>11</sup>but the seventh year you shall let it rest and lie fallow, that the poor of your people may eat; and what they leave the animal of the field shall eat. In the same way, you shall deal with your vineyard and with your olive grove.</p>
+            <p><sup>12</sup>"Six days you shall do your work, and on the seventh day you shall rest, that your ox and your donkey may have rest, and the son of your servant, and the alien may be refreshed.</p>
+            <p><sup>13</sup>"Be careful to do all things that I have said to you; and don't invoke the name of other gods or even let them be heard out of your mouth.</p>
+            <p><sup>14</sup>"You shall observe a feast to me three times a year.</p>
+            <p><sup>15</sup>You shall observe the feast of unleavened bread. Seven days you shall eat unleavened bread, as I commanded you, at the time appointed in the month Abib (for in it you came out of Egypt), and no one shall appear before me empty.</p>
+            <p><sup>16</sup>And the feast of harvest, the first fruits of your labors, which you sow in the field; and the feast of ingathering, at the end of the year, when you gather in your labors out of the field.</p>
+            <p><sup>17</sup>Three times in the year all your males shall appear before the Lord Yahweh.</p>
+            <p><sup>18</sup>"You shall not offer the blood of my sacrifice with leavened bread. The fat of my feast shall not remain all night until the morning.</p>
+            <p><sup>19</sup>You shall bring the first of the first fruits of your ground into the house of Yahweh your God. "You shall not boil a young goat in its mother's milk.</p>
+            <p><sup>20</sup>"Behold, I send an angel before you, to keep you by the way, and to bring you into the place which I have prepared.</p>
+            <p><sup>21</sup>Pay attention to him, and listen to his voice. Don't provoke him, for he will not pardon your disobedience, for my name is in him.</p>
+            <p><sup>22</sup>But if you indeed listen to his voice, and do all that I speak, then I will be an enemy to your enemies, and an adversary to your adversaries.</p>
+            <p><sup>23</sup>For my angel shall go before you, and bring you in to the Amorite, the Hittite, the Perizzite, the Canaanite, the Hivite, and the Jebusite; and I will cut them off.</p>
+            <p><sup>24</sup>You shall not bow down to their gods, nor serve them, nor follow their practices, but you shall utterly overthrow them and demolish their pillars.</p>
+            <p><sup>25</sup>You shall serve Yahweh your God, and he will bless your bread and your water, and I will take sickness away from among you.</p>
+            <p><sup>26</sup>No one will miscarry or be barren in your land. I will fulfill the number of your days.</p>
+            <p><sup>27</sup>I will send my terror before you, and will confuse all the people to whom you come, and I will make all your enemies turn their backs to you.</p>
+            <p><sup>28</sup>I will send the hornet before you, which will drive out the Hivite, the Canaanite, and the Hittite, from before you.</p>
+            <p><sup>29</sup>I will not drive them out from before you in one year, lest the land become desolate, and the animals of the field multiply against you.</p>
+            <p><sup>30</sup>Little by little I will drive them out from before you, until you have increased and inherit the land.</p>
+            <p><sup>31</sup>I will set your border from the Red Sea even to the sea of the Philistines, and from the wilderness to the River; for I will deliver the inhabitants of the land into your hand, and you shall drive them out before you.</p>
+            <p><sup>32</sup>You shall make no covenant with them, nor with their gods.</p>
+            <p><sup>33</sup>They shall not dwell in your land, lest they make you sin against me, for if you serve their gods, it will surely be a snare to you."</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="exodus-read-22.html" rel="prev" aria-label="Previous chapter: Exodus 22">&larr; Previous: Chapter 22</a>
+<a class="btn btn-ghost" href="exodus.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="exodus-read-24.html" rel="next" aria-label="Next chapter: Exodus 24">Next: Chapter 24 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>
