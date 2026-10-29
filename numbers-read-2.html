@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Numbers 2 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Numbers chapter 2 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Numbers 2 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Numbers chapter 2 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-numbers">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Numbers <span style="color:var(--burgundy);">&middot; Chapter 2</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 2 of 36</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Numbers <span class="chnum">&middot; Chapter 2</span></h1>
+<p class="chapter-position">Chapter 2 of 36</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="numbers-read.html">&larr; Chapter 1</a>
-<span class="chapter-indicator">Chapter 2 of 36</span>
-<a class="btn btn-primary shimmer" href="numbers-read-3.html">Chapter 3 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>And the LORD spake unto Moses and unto Aaron, saying,</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="numbers-read.html" rel="prev" aria-label="Previous chapter: Numbers 1">&larr; Previous: Chapter 1</a>
+<a class="btn btn-ghost" href="numbers.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="numbers-read-3.html" rel="next" aria-label="Next chapter: Numbers 3">Next: Chapter 3 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">A</span>nd the LORD spake unto Moses and unto Aaron, saying,</p>
             <p><sup>2</sup>Every man of the children of Israel shall pitch by his own standard, with the ensign of their father's house: far off about the tabernacle of the congregation shall they pitch.</p>
             <p><sup>3</sup>And on the east side toward the rising of the sun shall they of the standard of the camp of Judah pitch throughout their armies: and Nahshon the son of Amminadab shall be captain of the children of Judah.</p>
             <p><sup>4</sup>And his host, and those that were numbered of them, were threescore and fourteen thousand and six hundred.</p>
@@ -64,12 +71,77 @@
             <p><sup>33</sup>But the Levites were not numbered among the children of Israel; as the LORD commanded Moses.</p>
             <p><sup>34</sup>And the children of Israel did according to all that the LORD commanded Moses: so they pitched by their standards, and so they set forward, every one after their families, according to the house of their fathers.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="numbers-read.html">&larr; Chapter 1</a>
-<a href="numbers.html">&uarr; Numbers summary</a>
-<a class="btn btn-primary shimmer" href="numbers-read-3.html">Chapter 3 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">Y</span>ahweh spoke to Moses and to Aaron, saying,</p>
+            <p><sup>2</sup>"The children of Israel shall encamp every man by his own standard, with the banners of their fathers' houses. They shall encamp around the Tent of Meeting at a distance from it.</p>
+            <p><sup>3</sup>"Those who encamp on the east side toward the sunrise shall be of the standard of the camp of Judah, according to their divisions. The prince of the children of Judah shall be Nahshon the son of Amminadab.</p>
+            <p><sup>4</sup>His division, and those who were counted of them, were seventy-four thousand six hundred.</p>
+            <p><sup>5</sup>"Those who encamp next to him shall be the tribe of Issachar. The prince of the children of Issachar shall be Nethanel the son of Zuar.</p>
+            <p><sup>6</sup>His division, and those who were counted of it, were fifty-four thousand four hundred.</p>
+            <p><sup>7</sup>"The tribe of Zebulun: the prince of the children of Zebulun shall be Eliab the son of Helon.</p>
+            <p><sup>8</sup>His division, and those who were counted of it, were fifty-seven thousand four hundred.</p>
+            <p><sup>9</sup>"All who were counted of the camp of Judah were one hundred eighty-six thousand four hundred, according to their divisions. They shall set out first.</p>
+            <p><sup>10</sup>"On the south side shall be the standard of the camp of Reuben according to their divisions. The prince of the children of Reuben shall be Elizur the son of Shedeur.</p>
+            <p><sup>11</sup>His division, and those who were counted of it, were forty-six thousand five hundred.</p>
+            <p><sup>12</sup>"Those who encamp next to him shall be the tribe of Simeon. The prince of the children of Simeon shall be Shelumiel the son of Zurishaddai.</p>
+            <p><sup>13</sup>His division, and those who were counted of them, were fifty-nine thousand three hundred.</p>
+            <p><sup>14</sup>"The tribe of Gad: the prince of the children of Gad shall be Eliasaph the son of Reuel.</p>
+            <p><sup>15</sup>His division, and those who were counted of them, were forty-five thousand six hundred fifty.</p>
+            <p><sup>16</sup>"All who were counted of the camp of Reuben were one hundred fifty-one thousand four hundred fifty, according to their armies. They shall set out second.</p>
+            <p><sup>17</sup>"Then the Tent of Meeting shall set out, with the camp of the Levites in the middle of the camps. As they encamp, so shall they set out, every man in his place, by their standards.</p>
+            <p><sup>18</sup>"On the west side shall be the standard of the camp of Ephraim according to their divisions. The prince of the children of Ephraim shall be Elishama the son of Ammihud.</p>
+            <p><sup>19</sup>His division, and those who were counted of them, were forty thousand five hundred.</p>
+            <p><sup>20</sup>"Next to him shall be the tribe of Manasseh. The prince of the children of Manasseh shall be Gamaliel the son of Pedahzur.</p>
+            <p><sup>21</sup>His division, and those who were counted of them, were thirty-two thousand two hundred.</p>
+            <p><sup>22</sup>"The tribe of Benjamin: the prince of the children of Benjamin shall be Abidan the son of Gideoni.</p>
+            <p><sup>23</sup>His army, and those who were counted of them, were thirty-five thousand four hundred.</p>
+            <p><sup>24</sup>"All who were counted of the camp of Ephraim were one hundred eight thousand one hundred, according to their divisions. They shall set out third.</p>
+            <p><sup>25</sup>"On the north side shall be the standard of the camp of Dan according to their divisions. The prince of the children of Dan shall be Ahiezer the son of Ammishaddai.</p>
+            <p><sup>26</sup>His division, and those who were counted of them, were sixty-two thousand seven hundred.</p>
+            <p><sup>27</sup>"Those who encamp next to him shall be the tribe of Asher. The prince of the children of Asher shall be Pagiel the son of Ochran.</p>
+            <p><sup>28</sup>His division, and those who were counted of them, were forty-one thousand five hundred.</p>
+            <p><sup>29</sup>"The tribe of Naphtali: the prince of the children of Naphtali shall be Ahira the son of Enan.</p>
+            <p><sup>30</sup>His division, and those who were counted of them, were fifty-three thousand four hundred.</p>
+            <p><sup>31</sup>"All who were counted of the camp of Dan were one hundred fifty-seven thousand six hundred. They shall set out last by their standards."</p>
+            <p><sup>32</sup>These are those who were counted of the children of Israel by their fathers' houses. All who were counted of the camps according to their armies were six hundred three thousand five hundred fifty.</p>
+            <p><sup>33</sup>But the Levites were not counted among the children of Israel, as Yahweh commanded Moses.</p>
+            <p><sup>34</sup>Thus the children of Israel did. According to all that Yahweh commanded Moses, so they encamped by their standards, and so they set out, everyone by their families, according to their fathers' houses.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="numbers-read.html" rel="prev" aria-label="Previous chapter: Numbers 1">&larr; Previous: Chapter 1</a>
+<a class="btn btn-ghost" href="numbers.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="numbers-read-3.html" rel="next" aria-label="Next chapter: Numbers 3">Next: Chapter 3 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

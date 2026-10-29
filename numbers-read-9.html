@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Numbers 9 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Numbers chapter 9 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Numbers 9 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Numbers chapter 9 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-numbers">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Numbers <span style="color:var(--burgundy);">&middot; Chapter 9</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 9 of 36</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Numbers <span class="chnum">&middot; Chapter 9</span></h1>
+<p class="chapter-position">Chapter 9 of 36</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="numbers-read-8.html">&larr; Chapter 8</a>
-<span class="chapter-indicator">Chapter 9 of 36</span>
-<a class="btn btn-primary shimmer" href="numbers-read-10.html">Chapter 10 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>And the LORD spake unto Moses in the wilderness of Sinai, in the first month of the second year after they were come out of the land of Egypt, saying,</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="numbers-read-8.html" rel="prev" aria-label="Previous chapter: Numbers 8">&larr; Previous: Chapter 8</a>
+<a class="btn btn-ghost" href="numbers.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="numbers-read-10.html" rel="next" aria-label="Next chapter: Numbers 10">Next: Chapter 10 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">A</span>nd the LORD spake unto Moses in the wilderness of Sinai, in the first month of the second year after they were come out of the land of Egypt, saying,</p>
             <p><sup>2</sup>Let the children of Israel also keep the passover at his appointed season.</p>
             <p><sup>3</sup>In the fourteenth day of this month, at even, ye shall keep it in his appointed season: according to all the rites of it, and according to all the ceremonies thereof, shall ye keep it.</p>
             <p><sup>4</sup>And Moses spake unto the children of Israel, that they should keep the passover.</p>
@@ -53,12 +60,66 @@
             <p><sup>22</sup>Or whether it were two days, or a month, or a year, that the cloud tarried upon the tabernacle, remaining thereon, the children of Israel abode in their tents, and journeyed not: but when it was taken up, they journeyed.</p>
             <p><sup>23</sup>At the commandment of the LORD they rested in the tents, and at the commandment of the LORD they journeyed: they kept the charge of the LORD, at the commandment of the LORD by the hand of Moses.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="numbers-read-8.html">&larr; Chapter 8</a>
-<a href="numbers.html">&uarr; Numbers summary</a>
-<a class="btn btn-primary shimmer" href="numbers-read-10.html">Chapter 10 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">Y</span>ahweh spoke to Moses in the wilderness of Sinai, in the first month of the second year after they had come out of the land of Egypt, saying,</p>
+            <p><sup>2</sup>"Let the children of Israel keep the Passover in its appointed season.</p>
+            <p><sup>3</sup>On the fourteenth day of this month, at evening, you shall keep it in its appointed season. You shall keep it according to all its statutes and according to all its ordinances."</p>
+            <p><sup>4</sup>Moses told the children of Israel that they should keep the Passover.</p>
+            <p><sup>5</sup>They kept the Passover in the first month, on the fourteenth day of the month at evening, in the wilderness of Sinai. According to all that Yahweh commanded Moses, so the children of Israel did.</p>
+            <p><sup>6</sup>There were certain men who were unclean because of the dead body of a man, so that they could not keep the Passover on that day, and they came before Moses and Aaron on that day.</p>
+            <p><sup>7</sup>Those men said to him, "We are unclean because of the dead body of a man. Why are we kept back, that we may not offer the offering of Yahweh in its appointed season among the children of Israel?"</p>
+            <p><sup>8</sup>Moses answered them, "Wait, that I may hear what Yahweh will command concerning you."</p>
+            <p><sup>9</sup>Yahweh spoke to Moses, saying,</p>
+            <p><sup>10</sup>"Say to the children of Israel, 'If any man of you or of your generations is unclean by reason of a dead body, or is on a journey far away, he shall still keep the Passover to Yahweh.</p>
+            <p><sup>11</sup>In the second month, on the fourteenth day at evening they shall keep it; they shall eat it with unleavened bread and bitter herbs.</p>
+            <p><sup>12</sup>They shall leave none of it until the morning, nor break a bone of it. According to all the statute of the Passover they shall keep it.</p>
+            <p><sup>13</sup>But the man who is clean, and is not on a journey, and fails to keep the Passover, that soul shall be cut off from his people. Because he didn't offer the offering of Yahweh in its appointed season, that man shall bear his sin.</p>
+            <p><sup>14</sup>"'If a foreigner lives among you and desires to keep the Passover to Yahweh, then he shall do so according to the statute of the Passover, and according to its ordinance. You shall have one statute, both for the foreigner and for him who is born in the land.'"</p>
+            <p><sup>15</sup>On the day that the tabernacle was raised up, the cloud covered the tabernacle, even the Tent of the Testimony. At evening it was over the tabernacle, as it were the appearance of fire, until morning.</p>
+            <p><sup>16</sup>So it was continually. The cloud covered it, and the appearance of fire by night.</p>
+            <p><sup>17</sup>Whenever the cloud was taken up from over the Tent, then after that the children of Israel traveled; and in the place where the cloud remained, there the children of Israel encamped.</p>
+            <p><sup>18</sup>At the commandment of Yahweh, the children of Israel traveled, and at the commandment of Yahweh they encamped. As long as the cloud remained on the tabernacle they remained encamped.</p>
+            <p><sup>19</sup>When the cloud stayed on the tabernacle many days, then the children of Israel kept Yahweh's command, and didn't travel.</p>
+            <p><sup>20</sup>Sometimes the cloud was a few days on the tabernacle; then according to the commandment of Yahweh they remained encamped, and according to the commandment of Yahweh they traveled.</p>
+            <p><sup>21</sup>Sometimes the cloud was from evening until morning; and when the cloud was taken up in the morning, they traveled; or by day and by night, when the cloud was taken up, they traveled.</p>
+            <p><sup>22</sup>Whether it was two days, or a month, or a year that the cloud stayed on the tabernacle, remaining on it, the children of Israel remained encamped, and didn't travel; but when it was taken up, they traveled.</p>
+            <p><sup>23</sup>At the commandment of Yahweh they encamped, and at the commandment of Yahweh they traveled. They kept Yahweh's command, at the commandment of Yahweh by Moses.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="numbers-read-8.html" rel="prev" aria-label="Previous chapter: Numbers 8">&larr; Previous: Chapter 8</a>
+<a class="btn btn-ghost" href="numbers.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="numbers-read-10.html" rel="next" aria-label="Next chapter: Numbers 10">Next: Chapter 10 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

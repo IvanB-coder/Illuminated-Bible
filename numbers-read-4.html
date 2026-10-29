@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Numbers 4 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Numbers chapter 4 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Numbers 4 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Numbers chapter 4 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-numbers">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Numbers <span style="color:var(--burgundy);">&middot; Chapter 4</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 4 of 36</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Numbers <span class="chnum">&middot; Chapter 4</span></h1>
+<p class="chapter-position">Chapter 4 of 36</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="numbers-read-3.html">&larr; Chapter 3</a>
-<span class="chapter-indicator">Chapter 4 of 36</span>
-<a class="btn btn-primary shimmer" href="numbers-read-5.html">Chapter 5 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>And the LORD spake unto Moses and unto Aaron, saying,</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="numbers-read-3.html" rel="prev" aria-label="Previous chapter: Numbers 3">&larr; Previous: Chapter 3</a>
+<a class="btn btn-ghost" href="numbers.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="numbers-read-5.html" rel="next" aria-label="Next chapter: Numbers 5">Next: Chapter 5 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">A</span>nd the LORD spake unto Moses and unto Aaron, saying,</p>
             <p><sup>2</sup>Take the sum of the sons of Kohath from among the sons of Levi, after their families, by the house of their fathers,</p>
             <p><sup>3</sup>From thirty years old and upward even until fifty years old, all that enter into the host, to do the work in the tabernacle of the congregation.</p>
             <p><sup>4</sup>This shall be the service of the sons of Kohath in the tabernacle of the congregation, about the most holy things:</p>
@@ -79,12 +86,92 @@
             <p><sup>48</sup>Even those that were numbered of them, were eight thousand and five hundred and fourscore.</p>
             <p><sup>49</sup>According to the commandment of the LORD they were numbered by the hand of Moses, every one according to his service, and according to his burden: thus were they numbered of him, as the LORD commanded Moses.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="numbers-read-3.html">&larr; Chapter 3</a>
-<a href="numbers.html">&uarr; Numbers summary</a>
-<a class="btn btn-primary shimmer" href="numbers-read-5.html">Chapter 5 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">Y</span>ahweh spoke to Moses and to Aaron, saying,</p>
+            <p><sup>2</sup>"Take a census of the sons of Kohath from among the sons of Levi, by their families, by their fathers' houses,</p>
+            <p><sup>3</sup>from thirty years old and upward even until fifty years old, all who enter into the service to do the work in the Tent of Meeting.</p>
+            <p><sup>4</sup>"This is the service of the sons of Kohath in the Tent of Meeting, regarding the most holy things.</p>
+            <p><sup>5</sup>When the camp moves forward, Aaron shall go in with his sons; and they shall take down the veil of the screen, cover the ark of the Testimony with it,</p>
+            <p><sup>6</sup>put a covering of sealskin on it, spread a blue cloth over it, and put in its poles.</p>
+            <p><sup>7</sup>"On the table of show bread they shall spread a blue cloth, and put on it the dishes, the spoons, the bowls, and the cups with which to pour out; and the continual bread shall be on it.</p>
+            <p><sup>8</sup>They shall spread on them a scarlet cloth, and cover it with a covering of sealskin, and shall put in its poles.</p>
+            <p><sup>9</sup>"They shall take a blue cloth and cover the lamp stand of the light, its lamps, its snuffers, its snuff dishes, and all its oil vessels, with which they minister to it.</p>
+            <p><sup>10</sup>They shall put it and all its vessels within a covering of sealskin, and shall put it on the frame.</p>
+            <p><sup>11</sup>"On the golden altar they shall spread a blue cloth, and cover it with a covering of sealskin, and shall put in its poles.</p>
+            <p><sup>12</sup>"They shall take all the vessels of ministry with which they minister in the sanctuary, and put them in a blue cloth, cover them with a covering of sealskin, and shall put them on the frame.</p>
+            <p><sup>13</sup>"They shall take away the ashes from the altar, and spread a purple cloth on it.</p>
+            <p><sup>14</sup>They shall put on it all its vessels with which they minister about it, the fire pans, the meat hooks, the shovels, and the basins--all the vessels of the altar; and they shall spread on it a covering of sealskin, and put in its poles.</p>
+            <p><sup>15</sup>"When Aaron and his sons have finished covering the sanctuary and all the furniture of the sanctuary, as the camp moves forward; after that, the sons of Kohath shall come to carry it; but they shall not touch the sanctuary, lest they die. The sons of Kohath shall carry these things belonging to the Tent of Meeting.</p>
+            <p><sup>16</sup>"The duty of Eleazar the son of Aaron the priest shall be the oil for the light, the sweet incense, the continual meal offering, and the anointing oil, the requirements of all the tabernacle, and of all that is in it, the sanctuary, and its furnishings."</p>
+            <p><sup>17</sup>Yahweh spoke to Moses and to Aaron, saying,</p>
+            <p><sup>18</sup>"Don't cut off the tribe of the families of the Kohathites from among the Levites;</p>
+            <p><sup>19</sup>but do this to them, that they may live, and not die, when they approach the most holy things: Aaron and his sons shall go in and appoint everyone to his service and to his burden;</p>
+            <p><sup>20</sup>but they shall not go in to see the sanctuary even for a moment, lest they die."</p>
+            <p><sup>21</sup>Yahweh spoke to Moses, saying,</p>
+            <p><sup>22</sup>"Take a census of the sons of Gershon also, by their fathers' houses, by their families;</p>
+            <p><sup>23</sup>you shall count them from thirty years old and upward until fifty years old: all who enter in to wait on the service, to do the work in the Tent of Meeting.</p>
+            <p><sup>24</sup>"This is the service of the families of the Gershonites, in serving and in bearing burdens:</p>
+            <p><sup>25</sup>they shall carry the curtains of the tabernacle and the Tent of Meeting, its covering, the covering of sealskin that is on it, the screen for the door of the Tent of Meeting,</p>
+            <p><sup>26</sup>the hangings of the court, the screen for the door of the gate of the court which is by the tabernacle and around the altar, their cords, and all the instruments of their service, and whatever shall be done with them. They shall serve in there.</p>
+            <p><sup>27</sup>At the commandment of Aaron and his sons shall be all the service of the sons of the Gershonites, in all their burden and in all their service; and you shall appoint their duty to them in all their responsibilities.</p>
+            <p><sup>28</sup>This is the service of the families of the sons of the Gershonites in the Tent of Meeting. Their duty shall be under the hand of Ithamar the son of Aaron the priest.</p>
+            <p><sup>29</sup>"As for the sons of Merari, you shall count them by their families, by their fathers' houses;</p>
+            <p><sup>30</sup>you shall count them from thirty years old and upward even to fifty years old--everyone who enters on the service, to do the work of the Tent of Meeting.</p>
+            <p><sup>31</sup>This is the duty of their burden, according to all their service in the Tent of Meeting: the tabernacle's boards, its bars, its pillars, its sockets,</p>
+            <p><sup>32</sup>the pillars of the court around it, their sockets, their pins, their cords, with all their instruments, and with all their service. You shall appoint the instruments of the duty of their burden to them by name.</p>
+            <p><sup>33</sup>This is the service of the families of the sons of Merari, according to all their service in the Tent of Meeting, under the hand of Ithamar the son of Aaron the priest."</p>
+            <p><sup>34</sup>Moses and Aaron and the princes of the congregation counted the sons of the Kohathites by their families, and by their fathers' houses,</p>
+            <p><sup>35</sup>from thirty years old and upward even to fifty years old, everyone who entered into the service for work in the Tent of Meeting.</p>
+            <p><sup>36</sup>Those who were counted of them by their families were two thousand seven hundred fifty.</p>
+            <p><sup>37</sup>These are those who were counted of the families of the Kohathites, all who served in the Tent of Meeting, whom Moses and Aaron counted according to the commandment of Yahweh by Moses.</p>
+            <p><sup>38</sup>Those who were counted of the sons of Gershon, by their families, and by their fathers' houses,</p>
+            <p><sup>39</sup>from thirty years old and upward even to fifty years old--everyone who entered into the service for work in the Tent of Meeting,</p>
+            <p><sup>40</sup>even those who were counted of them, by their families, by their fathers' houses, were two thousand six hundred thirty.</p>
+            <p><sup>41</sup>These are those who were counted of the families of the sons of Gershon, all who served in the Tent of Meeting, whom Moses and Aaron counted according to the commandment of Yahweh.</p>
+            <p><sup>42</sup>Those who were counted of the families of the sons of Merari, by their families, by their fathers' houses,</p>
+            <p><sup>43</sup>from thirty years old and upward even to fifty years old--everyone who entered into the service for work in the Tent of Meeting,</p>
+            <p><sup>44</sup>even those who were counted of them by their families, were three thousand two hundred.</p>
+            <p><sup>45</sup>These are those who were counted of the families of the sons of Merari, whom Moses and Aaron counted according to the commandment of Yahweh by Moses.</p>
+            <p><sup>46</sup>All those who were counted of the Levites whom Moses and Aaron and the princes of Israel counted, by their families and by their fathers' houses,</p>
+            <p><sup>47</sup>from thirty years old and upward even to fifty years old, everyone who entered in to do the work of service and the work of bearing burdens in the Tent of Meeting,</p>
+            <p><sup>48</sup>even those who were counted of them, were eight thousand five hundred eighty.</p>
+            <p><sup>49</sup>According to the commandment of Yahweh they were counted by Moses, everyone according to his service and according to his burden. Thus they were counted by him, as Yahweh commanded Moses.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="numbers-read-3.html" rel="prev" aria-label="Previous chapter: Numbers 3">&larr; Previous: Chapter 3</a>
+<a class="btn btn-ghost" href="numbers.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="numbers-read-5.html" rel="next" aria-label="Next chapter: Numbers 5">Next: Chapter 5 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

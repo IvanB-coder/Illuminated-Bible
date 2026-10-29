@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Numbers 8 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Numbers chapter 8 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Numbers 8 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Numbers chapter 8 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-numbers">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Numbers <span style="color:var(--burgundy);">&middot; Chapter 8</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 8 of 36</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Numbers <span class="chnum">&middot; Chapter 8</span></h1>
+<p class="chapter-position">Chapter 8 of 36</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="numbers-read-7.html">&larr; Chapter 7</a>
-<span class="chapter-indicator">Chapter 8 of 36</span>
-<a class="btn btn-primary shimmer" href="numbers-read-9.html">Chapter 9 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>And the LORD spake unto Moses, saying,</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="numbers-read-7.html" rel="prev" aria-label="Previous chapter: Numbers 7">&larr; Previous: Chapter 7</a>
+<a class="btn btn-ghost" href="numbers.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="numbers-read-9.html" rel="next" aria-label="Next chapter: Numbers 9">Next: Chapter 9 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">A</span>nd the LORD spake unto Moses, saying,</p>
             <p><sup>2</sup>Speak unto Aaron, and say unto him, When thou lightest the lamps, the seven lamps shall give light over against the candlestick.</p>
             <p><sup>3</sup>And Aaron did so; he lighted the lamps thereof over against the candlestick, as the LORD commanded Moses.</p>
             <p><sup>4</sup>And this work of the candlestick was of beaten gold, unto the shaft thereof, unto the flowers thereof, was beaten work: according unto the pattern which the LORD had shewed Moses, so he made the candlestick.</p>
@@ -56,12 +63,69 @@
             <p><sup>25</sup>And from the age of fifty years they shall cease waiting upon the service thereof, and shall serve no more:</p>
             <p><sup>26</sup>But shall minister with their brethren in the tabernacle of the congregation, to keep the charge, and shall do no service. Thus shalt thou do unto the Levites touching their charge.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="numbers-read-7.html">&larr; Chapter 7</a>
-<a href="numbers.html">&uarr; Numbers summary</a>
-<a class="btn btn-primary shimmer" href="numbers-read-9.html">Chapter 9 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">Y</span>ahweh spoke to Moses, saying,</p>
+            <p><sup>2</sup>"Speak to Aaron, and tell him, 'When you light the lamps, the seven lamps shall give light in front of the lamp stand.'"</p>
+            <p><sup>3</sup>Aaron did so. He lit its lamps to light the area in front of the lamp stand, as Yahweh commanded Moses.</p>
+            <p><sup>4</sup>This was the workmanship of the lamp stand, beaten work of gold. From its base to its flowers, it was beaten work. He made the lamp stand according to the pattern which Yahweh had shown Moses.</p>
+            <p><sup>5</sup>Yahweh spoke to Moses, saying,</p>
+            <p><sup>6</sup>"Take the Levites from among the children of Israel, and cleanse them.</p>
+            <p><sup>7</sup>You shall do this to them to cleanse them: sprinkle the water of cleansing on them, let them shave their whole bodies with a razor, let them wash their clothes, and cleanse themselves.</p>
+            <p><sup>8</sup>Then let them take a young bull and its meal offering, fine flour mixed with oil; and another young bull you shall take for a sin offering.</p>
+            <p><sup>9</sup>You shall present the Levites before the Tent of Meeting. You shall assemble the whole congregation of the children of Israel.</p>
+            <p><sup>10</sup>You shall present the Levites before Yahweh. The children of Israel shall lay their hands on the Levites,</p>
+            <p><sup>11</sup>and Aaron shall offer the Levites before Yahweh for a wave offering on the behalf of the children of Israel, that it may be theirs to do the service of Yahweh.</p>
+            <p><sup>12</sup>"The Levites shall lay their hands on the heads of the bulls, and you shall offer the one for a sin offering and the other for a burnt offering to Yahweh, to make atonement for the Levites.</p>
+            <p><sup>13</sup>You shall set the Levites before Aaron and before his sons, and offer them as a wave offering to Yahweh.</p>
+            <p><sup>14</sup>Thus you shall separate the Levites from among the children of Israel, and the Levites shall be mine.</p>
+            <p><sup>15</sup>"After that, the Levites shall go in to do the service of the Tent of Meeting. You shall cleanse them, and offer them as a wave offering.</p>
+            <p><sup>16</sup>For they are wholly given to me from among the children of Israel; instead of all who open the womb, even the firstborn of all the children of Israel, I have taken them to me.</p>
+            <p><sup>17</sup>For all the firstborn among the children of Israel are mine, both man and animal. On the day that I struck all the firstborn in the land of Egypt, I sanctified them for myself.</p>
+            <p><sup>18</sup>I have taken the Levites instead of all the firstborn among the children of Israel.</p>
+            <p><sup>19</sup>I have given the Levites as a gift to Aaron and to his sons from among the children of Israel, to do the service of the children of Israel in the Tent of Meeting, and to make atonement for the children of Israel, so that there will be no plague among the children of Israel when the children of Israel come near to the sanctuary."</p>
+            <p><sup>20</sup>Moses, and Aaron, and all the congregation of the children of Israel did so to the Levites. According to all that Yahweh commanded Moses concerning the Levites, so the children of Israel did to them.</p>
+            <p><sup>21</sup>The Levites purified themselves from sin, and they washed their clothes; and Aaron offered them for a wave offering before Yahweh and Aaron made atonement for them to cleanse them.</p>
+            <p><sup>22</sup>After that, the Levites went in to do their service in the Tent of Meeting before Aaron and before his sons: as Yahweh had commanded Moses concerning the Levites, so they did to them.</p>
+            <p><sup>23</sup>Yahweh spoke to Moses, saying,</p>
+            <p><sup>24</sup>"This is what is assigned to the Levites: from twenty-five years old and upward they shall go in to wait on the service in the work of the Tent of Meeting;</p>
+            <p><sup>25</sup>and from the age of fifty years they shall retire from doing the work, and shall serve no more,</p>
+            <p><sup>26</sup>but shall assist their brothers in the Tent of Meeting, to perform the duty, and shall perform no service. This is how you shall have the Levites do their duties."</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="numbers-read-7.html" rel="prev" aria-label="Previous chapter: Numbers 7">&larr; Previous: Chapter 7</a>
+<a class="btn btn-ghost" href="numbers.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="numbers-read-9.html" rel="next" aria-label="Next chapter: Numbers 9">Next: Chapter 9 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

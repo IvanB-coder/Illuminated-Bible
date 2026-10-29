@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Numbers 11 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Numbers chapter 11 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Numbers 11 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Numbers chapter 11 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-numbers">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Numbers <span style="color:var(--burgundy);">&middot; Chapter 11</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 11 of 36</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Numbers <span class="chnum">&middot; Chapter 11</span></h1>
+<p class="chapter-position">Chapter 11 of 36</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="numbers-read-10.html">&larr; Chapter 10</a>
-<span class="chapter-indicator">Chapter 11 of 36</span>
-<a class="btn btn-primary shimmer" href="numbers-read-12.html">Chapter 12 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>And when the people complained, it displeased the LORD: and the LORD heard it; and his anger was kindled; and the fire of the LORD burnt among them, and consumed them that were in the uttermost parts of the camp.</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="numbers-read-10.html" rel="prev" aria-label="Previous chapter: Numbers 10">&larr; Previous: Chapter 10</a>
+<a class="btn btn-ghost" href="numbers.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="numbers-read-12.html" rel="next" aria-label="Next chapter: Numbers 12">Next: Chapter 12 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">A</span>nd when the people complained, it displeased the LORD: and the LORD heard it; and his anger was kindled; and the fire of the LORD burnt among them, and consumed them that were in the uttermost parts of the camp.</p>
             <p><sup>2</sup>And the people cried unto Moses; and when Moses prayed unto the LORD, the fire was quenched.</p>
             <p><sup>3</sup>And he called the name of the place Taberah: because the fire of the LORD burnt among them.</p>
             <p><sup>4</sup>And the mixt multitude that was among them fell a lusting: and the children of Israel also wept again, and said, Who shall give us flesh to eat?</p>
@@ -65,12 +72,78 @@
             <p><sup>34</sup>And he called the name of that place Kibrothhattaavah: because there they buried the people that lusted.</p>
             <p><sup>35</sup>And the people journeyed from Kibrothhattaavah unto Hazeroth; and abode at Hazeroth.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="numbers-read-10.html">&larr; Chapter 10</a>
-<a href="numbers.html">&uarr; Numbers summary</a>
-<a class="btn btn-primary shimmer" href="numbers-read-12.html">Chapter 12 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">T</span>he people were complaining in the ears of Yahweh. When Yahweh heard it, his anger burned; and Yahweh's fire burned among them, and consumed some of the outskirts of the camp.</p>
+            <p><sup>2</sup>The people cried to Moses; and Moses prayed to Yahweh, and the fire abated.</p>
+            <p><sup>3</sup>The name of that place was called Taberah, because Yahweh's fire burned among them.</p>
+            <p><sup>4</sup>The mixed multitude that was among them lusted exceedingly; and the children of Israel also wept again, and said, "Who will give us meat to eat?</p>
+            <p><sup>5</sup>We remember the fish, which we ate in Egypt for nothing; the cucumbers, and the melons, and the leeks, and the onions, and the garlic;</p>
+            <p><sup>6</sup>but now we have lost our appetite. There is nothing at all except this manna to look at."</p>
+            <p><sup>7</sup>The manna was like coriander seed, and it looked like bdellium.</p>
+            <p><sup>8</sup>The people went around, gathered it, and ground it in mills, or beat it in mortars, and boiled it in pots, and made cakes of it. Its taste was like the taste of fresh oil.</p>
+            <p><sup>9</sup>When the dew fell on the camp in the night, the manna fell on it.</p>
+            <p><sup>10</sup>Moses heard the people weeping throughout their families, every man at the door of his tent; and Yahweh's anger burned greatly; and Moses was displeased.</p>
+            <p><sup>11</sup>Moses said to Yahweh, "Why have you treated your servant so badly? Why haven't I found favor in your sight, that you lay the burden of all this people on me?</p>
+            <p><sup>12</sup>Have I conceived all this people? Have I brought them out, that you should tell me, 'Carry them in your bosom, as a nurse carries a nursing infant, to the land which you swore to their fathers'?</p>
+            <p><sup>13</sup>Where could I get meat to give all these people? For they weep before me, saying, 'Give us meat, that we may eat.'</p>
+            <p><sup>14</sup>I am not able to bear all this people alone, because it is too heavy for me.</p>
+            <p><sup>15</sup>If you treat me this way, please kill me right now, if I have found favor in your sight; and don't let me see my wretchedness."</p>
+            <p><sup>16</sup>Yahweh said to Moses, "Gather to me seventy men of the elders of Israel, whom you know to be the elders of the people and officers over them; and bring them to the Tent of Meeting, that they may stand there with you.</p>
+            <p><sup>17</sup>I will come down and talk with you there. I will take of the Spirit which is on you, and will put it on them; and they shall bear the burden of the people with you, that you don't bear it yourself alone.</p>
+            <p><sup>18</sup>"Say to the people, 'Sanctify yourselves in preparation for tomorrow, and you will eat meat; for you have wept in the ears of Yahweh, saying, "Who will give us meat to eat? For it was well with us in Egypt." Therefore Yahweh will give you meat, and you will eat.</p>
+            <p><sup>19</sup>You will not eat just one day, or two days, or five days, or ten days, or twenty days,</p>
+            <p><sup>20</sup>but a whole month, until it comes out at your nostrils, and it is loathsome to you; because you have rejected Yahweh who is among you, and have wept before him, saying, "Why did we come out of Egypt?"'"</p>
+            <p><sup>21</sup>Moses said, "The people, among whom I am, are six hundred thousand men on foot; and you have said, 'I will give them meat, that they may eat a whole month.'</p>
+            <p><sup>22</sup>Shall flocks and herds be slaughtered for them, to be sufficient for them? Shall all the fish of the sea be gathered together for them, to be sufficient for them?"</p>
+            <p><sup>23</sup>Yahweh said to Moses, "Has Yahweh's hand grown short? Now you will see whether my word will happen to you or not."</p>
+            <p><sup>24</sup>Moses went out, and told the people Yahweh's words; and he gathered seventy men of the elders of the people, and set them around the Tent.</p>
+            <p><sup>25</sup>Yahweh came down in the cloud, and spoke to him, and took of the Spirit that was on him, and put it on the seventy elders. When the Spirit rested on them, they prophesied, but they did so no more.</p>
+            <p><sup>26</sup>But two men remained in the camp. The name of one was Eldad, and the name of the other Medad; and the Spirit rested on them. They were of those who were written, but had not gone out to the Tent; and they prophesied in the camp.</p>
+            <p><sup>27</sup>A young man ran, and told Moses, and said, "Eldad and Medad are prophesying in the camp!"</p>
+            <p><sup>28</sup>Joshua the son of Nun, the servant of Moses, one of his chosen men, answered, "My lord Moses, forbid them!"</p>
+            <p><sup>29</sup>Moses said to him, "Are you jealous for my sake? I wish that all Yahweh's people were prophets, that Yahweh would put his Spirit on them!"</p>
+            <p><sup>30</sup>Moses went into the camp, he and the elders of Israel.</p>
+            <p><sup>31</sup>A wind from Yahweh went out and brought quails from the sea, and let them fall by the camp, about a day's journey on this side, and a day's journey on the other side, around the camp, and about two cubits above the surface of the earth.</p>
+            <p><sup>32</sup>The people rose up all that day, and all of that night, and all the next day, and gathered the quails. He who gathered least gathered ten homers; and they spread them all out for themselves around the camp.</p>
+            <p><sup>33</sup>While the meat was still between their teeth, before it was chewed, Yahweh's anger burned against the people, and Yahweh struck the people with a very great plague.</p>
+            <p><sup>34</sup>The name of that place was called Kibroth Hattaavah, because there they buried the people who lusted.</p>
+            <p><sup>35</sup>From Kibroth Hattaavah the people traveled to Hazeroth; and they stayed at Hazeroth.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="numbers-read-10.html" rel="prev" aria-label="Previous chapter: Numbers 10">&larr; Previous: Chapter 10</a>
+<a class="btn btn-ghost" href="numbers.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="numbers-read-12.html" rel="next" aria-label="Next chapter: Numbers 12">Next: Chapter 12 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

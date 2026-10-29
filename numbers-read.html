@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Numbers 1 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Numbers chapter 1 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Numbers 1 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Numbers chapter 1 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-numbers">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Numbers <span style="color:var(--burgundy);">&middot; Chapter 1</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 1 of 36</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Numbers <span class="chnum">&middot; Chapter 1</span></h1>
+<p class="chapter-position">Chapter 1 of 36</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="numbers.html">&larr; Back to Numbers summary</a>
-<span class="chapter-indicator">Chapter 1 of 36</span>
-<a class="btn btn-primary shimmer" href="numbers-read-2.html">Chapter 2 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="numbers.html">&larr; Book Summary</a>
+<a class="btn btn-ghost" href="numbers.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="numbers-read-2.html" rel="next" aria-label="Next chapter: Numbers 2">Next: Chapter 2 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd the LORD spake unto Moses in the wilderness of Sinai, in the tabernacle of the congregation, on the first day of the second month, in the second year after they were come out of the land of Egypt, saying,</p>
             <p><sup>2</sup>Take ye the sum of all the congregation of the children of Israel, after their families, by the house of their fathers, with the number of their names, every male by their polls;</p>
             <p><sup>3</sup>From twenty years old and upward, all that are able to go forth to war in Israel: thou and Aaron shall number them by their armies.</p>
@@ -84,12 +91,97 @@
             <p><sup>53</sup>But the Levites shall pitch round about the tabernacle of testimony, that there be no wrath upon the congregation of the children of Israel: and the Levites shall keep the charge of the tabernacle of testimony.</p>
             <p><sup>54</sup>And the children of Israel did according to all that the LORD commanded Moses, so did they.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="numbers.html">&larr; Back to Numbers summary</a>
-<a href="numbers.html">&uarr; Numbers summary</a>
-<a class="btn btn-primary shimmer" href="numbers-read-2.html">Chapter 2 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">Y</span>ahweh spoke to Moses in the wilderness of Sinai, in the Tent of Meeting, on the first day of the second month, in the second year after they had come out of the land of Egypt, saying,</p>
+            <p><sup>2</sup>"Take a census of all the congregation of the children of Israel, by their families, by their fathers' houses, according to the number of the names, every male, one by one,</p>
+            <p><sup>3</sup>from twenty years old and upward, all who are able to go out to war in Israel. You and Aaron shall count them by their divisions.</p>
+            <p><sup>4</sup>With you there shall be a man of every tribe, each one head of his fathers' house.</p>
+            <p><sup>5</sup>These are the names of the men who shall stand with you: Of Reuben: Elizur the son of Shedeur.</p>
+            <p><sup>6</sup>Of Simeon: Shelumiel the son of Zurishaddai.</p>
+            <p><sup>7</sup>Of Judah: Nahshon the son of Amminadab.</p>
+            <p><sup>8</sup>Of Issachar: Nethanel the son of Zuar.</p>
+            <p><sup>9</sup>Of Zebulun: Eliab the son of Helon.</p>
+            <p><sup>10</sup>Of the children of Joseph: of Ephraim: Elishama the son of Ammihud; of Manasseh: Gamaliel the son of Pedahzur.</p>
+            <p><sup>11</sup>Of Benjamin: Abidan the son of Gideoni.</p>
+            <p><sup>12</sup>Of Dan: Ahiezer the son of Ammishaddai.</p>
+            <p><sup>13</sup>Of Asher: Pagiel the son of Ochran.</p>
+            <p><sup>14</sup>Of Gad: Eliasaph the son of Deuel.</p>
+            <p><sup>15</sup>Of Naphtali: Ahira the son of Enan."</p>
+            <p><sup>16</sup>These are those who were called of the congregation, the princes of the tribes of their fathers; they were the heads of the thousands of Israel.</p>
+            <p><sup>17</sup>Moses and Aaron took these men who are mentioned by name.</p>
+            <p><sup>18</sup>They assembled all the congregation together on the first day of the second month; and they declared their ancestry by their families, by their fathers' houses, according to the number of the names, from twenty years old and upward, one by one.</p>
+            <p><sup>19</sup>As Yahweh commanded Moses, so he counted them in the wilderness of Sinai.</p>
+            <p><sup>20</sup>The children of Reuben, Israel's firstborn, their generations, by their families, by their fathers' houses, according to the number of the names, one by one, every male from twenty years old and upward, all who were able to go out to war:</p>
+            <p><sup>21</sup>those who were counted of them, of the tribe of Reuben, were forty-six thousand five hundred.</p>
+            <p><sup>22</sup>Of the children of Simeon, their generations, by their families, by their fathers' houses, those who were counted of it, according to the number of the names, one by one, every male from twenty years old and upward, all who were able to go out to war:</p>
+            <p><sup>23</sup>those who were counted of them, of the tribe of Simeon, were fifty-nine thousand three hundred.</p>
+            <p><sup>24</sup>Of the children of Gad, their generations, by their families, by their fathers' houses, according to the number of the names, from twenty years old and upward, all who were able to go out to war:</p>
+            <p><sup>25</sup>those who were counted of them, of the tribe of Gad, were forty-five thousand six hundred fifty.</p>
+            <p><sup>26</sup>Of the children of Judah, their generations, by their families, by their fathers' houses, according to the number of the names, from twenty years old and upward, all who were able to go out to war:</p>
+            <p><sup>27</sup>those who were counted of them, of the tribe of Judah, were seventy-four thousand six hundred.</p>
+            <p><sup>28</sup>Of the children of Issachar, their generations, by their families, by their fathers' houses, according to the number of the names, from twenty years old and upward, all who were able to go out to war:</p>
+            <p><sup>29</sup>those who were counted of them, of the tribe of Issachar, were fifty-four thousand four hundred.</p>
+            <p><sup>30</sup>Of the children of Zebulun, their generations, by their families, by their fathers' houses, according to the number of the names, from twenty years old and upward, all who were able to go out to war:</p>
+            <p><sup>31</sup>those who were counted of them, of the tribe of Zebulun, were fifty-seven thousand four hundred.</p>
+            <p><sup>32</sup>Of the children of Joseph: of the children of Ephraim, their generations, by their families, by their fathers' houses, according to the number of the names, from twenty years old and upward, all who were able to go out to war:</p>
+            <p><sup>33</sup>those who were counted of them, of the tribe of Ephraim, were forty thousand five hundred.</p>
+            <p><sup>34</sup>Of the children of Manasseh, their generations, by their families, by their fathers' houses, according to the number of the names, from twenty years old and upward, all who were able to go out to war:</p>
+            <p><sup>35</sup>those who were counted of them, of the tribe of Manasseh, were thirty-two thousand two hundred.</p>
+            <p><sup>36</sup>Of the children of Benjamin, their generations, by their families, by their fathers' houses, according to the number of the names, from twenty years old and upward, all who were able to go out to war:</p>
+            <p><sup>37</sup>those who were counted of them, of the tribe of Benjamin, were thirty-five thousand four hundred.</p>
+            <p><sup>38</sup>Of the children of Dan, their generations, by their families, by their fathers' houses, according to the number of the names, from twenty years old and upward, all who were able to go out to war:</p>
+            <p><sup>39</sup>those who were counted of them, of the tribe of Dan, were sixty-two thousand seven hundred.</p>
+            <p><sup>40</sup>Of the children of Asher, their generations, by their families, by their fathers' houses, according to the number of the names, from twenty years old and upward, all who were able to go out to war:</p>
+            <p><sup>41</sup>those who were counted of them, of the tribe of Asher, were forty-one thousand five hundred.</p>
+            <p><sup>42</sup>Of the children of Naphtali, their generations, by their families, by their fathers' houses, according to the number of the names, from twenty years old and upward, all who were able to go out to war:</p>
+            <p><sup>43</sup>those who were counted of them, of the tribe of Naphtali, were fifty-three thousand four hundred.</p>
+            <p><sup>44</sup>These are those who were counted, whom Moses and Aaron counted, and the twelve men who were princes of Israel, each one for his fathers' house.</p>
+            <p><sup>45</sup>So all those who were counted of the children of Israel by their fathers' houses, from twenty years old and upward, all who were able to go out to war in Israel--</p>
+            <p><sup>46</sup>all those who were counted were six hundred three thousand five hundred fifty.</p>
+            <p><sup>47</sup>But the Levites after the tribe of their fathers were not counted among them.</p>
+            <p><sup>48</sup>For Yahweh spoke to Moses, saying,</p>
+            <p><sup>49</sup>"Only the tribe of Levi you shall not count, neither shall you take a census of them among the children of Israel;</p>
+            <p><sup>50</sup>but appoint the Levites over the Tabernacle of the Testimony, and over all its furnishings, and over all that belongs to it. They shall carry the tabernacle and all its furnishings; and they shall take care of it, and shall encamp around it.</p>
+            <p><sup>51</sup>When the tabernacle is to move, the Levites shall take it down; and when the tabernacle is to be set up, the Levites shall set it up. The stranger who comes near shall be put to death.</p>
+            <p><sup>52</sup>The children of Israel shall pitch their tents, every man by his own camp, and every man by his own standard, according to their divisions.</p>
+            <p><sup>53</sup>But the Levites shall encamp around the Tabernacle of the Testimony, that there may be no wrath on the congregation of the children of Israel. The Levites shall be responsible for the Tabernacle of the Testimony."</p>
+            <p><sup>54</sup>Thus the children of Israel did. According to all that Yahweh commanded Moses, so they did.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="numbers.html">&larr; Book Summary</a>
+<a class="btn btn-ghost" href="numbers.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="numbers-read-2.html" rel="next" aria-label="Next chapter: Numbers 2">Next: Chapter 2 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Numbers 10 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Numbers chapter 10 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Numbers 10 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Numbers chapter 10 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-numbers">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Numbers <span style="color:var(--burgundy);">&middot; Chapter 10</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 10 of 36</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Numbers <span class="chnum">&middot; Chapter 10</span></h1>
+<p class="chapter-position">Chapter 10 of 36</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="numbers-read-9.html">&larr; Chapter 9</a>
-<span class="chapter-indicator">Chapter 10 of 36</span>
-<a class="btn btn-primary shimmer" href="numbers-read-11.html">Chapter 11 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>And the LORD spake unto Moses, saying,</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="numbers-read-9.html" rel="prev" aria-label="Previous chapter: Numbers 9">&larr; Previous: Chapter 9</a>
+<a class="btn btn-ghost" href="numbers.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="numbers-read-11.html" rel="next" aria-label="Next chapter: Numbers 11">Next: Chapter 11 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">A</span>nd the LORD spake unto Moses, saying,</p>
             <p><sup>2</sup>Make thee two trumpets of silver; of a whole piece shalt thou make them: that thou mayest use them for the calling of the assembly, and for the journeying of the camps.</p>
             <p><sup>3</sup>And when they shall blow with them, all the assembly shall assemble themselves to thee at the door of the tabernacle of the congregation.</p>
             <p><sup>4</sup>And if they blow but with one trumpet, then the princes, which are heads of the thousands of Israel, shall gather themselves unto thee.</p>
@@ -66,12 +73,79 @@
             <p><sup>35</sup>And it came to pass, when the ark set forward, that Moses said, Rise up, LORD, and let thine enemies be scattered; and let them that hate thee flee before thee.</p>
             <p><sup>36</sup>And when it rested, he said, Return, O LORD, unto the many thousands of Israel.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="numbers-read-9.html">&larr; Chapter 9</a>
-<a href="numbers.html">&uarr; Numbers summary</a>
-<a class="btn btn-primary shimmer" href="numbers-read-11.html">Chapter 11 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">Y</span>ahweh spoke to Moses, saying,</p>
+            <p><sup>2</sup>"Make two trumpets of silver. You shall make them of beaten work. You shall use them for the calling of the congregation and for the journeying of the camps.</p>
+            <p><sup>3</sup>When they blow them, all the congregation shall gather themselves to you at the door of the Tent of Meeting.</p>
+            <p><sup>4</sup>If they blow just one, then the princes, the heads of the thousands of Israel, shall gather themselves to you.</p>
+            <p><sup>5</sup>When you blow an alarm, the camps that lie on the east side shall go forward.</p>
+            <p><sup>6</sup>When you blow an alarm the second time, the camps that lie on the south side shall go forward. They shall blow an alarm for their journeys.</p>
+            <p><sup>7</sup>But when the assembly is to be gathered together, you shall blow, but you shall not sound an alarm.</p>
+            <p><sup>8</sup>"The sons of Aaron, the priests, shall blow the trumpets. This shall be to you for a statute forever throughout your generations.</p>
+            <p><sup>9</sup>When you go to war in your land against the adversary who oppresses you, then you shall sound an alarm with the trumpets. Then you will be remembered before Yahweh your God, and you will be saved from your enemies.</p>
+            <p><sup>10</sup>"Also in the day of your gladness, and in your set feasts, and in the beginnings of your months, you shall blow the trumpets over your burnt offerings, and over the sacrifices of your peace offerings; and they shall be to you for a memorial before your God. I am Yahweh your God."</p>
+            <p><sup>11</sup>In the second year, in the second month, on the twentieth day of the month, the cloud was taken up from over the tabernacle of the covenant.</p>
+            <p><sup>12</sup>The children of Israel went forward on their journeys out of the wilderness of Sinai; and the cloud stayed in the wilderness of Paran.</p>
+            <p><sup>13</sup>They first went forward according to the commandment of Yahweh by Moses.</p>
+            <p><sup>14</sup>First, the standard of the camp of the children of Judah went forward according to their armies. Nahshon the son of Amminadab was over his army.</p>
+            <p><sup>15</sup>Nethanel the son of Zuar was over the army of the tribe of the children of Issachar.</p>
+            <p><sup>16</sup>Eliab the son of Helon was over the army of the tribe of the children of Zebulun.</p>
+            <p><sup>17</sup>The tabernacle was taken down; and the sons of Gershon and the sons of Merari, who bore the tabernacle, went forward.</p>
+            <p><sup>18</sup>The standard of the camp of Reuben went forward according to their armies. Elizur the son of Shedeur was over his army.</p>
+            <p><sup>19</sup>Shelumiel the son of Zurishaddai was over the army of the tribe of the children of Simeon.</p>
+            <p><sup>20</sup>Eliasaph the son of Deuel was over the army of the tribe of the children of Gad.</p>
+            <p><sup>21</sup>The Kohathites set forward, bearing the sanctuary. The others set up the tabernacle before they arrived.</p>
+            <p><sup>22</sup>The standard of the camp of the children of Ephraim set forward according to their armies. Elishama the son of Ammihud was over his army.</p>
+            <p><sup>23</sup>Gamaliel the son of Pedahzur was over the army of the tribe of the children of Manasseh.</p>
+            <p><sup>24</sup>Abidan the son of Gideoni was over the army of the tribe of the children of Benjamin.</p>
+            <p><sup>25</sup>The standard of the camp of the children of Dan, which was the rear guard of all the camps, set forward according to their armies. Ahiezer the son of Ammishaddai was over his army.</p>
+            <p><sup>26</sup>Pagiel the son of Ochran was over the army of the tribe of the children of Asher.</p>
+            <p><sup>27</sup>Ahira the son of Enan was over the army of the tribe of the children of Naphtali.</p>
+            <p><sup>28</sup>Thus were the travels of the children of Israel according to their armies; and they went forward.</p>
+            <p><sup>29</sup>Moses said to Hobab, the son of Reuel the Midianite, Moses' father-in-law, "We are journeying to the place of which Yahweh said, 'I will give it to you.' Come with us, and we will treat you well; for Yahweh has spoken good concerning Israel."</p>
+            <p><sup>30</sup>He said to him, "I will not go; but I will depart to my own land, and to my relatives."</p>
+            <p><sup>31</sup>Moses said, "Don't leave us, please; because you know how we are to encamp in the wilderness, and you can be our eyes.</p>
+            <p><sup>32</sup>It shall be, if you go with us--yes, it shall be--that whatever good Yahweh does to us, we will do the same to you."</p>
+            <p><sup>33</sup>They set forward from the Mount of Yahweh three days' journey. The ark of Yahweh's covenant went before them three days' journey, to seek out a resting place for them.</p>
+            <p><sup>34</sup>The cloud of Yahweh was over them by day, when they set forward from the camp.</p>
+            <p><sup>35</sup>When the ark went forward, Moses said, "Rise up, Yahweh, and let your enemies be scattered! Let those who hate you flee before you!"</p>
+            <p><sup>36</sup>When it rested, he said, "Return, Yahweh, to the ten thousands of the thousands of Israel."</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="numbers-read-9.html" rel="prev" aria-label="Previous chapter: Numbers 9">&larr; Previous: Chapter 9</a>
+<a class="btn btn-ghost" href="numbers.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="numbers-read-11.html" rel="next" aria-label="Next chapter: Numbers 11">Next: Chapter 11 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>
