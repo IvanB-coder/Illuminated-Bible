@@ -6,7 +6,7 @@ Illuminated Word brings together all 66 books of the Bible, classical-style artw
 
 Built with plain HTML, CSS, and JavaScript, the site offers a quiet reading experience with a parchment-inspired design, clear navigation, and scripture search.
 
-[Visit the website](https://ivanbarties-coder.github.io/Illuminated-Bible/) · [Browse the repository](https://github.com/ivanbarties-coder/Illuminated-Bible)
+[Visit the website](https://ivanb-coder.github.io/Illuminated-Bible/) · [Browse the repository](https://github.com/ivanb-coder/Illuminated-Bible)
 
 ## Features
 
