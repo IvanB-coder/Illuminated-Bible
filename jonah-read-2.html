@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jonah 2 (KJV / WEB) | Illuminated Word</title>
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="read-page">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
+<a href="index.html#old-testament">Old Testament</a>
+<a href="index.html#new-testament">New Testament</a>
+<a href="index.html#about">About</a>
+</nav>
+</header>
+<main class="read-main">
+<div class="read-header">
+  <div class="version-pill" id="version-pill">King James Version &middot; Public Domain</div>
+  <h1 class="read-title">Jonah <span class="chnum">&middot; Chapter 2</span></h1>
+<p class="chapter-position">Chapter 2 of 4</p>
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
+</div>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+  
+</div>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="jonah-read.html" rel="prev" aria-label="Previous chapter: Jonah 1">&larr; Previous: Chapter 1</a>
+<a class="btn btn-ghost" href="jonah.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="jonah-read-3.html" rel="next" aria-label="Next chapter: Jonah 3">Next: Chapter 3 &rarr;</a>
+</div>
+  <div class="scripture read-container" id="text-kjv">
+  <p><sup>1</sup>Then Jonah prayed unto the LORD his God out of the fish's belly,</p>
+<p><sup>2</sup>And said, I cried by reason of mine affliction unto the LORD, and he heard me; out of the belly of hell cried I, and thou heardest my voice.</p>
+<p><sup>3</sup>For thou hadst cast me into the deep, in the midst of the seas; and the floods compassed me about: all thy billows and thy waves passed over me.</p>
+<p><sup>4</sup>Then I said, I am cast out of thy sight; yet I will look again toward thy holy temple.</p>
+<p><sup>5</sup>The waters compassed me about, even to the soul: the depth closed me round about, the weeds were wrapped about my head.</p>
+<p><sup>6</sup>I went down to the bottoms of the mountains; the earth with her bars was about me for ever: yet hast thou brought up my life from corruption, O LORD my God.</p>
+<p><sup>7</sup>When my soul fainted within me I remembered the LORD: and my prayer came in unto thee, into thine holy temple.</p>
+<p><sup>8</sup>They that observe lying vanities forsake their own mercy.</p>
+<p><sup>9</sup>But I will sacrifice unto thee with the voice of thanksgiving; I will pay that that I have vowed. Salvation is of the LORD.</p>
+<p><sup>10</sup>And the LORD spake unto the fish, and it vomited out Jonah upon the dry land.</p>
+  </div>
+  <div class="scripture read-container is-hidden" id="text-web">
+<p><sup>1</sup>Then Jonah prayed to Yahweh, his God, out of the fish’s belly.</p>
+<p><sup>2</sup>He said, “I called because of my affliction to Yahweh. He answered me. Out of the belly of Sheol I cried. You heard my voice.</p>
+<p><sup>3</sup>For you threw me into the depths, in the heart of the seas. The flood was all around me. All your waves and your billows passed over me.</p>
+<p><sup>4</sup>I said, ‘I have been banished from your sight; yet I will look again toward your holy temple.’</p>
+<p><sup>5</sup>The waters surrounded me, even to the soul. The deep was around me. The weeds were wrapped around my head.</p>
+<p><sup>6</sup>I went down to the bottoms of the mountains. The earth barred me in forever; yet you have brought my life up from the pit, Yahweh my God.</p>
+<p><sup>7</sup>“When my soul fainted within me, I remembered Yahweh. My prayer came in to you, into your holy temple.</p>
+<p><sup>8</sup>Those who regard vain idols forsake their own mercy.</p>
+<p><sup>9</sup>But I will sacrifice to you with the voice of thanksgiving. I will pay that which I have vowed. Salvation belongs to Yahweh.”</p>
+<p><sup>10</sup>Then Yahweh spoke to the fish, and it vomited out Jonah on the dry land.</p>
+  </div>
+  <div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="jonah-read.html" rel="prev" aria-label="Previous chapter: Jonah 1">&larr; Previous: Chapter 1</a>
+<a class="btn btn-ghost" href="jonah.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="jonah-read-3.html" rel="next" aria-label="Next chapter: Jonah 3">Next: Chapter 3 &rarr;</a>
+</div>
+</main>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jonah 3 (KJV / WEB) | Illuminated Word</title>
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="read-page">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
+<a href="index.html#old-testament">Old Testament</a>
+<a href="index.html#new-testament">New Testament</a>
+<a href="index.html#about">About</a>
+</nav>
+</header>
+<main class="read-main">
+<div class="read-header">
+  <div class="version-pill" id="version-pill">King James Version &middot; Public Domain</div>
+  <h1 class="read-title">Jonah <span class="chnum">&middot; Chapter 3</span></h1>
+<p class="chapter-position">Chapter 3 of 4</p>
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
+</div>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+  
+</div>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="jonah-read-2.html" rel="prev" aria-label="Previous chapter: Jonah 2">&larr; Previous: Chapter 2</a>
+<a class="btn btn-ghost" href="jonah.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="jonah-read-4.html" rel="next" aria-label="Next chapter: Jonah 4">Next: Chapter 4 &rarr;</a>
+</div>
+  <div class="scripture read-container" id="text-kjv">
+  <p><sup>1</sup>And the word of the LORD came unto Jonah the second time, saying,</p>
+<p><sup>2</sup>Arise, go unto Nineveh, that great city, and preach unto it the preaching that I bid thee.</p>
+<p><sup>3</sup>So Jonah arose, and went unto Nineveh, according to the word of the LORD. Now Nineveh was an exceeding great city of three days' journey.</p>
+<p><sup>4</sup>And Jonah began to enter into the city a day's journey, and he cried, and said, Yet forty days, and Nineveh shall be overthrown.</p>
+<p><sup>5</sup>So the people of Nineveh believed God, and proclaimed a fast, and put on sackcloth, from the greatest of them even to the least of them.</p>
+<p><sup>6</sup>For word came unto the king of Nineveh, and he arose from his throne, and he laid his robe from him, and covered him with sackcloth, and sat in ashes.</p>
+<p><sup>7</sup>And he caused it to be proclaimed and published through Nineveh by the decree of the king and his nobles, saying, Let neither man nor beast, herd nor flock, taste any thing: let them not feed, nor drink water:</p>
+<p><sup>8</sup>But let man and beast be covered with sackcloth, and cry mightily unto God: yea, let them turn every one from his evil way, and from the violence that is in their hands.</p>
+<p><sup>9</sup>Who can tell if God will turn and repent, and turn away from his fierce anger, that we perish not?</p>
+<p><sup>10</sup>And God saw their works, that they turned from their evil way; and God repented of the evil, that he had said that he would do unto them; and he did it not.</p>
+  </div>
+  <div class="scripture read-container is-hidden" id="text-web">
+<p><sup>1</sup>Yahweh’s word came to Jonah the second time, saying,</p>
+<p><sup>2</sup>“Arise, go to Nineveh, that great city, and preach to it the message that I give you.”</p>
+<p><sup>3</sup>So Jonah arose, and went to Nineveh, according to Yahweh’s word. Now Nineveh was an exceedingly great city, three days’ journey across.</p>
+<p><sup>4</sup>Jonah began to enter into the city a day’s journey, and he cried out, and said, “In forty days, Nineveh will be overthrown!”</p>
+<p><sup>5</sup>The people of Nineveh believed God; and they proclaimed a fast and put on sackcloth, from their greatest even to their least.</p>
+<p><sup>6</sup>The news reached the king of Nineveh, and he arose from his throne, took off his royal robe, covered himself with sackcloth, and sat in ashes.</p>
+<p><sup>7</sup>He made a proclamation and published through Nineveh by the decree of the king and his nobles, saying, “Let neither man nor animal, herd nor flock, taste anything; let them not feed, nor drink water;</p>
+<p><sup>8</sup>but let them be covered with sackcloth, both man and animal, and let them cry mightily to God. Yes, let them turn everyone from his evil way and from the violence that is in his hands.</p>
+<p><sup>9</sup>Who knows whether God will not turn and relent, and turn away from his fierce anger, so that we might not perish?”</p>
+<p><sup>10</sup>God saw their works, that they turned from their evil way. God relented of the disaster which he said he would do to them, and he didn’t do it.</p>
+  </div>
+  <div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="jonah-read-2.html" rel="prev" aria-label="Previous chapter: Jonah 2">&larr; Previous: Chapter 2</a>
+<a class="btn btn-ghost" href="jonah.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="jonah-read-4.html" rel="next" aria-label="Next chapter: Jonah 4">Next: Chapter 4 &rarr;</a>
+</div>
+</main>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
+</body>
+</html>
