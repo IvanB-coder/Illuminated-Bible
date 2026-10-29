@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genesis 9 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Genesis chapter 9 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Genesis 9 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Genesis chapter 9 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-genesis">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Genesis <span style="color:var(--burgundy);">&middot; Chapter 9</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 9 of 50</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Genesis <span class="chnum">&middot; Chapter 9</span></h1>
+<p class="chapter-position">Chapter 9 of 50</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="genesis-read-8.html">&larr; Chapter 8</a>
-<span class="chapter-indicator">Chapter 9 of 50</span>
-<a class="btn btn-primary shimmer" href="genesis-read-10.html">Chapter 10 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-8.html" rel="prev" aria-label="Previous chapter: Genesis 8">&larr; Previous: Chapter 8</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-10.html" rel="next" aria-label="Next chapter: Genesis 10">Next: Chapter 10 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd God blessed Noah and his sons, and said unto them, Be fruitful, and multiply, and replenish the earth.</p>
             <p><sup>2</sup>And the fear of you and the dread of you shall be upon every beast of the earth, and upon every fowl of the air, upon all that moveth upon the earth, and upon all the fishes of the sea; into your hand are they delivered.</p>
             <p><sup>3</sup>Every moving thing that liveth shall be meat for you; even as the green herb have I given you all things.</p>
@@ -59,12 +66,72 @@
             <p><sup>28</sup>And Noah lived after the flood three hundred and fifty years.</p>
             <p><sup>29</sup>And all the days of Noah were nine hundred and fifty years: and he died.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="genesis-read-8.html">&larr; Chapter 8</a>
-<a href="genesis.html">&uarr; Genesis summary</a>
-<a class="btn btn-primary shimmer" href="genesis-read-10.html">Chapter 10 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">G</span>od blessed Noah and his sons, and said to them, “Be fruitful, multiply, and replenish the earth.</p>
+            <p><sup>2</sup>The fear of you and the dread of you will be on every animal of the earth, and on every bird of the sky. Everything that moves along the ground, and all the fish of the sea, are delivered into your hand.</p>
+            <p><sup>3</sup>Every moving thing that lives will be food for you. As I gave you the green herb, I have given everything to you.</p>
+            <p><sup>4</sup>But flesh with its life, that is, its blood, you shall not eat.</p>
+            <p><sup>5</sup>I will surely require accounting for your life’s blood. At the hand of every animal I will require it. At the hand of man, even at the hand of every man’s brother, I will require the life of man.</p>
+            <p><sup>6</sup>Whoever sheds man’s blood, his blood will be shed by man, for God made man in his own image.</p>
+            <p><sup>7</sup>Be fruitful and multiply. Increase abundantly in the earth, and multiply in it.”</p>
+            <p><sup>8</sup>God spoke to Noah and to his sons with him, saying,</p>
+            <p><sup>9</sup>“As for me, behold, I establish my covenant with you, and with your offspring after you,</p>
+            <p><sup>10</sup>and with every living creature that is with you: the birds, the livestock, and every animal of the earth with you, of all that go out of the ship, even every animal of the earth.</p>
+            <p><sup>11</sup>I will establish my covenant with you: All flesh will not be cut off any more by the waters of the flood. There will never again be a flood to destroy the earth.”</p>
+            <p><sup>12</sup>God said, “This is the token of the covenant which I make between me and you and every living creature that is with you, for perpetual generations:</p>
+            <p><sup>13</sup>I set my rainbow in the cloud, and it will be a sign of a covenant between me and the earth.</p>
+            <p><sup>14</sup>When I bring a cloud over the earth, that the rainbow will be seen in the cloud,</p>
+            <p><sup>15</sup>I will remember my covenant, which is between me and you and every living creature of all flesh, and the waters will no more become a flood to destroy all flesh.</p>
+            <p><sup>16</sup>The rainbow will be in the cloud. I will look at it, that I may remember the everlasting covenant between God and every living creature of all flesh that is on the earth.”</p>
+            <p><sup>17</sup>God said to Noah, “This is the token of the covenant which I have established between me and all flesh that is on the earth.”</p>
+            <p><sup>18</sup>The sons of Noah who went out from the ship were Shem, Ham, and Japheth. Ham is the father of Canaan.</p>
+            <p><sup>19</sup>These three were the sons of Noah, and from these the whole earth was populated.</p>
+            <p><sup>20</sup>Noah began to be a farmer, and planted a vineyard.</p>
+            <p><sup>21</sup>He drank of the wine and got drunk. He was uncovered within his tent.</p>
+            <p><sup>22</sup>Ham, the father of Canaan, saw the nakedness of his father, and told his two brothers outside.</p>
+            <p><sup>23</sup>Shem and Japheth took a garment, and laid it on both their shoulders, went in backwards, and covered the nakedness of their father. Their faces were backwards, and they didn’t see their father’s nakedness.</p>
+            <p><sup>24</sup>Noah awoke from his wine, and knew what his youngest son had done to him.</p>
+            <p><sup>25</sup>He said, “Canaan is cursed. He will be a servant of servants to his brothers.”</p>
+            <p><sup>26</sup>He said, “Blessed be Yahweh, the God of Shem. Let Canaan be his servant.</p>
+            <p><sup>27</sup>May God enlarge Japheth. Let him dwell in the tents of Shem. Let Canaan be his servant.”</p>
+            <p><sup>28</sup>Noah lived three hundred fifty years after the flood.</p>
+            <p><sup>29</sup>All the days of Noah were nine hundred fifty years, and then he died.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-8.html" rel="prev" aria-label="Previous chapter: Genesis 8">&larr; Previous: Chapter 8</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-10.html" rel="next" aria-label="Next chapter: Genesis 10">Next: Chapter 10 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

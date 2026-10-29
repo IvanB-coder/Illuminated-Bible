@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genesis 46 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Genesis chapter 46 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Genesis 46 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Genesis chapter 46 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-genesis">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Genesis <span style="color:var(--burgundy);">&middot; Chapter 46</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 46 of 50</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Genesis <span class="chnum">&middot; Chapter 46</span></h1>
+<p class="chapter-position">Chapter 46 of 50</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="genesis-read-45.html">&larr; Chapter 45</a>
-<span class="chapter-indicator">Chapter 46 of 50</span>
-<a class="btn btn-primary shimmer" href="genesis-read-47.html">Chapter 47 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-45.html" rel="prev" aria-label="Previous chapter: Genesis 45">&larr; Previous: Chapter 45</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-47.html" rel="next" aria-label="Next chapter: Genesis 47">Next: Chapter 47 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd Israel took his journey with all that he had, and came to Beersheba, and offered sacrifices unto the God of his father Isaac.</p>
             <p><sup>2</sup>And God spake unto Israel in the visions of the night, and said, Jacob, Jacob. And he said, Here am I.</p>
             <p><sup>3</sup>And he said, I am God, the God of thy father: fear not to go down into Egypt; for I will there make of thee a great nation:</p>
@@ -64,12 +71,77 @@
             <p><sup>33</sup>And it shall come to pass, when Pharaoh shall call you, and shall say, What is your occupation?</p>
             <p><sup>34</sup>That ye shall say, Thy servants' trade hath been about cattle from our youth even until now, both we, and also our fathers: that ye may dwell in the land of Goshen; for every shepherd is an abomination unto the Egyptians.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="genesis-read-45.html">&larr; Chapter 45</a>
-<a href="genesis.html">&uarr; Genesis summary</a>
-<a class="btn btn-primary shimmer" href="genesis-read-47.html">Chapter 47 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">I</span>srael traveled with all that he had, and came to Beersheba, and offered sacrifices to the God of his father, Isaac.</p>
+            <p><sup>2</sup>God spoke to Israel in the visions of the night, and said, “Jacob, Jacob!” He said, “Here I am.”</p>
+            <p><sup>3</sup>He said, “I am God, the God of your father. Don’t be afraid to go down into Egypt, for there I will make of you a great nation.</p>
+            <p><sup>4</sup>I will go down with you into Egypt. I will also surely bring you up again. Joseph’s hand will close your eyes.”</p>
+            <p><sup>5</sup>Jacob rose up from Beersheba, and the sons of Israel carried Jacob, their father, their little ones, and their wives, in the wagons which Pharaoh had sent to carry him.</p>
+            <p><sup>6</sup>They took their livestock, and their goods, which they had gotten in the land of Canaan, and came into Egypt—Jacob, and all his offspring with him,</p>
+            <p><sup>7</sup>his sons, and his sons’ sons with him, his daughters, and his sons’ daughters, and he brought all his offspring with him into Egypt.</p>
+            <p><sup>8</sup>These are the names of the children of Israel, who came into Egypt, Jacob and his sons: Reuben, Jacob’s firstborn.</p>
+            <p><sup>9</sup>The sons of Reuben: Hanoch, Pallu, Hezron, and Carmi.</p>
+            <p><sup>10</sup>The sons of Simeon: Jemuel, Jamin, Ohad, Jachin, Zohar, and Shaul the son of a Canaanite woman.</p>
+            <p><sup>11</sup>The sons of Levi: Gershon, Kohath, and Merari.</p>
+            <p><sup>12</sup>The sons of Judah: Er, Onan, Shelah, Perez, and Zerah; but Er and Onan died in the land of Canaan. The sons of Perez were Hezron and Hamul.</p>
+            <p><sup>13</sup>The sons of Issachar: Tola, Puvah, Iob, and Shimron.</p>
+            <p><sup>14</sup>The sons of Zebulun: Sered, Elon, and Jahleel.</p>
+            <p><sup>15</sup>These are the sons of Leah, whom she bore to Jacob in Paddan Aram, with his daughter Dinah. All the souls of his sons and his daughters were thirty-three.</p>
+            <p><sup>16</sup>The sons of Gad: Ziphion, Haggi, Shuni, Ezbon, Eri, Arodi, and Areli.</p>
+            <p><sup>17</sup>The sons of Asher: Imnah, Ishvah, Ishvi, Beriah, and Serah their sister. The sons of Beriah: Heber and Malchiel.</p>
+            <p><sup>18</sup>These are the sons of Zilpah, whom Laban gave to Leah, his daughter, and these she bore to Jacob, even sixteen souls.</p>
+            <p><sup>19</sup>The sons of Rachel, Jacob’s wife: Joseph and Benjamin.</p>
+            <p><sup>20</sup>To Joseph in the land of Egypt were born Manasseh and Ephraim, whom Asenath, the daughter of Potiphera, priest of On, bore to him.</p>
+            <p><sup>21</sup>The sons of Benjamin: Bela, Becher, Ashbel, Gera, Naaman, Ehi, Rosh, Muppim, Huppim, and Ard.</p>
+            <p><sup>22</sup>These are the sons of Rachel, who were born to Jacob: all the souls were fourteen.</p>
+            <p><sup>23</sup>The son of Dan: Hushim.</p>
+            <p><sup>24</sup>The sons of Naphtali: Jahzeel, Guni, Jezer, and Shillem.</p>
+            <p><sup>25</sup>These are the sons of Bilhah, whom Laban gave to Rachel, his daughter, and these she bore to Jacob: all the souls were seven.</p>
+            <p><sup>26</sup>All the souls who came with Jacob into Egypt, who were his direct offspring, in addition to Jacob’s sons’ wives, all the souls were sixty-six.</p>
+            <p><sup>27</sup>The sons of Joseph, who were born to him in Egypt, were two souls. All the souls of the house of Jacob, who came into Egypt, were seventy.</p>
+            <p><sup>28</sup>Jacob sent Judah before him to Joseph, to show the way before him to Goshen, and they came into the land of Goshen.</p>
+            <p><sup>29</sup>Joseph prepared his chariot, and went up to meet Israel, his father, in Goshen. He presented himself to him, and fell on his neck, and wept on his neck a good while.</p>
+            <p><sup>30</sup>Israel said to Joseph, “Now let me die, since I have seen your face, that you are still alive.”</p>
+            <p><sup>31</sup>Joseph said to his brothers, and to his father’s house, “I will go up, and speak with Pharaoh, and will tell him, ‘My brothers, and my father’s house, who were in the land of Canaan, have come to me.</p>
+            <p><sup>32</sup>These men are shepherds, for they have been keepers of livestock, and they have brought their flocks, and their herds, and all that they have.’</p>
+            <p><sup>33</sup>It will happen, when Pharaoh summons you, and will say, ‘What is your occupation?’</p>
+            <p><sup>34</sup>that you shall say, ‘Your servants have been keepers of livestock from our youth even until now, both we, and our fathers:’ that you may dwell in the land of Goshen; for every shepherd is an abomination to the Egyptians.”</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-45.html" rel="prev" aria-label="Previous chapter: Genesis 45">&larr; Previous: Chapter 45</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-47.html" rel="next" aria-label="Next chapter: Genesis 47">Next: Chapter 47 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

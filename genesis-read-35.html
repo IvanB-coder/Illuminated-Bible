@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genesis 35 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Genesis chapter 35 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Genesis 35 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Genesis chapter 35 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-genesis">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Genesis <span style="color:var(--burgundy);">&middot; Chapter 35</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 35 of 50</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Genesis <span class="chnum">&middot; Chapter 35</span></h1>
+<p class="chapter-position">Chapter 35 of 50</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="genesis-read-34.html">&larr; Chapter 34</a>
-<span class="chapter-indicator">Chapter 35 of 50</span>
-<a class="btn btn-primary shimmer" href="genesis-read-36.html">Chapter 36 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-34.html" rel="prev" aria-label="Previous chapter: Genesis 34">&larr; Previous: Chapter 34</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-36.html" rel="next" aria-label="Next chapter: Genesis 36">Next: Chapter 36 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd God said unto Jacob, Arise, go up to Bethel, and dwell there: and make there an altar unto God, that appeared unto thee when thou fleddest from the face of Esau thy brother.</p>
             <p><sup>2</sup>Then Jacob said unto his household, and to all that were with him, Put away the strange gods that are among you, and be clean, and change your garments:</p>
             <p><sup>3</sup>And let us arise, and go up to Bethel; and I will make there an altar unto God, who answered me in the day of my distress, and was with me in the way which I went.</p>
@@ -59,12 +66,72 @@
             <p><sup>28</sup>And the days of Isaac were an hundred and fourscore years.</p>
             <p><sup>29</sup>And Isaac gave up the ghost, and died, and was gathered unto his people, being old and full of days: and his sons Esau and Jacob buried him.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="genesis-read-34.html">&larr; Chapter 34</a>
-<a href="genesis.html">&uarr; Genesis summary</a>
-<a class="btn btn-primary shimmer" href="genesis-read-36.html">Chapter 36 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">G</span>od said to Jacob, “Arise, go up to Bethel, and live there. Make there an altar to God, who appeared to you when you fled from the face of Esau your brother.”</p>
+            <p><sup>2</sup>Then Jacob said to his household, and to all who were with him, “Put away the foreign gods that are among you, purify yourselves, and change your garments.</p>
+            <p><sup>3</sup>Let’s arise, and go up to Bethel. I will make there an altar to God, who answered me in the day of my distress, and was with me on the way which I went.”</p>
+            <p><sup>4</sup>They gave to Jacob all the foreign gods which were in their hands, and the rings which were in their ears; and Jacob hid them under the oak which was by Shechem.</p>
+            <p><sup>5</sup>They traveled, and a terror of God was on the cities that were around them, and they didn’t pursue the sons of Jacob.</p>
+            <p><sup>6</sup>So Jacob came to Luz (that is, Bethel), which is in the land of Canaan, he and all the people who were with him.</p>
+            <p><sup>7</sup>He built an altar there, and called the place El Beth El; because there God was revealed to him, when he fled from the face of his brother.</p>
+            <p><sup>8</sup>Deborah, Rebekah’s nurse, died, and she was buried below Bethel under the oak; and its name was called Allon Bacuth.</p>
+            <p><sup>9</sup>God appeared to Jacob again, when he came from Paddan Aram, and blessed him.</p>
+            <p><sup>10</sup>God said to him, “Your name is Jacob. Your name shall not be Jacob any more, but your name will be Israel.” He named him Israel.</p>
+            <p><sup>11</sup>God said to him, “I am God Almighty. Be fruitful and multiply. A nation and a company of nations will be from you, and kings will come out of your body.</p>
+            <p><sup>12</sup>The land which I gave to Abraham and Isaac, I will give it to you, and to your offspring after you I will give the land.”</p>
+            <p><sup>13</sup>God went up from him in the place where he spoke with him.</p>
+            <p><sup>14</sup>Jacob set up a pillar in the place where he spoke with him, a pillar of stone. He poured out a drink offering on it, and poured oil on it.</p>
+            <p><sup>15</sup>Jacob called the name of the place where God spoke with him “Bethel”.</p>
+            <p><sup>16</sup>They traveled from Bethel. There was still some distance to come to Ephrath, and Rachel travailed. She had hard labor.</p>
+            <p><sup>17</sup>When she was in hard labor, the midwife said to her, “Don’t be afraid, for now you will have another son.”</p>
+            <p><sup>18</sup>As her soul was departing (for she died), she named him Benoni, but his father named him Benjamin.</p>
+            <p><sup>19</sup>Rachel died, and was buried on the way to Ephrath (also called Bethlehem).</p>
+            <p><sup>20</sup>Jacob set up a pillar on her grave. The same is the Pillar of Rachel’s grave to this day.</p>
+            <p><sup>21</sup>Israel traveled, and spread his tent beyond the tower of Eder.</p>
+            <p><sup>22</sup>While Israel lived in that land, Reuben went and lay with Bilhah, his father’s concubine, and Israel heard of it. Now the sons of Jacob were twelve.</p>
+            <p><sup>23</sup>The sons of Leah: Reuben (Jacob’s firstborn), Simeon, Levi, Judah, Issachar, and Zebulun.</p>
+            <p><sup>24</sup>The sons of Rachel: Joseph and Benjamin.</p>
+            <p><sup>25</sup>The sons of Bilhah (Rachel’s servant): Dan and Naphtali.</p>
+            <p><sup>26</sup>The sons of Zilpah (Leah’s servant): Gad and Asher. These are the sons of Jacob, who were born to him in Paddan Aram.</p>
+            <p><sup>27</sup>Jacob came to Isaac his father, to Mamre, to Kiriath Arba (which is Hebron), where Abraham and Isaac lived as foreigners.</p>
+            <p><sup>28</sup>The days of Isaac were one hundred eighty years.</p>
+            <p><sup>29</sup>Isaac gave up the spirit and died, and was gathered to his people, old and full of days. Esau and Jacob, his sons, buried him.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-34.html" rel="prev" aria-label="Previous chapter: Genesis 34">&larr; Previous: Chapter 34</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-36.html" rel="next" aria-label="Next chapter: Genesis 36">Next: Chapter 36 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

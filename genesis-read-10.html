@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genesis 10 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Genesis chapter 10 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Genesis 10 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Genesis chapter 10 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-genesis">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Genesis <span style="color:var(--burgundy);">&middot; Chapter 10</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 10 of 50</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Genesis <span class="chnum">&middot; Chapter 10</span></h1>
+<p class="chapter-position">Chapter 10 of 50</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="genesis-read-9.html">&larr; Chapter 9</a>
-<span class="chapter-indicator">Chapter 10 of 50</span>
-<a class="btn btn-primary shimmer" href="genesis-read-11.html">Chapter 11 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-9.html" rel="prev" aria-label="Previous chapter: Genesis 9">&larr; Previous: Chapter 9</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-11.html" rel="next" aria-label="Next chapter: Genesis 11">Next: Chapter 11 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">N</span>ow these are the generations of the sons of Noah, Shem, Ham, and Japheth: and unto them were sons born after the flood.</p>
             <p><sup>2</sup>The sons of Japheth; Gomer, and Magog, and Madai, and Javan, and Tubal, and Meshech, and Tiras.</p>
             <p><sup>3</sup>And the sons of Gomer; Ashkenaz, and Riphath, and Togarmah.</p>
@@ -62,12 +69,75 @@
             <p><sup>31</sup>These are the sons of Shem, after their families, after their tongues, in their lands, after their nations.</p>
             <p><sup>32</sup>These are the families of the sons of Noah, after their generations, in their nations: and by these were the nations divided in the earth after the flood.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="genesis-read-9.html">&larr; Chapter 9</a>
-<a href="genesis.html">&uarr; Genesis summary</a>
-<a class="btn btn-primary shimmer" href="genesis-read-11.html">Chapter 11 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">N</span>ow this is the history of the generations of the sons of Noah and of Shem, Ham, and Japheth. Sons were born to them after the flood.</p>
+            <p><sup>2</sup>The sons of Japheth were: Gomer, Magog, Madai, Javan, Tubal, Meshech, and Tiras.</p>
+            <p><sup>3</sup>The sons of Gomer were: Ashkenaz, Riphath, and Togarmah.</p>
+            <p><sup>4</sup>The sons of Javan were: Elishah, Tarshish, Kittim, and Dodanim.</p>
+            <p><sup>5</sup>Of these were the islands of the nations divided in their lands, everyone after his language, after their families, in their nations.</p>
+            <p><sup>6</sup>The sons of Ham were: Cush, Mizraim, Put, and Canaan.</p>
+            <p><sup>7</sup>The sons of Cush were: Seba, Havilah, Sabtah, Raamah, and Sabteca. The sons of Raamah were: Sheba and Dedan.</p>
+            <p><sup>8</sup>Cush became the father of Nimrod. He began to be a mighty one in the earth.</p>
+            <p><sup>9</sup>He was a mighty hunter before Yahweh. Therefore it is said, “like Nimrod, a mighty hunter before Yahweh”.</p>
+            <p><sup>10</sup>The beginning of his kingdom was Babel, Erech, Accad, and Calneh, in the land of Shinar.</p>
+            <p><sup>11</sup>Out of that land he went into Assyria, and built Nineveh, Rehoboth Ir, Calah,</p>
+            <p><sup>12</sup>and Resen between Nineveh and the great city Calah.</p>
+            <p><sup>13</sup>Mizraim became the father of Ludim, Anamim, Lehabim, Naphtuhim,</p>
+            <p><sup>14</sup>Pathrusim, Casluhim (which the Philistines descended from), and Caphtorim.</p>
+            <p><sup>15</sup>Canaan became the father of Sidon (his firstborn), Heth,</p>
+            <p><sup>16</sup>the Jebusites, the Amorites, the Girgashites,</p>
+            <p><sup>17</sup>the Hivites, the Arkites, the Sinites,</p>
+            <p><sup>18</sup>the Arvadites, the Zemarites, and the Hamathites. Afterward the families of the Canaanites were spread abroad.</p>
+            <p><sup>19</sup>The border of the Canaanites was from Sidon—as you go toward Gerar—to Gaza—as you go toward Sodom, Gomorrah, Admah, and Zeboiim—to Lasha.</p>
+            <p><sup>20</sup>These are the sons of Ham, after their families, according to their languages, in their lands and their nations.</p>
+            <p><sup>21</sup>Children were also born to Shem (the elder brother of Japheth), the father of all the children of Eber.</p>
+            <p><sup>22</sup>The sons of Shem were: Elam, Asshur, Arpachshad, Lud, and Aram.</p>
+            <p><sup>23</sup>The sons of Aram were: Uz, Hul, Gether, and Mash.</p>
+            <p><sup>24</sup>Arpachshad became the father of Shelah. Shelah became the father of Eber.</p>
+            <p><sup>25</sup>To Eber were born two sons. The name of the one was Peleg, for in his days the earth was divided. His brother’s name was Joktan.</p>
+            <p><sup>26</sup>Joktan became the father of Almodad, Sheleph, Hazarmaveth, Jerah,</p>
+            <p><sup>27</sup>Hadoram, Uzal, Diklah,</p>
+            <p><sup>28</sup>Obal, Abimael, Sheba,</p>
+            <p><sup>29</sup>Ophir, Havilah, and Jobab. All these were the sons of Joktan.</p>
+            <p><sup>30</sup>Their dwelling extended from Mesha, as you go toward Sephar, the mountain of the east.</p>
+            <p><sup>31</sup>These are the sons of Shem, by their families, according to their languages, lands, and nations.</p>
+            <p><sup>32</sup>These are the families of the sons of Noah, by their generations, according to their nations. The nations divided from these in the earth after the flood.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-9.html" rel="prev" aria-label="Previous chapter: Genesis 9">&larr; Previous: Chapter 9</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-11.html" rel="next" aria-label="Next chapter: Genesis 11">Next: Chapter 11 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

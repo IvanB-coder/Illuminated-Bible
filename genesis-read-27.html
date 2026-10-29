@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genesis 27 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Genesis chapter 27 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Genesis 27 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Genesis chapter 27 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
-<body class="read-page book-genesis">
+<body class="read-page genesis">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Genesis <span style="color:var(--burgundy);">&middot; Chapter 27</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 27 of 50</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Genesis <span class="chnum">&middot; Chapter 27</span></h1>
+<p class="chapter-position">Chapter 27 of 50</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="genesis-read-26.html">&larr; Chapter 26</a>
-<span class="chapter-indicator">Chapter 27 of 50</span>
-<a class="btn btn-primary shimmer" href="genesis-read-28.html">Chapter 28 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-26.html" rel="prev" aria-label="Previous chapter: Genesis 26">&larr; Previous: Chapter 26</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-28.html" rel="next" aria-label="Next chapter: Genesis 28">Next: Chapter 28 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd it came to pass, that when Isaac was old, and his eyes were dim, so that he could not see, he called Esau his eldest son, and said unto him, My son: and he said unto him, Behold, here am I.</p>
             <p><sup>2</sup>And he said, Behold now, I am old, I know not the day of my death:</p>
             <p><sup>3</sup>Now therefore take, I pray thee, thy weapons, thy quiver and thy bow, and go out to the field, and take me some venison;</p>
@@ -76,12 +83,89 @@
             <p><sup>45</sup>Until thy brother's anger turn away from thee, and he forget that which thou hast done to him: then I will send, and fetch thee from thence: why should I be deprived also of you both in one day?</p>
             <p><sup>46</sup>And Rebekah said to Isaac, I am weary of my life because of the daughters of Heth: if Jacob take a wife of the daughters of Heth, such as these which are of the daughters of the land, what good shall my life do me?</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="genesis-read-26.html">&larr; Chapter 26</a>
-<a href="genesis.html">&uarr; Genesis summary</a>
-<a class="btn btn-primary shimmer" href="genesis-read-28.html">Chapter 28 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">W</span>hen Isaac was old, and his eyes were dim, so that he could not see, he called Esau his elder son, and said to him, “My son?” He said to him, “Here I am.”</p>
+            <p><sup>2</sup>He said, “See now, I am old. I don’t know the day of my death.</p>
+            <p><sup>3</sup>Now therefore, please take your weapons, your quiver and your bow, and go out to the field, and get me venison.</p>
+            <p><sup>4</sup>Make me savory food, such as I love, and bring it to me, that I may eat, and that my soul may bless you before I die.”</p>
+            <p><sup>5</sup>Rebekah heard when Isaac spoke to Esau his son. Esau went to the field to hunt for venison, and to bring it.</p>
+            <p><sup>6</sup>Rebekah spoke to Jacob her son, saying, “Behold, I heard your father speak to Esau your brother, saying,</p>
+            <p><sup>7</sup>‘Bring me venison, and make me savory food, that I may eat, and bless you before Yahweh before my death.’</p>
+            <p><sup>8</sup>Now therefore, my son, obey my voice according to that which I command you.</p>
+            <p><sup>9</sup>Go now to the flock and get me two good young goats from there. I will make them savory food for your father, such as he loves.</p>
+            <p><sup>10</sup>You shall bring it to your father, that he may eat, so that he may bless you before his death.”</p>
+            <p><sup>11</sup>Jacob said to Rebekah his mother, “Behold, Esau my brother is a hairy man, and I am a smooth man.</p>
+            <p><sup>12</sup>What if my father touches me? I will seem to him as a deceiver, and I would bring a curse on myself, and not a blessing.”</p>
+            <p><sup>13</sup>His mother said to him, “Let your curse be on me, my son. Only obey my voice, and go get them for me.”</p>
+            <p><sup>14</sup>He went, and got them, and brought them to his mother. His mother made savory food, such as his father loved.</p>
+            <p><sup>15</sup>Rebekah took the good clothes of Esau, her elder son, which were with her in the house, and put them on Jacob, her younger son.</p>
+            <p><sup>16</sup>She put the skins of the young goats on his hands, and on the smooth of his neck.</p>
+            <p><sup>17</sup>She gave the savory food and the bread, which she had prepared, into the hand of her son Jacob.</p>
+            <p><sup>18</sup>He came to his father, and said, “My father?” He said, “Here I am. Who are you, my son?”</p>
+            <p><sup>19</sup>Jacob said to his father, “I am Esau your firstborn. I have done what you asked me to do. Please arise, sit and eat of my venison, that your soul may bless me.”</p>
+            <p><sup>20</sup>Isaac said to his son, “How is it that you have found it so quickly, my son?” He said, “Because Yahweh your God gave me success.”</p>
+            <p><sup>21</sup>Isaac said to Jacob, “Please come near, that I may feel you, my son, whether you are really my son Esau or not.”</p>
+            <p><sup>22</sup>Jacob went near to Isaac his father. He felt him, and said, “The voice is Jacob’s voice, but the hands are the hands of Esau.”</p>
+            <p><sup>23</sup>He didn’t recognize him, because his hands were hairy, like his brother Esau’s hands. So he blessed him.</p>
+            <p><sup>24</sup>He said, “Are you really my son Esau?” He said, “I am.”</p>
+            <p><sup>25</sup>He said, “Bring it near to me, and I will eat of my son’s venison, that my soul may bless you.” He brought it near to him, and he ate. He brought him wine, and he drank.</p>
+            <p><sup>26</sup>His father Isaac said to him, “Come near now, and kiss me, my son.”</p>
+            <p><sup>27</sup>He came near, and kissed him. He smelled the smell of his clothing, and blessed him, and said, “Behold, the smell of my son is as the smell of a field which Yahweh has blessed.</p>
+            <p><sup>28</sup>God give you of the dew of the sky, of the fatness of the earth, and plenty of grain and new wine.</p>
+            <p><sup>29</sup>Let peoples serve you, and nations bow down to you. Be lord over your brothers. Let your mother’s sons bow down to you. Cursed be everyone who curses you. Blessed be everyone who blesses you.”</p>
+            <p><sup>30</sup>As soon as Isaac had finished blessing Jacob, and Jacob had just gone out from the presence of Isaac his father, Esau his brother came in from his hunting.</p>
+            <p><sup>31</sup>He also made savory food, and brought it to his father. He said to his father, “Let my father arise, and eat of his son’s venison, that your soul may bless me.”</p>
+            <p><sup>32</sup>Isaac his father said to him, “Who are you?” He said, “I am your son, your firstborn, Esau.”</p>
+            <p><sup>33</sup>Isaac trembled violently, and said, “Who, then, is he who has taken venison, and brought it to me, and I have eaten of all before you came, and have blessed him? Yes, he will be blessed.”</p>
+            <p><sup>34</sup>When Esau heard the words of his father, he cried with an exceedingly great and bitter cry, and said to his father, “Bless me, even me also, my father.”</p>
+            <p><sup>35</sup>He said, “Your brother came with deceit, and has taken away your blessing.”</p>
+            <p><sup>36</sup>He said, “Isn’t he rightly named Jacob? For he has supplanted me these two times. He took away my birthright. See, now he has taken away my blessing.” He said, “Haven’t you reserved a blessing for me?”</p>
+            <p><sup>37</sup>Isaac answered Esau, “Behold, I have made him your lord, and all his brothers I have given to him for servants. I have sustained him with grain and new wine. What then will I do for you, my son?”</p>
+            <p><sup>38</sup>Esau said to his father, “Do you have just one blessing, my father? Bless me, even me also, my father.” Esau lifted up his voice, and wept.</p>
+            <p><sup>39</sup>Isaac his father answered him, “Behold, your dwelling will be of the fatness of the earth, and of the dew of the sky from above.</p>
+            <p><sup>40</sup>You will live by your sword, and you will serve your brother. It will happen, when you will break loose, that you will shake his yoke from off your neck.”</p>
+            <p><sup>41</sup>Esau hated Jacob because of the blessing with which his father blessed him. Esau said in his heart, “The days of mourning for my father are at hand. Then I will kill my brother Jacob.”</p>
+            <p><sup>42</sup>The words of Esau, her elder son, were told to Rebekah. She sent and called Jacob, her younger son, and said to him, “Behold, your brother Esau comforts himself about you by planning to kill you.</p>
+            <p><sup>43</sup>Now therefore, my son, obey my voice. Arise, flee to Laban, my brother, in Haran.</p>
+            <p><sup>44</sup>Stay with him a few days, until your brother’s fury turns away—</p>
+            <p><sup>45</sup>until your brother’s anger turns away from you, and he forgets what you have done to him. Then I will send, and get you from there. Why should I be bereaved of you both in one day?”</p>
+            <p><sup>46</sup>Rebekah said to Isaac, “I am weary of my life because of the daughters of Heth. If Jacob takes a wife of the daughters of Heth, such as these, of the daughters of the land, what good will my life do me?”</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-26.html" rel="prev" aria-label="Previous chapter: Genesis 26">&larr; Previous: Chapter 26</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-28.html" rel="next" aria-label="Next chapter: Genesis 28">Next: Chapter 28 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

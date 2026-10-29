@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genesis 7 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Genesis chapter 7 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Genesis 7 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Genesis chapter 7 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-genesis">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Genesis <span style="color:var(--burgundy);">&middot; Chapter 7</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 7 of 50</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Genesis <span class="chnum">&middot; Chapter 7</span></h1>
+<p class="chapter-position">Chapter 7 of 50</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="genesis-read-6.html">&larr; Chapter 6</a>
-<span class="chapter-indicator">Chapter 7 of 50</span>
-<a class="btn btn-primary shimmer" href="genesis-read-8.html">Chapter 8 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-6.html" rel="prev" aria-label="Previous chapter: Genesis 6">&larr; Previous: Chapter 6</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-8.html" rel="next" aria-label="Next chapter: Genesis 8">Next: Chapter 8 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd the Lord said unto Noah, Come thou and all thy house into the ark; for thee have I seen righteous before me in this generation.</p>
             <p><sup>2</sup>Of every clean beast thou shalt take to thee by sevens, the male and his female: and of beasts that are not clean by two, the male and his female.</p>
             <p><sup>3</sup>Of fowls also of the air by sevens, the male and the female; to keep seed alive upon the face of all the earth.</p>
@@ -54,12 +61,67 @@
             <p><sup>23</sup>And every living substance was destroyed which was upon the face of the ground, both man, and cattle, and the creeping things, and the fowl of the heaven; and they were destroyed from the earth: and Noah only remained alive, and they that were with him in the ark.</p>
             <p><sup>24</sup>And the waters prevailed upon the earth an hundred and fifty days.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="genesis-read-6.html">&larr; Chapter 6</a>
-<a href="genesis.html">&uarr; Genesis summary</a>
-<a class="btn btn-primary shimmer" href="genesis-read-8.html">Chapter 8 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">Y</span>ahweh said to Noah, “Come with all of your household into the ship, for I have seen your righteousness before me in this generation.</p>
+            <p><sup>2</sup>You shall take seven pairs of every clean animal with you, the male and his female. Of the animals that are not clean, take two, the male and his female.</p>
+            <p><sup>3</sup>Also of the birds of the sky, seven and seven, male and female, to keep seed alive on the surface of all the earth.</p>
+            <p><sup>4</sup>In seven days, I will cause it to rain on the earth for forty days and forty nights. I will destroy every living thing that I have made from the surface of the ground.”</p>
+            <p><sup>5</sup>Noah did everything that Yahweh commanded him.</p>
+            <p><sup>6</sup>Noah was six hundred years old when the flood of waters came on the earth.</p>
+            <p><sup>7</sup>Noah went into the ship with his sons, his wife, and his sons’ wives, because of the floodwaters.</p>
+            <p><sup>8</sup>Clean animals, unclean animals, birds, and everything that creeps on the ground</p>
+            <p><sup>9</sup>went by pairs to Noah into the ship, male and female, as God commanded Noah.</p>
+            <p><sup>10</sup>After the seven days, the floodwaters came on the earth.</p>
+            <p><sup>11</sup>In the six hundredth year of Noah’s life, in the second month, on the seventeenth day of the month, on that day all the fountains of the great deep burst open, and the sky’s windows opened.</p>
+            <p><sup>12</sup>It rained on the earth forty days and forty nights.</p>
+            <p><sup>13</sup>In the same day Noah, and Shem, Ham, and Japheth—the sons of Noah—and Noah’s wife and the three wives of his sons with them, entered into the ship—</p>
+            <p><sup>14</sup>they, and every animal after its kind, all the livestock after their kind, every creeping thing that creeps on the earth after its kind, and every bird after its kind, every bird of every sort.</p>
+            <p><sup>15</sup>Pairs from all flesh with the breath of life in them went into the ship to Noah.</p>
+            <p><sup>16</sup>Those who went in, went in male and female of all flesh, as God commanded him; then Yahweh shut him in.</p>
+            <p><sup>17</sup>The flood was forty days on the earth. The waters increased, and lifted up the ship, and it was lifted up above the earth.</p>
+            <p><sup>18</sup>The waters rose, and increased greatly on the earth; and the ship floated on the surface of the waters.</p>
+            <p><sup>19</sup>The waters rose very high on the earth. All the high mountains that were under the whole sky were covered.</p>
+            <p><sup>20</sup>The waters rose fifteen cubits higher, and the mountains were covered.</p>
+            <p><sup>21</sup>All flesh died that moved on the earth, including birds, livestock, animals, every creeping thing that creeps on the earth, and every man.</p>
+            <p><sup>22</sup>All on the dry land, in whose nostrils was the breath of the spirit of life, died.</p>
+            <p><sup>23</sup>Every living thing was destroyed that was on the surface of the ground, including man, livestock, creeping things, and birds of the sky. They were destroyed from the earth. Only Noah was left, and those who were with him in the ship.</p>
+            <p><sup>24</sup>The waters flooded the earth one hundred fifty days.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-6.html" rel="prev" aria-label="Previous chapter: Genesis 6">&larr; Previous: Chapter 6</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-8.html" rel="next" aria-label="Next chapter: Genesis 8">Next: Chapter 8 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

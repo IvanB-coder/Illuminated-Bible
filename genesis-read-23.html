@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genesis 23 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Genesis chapter 23 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Genesis 23 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Genesis chapter 23 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
-<body class="read-page book-genesis">
+<body class="read-page genesis">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Genesis <span style="color:var(--burgundy);">&middot; Chapter 23</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 23 of 50</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Genesis <span class="chnum">&middot; Chapter 23</span></h1>
+<p class="chapter-position">Chapter 23 of 50</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="genesis-read-22.html">&larr; Chapter 22</a>
-<span class="chapter-indicator">Chapter 23 of 50</span>
-<a class="btn btn-primary shimmer" href="genesis-read-24.html">Chapter 24 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-22.html" rel="prev" aria-label="Previous chapter: Genesis 22">&larr; Previous: Chapter 22</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-24.html" rel="next" aria-label="Next chapter: Genesis 24">Next: Chapter 24 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd Sarah was an hundred and seven and twenty years old: these were the years of the life of Sarah.</p>
             <p><sup>2</sup>And Sarah died in Kirjatharba; the same is Hebron in the land of Canaan: and Abraham came to mourn for Sarah, and to weep for her.</p>
             <p><sup>3</sup>And Abraham stood up from before his dead, and spake unto the sons of Heth, saying,</p>
@@ -50,12 +57,63 @@
             <p><sup>19</sup>And after this, Abraham buried Sarah his wife in the cave of the field of Machpelah before Mamre: the same is Hebron in the land of Canaan.</p>
             <p><sup>20</sup>And the field, and the cave that is therein, were made sure unto Abraham for a possession of a buryingplace by the sons of Heth.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="genesis-read-22.html">&larr; Chapter 22</a>
-<a href="genesis.html">&uarr; Genesis summary</a>
-<a class="btn btn-primary shimmer" href="genesis-read-24.html">Chapter 24 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">S</span>arah lived one hundred twenty-seven years. This was the length of Sarah’s life.</p>
+            <p><sup>2</sup>Sarah died in Kiriath Arba (also called Hebron), in the land of Canaan. Abraham came to mourn for Sarah, and to weep for her.</p>
+            <p><sup>3</sup>Abraham rose up from before his dead and spoke to the children of Heth, saying,</p>
+            <p><sup>4</sup>“I am a stranger and a foreigner living with you. Give me a possession of a burying-place with you, that I may bury my dead out of my sight.”</p>
+            <p><sup>5</sup>The children of Heth answered Abraham, saying to him,</p>
+            <p><sup>6</sup>“Hear us, my lord. You are a prince of God among us. Bury your dead in the best of our tombs. None of us will withhold from you his tomb. Bury your dead.”</p>
+            <p><sup>7</sup>Abraham rose up, and bowed himself to the people of the land, to the children of Heth.</p>
+            <p><sup>8</sup>He talked with them, saying, “If you agree that I should bury my dead out of my sight, hear me, and entreat for me to Ephron the son of Zohar,</p>
+            <p><sup>9</sup>that he may sell me the cave of Machpelah, which he has, which is in the end of his field. For the full price let him sell it to me among you as a possession for a burial place.”</p>
+            <p><sup>10</sup>Now Ephron was sitting in the middle of the children of Heth. Ephron the Hittite answered Abraham in the hearing of the children of Heth, even of all who went in at the gate of his city, saying,</p>
+            <p><sup>11</sup>“No, my lord, hear me. I give you the field, and I give you the cave that is in it. In the presence of the children of my people I give it to you. Bury your dead.”</p>
+            <p><sup>12</sup>Abraham bowed himself down before the people of the land.</p>
+            <p><sup>13</sup>He spoke to Ephron in the audience of the people of the land, saying, “But if you will, please hear me. I will give the price of the field. Take it from me, and I will bury my dead there.”</p>
+            <p><sup>14</sup>Ephron answered Abraham, saying to him,</p>
+            <p><sup>15</sup>“My lord, listen to me. What is a piece of land worth four hundred shekels of silver between me and you? Therefore bury your dead.”</p>
+            <p><sup>16</sup>Abraham listened to Ephron. Abraham weighed to Ephron the silver which he had named in the hearing of the children of Heth, four hundred shekels of silver, according to the current merchants’ standard.</p>
+            <p><sup>17</sup>So the field of Ephron, which was in Machpelah, which was before Mamre, the field, the cave which was in it, and all the trees that were in the field, that were in all of its borders, were deeded</p>
+            <p><sup>18</sup>to Abraham for a possession in the presence of the children of Heth, before all who went in at the gate of his city.</p>
+            <p><sup>19</sup>After this, Abraham buried Sarah his wife in the cave of the field of Machpelah before Mamre (that is, Hebron), in the land of Canaan.</p>
+            <p><sup>20</sup>The field, and the cave that is in it, were deeded to Abraham by the children of Heth as a possession for a burial place.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-22.html" rel="prev" aria-label="Previous chapter: Genesis 22">&larr; Previous: Chapter 22</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-24.html" rel="next" aria-label="Next chapter: Genesis 24">Next: Chapter 24 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

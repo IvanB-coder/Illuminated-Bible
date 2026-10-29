@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genesis 26 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Genesis chapter 26 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Genesis 26 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Genesis chapter 26 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
-<body class="read-page book-genesis">
+<body class="read-page genesis">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Genesis <span style="color:var(--burgundy);">&middot; Chapter 26</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 26 of 50</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Genesis <span class="chnum">&middot; Chapter 26</span></h1>
+<p class="chapter-position">Chapter 26 of 50</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="genesis-read-25.html">&larr; Chapter 25</a>
-<span class="chapter-indicator">Chapter 26 of 50</span>
-<a class="btn btn-primary shimmer" href="genesis-read-27.html">Chapter 27 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-25.html" rel="prev" aria-label="Previous chapter: Genesis 25">&larr; Previous: Chapter 25</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-27.html" rel="next" aria-label="Next chapter: Genesis 27">Next: Chapter 27 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd there was a famine in the land, beside the first famine that was in the days of Abraham. And Isaac went unto Abimelech king of the Philistines unto Gerar.</p>
             <p><sup>2</sup>And the Lord appeared unto him, and said, Go not down into Egypt; dwell in the land which I shall tell thee of:</p>
             <p><sup>3</sup>Sojourn in this land, and I will be with thee, and will bless thee; for unto thee, and unto thy seed, I will give all these countries, and I will perform the oath which I sware unto Abraham thy father;</p>
@@ -65,12 +72,78 @@
             <p><sup>34</sup>And Esau was forty years old when he took to wife Judith the daughter of Beeri the Hittite, and Bashemath the daughter of Elon the Hittite:</p>
             <p><sup>35</sup>Which were a grief of mind unto Isaac and to Rebekah.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="genesis-read-25.html">&larr; Chapter 25</a>
-<a href="genesis.html">&uarr; Genesis summary</a>
-<a class="btn btn-primary shimmer" href="genesis-read-27.html">Chapter 27 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">T</span>here was a famine in the land, in addition to the first famine that was in the days of Abraham. Isaac went to Abimelech king of the Philistines, to Gerar.</p>
+            <p><sup>2</sup>Yahweh appeared to him, and said, “Don’t go down into Egypt. Live in the land I will tell you about.</p>
+            <p><sup>3</sup>Live in this land, and I will be with you, and will bless you. For I will give to you, and to your offspring, all these lands, and I will establish the oath which I swore to Abraham your father.</p>
+            <p><sup>4</sup>I will multiply your offspring as the stars of the sky, and will give all these lands to your offspring. In your offspring all the nations of the earth will be blessed,</p>
+            <p><sup>5</sup>because Abraham obeyed my voice, and kept my requirements, my commandments, my statutes, and my laws.”</p>
+            <p><sup>6</sup>Isaac lived in Gerar.</p>
+            <p><sup>7</sup>The men of the place asked him about his wife. He said, “She is my sister,” for he was afraid to say, “My wife”, lest, he thought, “the men of the place might kill me for Rebekah, because she is beautiful to look at.”</p>
+            <p><sup>8</sup>When he had been there a long time, Abimelech king of the Philistines looked out at a window, and saw, and, behold, Isaac was caressing Rebekah, his wife.</p>
+            <p><sup>9</sup>Abimelech called Isaac, and said, “Behold, surely she is your wife. Why did you say, ‘She is my sister’?” Isaac said to him, “Because I said, ‘Lest I die because of her.’”</p>
+            <p><sup>10</sup>Abimelech said, “What is this you have done to us? One of the people might easily have lain with your wife, and you would have brought guilt on us!”</p>
+            <p><sup>11</sup>Abimelech commanded all the people, saying, “He who touches this man or his wife will surely be put to death.”</p>
+            <p><sup>12</sup>Isaac sowed in that land, and reaped in the same year one hundred times what he planted. Yahweh blessed him.</p>
+            <p><sup>13</sup>The man grew great, and grew more and more until he became very great.</p>
+            <p><sup>14</sup>He had possessions of flocks, possessions of herds, and a great household. The Philistines envied him.</p>
+            <p><sup>15</sup>Now all the wells which his father’s servants had dug in the days of Abraham his father, the Philistines had stopped, and filled with earth.</p>
+            <p><sup>16</sup>Abimelech said to Isaac, “Go away from us, for you are much mightier than we.”</p>
+            <p><sup>17</sup>Isaac departed from there, encamped in the valley of Gerar, and lived there.</p>
+            <p><sup>18</sup>Isaac dug again the wells of water, which they had dug in the days of Abraham his father, for the Philistines had stopped them after the death of Abraham. He called their names after the names by which his father had called them.</p>
+            <p><sup>19</sup>Isaac’s servants dug in the valley, and found there a well of flowing water.</p>
+            <p><sup>20</sup>The herdsmen of Gerar argued with Isaac’s herdsmen, saying, “The water is ours.” So he called the name of the well Esek, because they contended with him.</p>
+            <p><sup>21</sup>They dug another well, and they argued over that, also. So he called its name Sitnah.</p>
+            <p><sup>22</sup>He left that place, and dug another well. They didn’t argue over that one. So he called it Rehoboth. He said, “For now Yahweh has made room for us, and we will be fruitful in the land.”</p>
+            <p><sup>23</sup>He went up from there to Beersheba.</p>
+            <p><sup>24</sup>Yahweh appeared to him the same night, and said, “I am the God of Abraham your father. Don’t be afraid, for I am with you, and will bless you, and multiply your offspring for my servant Abraham’s sake.”</p>
+            <p><sup>25</sup>He built an altar there, and called on Yahweh’s name, and pitched his tent there. There Isaac’s servants dug a well.</p>
+            <p><sup>26</sup>Then Abimelech went to him from Gerar with Ahuzzath his friend, and Phicol the captain of his army.</p>
+            <p><sup>27</sup>Isaac said to them, “Why have you come to me, since you hate me, and have sent me away from you?”</p>
+            <p><sup>28</sup>They said, “We saw plainly that Yahweh was with you. We said, ‘Let there now be an oath between us, even between us and you, and let’s make a covenant with you,</p>
+            <p><sup>29</sup>that you will do us no harm, as we have not touched you, and as we have done to you nothing but good, and have sent you away in peace.’ You are now the blessed of Yahweh.”</p>
+            <p><sup>30</sup>He made them a feast, and they ate and drank.</p>
+            <p><sup>31</sup>They rose up some time in the morning, and swore an oath to one another. Isaac sent them away, and they departed from him in peace.</p>
+            <p><sup>32</sup>The same day, Isaac’s servants came, and told him concerning the well which they had dug, and said to him, “We have found water.”</p>
+            <p><sup>33</sup>He called it “Shibah”. Therefore the name of the city is “Beersheba” to this day.</p>
+            <p><sup>34</sup>When Esau was forty years old, he took as wife Judith, the daughter of Beeri the Hittite, and Basemath, the daughter of Elon the Hittite.</p>
+            <p><sup>35</sup>They grieved Isaac’s and Rebekah’s spirits.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-25.html" rel="prev" aria-label="Previous chapter: Genesis 25">&larr; Previous: Chapter 25</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-27.html" rel="next" aria-label="Next chapter: Genesis 27">Next: Chapter 27 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

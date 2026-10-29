@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genesis 32 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Genesis chapter 32 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Genesis 32 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Genesis chapter 32 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-genesis">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Genesis <span style="color:var(--burgundy);">&middot; Chapter 32</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 32 of 50</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Genesis <span class="chnum">&middot; Chapter 32</span></h1>
+<p class="chapter-position">Chapter 32 of 50</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="genesis-read-31.html">&larr; Chapter 31</a>
-<span class="chapter-indicator">Chapter 32 of 50</span>
-<a class="btn btn-primary shimmer" href="genesis-read-33.html">Chapter 33 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-31.html" rel="prev" aria-label="Previous chapter: Genesis 31">&larr; Previous: Chapter 31</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-33.html" rel="next" aria-label="Next chapter: Genesis 33">Next: Chapter 33 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd Jacob went on his way, and the angels of God met him.</p>
             <p><sup>2</sup>And when Jacob saw them, he said, This is God's host: and he called the name of that place Mahanaim.</p>
             <p><sup>3</sup>And Jacob sent messengers before him to Esau his brother unto the land of Seir, the country of Edom.</p>
@@ -62,12 +69,75 @@
             <p><sup>31</sup>And as he passed over Penuel the sun rose upon him, and he halted upon his thigh.</p>
             <p><sup>32</sup>Therefore the children of Israel eat not of the sinew which shrank, which is upon the hollow of the thigh, unto this day: because he touched the hollow of Jacob's thigh in the sinew that shrank.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="genesis-read-31.html">&larr; Chapter 31</a>
-<a href="genesis.html">&uarr; Genesis summary</a>
-<a class="btn btn-primary shimmer" href="genesis-read-33.html">Chapter 33 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">J</span>acob went on his way, and the angels of God met him.</p>
+            <p><sup>2</sup>When he saw them, Jacob said, “This is God’s army.” He called the name of that place Mahanaim.</p>
+            <p><sup>3</sup>Jacob sent messengers in front of him to Esau, his brother, to the land of Seir, the field of Edom.</p>
+            <p><sup>4</sup>He commanded them, saying, “This is what you shall tell my lord, Esau: ‘This is what your servant, Jacob, says. I have lived as a foreigner with Laban, and stayed until now.</p>
+            <p><sup>5</sup>I have cattle, donkeys, flocks, male servants, and female servants. I have sent to tell my lord, that I may find favor in your sight.’”</p>
+            <p><sup>6</sup>The messengers returned to Jacob, saying, “We came to your brother Esau. He is coming to meet you, and four hundred men are with him.”</p>
+            <p><sup>7</sup>Then Jacob was greatly afraid and was distressed. He divided the people who were with him, along with the flocks, the herds, and the camels, into two companies.</p>
+            <p><sup>8</sup>He said, “If Esau comes to the one company, and strikes it, then the company which is left will escape.”</p>
+            <p><sup>9</sup>Jacob said, “God of my father Abraham, and God of my father Isaac, Yahweh, who said to me, ‘Return to your country, and to your relatives, and I will do you good,’</p>
+            <p><sup>10</sup>I am not worthy of the least of all the loving kindnesses, and of all the truth, which you have shown to your servant; for with just my staff I crossed over this Jordan; and now I have become two companies.</p>
+            <p><sup>11</sup>Please deliver me from the hand of my brother, from the hand of Esau; for I fear him, lest he come and strike me and the mothers with the children.</p>
+            <p><sup>12</sup>You said, ‘I will surely do you good, and make your offspring as the sand of the sea, which can’t be counted because there are so many.’”</p>
+            <p><sup>13</sup>He stayed there that night, and took from that which he had with him a present for Esau, his brother:</p>
+            <p><sup>14</sup>two hundred female goats and twenty male goats, two hundred ewes and twenty rams,</p>
+            <p><sup>15</sup>thirty milk camels and their colts, forty cows, ten bulls, twenty female donkeys and ten foals.</p>
+            <p><sup>16</sup>He delivered them into the hands of his servants, every herd by itself, and said to his servants, “Pass over before me, and put a space between herd and herd.”</p>
+            <p><sup>17</sup>He commanded the foremost, saying, “When Esau, my brother, meets you, and asks you, saying, ‘Whose are you? Where are you going? Whose are these before you?’</p>
+            <p><sup>18</sup>Then you shall say, ‘They are your servant, Jacob’s. It is a present sent to my lord, Esau. Behold, he also is behind us.’”</p>
+            <p><sup>19</sup>He commanded also the second, and the third, and all that followed the herds, saying, “This is how you shall speak to Esau, when you find him.</p>
+            <p><sup>20</sup>You shall say, ‘Not only that, but behold, your servant, Jacob, is behind us.’” For, he said, “I will appease him with the present that goes before me, and afterward I will see his face. Perhaps he will accept me.”</p>
+            <p><sup>21</sup>So the present passed over before him, and he himself stayed that night in the camp.</p>
+            <p><sup>22</sup>He rose up that night, and took his two wives, and his two servants, and his eleven sons, and crossed over the ford of the Jabbok.</p>
+            <p><sup>23</sup>He took them, and sent them over the stream, and sent over that which he had.</p>
+            <p><sup>24</sup>Jacob was left alone, and wrestled with a man there until the breaking of the day.</p>
+            <p><sup>25</sup>When he saw that he didn’t prevail against him, the man touched the hollow of his thigh, and the hollow of Jacob’s thigh was strained as he wrestled.</p>
+            <p><sup>26</sup>The man said, “Let me go, for the day breaks.” Jacob said, “I won’t let you go unless you bless me.”</p>
+            <p><sup>27</sup>He said to him, “What is your name?” He said, “Jacob”.</p>
+            <p><sup>28</sup>He said, “Your name will no longer be called Jacob, but Israel; for you have fought with God and with men, and have prevailed.”</p>
+            <p><sup>29</sup>Jacob asked him, “Please tell me your name.” He said, “Why is it that you ask what my name is?” So he blessed him there.</p>
+            <p><sup>30</sup>Jacob called the name of the place Peniel; for he said, “I have seen God face to face, and my life is preserved.”</p>
+            <p><sup>31</sup>The sun rose on him as he passed over Peniel, and he limped because of his thigh.</p>
+            <p><sup>32</sup>Therefore the children of Israel don’t eat the sinew of the hip, which is on the hollow of the thigh, to this day, because he touched the hollow of Jacob’s thigh in the sinew of the hip.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-31.html" rel="prev" aria-label="Previous chapter: Genesis 31">&larr; Previous: Chapter 31</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-33.html" rel="next" aria-label="Next chapter: Genesis 33">Next: Chapter 33 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

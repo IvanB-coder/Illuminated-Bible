@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genesis 25 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Genesis chapter 25 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Genesis 25 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Genesis chapter 25 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
-<body class="read-page book-genesis">
+<body class="read-page genesis">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Genesis <span style="color:var(--burgundy);">&middot; Chapter 25</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 25 of 50</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Genesis <span class="chnum">&middot; Chapter 25</span></h1>
+<p class="chapter-position">Chapter 25 of 50</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="genesis-read-24.html">&larr; Chapter 24</a>
-<span class="chapter-indicator">Chapter 25 of 50</span>
-<a class="btn btn-primary shimmer" href="genesis-read-26.html">Chapter 26 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-24.html" rel="prev" aria-label="Previous chapter: Genesis 24">&larr; Previous: Chapter 24</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-26.html" rel="next" aria-label="Next chapter: Genesis 26">Next: Chapter 26 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">T</span>hen again Abraham took a wife, and her name was Keturah.</p>
             <p><sup>2</sup>And she bare him Zimran, and Jokshan, and Medan, and Midian, and Ishbak, and Shuah.</p>
             <p><sup>3</sup>And Jokshan begat Sheba, and Dedan. And the sons of Dedan were Asshurim, and Letushim, and Leummim.</p>
@@ -64,12 +71,77 @@
             <p><sup>33</sup>And Jacob said, Swear to me this day; and he sware unto him: and he sold his birthright unto Jacob.</p>
             <p><sup>34</sup>Then Jacob gave Esau bread and pottage of lentiles; and he did eat and drink, and rose up, and went his way: thus Esau despised his birthright.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="genesis-read-24.html">&larr; Chapter 24</a>
-<a href="genesis.html">&uarr; Genesis summary</a>
-<a class="btn btn-primary shimmer" href="genesis-read-26.html">Chapter 26 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">A</span>braham took another wife, and her name was Keturah.</p>
+            <p><sup>2</sup>She bore him Zimran, Jokshan, Medan, Midian, Ishbak, and Shuah.</p>
+            <p><sup>3</sup>Jokshan became the father of Sheba, and Dedan. The sons of Dedan were Asshurim, Letushim, and Leummim.</p>
+            <p><sup>4</sup>The sons of Midian were Ephah, Epher, Hanoch, Abida, and Eldaah. All these were the children of Keturah.</p>
+            <p><sup>5</sup>Abraham gave all that he had to Isaac,</p>
+            <p><sup>6</sup>but Abraham gave gifts to the sons of Abraham’s concubines. While he still lived, he sent them away from Isaac his son, eastward, to the east country.</p>
+            <p><sup>7</sup>These are the days of the years of Abraham’s life which he lived: one hundred seventy-five years.</p>
+            <p><sup>8</sup>Abraham gave up his spirit, and died at a good old age, an old man, and full of years, and was gathered to his people.</p>
+            <p><sup>9</sup>Isaac and Ishmael, his sons, buried him in the cave of Machpelah, in the field of Ephron, the son of Zohar the Hittite, which is near Mamre,</p>
+            <p><sup>10</sup>the field which Abraham purchased from the children of Heth. Abraham was buried there with Sarah, his wife.</p>
+            <p><sup>11</sup>After the death of Abraham, God blessed Isaac, his son. Isaac lived by Beer Lahai Roi.</p>
+            <p><sup>12</sup>Now this is the history of the generations of Ishmael, Abraham’s son, whom Hagar the Egyptian, Sarah’s servant, bore to Abraham.</p>
+            <p><sup>13</sup>These are the names of the sons of Ishmael, by their names, according to the order of their birth: the firstborn of Ishmael, Nebaioth, then Kedar, Adbeel, Mibsam,</p>
+            <p><sup>14</sup>Mishma, Dumah, Massa,</p>
+            <p><sup>15</sup>Hadad, Tema, Jetur, Naphish, and Kedemah.</p>
+            <p><sup>16</sup>These are the sons of Ishmael, and these are their names, by their villages, and by their encampments: twelve princes, according to their nations.</p>
+            <p><sup>17</sup>These are the years of the life of Ishmael: one hundred thirty-seven years. He gave up his spirit and died, and was gathered to his people.</p>
+            <p><sup>18</sup>They lived from Havilah to Shur that is before Egypt, as you go toward Assyria. He lived opposite all his relatives.</p>
+            <p><sup>19</sup>This is the history of the generations of Isaac, Abraham’s son. Abraham became the father of Isaac.</p>
+            <p><sup>20</sup>Isaac was forty years old when he took Rebekah, the daughter of Bethuel the Syrian of Paddan Aram, the sister of Laban the Syrian, to be his wife.</p>
+            <p><sup>21</sup>Isaac entreated Yahweh for his wife, because she was barren. Yahweh was entreated by him, and Rebekah his wife conceived.</p>
+            <p><sup>22</sup>The children struggled together within her. She said, “If it is like this, why do I live?” She went to inquire of Yahweh.</p>
+            <p><sup>23</sup>Yahweh said to her, “Two nations are in your womb. Two peoples will be separated from your body. The one people will be stronger than the other people. The elder will serve the younger.”</p>
+            <p><sup>24</sup>When her days to be delivered were fulfilled, behold, there were twins in her womb.</p>
+            <p><sup>25</sup>The first came out red all over, like a hairy garment. They named him Esau.</p>
+            <p><sup>26</sup>After that, his brother came out, and his hand had hold on Esau’s heel. He was named Jacob. Isaac was sixty years old when she bore them.</p>
+            <p><sup>27</sup>The boys grew. Esau was a skillful hunter, a man of the field. Jacob was a quiet man, living in tents.</p>
+            <p><sup>28</sup>Now Isaac loved Esau, because he ate his venison. Rebekah loved Jacob.</p>
+            <p><sup>29</sup>Jacob boiled stew. Esau came in from the field, and he was famished.</p>
+            <p><sup>30</sup>Esau said to Jacob, “Please feed me with some of that red stew, for I am famished.” Therefore his name was called Edom.</p>
+            <p><sup>31</sup>Jacob said, “First, sell me your birthright.”</p>
+            <p><sup>32</sup>Esau said, “Behold, I am about to die. What good is the birthright to me?”</p>
+            <p><sup>33</sup>Jacob said, “Swear to me first.” He swore to him. He sold his birthright to Jacob.</p>
+            <p><sup>34</sup>Jacob gave Esau bread and lentil stew. He ate and drank, rose up, and went his way. So Esau despised his birthright.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-24.html" rel="prev" aria-label="Previous chapter: Genesis 24">&larr; Previous: Chapter 24</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-26.html" rel="next" aria-label="Next chapter: Genesis 26">Next: Chapter 26 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

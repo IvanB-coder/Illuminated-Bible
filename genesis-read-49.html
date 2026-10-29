@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genesis 49 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Genesis chapter 49 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Genesis 49 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Genesis chapter 49 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-genesis">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Genesis <span style="color:var(--burgundy);">&middot; Chapter 49</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 49 of 50</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Genesis <span class="chnum">&middot; Chapter 49</span></h1>
+<p class="chapter-position">Chapter 49 of 50</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="genesis-read-48.html">&larr; Chapter 48</a>
-<span class="chapter-indicator">Chapter 49 of 50</span>
-<a class="btn btn-primary shimmer" href="genesis-read-50.html">Chapter 50 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-48.html" rel="prev" aria-label="Previous chapter: Genesis 48">&larr; Previous: Chapter 48</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-50.html" rel="next" aria-label="Next chapter: Genesis 50">Next: Chapter 50 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd Jacob called unto his sons, and said, Gather yourselves together, that I may tell you that which shall befall you in the last days.</p>
             <p><sup>2</sup>Gather yourselves together, and hear, ye sons of Jacob; and hearken unto Israel your father.</p>
             <p><sup>3</sup>Reuben, thou art my firstborn, my might, and the beginning of my strength, the excellency of dignity, and the excellency of power:</p>
@@ -63,12 +70,76 @@
             <p><sup>32</sup>The purchase of the field and of the cave that is therein was from the children of Heth.</p>
             <p><sup>33</sup>And when Jacob had made an end of commanding his sons, he gathered up his feet into the bed, and yielded up the ghost, and was gathered unto his people.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="genesis-read-48.html">&larr; Chapter 48</a>
-<a href="genesis.html">&uarr; Genesis summary</a>
-<a class="btn btn-primary shimmer" href="genesis-read-50.html">Chapter 50 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">J</span>acob called to his sons, and said: “Gather yourselves together, that I may tell you that which will happen to you in the days to come.</p>
+            <p><sup>2</sup>Assemble yourselves, and hear, you sons of Jacob. Listen to Israel, your father.</p>
+            <p><sup>3</sup>“Reuben, you are my firstborn, my might, and the beginning of my strength, excelling in dignity, and excelling in power.</p>
+            <p><sup>4</sup>Boiling over like water, you shall not excel, because you went up to your father’s bed, then defiled it. He went up to my couch.</p>
+            <p><sup>5</sup>“Simeon and Levi are brothers. Their swords are weapons of violence.</p>
+            <p><sup>6</sup>My soul, don’t come into their council. My glory, don’t be united to their assembly; for in their anger they killed men. In their self-will they hamstrung cattle.</p>
+            <p><sup>7</sup>Cursed be their anger, for it was fierce; and their wrath, for it was cruel. I will divide them in Jacob, and scatter them in Israel.</p>
+            <p><sup>8</sup>“Judah, your brothers will praise you. Your hand will be on the neck of your enemies. Your father’s sons will bow down before you.</p>
+            <p><sup>9</sup>Judah is a lion’s cub. From the prey, my son, you have gone up. He stooped down, he crouched as a lion, as a lioness. Who will rouse him up?</p>
+            <p><sup>10</sup>The scepter will not depart from Judah, nor the ruler’s staff from between his feet, until he comes to whom it belongs. The obedience of the peoples will be to him.</p>
+            <p><sup>11</sup>Binding his foal to the vine, his donkey’s colt to the choice vine, he has washed his garments in wine, his robes in the blood of grapes.</p>
+            <p><sup>12</sup>His eyes will be red with wine, his teeth white with milk.</p>
+            <p><sup>13</sup>“Zebulun will dwell at the haven of the sea. He will be for a haven of ships. His border will be on Sidon.</p>
+            <p><sup>14</sup>“Issachar is a strong donkey, lying down between the saddlebags.</p>
+            <p><sup>15</sup>He saw a resting place, that it was good, the land, that it was pleasant. He bows his shoulder to the burden, and becomes a servant doing forced labor.</p>
+            <p><sup>16</sup>“Dan will judge his people, as one of the tribes of Israel.</p>
+            <p><sup>17</sup>Dan will be a serpent on the trail, an adder in the path, that bites the horse’s heels, so that his rider falls backward.</p>
+            <p><sup>18</sup>I have waited for your salvation, Yahweh.</p>
+            <p><sup>19</sup>“A troop will press on Gad, but he will press on their heel.</p>
+            <p><sup>20</sup>“Asher’s food will be rich. He will produce royal dainties.</p>
+            <p><sup>21</sup>“Naphtali is a doe set free, who bears beautiful fawns.</p>
+            <p><sup>22</sup>“Joseph is a fruitful vine, a fruitful vine by a spring. His branches run over the wall.</p>
+            <p><sup>23</sup>The archers have severely grieved him, shot at him, and persecuted him:</p>
+            <p><sup>24</sup>But his bow remained strong. The arms of his hands were made strong, by the hands of the Mighty One of Jacob, (from there is the shepherd, the stone of Israel),</p>
+            <p><sup>25</sup>even by the God of your father, who will help you, by the Almighty, who will bless you, with blessings of heaven above, blessings of the deep that lies below, blessings of the breasts, and of the womb.</p>
+            <p><sup>26</sup>The blessings of your father have prevailed above the blessings of my ancestors, above the boundaries of the ancient hills. They will be on the head of Joseph, on the crown of the head of him who is separated from his brothers.</p>
+            <p><sup>27</sup>“Benjamin is a ravenous wolf. In the morning he will devour the prey. At evening he will divide the plunder.”</p>
+            <p><sup>28</sup>All these are the twelve tribes of Israel, and this is what their father spoke to them, and blessed them. He blessed everyone according to his own blessing.</p>
+            <p><sup>29</sup>He instructed them, and said to them, “I am to be gathered to my people. Bury me with my fathers in the cave that is in the field of Ephron the Hittite,</p>
+            <p><sup>30</sup>in the cave that is in the field of Machpelah, which is before Mamre, in the land of Canaan, which Abraham bought with the field from Ephron the Hittite as a burial place.</p>
+            <p><sup>31</sup>There they buried Abraham and Sarah, his wife. There they buried Isaac and Rebekah, his wife, and there I buried Leah:</p>
+            <p><sup>32</sup>the field and the cave that is therein, which was purchased from the children of Heth.”</p>
+            <p><sup>33</sup>When Jacob finished charging his sons, he gathered up his feet into the bed, breathed his last breath, and was gathered to his people.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-48.html" rel="prev" aria-label="Previous chapter: Genesis 48">&larr; Previous: Chapter 48</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-50.html" rel="next" aria-label="Next chapter: Genesis 50">Next: Chapter 50 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

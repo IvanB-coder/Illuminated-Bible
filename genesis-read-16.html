@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genesis 16 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Genesis chapter 16 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Genesis 16 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Genesis chapter 16 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-genesis">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Genesis <span style="color:var(--burgundy);">&middot; Chapter 16</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 16 of 50</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Genesis <span class="chnum">&middot; Chapter 16</span></h1>
+<p class="chapter-position">Chapter 16 of 50</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="genesis-read-15.html">&larr; Chapter 15</a>
-<span class="chapter-indicator">Chapter 16 of 50</span>
-<a class="btn btn-primary shimmer" href="genesis-read-17.html">Chapter 17 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-15.html" rel="prev" aria-label="Previous chapter: Genesis 15">&larr; Previous: Chapter 15</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-17.html" rel="next" aria-label="Next chapter: Genesis 17">Next: Chapter 17 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">N</span>ow Sarai Abram's wife bare him no children: and she had an handmaid, an Egyptian, whose name was Hagar.</p>
             <p><sup>2</sup>And Sarai said unto Abram, Behold now, the Lord hath restrained me from bearing: I pray thee, go in unto my maid; it may be that I may obtain children by her. And Abram hearkened to the voice of Sarai.</p>
             <p><sup>3</sup>And Sarai Abram's wife took Hagar her maid the Egyptian, after Abram had dwelt ten years in the land of Canaan, and gave her to her husband Abram to be his wife.</p>
@@ -46,12 +53,59 @@
             <p><sup>15</sup>And Hagar bare Abram a son: and Abram called his son's name, which Hagar bare, Ishmael.</p>
             <p><sup>16</sup>And Abram was fourscore and six years old, when Hagar bare Ishmael to Abram.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="genesis-read-15.html">&larr; Chapter 15</a>
-<a href="genesis.html">&uarr; Genesis summary</a>
-<a class="btn btn-primary shimmer" href="genesis-read-17.html">Chapter 17 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">N</span>ow Sarai, Abram’s wife, bore him no children. She had a servant, an Egyptian, whose name was Hagar.</p>
+            <p><sup>2</sup>Sarai said to Abram, “See now, Yahweh has restrained me from bearing. Please go in to my servant. It may be that I will obtain children by her.” Abram listened to the voice of Sarai.</p>
+            <p><sup>3</sup>Sarai, Abram’s wife, took Hagar the Egyptian, her servant, after Abram had lived ten years in the land of Canaan, and gave her to Abram her husband to be his wife.</p>
+            <p><sup>4</sup>He went in to Hagar, and she conceived. When she saw that she had conceived, her mistress was despised in her eyes.</p>
+            <p><sup>5</sup>Sarai said to Abram, “This wrong is your fault. I gave my servant into your bosom, and when she saw that she had conceived, she despised me. May Yahweh judge between me and you.”</p>
+            <p><sup>6</sup>But Abram said to Sarai, “Behold, your maid is in your hand. Do to her whatever is good in your eyes.” Sarai dealt harshly with her, and she fled from her face.</p>
+            <p><sup>7</sup>Yahweh’s angel found her by a fountain of water in the wilderness, by the fountain on the way to Shur.</p>
+            <p><sup>8</sup>He said, “Hagar, Sarai’s servant, where did you come from? Where are you going?” She said, “I am fleeing from the face of my mistress Sarai.”</p>
+            <p><sup>9</sup>Yahweh’s angel said to her, “Return to your mistress, and submit yourself under her hands.”</p>
+            <p><sup>10</sup>Yahweh’s angel said to her, “I will greatly multiply your offspring, that they will not be counted for multitude.”</p>
+            <p><sup>11</sup>Yahweh’s angel said to her, “Behold, you are with child, and will bear a son. You shall call his name Ishmael, because Yahweh has heard your affliction.</p>
+            <p><sup>12</sup>He will be like a wild donkey among men. His hand will be against every man, and every man’s hand against him. He will live opposed to all of his brothers.”</p>
+            <p><sup>13</sup>She called the name of Yahweh who spoke to her, “You are a God who sees,” for she said, “Have I even stayed alive after seeing him?”</p>
+            <p><sup>14</sup>Therefore the well was called Beer Lahai Roi. Behold, it is between Kadesh and Bered.</p>
+            <p><sup>15</sup>Hagar bore a son for Abram. Abram called the name of his son, whom Hagar bore, Ishmael.</p>
+            <p><sup>16</sup>Abram was eighty-six years old when Hagar bore Ishmael to Abram.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-15.html" rel="prev" aria-label="Previous chapter: Genesis 15">&larr; Previous: Chapter 15</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-17.html" rel="next" aria-label="Next chapter: Genesis 17">Next: Chapter 17 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

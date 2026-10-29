@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genesis 20 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Genesis chapter 20 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Genesis 20 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Genesis chapter 20 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
-<body class="read-page book-genesis">
+<body class="read-page genesis">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Genesis <span style="color:var(--burgundy);">&middot; Chapter 20</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 20 of 50</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Genesis <span class="chnum">&middot; Chapter 20</span></h1>
+<p class="chapter-position">Chapter 20 of 50</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="genesis-read-19.html">&larr; Chapter 19</a>
-<span class="chapter-indicator">Chapter 20 of 50</span>
-<a class="btn btn-primary shimmer" href="genesis-read-21.html">Chapter 21 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-19.html" rel="prev" aria-label="Previous chapter: Genesis 19">&larr; Previous: Chapter 19</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-21.html" rel="next" aria-label="Next chapter: Genesis 21">Next: Chapter 21 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd Abraham journeyed from thence toward the south country, and dwelled between Kadesh and Shur, and sojourned in Gerar.</p>
             <p><sup>2</sup>And Abraham said of Sarah his wife, She is my sister: and Abimelech king of Gerar sent, and took Sarah.</p>
             <p><sup>3</sup>But God came to Abimelech in a dream by night, and said to him, Behold, thou art but a dead man, for the woman which thou hast taken; for she is a man's wife.</p>
@@ -48,12 +55,61 @@
             <p><sup>17</sup>So Abraham prayed unto God: and God healed Abimelech, and his wife, and his maidservants; and they bare children.</p>
             <p><sup>18</sup>For the Lord had fast closed up all the wombs of the house of Abimelech, because of Sarah Abraham's wife.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="genesis-read-19.html">&larr; Chapter 19</a>
-<a href="genesis.html">&uarr; Genesis summary</a>
-<a class="btn btn-primary shimmer" href="genesis-read-21.html">Chapter 21 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">A</span>braham traveled from there toward the land of the South, and lived between Kadesh and Shur. He lived as a foreigner in Gerar.</p>
+            <p><sup>2</sup>Abraham said about Sarah his wife, “She is my sister.” Abimelech king of Gerar sent, and took Sarah.</p>
+            <p><sup>3</sup>But God came to Abimelech in a dream of the night, and said to him, “Behold, you are a dead man, because of the woman whom you have taken; for she is a man’s wife.”</p>
+            <p><sup>4</sup>Now Abimelech had not come near her. He said, “Lord, will you kill even a righteous nation?</p>
+            <p><sup>5</sup>Didn’t he tell me, ‘She is my sister’? She, even she herself, said, ‘He is my brother.’ I have done this in the integrity of my heart and the innocence of my hands.”</p>
+            <p><sup>6</sup>God said to him in the dream, “Yes, I know that in the integrity of your heart you have done this, and I also withheld you from sinning against me. Therefore I didn’t allow you to touch her.</p>
+            <p><sup>7</sup>Now therefore, restore the man’s wife. For he is a prophet, and he will pray for you, and you will live. If you don’t restore her, know for sure that you will die, you, and all who are yours.”</p>
+            <p><sup>8</sup>Abimelech rose early in the morning, and called all his servants, and told all these things in their ear. The men were very scared.</p>
+            <p><sup>9</sup>Then Abimelech called Abraham, and said to him, “What have you done to us? How have I sinned against you, that you have brought on me and on my kingdom a great sin? You have done deeds to me that ought not to be done!”</p>
+            <p><sup>10</sup>Abimelech said to Abraham, “What did you see, that you have done this thing?”</p>
+            <p><sup>11</sup>Abraham said, “Because I thought, ‘Surely the fear of God is not in this place. They will kill me for my wife’s sake.’</p>
+            <p><sup>12</sup>Besides, she is indeed my sister, the daughter of my father, but not the daughter of my mother; and she became my wife.</p>
+            <p><sup>13</sup>When God caused me to wander from my father’s house, I said to her, ‘This is your kindness which you shall show to me. Everywhere that we go, say of me, “He is my brother.”’”</p>
+            <p><sup>14</sup>Abimelech took sheep and cattle, male servants and female servants, and gave them to Abraham, and restored Sarah, his wife, to him.</p>
+            <p><sup>15</sup>Abimelech said, “Behold, my land is before you. Dwell where it pleases you.”</p>
+            <p><sup>16</sup>To Sarah he said, “Behold, I have given your brother a thousand pieces of silver. Behold, it is for you a covering of the eyes to all that are with you. In front of all you are vindicated.”</p>
+            <p><sup>17</sup>Abraham prayed to God. So God healed Abimelech, his wife, and his female servants, and they bore children.</p>
+            <p><sup>18</sup>For Yahweh had closed up tight all the wombs of the house of Abimelech, because of Sarah, Abraham’s wife.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-19.html" rel="prev" aria-label="Previous chapter: Genesis 19">&larr; Previous: Chapter 19</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-21.html" rel="next" aria-label="Next chapter: Genesis 21">Next: Chapter 21 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

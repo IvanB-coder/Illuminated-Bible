@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genesis 28 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Genesis chapter 28 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Genesis 28 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Genesis chapter 28 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-genesis">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,22 +20,28 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Genesis <span style="color:var(--burgundy);">&middot; Chapter 28</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 28 of 50</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Genesis <span class="chnum">&middot; Chapter 28</span></h1>
+<p class="chapter-position">Chapter 28 of 50</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="genesis-read-27.html">&larr; Chapter 27</a>
-<span class="chapter-indicator">Chapter 28 of 50</span>
-<a class="btn btn-primary shimmer" href="genesis-read-29.html">Chapter 29 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-27.html" rel="prev" aria-label="Previous chapter: Genesis 27">&larr; Previous: Chapter 27</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-29.html" rel="next" aria-label="Next chapter: Genesis 29">Next: Chapter 29 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd Isaac called Jacob, and blessed him, and charged him, and said unto him, Thou shalt not take a wife of the daughters of Canaan.</p>
-            <p><sup>2</sup>Arise, go to Padanaram, to the house of Bethuel thy mother's father; and take thee a wife from thence of the daughers of Laban thy mother's brother.</p>
+            <p><sup>2</sup>Arise, go to Padanaram, to the house of Bethuel thy mother's father; and take thee a wife from thence of the daughters of Laban thy mother's brother.</p>
             <p><sup>3</sup>And God Almighty bless thee, and make thee fruitful, and multiply thee, that thou mayest be a multitude of people;</p>
             <p><sup>4</sup>And give thee the blessing of Abraham, to thee, and to thy seed with thee; that thou mayest inherit the land wherein thou art a stranger, which God gave unto Abraham.</p>
             <p><sup>5</sup>And Isaac sent away Jacob: and he went to Padanaram unto Laban, son of Bethuel the Syrian, the brother of Rebekah, Jacob's and Esau's mother.</p>
-            <p><sup>6</sup>When Esau saw that Isaac had blessed Jacob, and sent him away to Padanaram, to take him a wife from thence; and that as he blessed him he gave him a charge, saying, Thou shalt not take a wife of the daughers of Canaan;</p>
+            <p><sup>6</sup>When Esau saw that Isaac had blessed Jacob, and sent him away to Padanaram, to take him a wife from thence; and that as he blessed him he gave him a charge, saying, Thou shalt not take a wife of the daughters of Canaan;</p>
             <p><sup>7</sup>And that Jacob obeyed his father and his mother, and was gone to Padanaram;</p>
             <p><sup>8</sup>And Esau seeing that the daughters of Canaan pleased not Isaac his father;</p>
             <p><sup>9</sup>Then went Esau unto Ishmael, and took unto the wives which he had Mahalath the daughter of Ishmael Abraham's son, the sister of Nebajoth, to be his wife.</p>
@@ -52,12 +59,65 @@
             <p><sup>21</sup>So that I come again to my father's house in peace; then shall the Lord be my God:</p>
             <p><sup>22</sup>And this stone, which I have set for a pillar, shall be God's house: and of all that thou shalt give me I will surely give the tenth unto thee.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="genesis-read-27.html">&larr; Chapter 27</a>
-<a href="genesis.html">&uarr; Genesis summary</a>
-<a class="btn btn-primary shimmer" href="genesis-read-29.html">Chapter 29 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">I</span>saac called Jacob, blessed him, and commanded him, “You shall not take a wife of the daughters of Canaan.</p>
+            <p><sup>2</sup>Arise, go to Paddan Aram, to the house of Bethuel your mother’s father. Take a wife from there from the daughters of Laban, your mother’s brother.</p>
+            <p><sup>3</sup>May God Almighty bless you, and make you fruitful, and multiply you, that you may be a company of peoples,</p>
+            <p><sup>4</sup>and give you the blessing of Abraham, to you and to your offspring with you, that you may inherit the land where you travel, which God gave to Abraham.”</p>
+            <p><sup>5</sup>Isaac sent Jacob away. He went to Paddan Aram to Laban, son of Bethuel the Syrian, the brother of Rebekah, Jacob’s and Esau’s mother.</p>
+            <p><sup>6</sup>Now Esau saw that Isaac had blessed Jacob and sent him away to Paddan Aram, to take him a wife from there, and that as he blessed him he gave him a command, saying, “You shall not take a wife of the daughters of Canaan;”</p>
+            <p><sup>7</sup>and that Jacob obeyed his father and his mother, and was gone to Paddan Aram.</p>
+            <p><sup>8</sup>Esau saw that the daughters of Canaan didn’t please Isaac, his father.</p>
+            <p><sup>9</sup>So Esau went to Ishmael, and took, in addition to the wives that he had, Mahalath the daughter of Ishmael, Abraham’s son, the sister of Nebaioth, to be his wife.</p>
+            <p><sup>10</sup>Jacob went out from Beersheba, and went toward Haran.</p>
+            <p><sup>11</sup>He came to a certain place, and stayed there all night, because the sun had set. He took one of the stones of the place, and put it under his head, and lay down in that place to sleep.</p>
+            <p><sup>12</sup>He dreamed and saw a stairway set upon the earth, and its top reached to heaven. Behold, the angels of God were ascending and descending on it.</p>
+            <p><sup>13</sup>Behold, Yahweh stood above it, and said, “I am Yahweh, the God of Abraham your father, and the God of Isaac. I will give the land you lie on to you and to your offspring.</p>
+            <p><sup>14</sup>Your offspring will be as the dust of the earth, and you will spread abroad to the west, and to the east, and to the north, and to the south. In you and in your offspring, all the families of the earth will be blessed.</p>
+            <p><sup>15</sup>Behold, I am with you, and will keep you, wherever you go, and will bring you again into this land. For I will not leave you until I have done that which I have spoken of to you.”</p>
+            <p><sup>16</sup>Jacob awakened out of his sleep, and he said, “Surely Yahweh is in this place, and I didn’t know it.”</p>
+            <p><sup>17</sup>He was afraid, and said, “How awesome this place is! This is none other than God’s house, and this is the gate of heaven.”</p>
+            <p><sup>18</sup>Jacob rose up early in the morning, and took the stone that he had put under his head, and set it up for a pillar, and poured oil on its top.</p>
+            <p><sup>19</sup>He called the name of that place Bethel, but the name of the city was Luz at the first.</p>
+            <p><sup>20</sup>Jacob vowed a vow, saying, “If God will be with me, and will keep me in this way that I go, and will give me bread to eat, and clothing to put on,</p>
+            <p><sup>21</sup>so that I come again to my father’s house in peace, and Yahweh will be my God,</p>
+            <p><sup>22</sup>then this stone, which I have set up for a pillar, will be God’s house. Of all that you will give me I will surely give a tenth to you.”</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-27.html" rel="prev" aria-label="Previous chapter: Genesis 27">&larr; Previous: Chapter 27</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-29.html" rel="next" aria-label="Next chapter: Genesis 29">Next: Chapter 29 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

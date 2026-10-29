@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genesis 42 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Genesis chapter 42 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Genesis 42 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Genesis chapter 42 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-genesis">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Genesis <span style="color:var(--burgundy);">&middot; Chapter 42</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 42 of 50</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Genesis <span class="chnum">&middot; Chapter 42</span></h1>
+<p class="chapter-position">Chapter 42 of 50</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="genesis-read-41.html">&larr; Chapter 41</a>
-<span class="chapter-indicator">Chapter 42 of 50</span>
-<a class="btn btn-primary shimmer" href="genesis-read-43.html">Chapter 43 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-41.html" rel="prev" aria-label="Previous chapter: Genesis 41">&larr; Previous: Chapter 41</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-43.html" rel="next" aria-label="Next chapter: Genesis 43">Next: Chapter 43 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">N</span>ow when Jacob saw that there was corn in Egypt, Jacob said unto his sons, Why do ye look one upon another?</p>
             <p><sup>2</sup>And he said, Behold, I have heard that there is corn in Egypt: get you down thither, and buy for us from thence; that we may live, and not die.</p>
             <p><sup>3</sup>And Joseph's ten brethren went down to buy corn in Egypt.</p>
@@ -68,12 +75,81 @@
             <p><sup>37</sup>And Reuben spake unto his father, saying, Slay my two sons, if I bring him not to thee: deliver him into my hand, and I will bring him to thee again.</p>
             <p><sup>38</sup>And he said, My son shall not go down with you; for his brother is dead, and he is left alone: if mischief befall him by the way in the which ye go, then shall ye bring down my gray hairs with sorrow to the grave.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="genesis-read-41.html">&larr; Chapter 41</a>
-<a href="genesis.html">&uarr; Genesis summary</a>
-<a class="btn btn-primary shimmer" href="genesis-read-43.html">Chapter 43 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">N</span>ow Jacob saw that there was grain in Egypt, and Jacob said to his sons, "Why do you look at one another?"</p>
+            <p><sup>2</sup>He said, "Behold, I have heard that there is grain in Egypt. Go down there, and buy for us from there, so that we may live, and not die."</p>
+            <p><sup>3</sup>Joseph's ten brothers went down to buy grain from Egypt.</p>
+            <p><sup>4</sup>But Jacob didn't send Benjamin, Joseph's brother, with his brothers; for he said, "Lest perhaps harm happen to him."</p>
+            <p><sup>5</sup>The sons of Israel came to buy among those who came, for the famine was in the land of Canaan.</p>
+            <p><sup>6</sup>Joseph was the governor over the land. It was he who sold to all the people of the land. Joseph's brothers came, and bowed themselves down to him with their faces to the earth.</p>
+            <p><sup>7</sup>Joseph saw his brothers, and he recognized them, but acted like a stranger to them, and spoke roughly with them. He said to them, "Where did you come from?" They said, "From the land of Canaan, to buy food."</p>
+            <p><sup>8</sup>Joseph recognized his brothers, but they didn't recognize him.</p>
+            <p><sup>9</sup>Joseph remembered the dreams which he dreamed about them, and said to them, "You are spies! You have come to see the nakedness of the land."</p>
+            <p><sup>10</sup>They said to him, "No, my lord, but your servants have come to buy food.</p>
+            <p><sup>11</sup>We are all one man's sons; we are honest men. Your servants are not spies."</p>
+            <p><sup>12</sup>He said to them, "No, but you have come to see the nakedness of the land!"</p>
+            <p><sup>13</sup>They said, "We, your servants, are twelve brothers, the sons of one man in the land of Canaan; and behold, the youngest is today with our father, and one is no more."</p>
+            <p><sup>14</sup>Joseph said to them, "It is like I told you, saying, 'You are spies!'</p>
+            <p><sup>15</sup>By this you shall be tested. By the life of Pharaoh, you shall not go out from here, unless your youngest brother comes here.</p>
+            <p><sup>16</sup>Send one of you, and let him get your brother, and you shall be bound, that your words may be tested, whether there is truth in you, or else by the life of Pharaoh surely you are spies."</p>
+            <p><sup>17</sup>He put them all together into custody for three days.</p>
+            <p><sup>18</sup>Joseph said to them the third day, "Do this, and live, for I fear God.</p>
+            <p><sup>19</sup>If you are honest men, then let one of your brothers be bound in your prison; but you go, carry grain for the famine of your houses.</p>
+            <p><sup>20</sup>Bring your youngest brother to me; so will your words be verified, and you won't die." They did so.</p>
+            <p><sup>21</sup>They said to one another, "We are certainly guilty concerning our brother, in that we saw the distress of his soul, when he begged us, and we wouldn't listen. Therefore this distress has come upon us."</p>
+            <p><sup>22</sup>Reuben answered them, saying, "Didn't I tell you, saying, 'Don't sin against the child,' and you wouldn't listen? Therefore also, behold, his blood is required."</p>
+            <p><sup>23</sup>They didn't know that Joseph understood them; for there was an interpreter between them.</p>
+            <p><sup>24</sup>He turned himself away from them, and wept. Then he returned to them, and spoke to them, and took Simeon from among them, and bound him before their eyes.</p>
+            <p><sup>25</sup>Then Joseph gave a command to fill their bags with grain, and to restore each man's money into his sack, and to give them food for the way. So it was done to them.</p>
+            <p><sup>26</sup>They loaded their donkeys with their grain, and departed from there.</p>
+            <p><sup>27</sup>As one of them opened his sack to give his donkey food in the lodging place, he saw his money. Behold, it was in the mouth of his sack.</p>
+            <p><sup>28</sup>He said to his brothers, "My money is restored! Behold, it is in my sack!" Their hearts failed them, and they turned trembling to one another, saying, "What is this that God has done to us?"</p>
+            <p><sup>29</sup>They came to Jacob their father, to the land of Canaan, and told him all that had happened to them, saying,</p>
+            <p><sup>30</sup>"The man, the lord of the land, spoke roughly with us, and took us for spies of the country.</p>
+            <p><sup>31</sup>We said to him, 'We are honest men. We are no spies.</p>
+            <p><sup>32</sup>We are twelve brothers, sons of our father; one is no more, and the youngest is today with our father in the land of Canaan.'</p>
+            <p><sup>33</sup>The man, the lord of the land, said to us, 'By this I will know that you are honest men: leave one of your brothers with me, and take grain for the famine of your houses, and go your way.</p>
+            <p><sup>34</sup>Bring your youngest brother to me. Then I will know that you are not spies, but that you are honest men. So I will deliver your brother to you, and you shall trade in the land.'"</p>
+            <p><sup>35</sup>As they emptied their sacks, behold, each man's bundle of money was in his sack. When they and their father saw their bundles of money, they were afraid.</p>
+            <p><sup>36</sup>Jacob, their father, said to them, "You have bereaved me of my children! Joseph is no more, Simeon is no more, and you want to take Benjamin away. All these things are against me."</p>
+            <p><sup>37</sup>Reuben spoke to his father, saying, "Kill my two sons, if I don't bring him to you. Entrust him to my care, and I will bring him to you again."</p>
+            <p><sup>38</sup>He said, "My son shall not go down with you; for his brother is dead, and he only is left. If harm happens to him along the way in which you go, then you will bring down my gray hairs with sorrow to Sheol."</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-41.html" rel="prev" aria-label="Previous chapter: Genesis 41">&larr; Previous: Chapter 41</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-43.html" rel="next" aria-label="Next chapter: Genesis 43">Next: Chapter 43 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

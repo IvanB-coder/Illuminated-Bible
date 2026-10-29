@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genesis 3 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Genesis chapter 3 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Genesis 3 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Genesis chapter 3 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-genesis">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,47 +20,110 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Genesis <span style="color:var(--burgundy);">&middot; Chapter 3</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 3 of 50</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Genesis <span class="chnum">&middot; Chapter 3</span></h1>
+<p class="chapter-position">Chapter 3 of 50</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="genesis-read-2.html">&larr; Chapter 2</a>
-<span class="chapter-indicator">Chapter 3 of 50</span>
-<a class="btn btn-primary shimmer" href="genesis-read-4.html">Chapter 4 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup><span class="dropcap">N</span>ow the serpent was more subtil than any beast of the field which the Lord God had made. And he said unto the woman, Yea, hath God said, Ye shall not eat of every tree of the garden?</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-2.html" rel="prev" aria-label="Previous chapter: Genesis 2">&larr; Previous: Chapter 2</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-4.html" rel="next" aria-label="Next chapter: Genesis 4">Next: Chapter 4 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">N</span>ow the serpent was more subtil than any beast of the field which the LORD God had made. And he said unto the woman, Yea, hath God said, Ye shall not eat of every tree of the garden?</p>
             <p><sup>2</sup>And the woman said unto the serpent, We may eat of the fruit of the trees of the garden:</p>
             <p><sup>3</sup>But of the fruit of the tree which is in the midst of the garden, God hath said, Ye shall not eat of it, neither shall ye touch it, lest ye die.</p>
             <p><sup>4</sup>And the serpent said unto the woman, Ye shall not surely die:</p>
             <p><sup>5</sup>For God doth know that in the day ye eat thereof, then your eyes shall be opened, and ye shall be as gods, knowing good and evil.</p>
             <p><sup>6</sup>And when the woman saw that the tree was good for food, and that it was pleasant to the eyes, and a tree to be desired to make one wise, she took of the fruit thereof, and did eat, and gave also unto her husband with her; and he did eat.</p>
             <p><sup>7</sup>And the eyes of them both were opened, and they knew that they were naked; and they sewed fig leaves together, and made themselves aprons.</p>
-            <p><sup>8</sup>And they heard the voice of the Lord God walking in the garden in the cool of the day: and Adam and his wife hid themselves from the presence of the Lord God amongst the trees of the garden.</p>
-            <p><sup>9</sup>And the Lord God called unto Adam, and said unto him, Where art thou?</p>
+            <p><sup>8</sup>And they heard the voice of the LORD God walking in the garden in the cool of the day: and Adam and his wife hid themselves from the presence of the LORD God amongst the trees of the garden.</p>
+            <p><sup>9</sup>And the LORD God called unto Adam, and said unto him, Where art thou?</p>
             <p><sup>10</sup>And he said, I heard thy voice in the garden, and I was afraid, because I was naked; and I hid myself.</p>
             <p><sup>11</sup>And he said, Who told thee that thou wast naked? Hast thou eaten of the tree, whereof I commanded thee that thou shouldest not eat?</p>
             <p><sup>12</sup>And the man said, The woman whom thou gavest to be with me, she gave me of the tree, and I did eat.</p>
-            <p><sup>13</sup>And the Lord God said unto the woman, What is this that thou hast done? And the woman said, The serpent beguiled me, and I did eat.</p>
-            <p><sup>14</sup>And the Lord God said unto the serpent, Because thou hast done this, thou art cursed above all cattle, and above every beast of the field; upon thy belly shalt thou go, and dust shalt thou eat all the days of thy life:</p>
+            <p><sup>13</sup>And the LORD God said unto the woman, What is this that thou hast done? And the woman said, The serpent beguiled me, and I did eat.</p>
+            <p><sup>14</sup>And the LORD God said unto the serpent, Because thou hast done this, thou art cursed above all cattle, and above every beast of the field; upon thy belly shalt thou go, and dust shalt thou eat all the days of thy life:</p>
             <p><sup>15</sup>And I will put enmity between thee and the woman, and between thy seed and her seed; it shall bruise thy head, and thou shalt bruise his heel.</p>
             <p><sup>16</sup>Unto the woman he said, I will greatly multiply thy sorrow and thy conception; in sorrow thou shalt bring forth children; and thy desire shall be to thy husband, and he shall rule over thee.</p>
             <p><sup>17</sup>And unto Adam he said, Because thou hast hearkened unto the voice of thy wife, and hast eaten of the tree, of which I commanded thee, saying, Thou shalt not eat of it: cursed is the ground for thy sake; in sorrow shalt thou eat of it all the days of thy life;</p>
             <p><sup>18</sup>Thorns also and thistles shall it bring forth to thee; and thou shalt eat the herb of the field;</p>
             <p><sup>19</sup>In the sweat of thy face shalt thou eat bread, till thou return unto the ground; for out of it wast thou taken: for dust thou art, and unto dust shalt thou return.</p>
             <p><sup>20</sup>And Adam called his wife's name Eve; because she was the mother of all living.</p>
-            <p><sup>21</sup>Unto Adam also and to his wife did the Lord God make coats of skins, and clothed them.</p>
-            <p><sup>22</sup>And the Lord God said, Behold, the man is become as one of us, to know good and evil: and now, lest he put forth his hand, and take also of the tree of life, and eat, and live for ever:</p>
-            <p><sup>23</sup>Therefore the Lord God sent him forth from the garden of Eden, to till the ground from whence he was taken.</p>
+            <p><sup>21</sup>Unto Adam also and to his wife did the LORD God make coats of skins, and clothed them.</p>
+            <p><sup>22</sup>And the LORD God said, Behold, the man is become as one of us, to know good and evil: and now, lest he put forth his hand, and take also of the tree of life, and eat, and live for ever:</p>
+            <p><sup>23</sup>Therefore the LORD God sent him forth from the garden of Eden, to till the ground from whence he was taken.</p>
             <p><sup>24</sup>So he drove out the man; and he placed at the east of the garden of Eden Cherubims, and a flaming sword which turned every way, to keep the way of the tree of life.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="genesis-read-2.html">&larr; Chapter 2</a>
-<a href="genesis.html">&uarr; Genesis summary</a>
-<a class="btn btn-primary shimmer" href="genesis-read-4.html">Chapter 4 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">N</span>ow the serpent was more subtle than any animal of the field which Yahweh God had made. He said to the woman, “Has God really said, ‘You shall not eat of any tree of the garden’?”</p>
+            <p><sup>2</sup>The woman said to the serpent, “We may eat fruit from the trees of the garden,</p>
+            <p><sup>3</sup>but not the fruit of the tree which is in the middle of the garden. God has said, ‘You shall not eat of it. You shall not touch it, lest you die.’”</p>
+            <p><sup>4</sup>The serpent said to the woman, “You won't really die,</p>
+            <p><sup>5</sup>for God knows that in the day you eat it, your eyes will be opened, and you will be like God, knowing good and evil.”</p>
+            <p><sup>6</sup>When the woman saw that the tree was good for food, and that it was a delight to the eyes, and that the tree was to be desired to make one wise, she took some of its fruit, and ate. Then she gave some to her husband with her, and he ate it, too.</p>
+            <p><sup>7</sup>Their eyes were opened, and they both knew that they were naked. They sewed fig leaves together, and made coverings for themselves.</p>
+            <p><sup>8</sup>They heard Yahweh God's voice walking in the garden in the cool of the day, and the man and his wife hid themselves from the presence of Yahweh God among the trees of the garden.</p>
+            <p><sup>9</sup>Yahweh God called to the man, and said to him, “Where are you?”</p>
+            <p><sup>10</sup>The man said, “I heard your voice in the garden, and I was afraid, because I was naked; so I hid myself.”</p>
+            <p><sup>11</sup>God said, “Who told you that you were naked? Have you eaten from the tree that I commanded you not to eat from?”</p>
+            <p><sup>12</sup>The man said, “The woman whom you gave to be with me, she gave me fruit from the tree, and I ate it.”</p>
+            <p><sup>13</sup>Yahweh God said to the woman, “What have you done?”
+
+The woman said, “The serpent deceived me, and I ate.”</p>
+            <p><sup>14</sup>Yahweh God said to the serpent, “Because you have done this, you are cursed above all livestock, and above every animal of the field. You shall go on your belly and you shall eat dust all the days of your life.</p>
+            <p><sup>15</sup>I will put hostility between you and the woman, and between your offspring and her offspring. He will bruise your head, and you will bruise his heel.”</p>
+            <p><sup>16</sup>To the woman he said, “I will greatly multiply your pain in childbirth. You will bear children in pain. Your desire will be for your husband, and he will rule over you.”</p>
+            <p><sup>17</sup>To Adam he said, “Because you have listened to your wife's voice, and have eaten from the tree, about which I commanded you, saying, ‘You shall not eat of it,’ the ground is cursed for your sake. You will eat from it with much labor all the days of your life.</p>
+            <p><sup>18</sup>It will yield thorns and thistles to you; and you will eat the herb of the field.</p>
+            <p><sup>19</sup>You will eat bread by the sweat of your face until you return to the ground, for you were taken out of it. For you are dust, and you shall return to dust.”</p>
+            <p><sup>20</sup>The man called his wife Eve because she would be the mother of all the living.</p>
+            <p><sup>21</sup>Yahweh God made garments of animal skins for Adam and for his wife, and clothed them.</p>
+            <p><sup>22</sup>Yahweh God said, “Behold, the man has become like one of us, knowing good and evil. Now, lest he reach out his hand, and also take of the tree of life, and eat, and live forever—”</p>
+            <p><sup>23</sup>Therefore Yahweh God sent him out from the garden of Eden, to till the ground from which he was taken.</p>
+            <p><sup>24</sup>So he drove out the man; and he placed cherubim at the east of the garden of Eden, and a flaming sword which turned every way, to guard the way to the tree of life.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-2.html" rel="prev" aria-label="Previous chapter: Genesis 2">&larr; Previous: Chapter 2</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-4.html" rel="next" aria-label="Next chapter: Genesis 4">Next: Chapter 4 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

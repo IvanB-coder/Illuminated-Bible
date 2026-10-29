@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genesis 15 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Genesis chapter 15 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Genesis 15 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Genesis chapter 15 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-genesis">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Genesis <span style="color:var(--burgundy);">&middot; Chapter 15</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 15 of 50</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Genesis <span class="chnum">&middot; Chapter 15</span></h1>
+<p class="chapter-position">Chapter 15 of 50</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="genesis-read-14.html">&larr; Chapter 14</a>
-<span class="chapter-indicator">Chapter 15 of 50</span>
-<a class="btn btn-primary shimmer" href="genesis-read-16.html">Chapter 16 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-14.html" rel="prev" aria-label="Previous chapter: Genesis 14">&larr; Previous: Chapter 14</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-16.html" rel="next" aria-label="Next chapter: Genesis 16">Next: Chapter 16 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>fter these things the word of the Lord came unto Abram in a vision, saying, Fear not, Abram: I am thy shield, and thy exceeding great reward.</p>
             <p><sup>2</sup>And Abram said, Lord God, what wilt thou give me, seeing I go childless, and the steward of my house is this Eliezer of Damascus?</p>
             <p><sup>3</sup>And Abram said, Behold, to me thou hast given no seed: and, lo, one born in my house is mine heir.</p>
@@ -51,12 +58,64 @@
             <p><sup>20</sup>And the Hittites, and the Perizzites, and the Rephaims,</p>
             <p><sup>21</sup>And the Amorites, and the Canaanites, and the Girgashites, and the Jebusites.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="genesis-read-14.html">&larr; Chapter 14</a>
-<a href="genesis.html">&uarr; Genesis summary</a>
-<a class="btn btn-primary shimmer" href="genesis-read-16.html">Chapter 16 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">A</span>fter these things Yahweh’s word came to Abram in a vision, saying, “Don’t be afraid, Abram. I am your shield, your exceedingly great reward.”</p>
+            <p><sup>2</sup>Abram said, “Lord Yahweh, what will you give me, since I go childless, and he who will inherit my estate is Eliezer of Damascus?”</p>
+            <p><sup>3</sup>Abram said, “Behold, you have given no children to me: and, behold, one born in my house is my heir.”</p>
+            <p><sup>4</sup>Behold, Yahweh’s word came to him, saying, “This man will not be your heir, but he who will come out of your own body will be your heir.”</p>
+            <p><sup>5</sup>Yahweh brought him outside, and said, “Look now toward the sky, and count the stars, if you are able to count them.” He said to Abram, “So your offspring will be.”</p>
+            <p><sup>6</sup>He believed in Yahweh, who credited it to him for righteousness.</p>
+            <p><sup>7</sup>He said to Abram, “I am Yahweh who brought you out of Ur of the Chaldees, to give you this land to inherit it.”</p>
+            <p><sup>8</sup>He said, “Lord Yahweh, how will I know that I will inherit it?”</p>
+            <p><sup>9</sup>He said to him, “Bring me a heifer three years old, a female goat three years old, a ram three years old, a turtledove, and a young pigeon.”</p>
+            <p><sup>10</sup>He brought him all these, and divided them in the middle, and laid each half opposite the other; but he didn’t divide the birds.</p>
+            <p><sup>11</sup>The birds of prey came down on the carcasses, and Abram drove them away.</p>
+            <p><sup>12</sup>When the sun was going down, a deep sleep fell on Abram. Now terror and great darkness fell on him.</p>
+            <p><sup>13</sup>He said to Abram, “Know for sure that your offspring will live as foreigners in a land that is not theirs, and will serve them. They will afflict them four hundred years.</p>
+            <p><sup>14</sup>I will also judge that nation, whom they will serve. Afterward they will come out with great wealth;</p>
+            <p><sup>15</sup>but you will go to your fathers in peace. You will be buried at a good old age.</p>
+            <p><sup>16</sup>In the fourth generation they will come here again, for the iniquity of the Amorite is not yet full.”</p>
+            <p><sup>17</sup>It came to pass that, when the sun went down, and it was dark, behold, a smoking furnace and a flaming torch passed between these pieces.</p>
+            <p><sup>18</sup>In that day Yahweh made a covenant with Abram, saying, “I have given this land to your offspring, from the river of Egypt to the great river, the river Euphrates:</p>
+            <p><sup>19</sup>the land of the Kenites, the Kenizzites, the Kadmonites,</p>
+            <p><sup>20</sup>the Hittites, the Perizzites, the Rephaim,</p>
+            <p><sup>21</sup>the Amorites, the Canaanites, the Girgashites, and the Jebusites.”</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-14.html" rel="prev" aria-label="Previous chapter: Genesis 14">&larr; Previous: Chapter 14</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-16.html" rel="next" aria-label="Next chapter: Genesis 16">Next: Chapter 16 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

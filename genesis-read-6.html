@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genesis 6 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Genesis chapter 6 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Genesis 6 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Genesis chapter 6 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-genesis">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Genesis <span style="color:var(--burgundy);">&middot; Chapter 6</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 6 of 50</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Genesis <span class="chnum">&middot; Chapter 6</span></h1>
+<p class="chapter-position">Chapter 6 of 50</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="genesis-read-5.html">&larr; Chapter 5</a>
-<span class="chapter-indicator">Chapter 6 of 50</span>
-<a class="btn btn-primary shimmer" href="genesis-read-7.html">Chapter 7 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-5.html" rel="prev" aria-label="Previous chapter: Genesis 5">&larr; Previous: Chapter 5</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-7.html" rel="next" aria-label="Next chapter: Genesis 7">Next: Chapter 7 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd it came to pass, when men began to multiply on the face of the earth, and daughters were born unto them,</p>
             <p><sup>2</sup>That the sons of God saw the daughters of men that they were fair; and they took them wives of all which they chose.</p>
             <p><sup>3</sup>And the Lord said, My spirit shall not always strive with man, for that he also is flesh: yet his days shall be an hundred and twenty years.</p>
@@ -52,12 +59,65 @@
             <p><sup>21</sup>And take thou unto thee of all food that is eaten, and thou shalt gather it to thee; and it shall be for food for thee, and for them.</p>
             <p><sup>22</sup>Thus did Noah; according to all that God commanded him, so did he.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="genesis-read-5.html">&larr; Chapter 5</a>
-<a href="genesis.html">&uarr; Genesis summary</a>
-<a class="btn btn-primary shimmer" href="genesis-read-7.html">Chapter 7 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">W</span>hen men began to multiply on the surface of the ground, and daughters were born to them,</p>
+            <p><sup>2</sup>God's sons saw that men's daughters were beautiful, and they took any that they wanted for themselves as wives.</p>
+            <p><sup>3</sup>Yahweh said, “My Spirit will not strive with man forever, because he also is flesh; so his days will be one hundred twenty years.”</p>
+            <p><sup>4</sup>The Nephilim were in the earth in those days, and also after that, when God's sons came in to men's daughters and had children with them. Those were the mighty men who were of old, men of renown.</p>
+            <p><sup>5</sup>Yahweh saw that the wickedness of man was great in the earth, and that every imagination of the thoughts of man's heart was continually only evil.</p>
+            <p><sup>6</sup>Yahweh was sorry that he had made man on the earth, and it grieved him in his heart.</p>
+            <p><sup>7</sup>Yahweh said, “I will destroy man whom I have created from the surface of the ground—man, along with animals, creeping things, and birds of the sky—for I am sorry that I have made them.”</p>
+            <p><sup>8</sup>But Noah found favor in Yahweh's eyes.</p>
+            <p><sup>9</sup>This is the history of the generations of Noah: Noah was a righteous man, blameless among the people of his time. Noah walked with God.</p>
+            <p><sup>10</sup>Noah became the father of three sons: Shem, Ham, and Japheth.</p>
+            <p><sup>11</sup>The earth was corrupt before God, and the earth was filled with violence.</p>
+            <p><sup>12</sup>God saw the earth, and saw that it was corrupt, for all flesh had corrupted their way on the earth.</p>
+            <p><sup>13</sup>God said to Noah, “I will bring an end to all flesh, for the earth is filled with violence through them. Behold, I will destroy them and the earth.</p>
+            <p><sup>14</sup>Make a ship of gopher wood. You shall make rooms in the ship, and shall seal it inside and outside with pitch.</p>
+            <p><sup>15</sup>This is how you shall make it. The length of the ship shall be three hundred cubits, its width fifty cubits, and its height thirty cubits.</p>
+            <p><sup>16</sup>You shall make a roof in the ship, and you shall finish it to a cubit upward. You shall set the door of the ship in its side. You shall make it with lower, second, and third levels.</p>
+            <p><sup>17</sup>I, even I, will bring the flood of waters on this earth, to destroy all flesh having the breath of life from under the sky. Everything that is in the earth will die.</p>
+            <p><sup>18</sup>But I will establish my covenant with you. You shall come into the ship, you, your sons, your wife, and your sons' wives with you.</p>
+            <p><sup>19</sup>Of every living thing of all flesh, you shall bring two of every sort into the ship, to keep them alive with you. They shall be male and female.</p>
+            <p><sup>20</sup>Of the birds after their kind, of the livestock after their kind, of every creeping thing of the ground after its kind, two of every sort will come to you, to keep them alive.</p>
+            <p><sup>21</sup>Take with you some of all food that is eaten, and gather it to yourself; and it will be for food for you, and for them.”</p>
+            <p><sup>22</sup>Thus Noah did. He did all that God commanded him.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-5.html" rel="prev" aria-label="Previous chapter: Genesis 5">&larr; Previous: Chapter 5</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-7.html" rel="next" aria-label="Next chapter: Genesis 7">Next: Chapter 7 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

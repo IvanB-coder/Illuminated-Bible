@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genesis 45 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Genesis chapter 45 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Genesis 45 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Genesis chapter 45 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-genesis">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Genesis <span style="color:var(--burgundy);">&middot; Chapter 45</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 45 of 50</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Genesis <span class="chnum">&middot; Chapter 45</span></h1>
+<p class="chapter-position">Chapter 45 of 50</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="genesis-read-44.html">&larr; Chapter 44</a>
-<span class="chapter-indicator">Chapter 45 of 50</span>
-<a class="btn btn-primary shimmer" href="genesis-read-46.html">Chapter 46 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-44.html" rel="prev" aria-label="Previous chapter: Genesis 44">&larr; Previous: Chapter 44</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-46.html" rel="next" aria-label="Next chapter: Genesis 46">Next: Chapter 46 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">T</span>hen Joseph could not refrain himself before all them that stood by him; and he cried, Cause every man to go out from me. And there stood no man with him, while Joseph made himself known unto his brethren.</p>
             <p><sup>2</sup>And he wept aloud: and the Egyptians and the house of Pharaoh heard.</p>
             <p><sup>3</sup>And Joseph said unto his brethren, I am Joseph; doth my father yet live? And his brethren could not answer him; for they were troubled at his presence.</p>
@@ -58,12 +65,71 @@
             <p><sup>27</sup>And they told him all the words of Joseph, which he had said unto them: and when he saw the wagons which Joseph had sent to carry him, the spirit of Jacob their father revived:</p>
             <p><sup>28</sup>And Israel said, It is enough; Joseph my son is yet alive: I will go and see him before I die.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="genesis-read-44.html">&larr; Chapter 44</a>
-<a href="genesis.html">&uarr; Genesis summary</a>
-<a class="btn btn-primary shimmer" href="genesis-read-46.html">Chapter 46 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">T</span>hen Joseph couldn't control himself before all those who stood before him, and he called out, "Cause everyone to go out from me!" No one else stood with him, while Joseph made himself known to his brothers.</p>
+            <p><sup>2</sup>He wept aloud. The Egyptians heard, and the house of Pharaoh heard.</p>
+            <p><sup>3</sup>Joseph said to his brothers, "I am Joseph! Does my father still live?" His brothers couldn't answer him; for they were terrified at his presence.</p>
+            <p><sup>4</sup>Joseph said to his brothers, "Come near to me, please." They came near. He said, "I am Joseph, your brother, whom you sold into Egypt.</p>
+            <p><sup>5</sup>Now don't be grieved, nor angry with yourselves, that you sold me here, for God sent me before you to preserve life.</p>
+            <p><sup>6</sup>For these two years the famine has been in the land, and there are yet five years, in which there will be no plowing and no harvest.</p>
+            <p><sup>7</sup>God sent me before you to preserve for you a remnant in the earth, and to save you alive by a great deliverance.</p>
+            <p><sup>8</sup>So now it wasn't you who sent me here, but God, and he has made me a father to Pharaoh, lord of all his house, and ruler over all the land of Egypt.</p>
+            <p><sup>9</sup>Hurry, and go up to my father, and tell him, 'This is what your son Joseph says, "God has made me lord of all Egypt. Come down to me. Don't wait.</p>
+            <p><sup>10</sup>You shall dwell in the land of Goshen, and you will be near to me, you, your children, your children's children, your flocks, your herds, and all that you have.</p>
+            <p><sup>11</sup>There I will provide for you; for there are yet five years of famine; lest you come to poverty, you, and your household, and all that you have."'</p>
+            <p><sup>12</sup>Behold, your eyes see, and the eyes of my brother Benjamin, that it is my mouth that speaks to you.</p>
+            <p><sup>13</sup>You shall tell my father of all my glory in Egypt, and of all that you have seen. You shall hurry and bring my father down here."</p>
+            <p><sup>14</sup>He fell on his brother Benjamin's neck and wept, and Benjamin wept on his neck.</p>
+            <p><sup>15</sup>He kissed all his brothers, and wept on them. After that his brothers talked with him.</p>
+            <p><sup>16</sup>The report of it was heard in Pharaoh's house, saying, "Joseph's brothers have come." It pleased Pharaoh well, and his servants.</p>
+            <p><sup>17</sup>Pharaoh said to Joseph, "Tell your brothers, 'Do this: Load your animals, and go, travel to the land of Canaan.</p>
+            <p><sup>18</sup>Take your father and your households, and come to me, and I will give you the good of the land of Egypt, and you will eat the fat of the land.'</p>
+            <p><sup>19</sup>Now you are commanded to do this: Take wagons out of the land of Egypt for your little ones, and for your wives, and bring your father, and come.</p>
+            <p><sup>20</sup>Also, don't concern yourselves about your belongings, for the good of all the land of Egypt is yours."</p>
+            <p><sup>21</sup>The sons of Israel did so. Joseph gave them wagons, according to the commandment of Pharaoh, and gave them provision for the way.</p>
+            <p><sup>22</sup>He gave each one of them changes of clothing, but to Benjamin he gave three hundred pieces of silver and five changes of clothing.</p>
+            <p><sup>23</sup>He sent the following to his father: ten donkeys loaded with the good things of Egypt, and ten female donkeys loaded with grain and bread and provision for his father by the way.</p>
+            <p><sup>24</sup>So he sent his brothers away, and they departed. He said to them, "See that you don't quarrel on the way."</p>
+            <p><sup>25</sup>They went up out of Egypt, and came into the land of Canaan, to Jacob their father.</p>
+            <p><sup>26</sup>They told him, saying, "Joseph is still alive, and he is ruler over all the land of Egypt." His heart fainted, for he didn't believe them.</p>
+            <p><sup>27</sup>They told him all the words of Joseph, which he had said to them. When he saw the wagons which Joseph had sent to carry him, the spirit of Jacob, their father, revived.</p>
+            <p><sup>28</sup>Israel said, "It is enough. Joseph my son is still alive. I will go and see him before I die."</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="genesis-read-44.html" rel="prev" aria-label="Previous chapter: Genesis 44">&larr; Previous: Chapter 44</a>
+<a class="btn btn-ghost" href="genesis.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="genesis-read-46.html" rel="next" aria-label="Next chapter: Genesis 46">Next: Chapter 46 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>
