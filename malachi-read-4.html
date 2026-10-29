@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Malachi 4 (KJV / WEB) | Illuminated Word</title>
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="read-page">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
+<a href="index.html#old-testament">Old Testament</a>
+<a href="index.html#new-testament">New Testament</a>
+<a href="index.html#about">About</a>
+</nav>
+</header>
+<main class="read-main">
+<div class="read-header">
+  <div class="version-pill" id="version-pill">King James Version &middot; Public Domain</div>
+  <h1 class="read-title">Malachi <span class="chnum">&middot; Chapter 4</span></h1>
+<p class="chapter-position">Chapter 4 of 4</p>
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
+</div>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+  
+</div>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="malachi-read-3.html" rel="prev" aria-label="Previous chapter: Malachi 3">&larr; Previous: Chapter 3</a>
+<a class="btn btn-ghost" href="malachi.html#chapters">All Chapters</a>
+<a class="btn btn-ghost" href="malachi.html">Book Summary &rarr;</a>
+</div>
+  <div class="scripture read-container" id="text-kjv">
+  <p><sup>1</sup>For, behold, the day cometh, that shall burn as an oven; and all the proud, yea, and all that do wickedly, shall be stubble: and the day that cometh shall burn them up, saith the LORD of hosts, that it shall leave them neither root nor branch.</p>
+<p><sup>2</sup>But unto you that fear my name shall the Sun of righteousness arise with healing in his wings; and ye shall go forth, and grow up as calves of the stall.</p>
+<p><sup>3</sup>And ye shall tread down the wicked; for they shall be ashes under the soles of your feet in the day that I shall do this, saith the LORD of hosts.</p>
+<p><sup>4</sup>Remember ye the law of Moses my servant, which I commanded unto him in Horeb for all Israel, with the statutes and judgments.</p>
+<p><sup>5</sup>Behold, I will send you Elijah the prophet before the coming of the great and dreadful day of the LORD:</p>
+<p><sup>6</sup>And he shall turn the heart of the fathers to the children, and the heart of the children to their fathers, lest I come and smite the earth with a curse.</p>
+  </div>
+  <div class="scripture read-container is-hidden" id="text-web">
+<p><sup>1</sup>“For behold, the day comes, burning like a furnace, when all the proud and all who work wickedness will be stubble. The day that comes will burn them up,” says Yahweh of Armies, “so that it will leave them neither root nor branch.</p>
+<p><sup>2</sup>But to you who fear my name shall the sun of righteousness arise with healing in its wings. You will go out and leap like calves of the stall.</p>
+<p><sup>3</sup>You shall tread down the wicked; for they will be ashes under the soles of your feet in the day that I make,” says Yahweh of Armies.</p>
+<p><sup>4</sup>“Remember the law of Moses my servant, which I commanded to him in Horeb for all Israel, even statutes and ordinances.</p>
+<p><sup>5</sup>Behold, I will send you Elijah the prophet before the great and terrible day of Yahweh comes.</p>
+<p><sup>6</sup>He will turn the hearts of the fathers to the children and the hearts of the children to their fathers, lest I come and strike the earth with a curse.”</p>
+  </div>
+  <div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="malachi-read-3.html" rel="prev" aria-label="Previous chapter: Malachi 3">&larr; Previous: Chapter 3</a>
+<a class="btn btn-ghost" href="malachi.html#chapters">All Chapters</a>
+<a class="btn btn-ghost" href="malachi.html">Book Summary &rarr;</a>
+</div>
+</main>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
+</body>
+</html>

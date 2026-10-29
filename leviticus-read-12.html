@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Leviticus 12 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Leviticus chapter 12 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Leviticus 12 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Leviticus chapter 12 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-leviticus">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Leviticus <span style="color:var(--burgundy);">&middot; Chapter 12</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 12 of 27</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Leviticus <span class="chnum">&middot; Chapter 12</span></h1>
+<p class="chapter-position">Chapter 12 of 27</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="leviticus-read-11.html">&larr; Chapter 11</a>
-<span class="chapter-indicator">Chapter 12 of 27</span>
-<a class="btn btn-primary shimmer" href="leviticus-read-13.html">Chapter 13 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>And the LORD spake unto Moses, saying,</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="leviticus-read-11.html" rel="prev" aria-label="Previous chapter: Leviticus 11">&larr; Previous: Chapter 11</a>
+<a class="btn btn-ghost" href="leviticus.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="leviticus-read-13.html" rel="next" aria-label="Next chapter: Leviticus 13">Next: Chapter 13 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">A</span>nd the LORD spake unto Moses, saying,</p>
             <p><sup>2</sup>Speak unto the children of Israel, saying, If a woman have conceived seed, and born a man child: then she shall be unclean seven days; according to the days of the separation for her infirmity shall she be unclean.</p>
             <p><sup>3</sup>And in the eighth day the flesh of his foreskin shall be circumcised.</p>
             <p><sup>4</sup>And she shall then continue in the blood of her purifying three and thirty days; she shall touch no hallowed thing, nor come into the sanctuary, until the days of her purifying be fulfilled.</p>
@@ -38,12 +45,51 @@
             <p><sup>7</sup>Who shall offer it before the LORD, and make an atonement for her; and she shall be cleansed from the issue of her blood. This is the law for her that hath born a male or a female.</p>
             <p><sup>8</sup>And if she be not able to bring a lamb, then she shall bring two turtles, or two young pigeons; the one for the burnt offering, and the other for a sin offering: and the priest shall make an atonement for her, and she shall be clean.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="leviticus-read-11.html">&larr; Chapter 11</a>
-<a href="leviticus.html">&uarr; Leviticus summary</a>
-<a class="btn btn-primary shimmer" href="leviticus-read-13.html">Chapter 13 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">Y</span>ahweh spoke to Moses, saying,</p>
+            <p><sup>2</sup>"Speak to the children of Israel, saying, 'If a woman conceives, and bears a male child, then she shall be unclean seven days; as in the days of her monthly period she shall be unclean.</p>
+            <p><sup>3</sup>In the eighth day the flesh of his foreskin shall be circumcised.</p>
+            <p><sup>4</sup>She shall continue in the blood of purification thirty-three days. She shall not touch any holy thing, nor come into the sanctuary, until the days of her purifying are completed.</p>
+            <p><sup>5</sup>But if she bears a female child, then she shall be unclean two weeks, as in her period; and she shall continue in the blood of purification sixty-six days.</p>
+            <p><sup>6</sup>"'When the days of her purification are completed for a son or for a daughter, she shall bring to the priest at the door of the Tent of Meeting, a year old lamb for a burnt offering, and a young pigeon or a turtledove, for a sin offering.</p>
+            <p><sup>7</sup>He shall offer it before Yahweh, and make atonement for her; then she shall be cleansed from the fountain of her blood. "'This is the law for her who bears, whether a male or a female.</p>
+            <p><sup>8</sup>If she cannot afford a lamb, then she shall take two turtledoves or two young pigeons: the one for a burnt offering, and the other for a sin offering. The priest shall make atonement for her, and she shall be clean.'"</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="leviticus-read-11.html" rel="prev" aria-label="Previous chapter: Leviticus 11">&larr; Previous: Chapter 11</a>
+<a class="btn btn-ghost" href="leviticus.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="leviticus-read-13.html" rel="next" aria-label="Next chapter: Leviticus 13">Next: Chapter 13 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>
