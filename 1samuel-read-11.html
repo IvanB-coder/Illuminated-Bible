@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1 Samuel 11 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read 1 Samuel chapter 11 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>1 Samuel 11 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read 1 Samuel chapter 11 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-1samuel">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>1 Samuel <span style="color:var(--burgundy);">&middot; Chapter 11</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 11 of 31</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">1 Samuel <span class="chnum">&middot; Chapter 11</span></h1>
+<p class="chapter-position">Chapter 11 of 31</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="1samuel.html">&larr; Back to 1 Samuel summary</a>
-<span class="chapter-indicator">Chapter 11 of 31</span>
-<a class="btn btn-primary shimmer" href="1samuel-read-12.html">Chapter 12 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="1samuel-read-10.html" rel="prev" aria-label="Previous chapter: 1 Samuel 10">&larr; Previous: Chapter 10</a>
+<a class="btn btn-ghost" href="1samuel.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1samuel-read-12.html" rel="next" aria-label="Next chapter: 1 Samuel 12">Next: Chapter 12 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">T</span>hen Nahash the Ammonite came up, and encamped against Jabeshgilead: and all the men of Jabesh said unto Nahash, Make a covenant with us, and we will serve thee.</p>
             <p><sup>2</sup>And Nahash the Ammonite answered them, On this condition will I make a covenant with you, that I may thrust out all your right eyes, and lay it for a reproach upon all Israel.</p>
             <p><sup>3</sup>And the elders of Jabesh said unto him, Give us seven days' respite, that we may send messengers unto all the coasts of Israel: and then, if there be no man to save us, we will come out to thee.</p>
@@ -45,12 +52,58 @@
             <p><sup>14</sup>Then said Samuel to the people, Come, and let us go to Gilgal, and renew the kingdom there.</p>
             <p><sup>15</sup>And all the people went to Gilgal; and there they made Saul king before the LORD in Gilgal; and there they sacrificed sacrifices of peace offerings before the LORD; and there Saul and all the men of Israel rejoiced greatly.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="1samuel.html">&larr; Back to 1 Samuel summary</a>
-<a href="1samuel.html">&uarr; 1 Samuel summary</a>
-<a class="btn btn-primary shimmer" href="1samuel-read-12.html">Chapter 12 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">T</span>hen Nahash the Ammonite came up and encamped against Jabesh Gilead; and all the men of Jabesh said to Nahash, "Make a covenant with us, and we will serve you."</p>
+            <p><sup>2</sup>Nahash the Ammonite said to them, "On this condition I will make it with you, that all your right eyes be gouged out. I will make this dishonor all Israel."</p>
+            <p><sup>3</sup>The elders of Jabesh said to him, "Give us seven days, that we may send messengers to all the borders of Israel; and then, if there is no one to save us, we will come out to you."</p>
+            <p><sup>4</sup>Then the messengers came to Gibeah of Saul, and spoke these words in the ears of the people, then all the people lifted up their voice and wept.</p>
+            <p><sup>5</sup>Behold, Saul came following the oxen out of the field; and Saul said, "What ails the people that they weep?" They told him the words of the men of Jabesh.</p>
+            <p><sup>6</sup>God's Spirit came mightily on Saul when he heard those words, and his anger burned hot.</p>
+            <p><sup>7</sup>He took a yoke of oxen and cut them in pieces, then sent them throughout all the borders of Israel by the hand of messengers, saying, "Whoever doesn't come out after Saul and after Samuel, so shall it be done to his oxen." The dread of Yahweh fell on the people, and they came out as one man.</p>
+            <p><sup>8</sup>He counted them in Bezek; and the children of Israel were three hundred thousand, and the men of Judah thirty thousand.</p>
+            <p><sup>9</sup>They said to the messengers who came, "Tell the men of Jabesh Gilead, 'Tomorrow, by the time the sun is hot, you will be rescued.'" The messengers came and told the men of Jabesh; and they were glad.</p>
+            <p><sup>10</sup>Therefore the men of Jabesh said, "Tomorrow we will come out to you, and you shall do with us all that seems good to you."</p>
+            <p><sup>11</sup>On the next day, Saul put the people in three companies; and they came into the middle of the camp in the morning watch, and struck the Ammonites until the heat of the day. Those who remained were scattered, so that no two of them were left together.</p>
+            <p><sup>12</sup>The people said to Samuel, "Who is he who said, 'Shall Saul reign over us?' Bring those men, that we may put them to death!"</p>
+            <p><sup>13</sup>Saul said, "No man shall be put to death today; for today Yahweh has rescued Israel."</p>
+            <p><sup>14</sup>Then Samuel said to the people, "Come! Let's go to Gilgal, and renew the kingdom there."</p>
+            <p><sup>15</sup>All the people went to Gilgal; and there they made Saul king before Yahweh in Gilgal. There they offered sacrifices of peace offerings before Yahweh; and there Saul and all the men of Israel rejoiced greatly.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="1samuel-read-10.html" rel="prev" aria-label="Previous chapter: 1 Samuel 10">&larr; Previous: Chapter 10</a>
+<a class="btn btn-ghost" href="1samuel.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1samuel-read-12.html" rel="next" aria-label="Next chapter: 1 Samuel 12">Next: Chapter 12 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

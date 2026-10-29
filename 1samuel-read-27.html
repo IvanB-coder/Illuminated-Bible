@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1 Samuel 27 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read 1 Samuel chapter 27 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>1 Samuel 27 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read 1 Samuel chapter 27 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-1samuel">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>1 Samuel <span style="color:var(--burgundy);">&middot; Chapter 27</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 27 of 31</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">1 Samuel <span class="chnum">&middot; Chapter 27</span></h1>
+<p class="chapter-position">Chapter 27 of 31</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="1samuel.html">&larr; Back to 1 Samuel summary</a>
-<span class="chapter-indicator">Chapter 27 of 31</span>
-<a class="btn btn-primary shimmer" href="1samuel-read-28.html">Chapter 28 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="1samuel-read-26.html" rel="prev" aria-label="Previous chapter: 1 Samuel 26">&larr; Previous: Chapter 26</a>
+<a class="btn btn-ghost" href="1samuel.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1samuel-read-28.html" rel="next" aria-label="Next chapter: 1 Samuel 28">Next: Chapter 28 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd David said in his heart, I shall now perish one day by the hand of Saul: there is nothing better for me than that I should speedily escape into the land of the Philistines; and Saul shall despair of me, to seek me any more in any coast of Israel: so shall I escape out of his hand.</p>
             <p><sup>2</sup>And David arose, and he passed over with the six hundred men that were with him unto Achish, the son of Maoch, king of Gath.</p>
             <p><sup>3</sup>And David dwelt with Achish at Gath, he and his men, every man with his household, even David with his two wives, Ahinoam the Jezreelitess, and Abigail the Carmelitess, Nabal's wife.</p>
@@ -42,12 +49,55 @@
             <p><sup>11</sup>And David saved neither man nor woman alive, to bring tidings to Gath, saying, Lest they should tell on us, saying, So did David, and so will be his manner all the while he dwelleth in the country of the Philistines.</p>
             <p><sup>12</sup>And Achish believed David, saying, He hath made his people Israel utterly to abhor him; therefore he shall be my servant for ever.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="1samuel.html">&larr; Back to 1 Samuel summary</a>
-<a href="1samuel.html">&uarr; 1 Samuel summary</a>
-<a class="btn btn-primary shimmer" href="1samuel-read-28.html">Chapter 28 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">D</span>avid said in his heart, "I will now perish one day by the hand of Saul. There is nothing better for me than that I should escape into the land of the Philistines; and Saul will despair of me, to seek me any more in all the borders of Israel. So I will escape out of his hand."</p>
+            <p><sup>2</sup>David arose and passed over, he and the six hundred men who were with him, to Achish the son of Maoch, king of Gath.</p>
+            <p><sup>3</sup>David lived with Achish at Gath, he and his men, every man with his household, even David with his two wives, Ahinoam the Jezreelitess and Abigail the Carmelitess, Nabal's wife.</p>
+            <p><sup>4</sup>Saul was told that David had fled to Gath, so he stopped looking for him.</p>
+            <p><sup>5</sup>David said to Achish, "If now I have found favor in your eyes, let them give me a place in one of the cities in the country, that I may dwell there. For why should your servant dwell in the royal city with you?"</p>
+            <p><sup>6</sup>Then Achish gave him Ziklag that day: therefore Ziklag belongs to the kings of Judah to this day.</p>
+            <p><sup>7</sup>The number of the days that David lived in the country of the Philistines was a full year and four months.</p>
+            <p><sup>8</sup>David and his men went up and raided the Geshurites, the Girzites, and the Amalekites; for those were the inhabitants of the land who were of old, on the way to Shur, even to the land of Egypt.</p>
+            <p><sup>9</sup>David struck the land, and saved no man or woman alive, and took away the sheep, the cattle, the donkeys, the camels, and the clothing. Then he returned, and came to Achish.</p>
+            <p><sup>10</sup>Achish said, "Against whom have you made a raid today?" David said, "Against the South of Judah, against the South of the Jerahmeelites, and against the South of the Kenites."</p>
+            <p><sup>11</sup>David saved neither man nor woman alive to bring them to Gath, saying, "Lest they should tell about us, saying, 'David did this, and this has been his way all the time he has lived in the country of the Philistines.'"</p>
+            <p><sup>12</sup>Achish believed David, saying, "He has made his people Israel utterly to abhor him. Therefore he will be my servant forever."</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="1samuel-read-26.html" rel="prev" aria-label="Previous chapter: 1 Samuel 26">&larr; Previous: Chapter 26</a>
+<a class="btn btn-ghost" href="1samuel.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1samuel-read-28.html" rel="next" aria-label="Next chapter: 1 Samuel 28">Next: Chapter 28 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1 Samuel 19 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read 1 Samuel chapter 19 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>1 Samuel 19 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read 1 Samuel chapter 19 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-1samuel">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>1 Samuel <span style="color:var(--burgundy);">&middot; Chapter 19</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 19 of 31</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">1 Samuel <span class="chnum">&middot; Chapter 19</span></h1>
+<p class="chapter-position">Chapter 19 of 31</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="1samuel.html">&larr; Back to 1 Samuel summary</a>
-<span class="chapter-indicator">Chapter 19 of 31</span>
-<a class="btn btn-primary shimmer" href="1samuel-read-20.html">Chapter 20 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="1samuel-read-18.html" rel="prev" aria-label="Previous chapter: 1 Samuel 18">&larr; Previous: Chapter 18</a>
+<a class="btn btn-ghost" href="1samuel.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1samuel-read-20.html" rel="next" aria-label="Next chapter: 1 Samuel 20">Next: Chapter 20 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd Saul spake to Jonathan his son, and to all his servants, that they should kill David.</p>
             <p><sup>2</sup>But Jonathan Saul's son delighted much in David: and Jonathan told David, saying, Saul my father seeketh to kill thee: now therefore, I pray thee, take heed to thyself until the morning, and abide in a secret place, and hide thyself:</p>
             <p><sup>3</sup>And I will go out and stand beside my father in the field where thou art, and I will commune with my father of thee; and what I see, that I will tell thee.</p>
@@ -54,12 +61,67 @@
             <p><sup>23</sup>And he went thither to Naioth in Ramah: and the Spirit of God was upon him also, and he went on, and prophesied, until he came to Naioth in Ramah.</p>
             <p><sup>24</sup>And he stripped off his clothes also, and prophesied before Samuel in like manner, and lay down naked all that day and all that night. Wherefore they say, Is Saul also among the prophets?</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="1samuel.html">&larr; Back to 1 Samuel summary</a>
-<a href="1samuel.html">&uarr; 1 Samuel summary</a>
-<a class="btn btn-primary shimmer" href="1samuel-read-20.html">Chapter 20 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">S</span>aul spoke to Jonathan his son and to all his servants, that they should kill David. But Jonathan, Saul's son, greatly delighted in David.</p>
+            <p><sup>2</sup>Jonathan told David, saying, "Saul my father seeks to kill you. Now therefore, please take care of yourself in the morning, live in a secret place, and hide yourself.</p>
+            <p><sup>3</sup>I will go out and stand beside my father in the field where you are, and I will talk with my father about you; and if I see anything, I will tell you."</p>
+            <p><sup>4</sup>Jonathan spoke good of David to Saul his father, and said to him, "Don't let the king sin against his servant, against David; because he has not sinned against you, and because his works have been very good toward you;</p>
+            <p><sup>5</sup>for he put his life in his hand and struck the Philistine, and Yahweh worked a great victory for all Israel. You saw it and rejoiced. Why then will you sin against innocent blood, to kill David without a cause?"</p>
+            <p><sup>6</sup>Saul listened to the voice of Jonathan; and Saul swore, "As Yahweh lives, he shall not be put to death."</p>
+            <p><sup>7</sup>Jonathan called David, and Jonathan showed him all those things. Then Jonathan brought David to Saul, and he was in his presence as before.</p>
+            <p><sup>8</sup>There was war again. David went out and fought with the Philistines, and killed them with a great slaughter; and they fled before him.</p>
+            <p><sup>9</sup>An evil spirit from Yahweh was on Saul as he sat in his house with his spear in his hand; and David was playing music with his hand.</p>
+            <p><sup>10</sup>Saul sought to pin David to the wall with the spear, but he slipped away out of Saul's presence; and he stuck the spear into the wall. David fled and escaped that night.</p>
+            <p><sup>11</sup>Saul sent messengers to David's house to watch him and to kill him in the morning. Michal, David's wife, told him, saying, "If you don't save your life tonight, tomorrow you will be killed."</p>
+            <p><sup>12</sup>So Michal let David down through the window. He went away, fled, and escaped.</p>
+            <p><sup>13</sup>Michal took the teraphim and laid it in the bed, and put a pillow of goats' hair at its head and covered it with clothes.</p>
+            <p><sup>14</sup>When Saul sent messengers to take David, she said, "He is sick."</p>
+            <p><sup>15</sup>Saul sent the messengers to see David, saying, "Bring him up to me in the bed, that I may kill him."</p>
+            <p><sup>16</sup>When the messengers came in, behold, the teraphim was in the bed, with the pillow of goats' hair at its head.</p>
+            <p><sup>17</sup>Saul said to Michal, "Why have you deceived me like this and let my enemy go, so that he has escaped?" Michal answered Saul, "He said to me, 'Let me go! Why should I kill you?'"</p>
+            <p><sup>18</sup>Now David fled and escaped, and came to Samuel at Ramah, and told him all that Saul had done to him. He and Samuel went and lived in Naioth.</p>
+            <p><sup>19</sup>Saul was told, saying, "Behold, David is at Naioth in Ramah."</p>
+            <p><sup>20</sup>Saul sent messengers to seize David; and when they saw the company of the prophets prophesying, and Samuel standing as head over them, God's Spirit came on Saul's messengers, and they also prophesied.</p>
+            <p><sup>21</sup>When Saul was told, he sent other messengers, and they also prophesied. Saul sent messengers again the third time, and they also prophesied.</p>
+            <p><sup>22</sup>Then he also went to Ramah, and came to the great well that is in Secu: and he asked, "Where are Samuel and David?" One said, "Behold, they are at Naioth in Ramah."</p>
+            <p><sup>23</sup>He went there to Naioth in Ramah. Then God's Spirit came on him also, and he went on, and prophesied, until he came to Naioth in Ramah.</p>
+            <p><sup>24</sup>He also stripped off his clothes. He also prophesied before Samuel and lay down naked all that day and all that night. Therefore they say, "Is Saul also among the prophets?"</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="1samuel-read-18.html" rel="prev" aria-label="Previous chapter: 1 Samuel 18">&larr; Previous: Chapter 18</a>
+<a class="btn btn-ghost" href="1samuel.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1samuel-read-20.html" rel="next" aria-label="Next chapter: 1 Samuel 20">Next: Chapter 20 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

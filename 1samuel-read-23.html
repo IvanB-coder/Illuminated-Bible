@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1 Samuel 23 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read 1 Samuel chapter 23 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>1 Samuel 23 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read 1 Samuel chapter 23 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-1samuel">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>1 Samuel <span style="color:var(--burgundy);">&middot; Chapter 23</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 23 of 31</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">1 Samuel <span class="chnum">&middot; Chapter 23</span></h1>
+<p class="chapter-position">Chapter 23 of 31</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="1samuel.html">&larr; Back to 1 Samuel summary</a>
-<span class="chapter-indicator">Chapter 23 of 31</span>
-<a class="btn btn-primary shimmer" href="1samuel-read-24.html">Chapter 24 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="1samuel-read-22.html" rel="prev" aria-label="Previous chapter: 1 Samuel 22">&larr; Previous: Chapter 22</a>
+<a class="btn btn-ghost" href="1samuel.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1samuel-read-24.html" rel="next" aria-label="Next chapter: 1 Samuel 24">Next: Chapter 24 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">T</span>hen they told David, saying, Behold, the Philistines fight against Keilah, and they rob the threshingfloors.</p>
             <p><sup>2</sup>Therefore David enquired of the LORD, saying, Shall I go and smite these Philistines? And the LORD said unto David, Go, and smite the Philistines, and save Keilah.</p>
             <p><sup>3</sup>And David's men said unto him, Behold, we be afraid here in Judah: how much more then if we come to Keilah against the armies of the Philistines?</p>
@@ -59,12 +66,72 @@
             <p><sup>28</sup>Wherefore Saul returned from pursuing after David, and went against the Philistines: therefore they called that place Selahammahlekoth.</p>
             <p><sup>29</sup>And David went up from thence, and dwelt in strong holds at Engedi.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="1samuel.html">&larr; Back to 1 Samuel summary</a>
-<a href="1samuel.html">&uarr; 1 Samuel summary</a>
-<a class="btn btn-primary shimmer" href="1samuel-read-24.html">Chapter 24 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">D</span>avid was told, "Behold, the Philistines are fighting against Keilah, and are robbing the threshing floors."</p>
+            <p><sup>2</sup>Therefore David inquired of Yahweh, saying, "Shall I go and strike these Philistines?" Yahweh said to David, "Go strike the Philistines, and save Keilah."</p>
+            <p><sup>3</sup>David's men said to him, "Behold, we are afraid here in Judah. How much more then if we go to Keilah against the armies of the Philistines?"</p>
+            <p><sup>4</sup>Then David inquired of Yahweh yet again. Yahweh answered him, and said, "Arise, go down to Keilah; for I will deliver the Philistines into your hand."</p>
+            <p><sup>5</sup>David and his men went to Keilah and fought with the Philistines, and brought away their livestock, and killed them with a great slaughter. So David saved the inhabitants of Keilah.</p>
+            <p><sup>6</sup>When Abiathar the son of Ahimelech fled to David to Keilah, he came down with an ephod in his hand.</p>
+            <p><sup>7</sup>Saul was told that David had come to Keilah. Saul said, "God has delivered him into my hand, for he is shut in by entering into a town that has gates and bars."</p>
+            <p><sup>8</sup>Saul summoned all the people to war, to go down to Keilah to besiege David and his men.</p>
+            <p><sup>9</sup>David knew that Saul was devising mischief against him. He said to Abiathar the priest, "Bring the ephod here."</p>
+            <p><sup>10</sup>Then David said, "O Yahweh, the God of Israel, your servant has surely heard that Saul seeks to come to Keilah to destroy the city for my sake.</p>
+            <p><sup>11</sup>Will the men of Keilah deliver me up into his hand? Will Saul come down, as your servant has heard? Yahweh, the God of Israel, I beg you, tell your servant." Yahweh said, "He will come down."</p>
+            <p><sup>12</sup>Then David said, "Will the men of Keilah deliver me and my men into the hand of Saul?" Yahweh said, "They will deliver you up."</p>
+            <p><sup>13</sup>Then David and his men, who were about six hundred, arose and departed out of Keilah and went wherever they could go. Saul was told that David had escaped from Keilah; and he gave up going there.</p>
+            <p><sup>14</sup>David stayed in the wilderness in the strongholds, and remained in the hill country in the wilderness of Ziph. Saul sought him every day, but God didn't deliver him into his hand.</p>
+            <p><sup>15</sup>David saw that Saul had come out to seek his life. David was in the wilderness of Ziph in the woods.</p>
+            <p><sup>16</sup>Jonathan, Saul's son, arose and went to David into the woods, and strengthened his hand in God.</p>
+            <p><sup>17</sup>He said to him, "Don't be afraid, for the hand of Saul my father won't find you; and you will be king over Israel, and I will be next to you; and Saul my father knows that also."</p>
+            <p><sup>18</sup>They both made a covenant before Yahweh. Then David stayed in the woods and Jonathan went to his house.</p>
+            <p><sup>19</sup>Then the Ziphites came up to Saul to Gibeah, saying, "Doesn't David hide himself with us in the strongholds in the woods, in the hill of Hachilah, which is on the south of the desert?</p>
+            <p><sup>20</sup>Now therefore, O king, come down. According to all the desire of your soul to come down; and our part will be to deliver him up into the king's hand."</p>
+            <p><sup>21</sup>Saul said, "You are blessed by Yahweh, for you have had compassion on me.</p>
+            <p><sup>22</sup>Please go make yet more sure, and know and see his place where his haunt is, and who has seen him there; for I have been told that he is very cunning.</p>
+            <p><sup>23</sup>See therefore, and take knowledge of all the lurking places where he hides himself; and come again to me with certainty, and I will go with you. It shall happen, if he is in the land, that I will search him out among all the thousands of Judah."</p>
+            <p><sup>24</sup>They arose, and went to Ziph before Saul; but David and his men were in the wilderness of Maon, in the Arabah on the south of the desert.</p>
+            <p><sup>25</sup>Saul and his men went to seek him. When David was told, he went down to the rock, and stayed in the wilderness of Maon. When Saul heard that, he pursued David in the wilderness of Maon.</p>
+            <p><sup>26</sup>Saul went on this side of the mountain, and David and his men on that side of the mountain; and David hurried to get away for fear of Saul, for Saul and his men surrounded David and his men to take them.</p>
+            <p><sup>27</sup>But a messenger came to Saul, saying, "Hurry and come, for the Philistines have made a raid on the land!"</p>
+            <p><sup>28</sup>So Saul returned from pursuing David, and went against the Philistines. Therefore they called that place Sela Hammahlekoth.</p>
+            <p><sup>29</sup>David went up from there and lived in the strongholds of En Gedi.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="1samuel-read-22.html" rel="prev" aria-label="Previous chapter: 1 Samuel 22">&larr; Previous: Chapter 22</a>
+<a class="btn btn-ghost" href="1samuel.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1samuel-read-24.html" rel="next" aria-label="Next chapter: 1 Samuel 24">Next: Chapter 24 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1 Samuel 9 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read 1 Samuel chapter 9 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>1 Samuel 9 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read 1 Samuel chapter 9 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-1samuel">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>1 Samuel <span style="color:var(--burgundy);">&middot; Chapter 9</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 9 of 31</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">1 Samuel <span class="chnum">&middot; Chapter 9</span></h1>
+<p class="chapter-position">Chapter 9 of 31</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="1samuel.html">&larr; Back to 1 Samuel summary</a>
-<span class="chapter-indicator">Chapter 9 of 31</span>
-<a class="btn btn-primary shimmer" href="1samuel-read-10.html">Chapter 10 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="1samuel-read-8.html" rel="prev" aria-label="Previous chapter: 1 Samuel 8">&larr; Previous: Chapter 8</a>
+<a class="btn btn-ghost" href="1samuel.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1samuel-read-10.html" rel="next" aria-label="Next chapter: 1 Samuel 10">Next: Chapter 10 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">N</span>ow there was a man of Benjamin, whose name was Kish, the son of Abiel, the son of Zeror, the son of Bechorath, the son of Aphiah, a Benjamite, a mighty man of power.</p>
             <p><sup>2</sup>And he had a son, whose name was Saul, a choice young man, and a goodly: and there was not among the children of Israel a goodlier person than he: from his shoulders and upward he was higher than any of the people.</p>
             <p><sup>3</sup>And the asses of Kish Saul's father were lost. And Kish said to Saul his son, Take now one of the servants with thee, and arise, go seek the asses.</p>
@@ -57,12 +64,70 @@
             <p><sup>26</sup>And they arose early: and it came to pass about the spring of the day, that Samuel called Saul to the top of the house, saying, Up, that I may send thee away. And Saul arose, and they went out both of them, he and Samuel, abroad.</p>
             <p><sup>27</sup>And as they were going down to the end of the city, Samuel said to Saul, Bid the servant pass on before us, (and he passed on,) but stand thou still a while, that I may shew thee the word of God. ?</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="1samuel.html">&larr; Back to 1 Samuel summary</a>
-<a href="1samuel.html">&uarr; 1 Samuel summary</a>
-<a class="btn btn-primary shimmer" href="1samuel-read-10.html">Chapter 10 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">N</span>ow there was a man of Benjamin, whose name was Kish the son of Abiel, the son of Zeror, the son of Becorath, the son of Aphiah, the son of a Benjamite, a mighty man of valor.</p>
+            <p><sup>2</sup>He had a son whose name was Saul, an impressive young man; and there was not among the children of Israel a more handsome person than he. From his shoulders and upward he was taller than any of the people.</p>
+            <p><sup>3</sup>The donkeys of Kish, Saul's father, were lost. Kish said to Saul his son, "Now take one of the servants with you, and arise, go look for the donkeys."</p>
+            <p><sup>4</sup>He passed through the hill country of Ephraim, and passed through the land of Shalishah, but they didn't find them. Then they passed through the land of Shaalim, and they weren't there. Then he passed through the land of the Benjamites, but they didn't find them.</p>
+            <p><sup>5</sup>When they had come to the land of Zuph, Saul said to his servant who was with him, "Come! Let's return, lest my father stop caring about the donkeys and be anxious for us."</p>
+            <p><sup>6</sup>The servant said to him, "Behold now, there is a man of God in this city, and he is a man who is held in honor. All that he says surely happens. Now let's go there. Perhaps he can tell us which way to go."</p>
+            <p><sup>7</sup>Then Saul said to his servant, "But behold, if we go, what should we bring the man? For the bread is spent in our sacks, and there is not a present to bring to the man of God. What do we have?"</p>
+            <p><sup>8</sup>The servant answered Saul again and said, "Behold, I have in my hand the fourth part of a shekel of silver. I will give that to the man of God, to tell us our way."</p>
+            <p><sup>9</sup>(In earlier times in Israel, when a man went to inquire of God, he said, "Come! Let's go to the seer;" for he who is now called a prophet was before called a seer.)</p>
+            <p><sup>10</sup>Then Saul said to his servant, "Well said. Come! Let's go." So they went to the city where the man of God was.</p>
+            <p><sup>11</sup>As they went up the ascent to the city, they found young maidens going out to draw water, and said to them, "Is the seer here?"</p>
+            <p><sup>12</sup>They answered them and said, "He is. Behold, he is before you. Hurry now, for he has come today into the city; for the people have a sacrifice today in the high place.</p>
+            <p><sup>13</sup>As soon as you have come into the city, you will immediately find him before he goes up to the high place to eat; for the people will not eat until he comes, because he blesses the sacrifice. Afterwards those who are invited eat. Now therefore go up; for at this time you will find him."</p>
+            <p><sup>14</sup>They went up to the city. As they came within the city, behold, Samuel came out toward them to go up to the high place.</p>
+            <p><sup>15</sup>Now Yahweh had revealed to Samuel a day before Saul came, saying,</p>
+            <p><sup>16</sup>"Tomorrow about this time I will send you a man out of the land of Benjamin, and you shall anoint him to be prince over my people Israel. He will save my people out of the hand of the Philistines; for I have looked upon my people, because their cry has come to me."</p>
+            <p><sup>17</sup>When Samuel saw Saul, Yahweh said to him, "Behold, the man of whom I spoke to you! He will have authority over my people."</p>
+            <p><sup>18</sup>Then Saul approached Samuel in the gateway, and said, "Please tell me where the seer's house is."</p>
+            <p><sup>19</sup>Samuel answered Saul and said, "I am the seer. Go up before me to the high place, for you are to eat with me today. In the morning I will let you go and will tell you all that is in your heart.</p>
+            <p><sup>20</sup>As for your donkeys who were lost three days ago, don't set your mind on them, for they have been found. For whom does all Israel desire? Is it not you and all your father's house?"</p>
+            <p><sup>21</sup>Saul answered, "Am I not a Benjamite, of the smallest of the tribes of Israel? And my family the least of all the families of the tribe of Benjamin? Why then do you speak to me like this?"</p>
+            <p><sup>22</sup>Samuel took Saul and his servant and brought them into the guest room, and made them sit in the best place among those who were invited, who were about thirty persons.</p>
+            <p><sup>23</sup>Samuel said to the cook, "Bring the portion which I gave you, of which I said to you, 'Set it aside.'"</p>
+            <p><sup>24</sup>The cook took up the thigh, and that which was on it, and set it before Saul. Samuel said, "Behold, that which has been reserved! Set it before yourself and eat; because it has been kept for you for the appointed time, for I said, 'I have invited the people.'" So Saul ate with Samuel that day.</p>
+            <p><sup>25</sup>When they had come down from the high place into the city, he talked with Saul on the housetop.</p>
+            <p><sup>26</sup>They arose early; and about daybreak, Samuel called to Saul on the housetop, saying, "Get up, that I may send you away." Saul arose, and they both went outside, he and Samuel, together.</p>
+            <p><sup>27</sup>As they were going down at the end of the city, Samuel said to Saul, "Tell the servant to go on ahead of us." He went ahead, then Samuel said, "But stand still first, that I may cause you to hear God's message."</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="1samuel-read-8.html" rel="prev" aria-label="Previous chapter: 1 Samuel 8">&larr; Previous: Chapter 8</a>
+<a class="btn btn-ghost" href="1samuel.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1samuel-read-10.html" rel="next" aria-label="Next chapter: 1 Samuel 10">Next: Chapter 10 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>
