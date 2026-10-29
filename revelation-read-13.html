@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Revelation 13 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Revelation chapter 13 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Revelation 13 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Revelation chapter 13 in the King James Version or World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-revelation">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Revelation <span style="color:var(--burgundy);">&middot; Chapter 13</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">New Testament &middot; Chapter 13 of 22</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Revelation <span class="chnum">&middot; Chapter 13</span></h1>
+<p class="chapter-position">Chapter 13 of 22</p>
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="revelation-read-12.html">&larr; Chapter 12</a>
-<span class="chapter-indicator">Chapter 13 of 22</span>
-<a class="btn btn-primary shimmer" href="revelation-read-14.html">Chapter 14 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="revelation-read-12.html" rel="prev" aria-label="Previous chapter: Revelation 12">&larr; Previous: Chapter 12</a>
+<a class="btn btn-ghost" href="revelation.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="revelation-read-14.html" rel="next" aria-label="Next chapter: Revelation 14">Next: Chapter 14 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd I stood upon the sand of the sea, and saw a beast rise up out of the sea, having seven heads and ten horns, and upon his horns ten crowns, and upon his heads the name of blasphemy.</p>
             <p><sup>2</sup>And the beast which I saw was like unto a leopard, and his feet were as the feet of a bear, and his mouth as the mouth of a lion: and the dragon gave him his power, and his seat, and great authority.</p>
             <p><sup>3</sup>And I saw one of his heads as it were wounded to death; and his deadly wound was healed: and all the world wondered after the beast.</p>
@@ -48,12 +55,61 @@
             <p><sup>17</sup>And that no man might buy or sell, save he that had the mark, or the name of the beast, or the number of his name.</p>
             <p><sup>18</sup>Here is wisdom. Let him that hath understanding count the number of the beast: for it is the number of a man; and his number is Six hundred threescore and six.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="revelation-read-12.html">&larr; Chapter 12</a>
-<a href="revelation.html">&uarr; Revelation summary</a>
-<a class="btn btn-primary shimmer" href="revelation-read-14.html">Chapter 14 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+<p><sup>1</sup>Then I stood on the sand of the sea. I saw a beast coming up out of the sea, having ten horns and seven heads. On his horns were ten crowns, and on his heads, blasphemous names.</p>
+<p><sup>2</sup>The beast which I saw was like a leopard, and his feet were like those of a bear, and his mouth like the mouth of a lion. The dragon gave him his power, his throne, and great authority.</p>
+<p><sup>3</sup>One of his heads looked like it had been wounded fatally. His fatal wound was healed, and the whole earth marveled at the beast.</p>
+<p><sup>4</sup>They worshiped the dragon because he gave his authority to the beast; and they worshiped the beast, saying, "Who is like the beast? Who is able to make war with him?"</p>
+<p><sup>5</sup>A mouth speaking great things and blasphemy was given to him. Authority to make war for forty-two months was given to him.</p>
+<p><sup>6</sup>He opened his mouth for blasphemy against God, to blaspheme his name, his dwelling, and those who dwell in heaven.</p>
+<p><sup>7</sup>It was given to him to make war with the saints and to overcome them. Authority over every tribe, people, language, and nation was given to him.</p>
+<p><sup>8</sup>All who dwell on the earth will worship him, everyone whose name has not been written from the foundation of the world in the book of life of the Lamb who has been killed.</p>
+<p><sup>9</sup>If anyone has an ear, let him hear.</p>
+<p><sup>10</sup>If anyone is to go into captivity, he will go into captivity. If anyone is to be killed with the sword, he must be killed. Here is the endurance and the faith of the saints.</p>
+<p><sup>11</sup>I saw another beast coming up out of the earth. He had two horns like a lamb and it spoke like a dragon.</p>
+<p><sup>12</sup>He exercises all the authority of the first beast in his presence. He makes the earth and those who dwell in it to worship the first beast, whose fatal wound was healed.</p>
+<p><sup>13</sup>He performs great signs, even making fire come down out of the sky to the earth in the sight of people.</p>
+<p><sup>14</sup>He deceives my own people who dwell on the earth because of the signs he was granted to do in front of the beast, saying to those who dwell on the earth that they should make an image to the beast who had the sword wound and lived.</p>
+<p><sup>15</sup>It was given to him to give breath to the image of the beast, that the image of the beast should both speak, and cause as many as wouldn't worship the image of the beast to be killed.</p>
+<p><sup>16</sup>He causes all, the small and the great, the rich and the poor, and the free and the slave, to be given marks on their right hands or on their foreheads;</p>
+<p><sup>17</sup>and that no one would be able to buy or to sell unless he has that mark, which is the name of the beast or the number of his name.</p>
+<p><sup>18</sup>Here is wisdom. He who has understanding, let him calculate the number of the beast, for it is the number of a man. His number is six hundred sixty-six.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="revelation-read-12.html" rel="prev" aria-label="Previous chapter: Revelation 12">&larr; Previous: Chapter 12</a>
+<a class="btn btn-ghost" href="revelation.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="revelation-read-14.html" rel="next" aria-label="Next chapter: Revelation 14">Next: Chapter 14 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

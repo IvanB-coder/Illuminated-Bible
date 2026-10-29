@@ -42,7 +42,6 @@ header.site-header{
   position:sticky;
   top:0;
   z-index:50;
-  backdrop-filter: blur(6px);
 }
 .brand{
   font-family:'DM Sans', sans-serif;
@@ -242,10 +241,27 @@ nav.site-nav a:hover::after, nav.site-nav a:focus::after{transform:scaleX(1);}
 .other-versions .pill{
   border:1px dashed var(--rule);padding:0.3rem 0.7rem;border-radius:999px;font-size:0.78rem;
 }
+.translation-toggle{
+  display:inline-flex;gap:0.3rem;background:rgba(42,33,24,0.06);padding:0.25rem;border-radius:999px;
+  margin:0 0 0.9rem;font-family:'DM Sans',sans-serif;
+}
+.translation-toggle button{
+  border:none;background:transparent;cursor:pointer;padding:0.4rem 1rem;border-radius:999px;
+  font-family:'DM Sans',sans-serif;font-weight:700;font-size:0.78rem;letter-spacing:0.05em;
+  text-transform:uppercase;color:#6b5c44;transition:background .2s ease,color .2s ease,box-shadow .2s ease;
+}
+.translation-toggle button.active{
+  background:var(--indigo);color:var(--parchment);box-shadow:0 4px 12px rgba(43,42,76,0.25);
+}
+.translation-toggle button:not(.active):hover{background:rgba(42,33,24,0.1);color:var(--ink);}
+.translation-note{
+  font-family:'DM Sans',sans-serif;font-size:0.78rem;color:#7a6b53;margin:0 0 1rem;
+}
 .scripture{
   max-width:760px;margin:0 auto;padding:1.5rem clamp(1.2rem,4vw,1.5rem) 4rem;
   font-size:1.18rem;color:#2c2415;
 }
+.scripture.is-hidden{display:none;}
 .scripture p{margin:0 0 1.1rem;}
 .scripture sup{color:var(--burgundy);font-weight:700;margin-right:0.3rem;font-family:'DM Sans',sans-serif;}
 .scripture .dropcap{
@@ -293,7 +309,16 @@ body.summary-page .summary-body{
 body.summary-page .summary-body h2{color:var(--burgundy);font-weight:800;}
 body.summary-page footer.site-footer{color:#d8cdb4;border-top:1px solid rgba(232,200,116,0.2);}
 body.summary-page .btn-ghost{border-color:rgba(232,200,116,0.4);color:#F4ECD8;}
-body.summary-page .summary-body .btn-ghost{border-color:var(--rule);color:var(--ink);}
+body.summary-page .summary-body .btn-ghost,
+body.summary-page .summary-body .cta-row .btn-ghost{
+  border-color:var(--ink) !important;
+  color:var(--ink) !important;
+  background:rgba(42,33,24,0.06) !important;
+  font-weight:800 !important;
+}
+body.summary-page .summary-body .cta-row .btn-ghost:hover{
+  background:rgba(42,33,24,0.14) !important;
+}
 
 /* ---------- Per-book signature colour backgrounds ---------- */
 body.book-genesis.summary-page{
@@ -597,3 +622,210 @@ body.book-1kings.summary-page{
   .chapter-nav{justify-content:center;text-align:center;}
   .chapter-indicator{order:3;width:100%;}
 }
+
+/* ========================================================================
+   Simple chapter-reading template (used by books such as Esther, Judges,
+   1-2 Samuel, 1 Kings, Nehemiah, Joshua, etc. that have not yet been
+   migrated to the full single-page "Illuminated Word" reading template).
+   Added to give these pages real styling consistent with the site's
+   parchment / gold / burgundy palette, and to support a KJV <-> WEB
+   translation toggle on the reading pages.
+   ======================================================================== */
+body.read-page{
+  background:var(--parchment);
+  color:var(--ink);
+  font-family:'Source Serif 4', serif;
+  margin:0;
+  padding:2.5rem 1.25rem 4rem;
+}
+.read-container{
+  max-width:720px;
+  margin:0 auto;
+}
+.read-title{
+  font-family:'DM Sans', sans-serif;
+  font-weight:800;
+  font-size:2rem;
+  color:var(--burgundy);
+  text-align:center;
+  margin:0 0 0.5rem;
+  letter-spacing:0.01em;
+}
+.read-title .chnum{
+  color:var(--ink);
+  font-weight:500;
+}
+
+/* --- KJV / WEB version toggle --- */
+.version-toggle{
+  display:flex;
+  justify-content:center;
+  gap:0;
+  margin:0 auto 2rem;
+  width:max-content;
+  border:1px solid var(--gold);
+  border-radius:999px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 2px 8px rgba(42,33,24,0.08);
+}
+.version-toggle button{
+  font-family:'DM Sans', sans-serif;
+  font-weight:700;
+  font-size:0.82rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  border:none;
+  background:transparent;
+  color:var(--burgundy);
+  padding:0.55rem 1.4rem;
+  cursor:pointer;
+  transition:background 0.15s ease, color 0.15s ease;
+}
+.version-toggle button:hover{
+  background:var(--parchment-deep);
+}
+.version-toggle button.active{
+  background:var(--burgundy);
+  color:var(--parchment);
+}
+.version-toggle button:focus-visible{
+  outline:2px solid var(--gold);
+  outline-offset:2px;
+}
+.version-label{
+  display:block;
+  text-align:center;
+  font-family:'DM Sans', sans-serif;
+  font-size:0.75rem;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:#8a7b5c;
+  margin:-1.3rem 0 2rem;
+}
+
+.verses{
+  font-size:1.08rem;
+  line-height:1.85;
+}
+.verses[hidden]{display:none;}
+.verse{
+  margin:0 0 1rem;
+}
+.verse .vnum{
+  font-family:'DM Sans', sans-serif;
+  font-weight:800;
+  font-size:0.78rem;
+  color:var(--burgundy);
+  vertical-align:super;
+  margin-right:0.35rem;
+}
+
+.read-page .chapter-nav{
+  margin-top:2.5rem;
+  padding-top:1.5rem;
+  border-top:1px solid var(--parchment-deep);
+}
+.read-page .nav-btn{
+  font-family:'DM Sans', sans-serif;
+  font-weight:700;
+  font-size:0.85rem;
+  text-decoration:none;
+  color:var(--burgundy);
+  border:1px solid var(--gold);
+  border-radius:999px;
+  padding:0.5rem 1.1rem;
+  transition:background 0.15s ease, color 0.15s ease;
+}
+.read-page .nav-btn:hover{
+  background:var(--burgundy);
+  color:var(--parchment);
+  border-color:var(--burgundy);
+}
+@media (max-width:600px){
+  .read-title{font-size:1.5rem;}
+  .verses{font-size:1rem;}
+}
+
+/* Recovery audit, 26 October 2026: uncropped original art and robust navigation. */
+.summary-art { min-height:0; align-self:start; }
+.summary-art img { display:block; width:100%; height:auto; max-width:100%; object-fit:contain; }
+.summary-art .frame { max-width:calc(100% - 20px); }
+.chapter-nav { box-sizing:border-box; width:100%; gap:0.75rem; }
+.chapter-nav > * { min-width:0; max-width:100%; }
+.chapter-nav a, .read-page .nav-btn {
+  display:inline-flex; align-items:center; justify-content:center;
+  box-sizing:border-box; min-height:44px; max-width:100%;
+  white-space:normal; overflow-wrap:anywhere; text-align:center; line-height:1.4;
+}
+.chapter-nav a:hover { text-decoration:underline; text-underline-offset:0.18em; }
+.version-toggle button, .translation-toggle button { min-height:44px; min-width:44px; }
+a:focus-visible, button:focus-visible {
+  outline:3px solid var(--gold); outline-offset:3px;
+}
+@media (max-width:600px) {
+  .chapter-nav { padding-left:0; padding-right:0; justify-content:center; }
+  .chapter-nav a { padding:0.7rem 1rem; }
+  .chapter-indicator { flex-basis:100%; text-align:center; }
+}
+@media (prefers-reduced-motion:reduce) {
+  *, *::before, *::after { animation:none !important; transition:none !important; scroll-behavior:auto !important; }
+}
+
+/* 27 October 2026: one centered reading column across all page variants. */
+.read-page > main, .read-page > .read-container {
+  display:block; width:100%; max-width:760px; min-width:0;
+  margin-left:auto; margin-right:auto; float:none;
+}
+.read-page .read-header {
+  width:100%; max-width:760px; margin-left:auto; margin-right:auto;
+  padding:2rem 1.5rem 1rem; text-align:center;
+}
+.read-page .read-title {
+  width:100%; margin:0 0 0.5rem; text-align:center;
+  font-family:'DM Sans',sans-serif; font-size:2rem; line-height:1.3;
+  color:var(--indigo); overflow-wrap:break-word;
+}
+.read-page .read-title .chnum { color:var(--burgundy); font-weight:500; }
+.read-page .chapter-position {
+  margin:0.5rem 0 1.2rem; text-align:center;
+  font-family:'DM Sans',sans-serif; font-size:0.9rem; color:#6b5c44;
+}
+.read-page .scripture {
+  width:100%; max-width:760px; margin-left:auto; margin-right:auto;
+  padding-left:1.5rem; padding-right:1.5rem; text-align:left;
+}
+.read-page .chapter-nav {
+  width:100%; max-width:760px; margin:1.5rem auto 2rem;
+  padding:1.25rem 1.5rem 0; justify-content:center; align-items:stretch;
+  gap:0.75rem; clear:both;
+}
+.read-page .chapter-nav a {
+  flex:1 1 12rem; max-width:100%; min-width:0;
+  justify-content:center; padding:0.75rem 1rem; line-height:1.4;
+}
+.read-page .chapter-nav-bottom { margin-top:2rem; margin-bottom:3rem; }
+@media (max-width:600px) {
+  .read-page .read-title { font-size:1.6rem; }
+  .read-page .read-title .chnum { display:block; margin-top:0.25rem; font-size:1.15rem; }
+  .read-page .read-header { padding:1.5rem 0.5rem 1rem; }
+  .read-page .scripture { padding-left:0.5rem; padding-right:0.5rem; }
+  .read-page .chapter-nav { padding-left:0.5rem; padding-right:0.5rem; }
+  .read-page .chapter-nav a { flex-basis:100%; }
+  .read-page nav.site-nav { flex-wrap:wrap; white-space:normal; gap:0.5rem 1rem; }
+}
+
+/* Exact verse opened from scripture search. */
+.scripture p[id^="verse-"], .verses p[id^="verse-"] {scroll-margin-top:7rem;}
+.scripture p.verse-search-target, .verses p.verse-search-target {background:#f5e6b6;box-shadow:0 0 0 0.5rem #f5e6b6;outline:2px solid #ad8521;outline-offset:0.5rem;border-radius:2px;}
+
+/* One shared masthead across all summaries and both reading templates. */
+header.iw-standard-header .brand { font-family:'DM Sans',Arial,sans-serif; font-size:1.2rem; font-weight:900; letter-spacing:.02em; line-height:1.4; }
+header.iw-standard-header .brand .mark { flex:0 0 1.6rem; }
+header.iw-standard-header nav.site-nav { flex-wrap:wrap; white-space:normal; gap:.5rem 1.5rem; }
+header.iw-standard-header nav.site-nav a { display:inline-flex; align-items:center; min-height:44px; }
+header.iw-standard-header .brand { min-height:44px; }
+@media(max-width:600px) { header.iw-standard-header { gap:.25rem; padding:.6rem 1rem; } header.iw-standard-header nav.site-nav { width:100%; gap:.25rem 1rem; font-size:.8rem; } }
+body.read-page { padding:0 0 4rem; }
+.read-page > main, .read-page > .read-container { width:calc(100% - 2rem); }
+.read-page > .read-container { margin-top:2rem; }

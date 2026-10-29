@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Revelation 10 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Revelation chapter 10 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Revelation 10 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Revelation chapter 10 in the King James Version or World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-revelation">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Revelation <span style="color:var(--burgundy);">&middot; Chapter 10</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">New Testament &middot; Chapter 10 of 22</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Revelation <span class="chnum">&middot; Chapter 10</span></h1>
+<p class="chapter-position">Chapter 10 of 22</p>
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="revelation-read-9.html">&larr; Chapter 9</a>
-<span class="chapter-indicator">Chapter 10 of 22</span>
-<a class="btn btn-primary shimmer" href="revelation-read-11.html">Chapter 11 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="revelation-read-9.html" rel="prev" aria-label="Previous chapter: Revelation 9">&larr; Previous: Chapter 9</a>
+<a class="btn btn-ghost" href="revelation.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="revelation-read-11.html" rel="next" aria-label="Next chapter: Revelation 11">Next: Chapter 11 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd I saw another mighty angel come down from heaven, clothed with a cloud: and a rainbow was upon his head, and his face was as it were the sun, and his feet as pillars of fire:</p>
             <p><sup>2</sup>And he had in his hand a little book open: and he set his right foot upon the sea, and his left foot on the earth,</p>
             <p><sup>3</sup>And cried with a loud voice, as when a lion roareth: and when he had cried, seven thunders uttered their voices.</p>
@@ -41,12 +48,54 @@
             <p><sup>10</sup>And I took the little book out of the angel's hand, and ate it up; and it was in my mouth sweet as honey: and as soon as I had eaten it, my belly was bitter.</p>
             <p><sup>11</sup>And he said unto me, Thou must prophesy again before many peoples, and nations, and tongues, and kings.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="revelation-read-9.html">&larr; Chapter 9</a>
-<a href="revelation.html">&uarr; Revelation summary</a>
-<a class="btn btn-primary shimmer" href="revelation-read-11.html">Chapter 11 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+<p><sup>1</sup>I saw a mighty angel coming down out of the sky, clothed with a cloud. A rainbow was on his head. His face was like the sun, and his feet like pillars of fire.</p>
+<p><sup>2</sup>He had in his hand a little open book. He set his right foot on the sea, and his left on the land.</p>
+<p><sup>3</sup>He cried with a loud voice, as a lion roars. When he cried, the seven thunders uttered their voices.</p>
+<p><sup>4</sup>When the seven thunders sounded, I was about to write; but I heard a voice from the sky saying, "Seal up the things which the seven thunders said, and don't write them."</p>
+<p><sup>5</sup>The angel whom I saw standing on the sea and on the land lifted up his right hand to the sky</p>
+<p><sup>6</sup>and swore by him who lives forever and ever, who created heaven and the things that are in it, the earth and the things that are in it, and the sea and the things that are in it, that there will no longer be delay,</p>
+<p><sup>7</sup>but in the days of the voice of the seventh angel, when he is about to sound, then the mystery of God is finished, as he declared to his servants the prophets.</p>
+<p><sup>8</sup>The voice which I heard from heaven, again speaking with me, said, "Go, take the book which is open in the hand of the angel who stands on the sea and on the land."</p>
+<p><sup>9</sup>I went to the angel, telling him to give me the little book. He said to me, "Take it and eat it. It will make your stomach bitter, but in your mouth it will be as sweet as honey."</p>
+<p><sup>10</sup>I took the little book out of the angel's hand, and ate it. It was as sweet as honey in my mouth. When I had eaten it, my stomach was made bitter.</p>
+<p><sup>11</sup>They told me, "You must prophesy again over many peoples, nations, languages, and kings."</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="revelation-read-9.html" rel="prev" aria-label="Previous chapter: Revelation 9">&larr; Previous: Chapter 9</a>
+<a class="btn btn-ghost" href="revelation.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="revelation-read-11.html" rel="next" aria-label="Next chapter: Revelation 11">Next: Chapter 11 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

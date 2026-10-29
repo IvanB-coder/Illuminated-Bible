@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Revelation 21 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Revelation chapter 21 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Revelation 21 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Revelation chapter 21 in the King James Version or World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-revelation">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Revelation <span style="color:var(--burgundy);">&middot; Chapter 21</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">New Testament &middot; Chapter 21 of 22</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Revelation <span class="chnum">&middot; Chapter 21</span></h1>
+<p class="chapter-position">Chapter 21 of 22</p>
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="revelation-read-20.html">&larr; Chapter 20</a>
-<span class="chapter-indicator">Chapter 21 of 22</span>
-<a class="btn btn-primary shimmer" href="revelation-read-22.html">Chapter 22 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="revelation-read-20.html" rel="prev" aria-label="Previous chapter: Revelation 20">&larr; Previous: Chapter 20</a>
+<a class="btn btn-ghost" href="revelation.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="revelation-read-22.html" rel="next" aria-label="Next chapter: Revelation 22">Next: Chapter 22 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd I saw a new heaven and a new earth: for the first heaven and the first earth were passed away; and there was no more sea.</p>
             <p><sup>2</sup>And I John saw the holy city, new Jerusalem, coming down from God out of heaven, prepared as a bride adorned for her husband.</p>
             <p><sup>3</sup>And I heard a great voice out of heaven saying, Behold, the tabernacle of God is with men, and he will dwell with them, and they shall be his people, and God himself shall be with them, and be their God.</p>
@@ -57,12 +64,70 @@
             <p><sup>26</sup>And they shall bring the glory and honour of the nations into it.</p>
             <p><sup>27</sup>And there shall in no wise enter into it any thing that defileth, neither whatsoever worketh abomination, or maketh a lie: but they which are written in the Lamb's book of life.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="revelation-read-20.html">&larr; Chapter 20</a>
-<a href="revelation.html">&uarr; Revelation summary</a>
-<a class="btn btn-primary shimmer" href="revelation-read-22.html">Chapter 22 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+<p><sup>1</sup>I saw a new heaven and a new earth, for the first heaven and the first earth have passed away, and the sea is no more.</p>
+<p><sup>2</sup>I saw the holy city, New Jerusalem, coming down out of heaven from God, prepared like a bride adorned for her husband.</p>
+<p><sup>3</sup>I heard a loud voice out of heaven saying, "Behold, God's dwelling is with people; and he will dwell with them, and they will be his people, and God himself will be with them as their God.</p>
+<p><sup>4</sup>He will wipe away every tear from their eyes. Death will be no more; neither will there be mourning, nor crying, nor pain any more. The first things have passed away."</p>
+<p><sup>5</sup>He who sits on the throne said, "Behold, I am making all things new." He said, "Write, for these words of God are faithful and true."</p>
+<p><sup>6</sup>He said to me, "I am the Alpha and the Omega, the Beginning and the End. I will give freely to him who is thirsty from the spring of the water of life.</p>
+<p><sup>7</sup>He who overcomes, I will give him these things. I will be his God, and he will be my son.</p>
+<p><sup>8</sup>But for the cowardly, unbelieving, sinners, abominable, murderers, sexually immoral, sorcerers, idolaters, and all liars, their part is in the lake that burns with fire and sulfur, which is the second death."</p>
+<p><sup>9</sup>One of the seven angels who had the seven bowls which were loaded with the seven last plagues came, and he spoke with me, saying, "Come here. I will show you the bride, the Lamb's wife."</p>
+<p><sup>10</sup>He carried me away in the Spirit to a great and high mountain, and showed me the holy city, Jerusalem, coming down out of heaven from God,</p>
+<p><sup>11</sup>having the glory of God. Her light was like a most precious stone, like a jasper stone, clear as crystal;</p>
+<p><sup>12</sup>having a great and high wall with twelve gates, and at the gates twelve angels, and names written on them, which are the names of the twelve tribes of the children of Israel.</p>
+<p><sup>13</sup>On the east were three gates, and on the north three gates, and on the south three gates, and on the west three gates.</p>
+<p><sup>14</sup>The wall of the city had twelve foundations, and on them twelve names of the twelve Apostles of the Lamb.</p>
+<p><sup>15</sup>He who spoke with me had for a measure a golden reed to measure the city, its gates, and its walls.</p>
+<p><sup>16</sup>The city is square. Its length is as great as its width. He measured the city with the reed: twelve thousand twelve stadia. Its length, width, and height are equal.</p>
+<p><sup>17</sup>Its wall is one hundred forty-four cubits, by the measure of a man, that is, of an angel.</p>
+<p><sup>18</sup>The construction of its wall was jasper. The city was pure gold, like pure glass.</p>
+<p><sup>19</sup>The foundations of the city's wall were adorned with all kinds of precious stones. The first foundation was jasper, the second sapphire, the third chalcedony, the fourth emerald,</p>
+<p><sup>20</sup>the fifth sardonyx, the sixth sardius, the seventh chrysolite, the eighth beryl, the ninth topaz, the tenth chrysoprase, the eleventh jacinth, and the twelfth amethyst.</p>
+<p><sup>21</sup>The twelve gates were twelve pearls. Each one of the gates was made of one pearl. The street of the city was pure gold, like transparent glass.</p>
+<p><sup>22</sup>I saw no temple in it, for the Lord God the Almighty and the Lamb are its temple.</p>
+<p><sup>23</sup>The city has no need for the sun or moon to shine, for the very glory of God illuminated it and its lamp is the Lamb.</p>
+<p><sup>24</sup>The nations will walk in its light. The kings of the earth bring the glory and honor of the nations into it.</p>
+<p><sup>25</sup>Its gates will in no way be shut by day (for there will be no night there),</p>
+<p><sup>26</sup>and they shall bring the glory and the honor of the nations into it so that they may enter.</p>
+<p><sup>27</sup>There will in no way enter into it anything profane, or one who causes an abomination or a lie, but only those who are written in the Lamb's book of life.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="revelation-read-20.html" rel="prev" aria-label="Previous chapter: Revelation 20">&larr; Previous: Chapter 20</a>
+<a class="btn btn-ghost" href="revelation.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="revelation-read-22.html" rel="next" aria-label="Next chapter: Revelation 22">Next: Chapter 22 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

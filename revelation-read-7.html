@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Revelation 7 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Revelation chapter 7 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Revelation 7 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Revelation chapter 7 in the King James Version or World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-revelation">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Revelation <span style="color:var(--burgundy);">&middot; Chapter 7</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">New Testament &middot; Chapter 7 of 22</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Revelation <span class="chnum">&middot; Chapter 7</span></h1>
+<p class="chapter-position">Chapter 7 of 22</p>
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="revelation-read-6.html">&larr; Chapter 6</a>
-<span class="chapter-indicator">Chapter 7 of 22</span>
-<a class="btn btn-primary shimmer" href="revelation-read-8.html">Chapter 8 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="revelation-read-6.html" rel="prev" aria-label="Previous chapter: Revelation 6">&larr; Previous: Chapter 6</a>
+<a class="btn btn-ghost" href="revelation.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="revelation-read-8.html" rel="next" aria-label="Next chapter: Revelation 8">Next: Chapter 8 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd after these things I saw four angels standing on the four corners of the earth, holding the four winds of the earth, that the wind should not blow on the earth, nor on the sea, nor on any tree.</p>
             <p><sup>2</sup>And I saw another angel ascending from the east, having the seal of the living God: and he cried with a loud voice to the four angels, to whom it was given to hurt the earth and the sea,</p>
             <p><sup>3</sup>Saying, Hurt not the earth, neither the sea, nor the trees, till we have sealed the servants of our God in their foreheads.</p>
@@ -47,12 +54,60 @@
             <p><sup>16</sup>They shall hunger no more, neither thirst any more; neither shall the sun light on them, nor any heat.</p>
             <p><sup>17</sup>For the Lamb which is in the midst of the throne shall feed them, and shall lead them unto living fountains of waters: and God shall wipe away all tears from their eyes.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="revelation-read-6.html">&larr; Chapter 6</a>
-<a href="revelation.html">&uarr; Revelation summary</a>
-<a class="btn btn-primary shimmer" href="revelation-read-8.html">Chapter 8 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+<p><sup>1</sup>After this, I saw four angels standing at the four corners of the earth, holding the four winds of the earth, so that no wind would blow on the earth, or on the sea, or on any tree.</p>
+<p><sup>2</sup>I saw another angel ascend from the sunrise, having the seal of the living God. He cried with a loud voice to the four angels to whom it was given to harm the earth and the sea,</p>
+<p><sup>3</sup>saying, "Don't harm the earth, the sea, or the trees, until we have sealed the bondservants of our God on their foreheads!"</p>
+<p><sup>4</sup>I heard the number of those who were sealed, one hundred forty-four thousand, sealed out of every tribe of the children of Israel:</p>
+<p><sup>5</sup>of the tribe of Judah twelve thousand were sealed, of the tribe of Reuben twelve thousand, of the tribe of Gad twelve thousand,</p>
+<p><sup>6</sup>of the tribe of Asher twelve thousand, of the tribe of Naphtali twelve thousand, of the tribe of Manasseh twelve thousand,</p>
+<p><sup>7</sup>of the tribe of Simeon twelve thousand, of the tribe of Levi twelve thousand, of the tribe of Issachar twelve thousand,</p>
+<p><sup>8</sup>of the tribe of Zebulun twelve thousand, of the tribe of Joseph twelve thousand, and of the tribe of Benjamin twelve thousand were sealed.</p>
+<p><sup>9</sup>After these things I looked, and behold, a great multitude which no man could count, out of every nation and of all tribes, peoples, and languages, standing before the throne and before the Lamb, dressed in white robes, with palm branches in their hands.</p>
+<p><sup>10</sup>They cried with a loud voice, saying, "Salvation be to our God, who sits on the throne, and to the Lamb!"</p>
+<p><sup>11</sup>All the angels were standing around the throne, the elders, and the four living creatures; and they fell on their faces before his throne, and worshiped God,</p>
+<p><sup>12</sup>saying, "Amen! Blessing, glory, wisdom, thanksgiving, honor, power, and might, be to our God forever and ever! Amen."</p>
+<p><sup>13</sup>One of the elders answered, saying to me, "These who are arrayed in the white robes, who are they, and where did they come from?"</p>
+<p><sup>14</sup>I told him, "My lord, you know." He said to me, "These are those who came out of the great suffering. They washed their robes and made them white in the Lamb's blood.</p>
+<p><sup>15</sup>Therefore they are before the throne of God, and they serve him day and night in his temple. He who sits on the throne will spread his tabernacle over them.</p>
+<p><sup>16</sup>They will never be hungry or thirsty any more. The sun won't beat on them, nor any heat;</p>
+<p><sup>17</sup>for the Lamb who is in the middle of the throne shepherds them and leads them to springs of life-giving waters. And God will wipe away every tear from their eyes."</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="revelation-read-6.html" rel="prev" aria-label="Previous chapter: Revelation 6">&larr; Previous: Chapter 6</a>
+<a class="btn btn-ghost" href="revelation.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="revelation-read-8.html" rel="next" aria-label="Next chapter: Revelation 8">Next: Chapter 8 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

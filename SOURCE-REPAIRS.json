@@ -1,0 +1,507 @@
+[
+  {
+    "file": "psalms-read-46.html",
+    "translation": "kjv",
+    "repair": "Replace number-only placeholders with verified KJV text",
+    "verses": 11,
+    "source": "https://ebible.org/kjv/PSA046.htm"
+  },
+  {
+    "file": "psalms-read-47.html",
+    "translation": "kjv",
+    "repair": "Replace number-only placeholders with verified KJV text",
+    "verses": 9,
+    "source": "https://ebible.org/kjv/PSA047.htm"
+  },
+  {
+    "file": "psalms-read-48.html",
+    "translation": "kjv",
+    "repair": "Replace number-only placeholders with verified KJV text",
+    "verses": 14,
+    "source": "https://ebible.org/kjv/PSA048.htm"
+  },
+  {
+    "file": "psalms-read-49.html",
+    "translation": "kjv",
+    "repair": "Replace number-only placeholders with verified KJV text",
+    "verses": 20,
+    "source": "https://ebible.org/kjv/PSA049.htm"
+  },
+  {
+    "file": "job-read-2.html",
+    "translation": "kjv",
+    "repair": "Split existing merged wording into verses 1 and 2; preserve existing Lord capitalization",
+    "source": "https://ebible.org/kjv/JOB02.htm"
+  },
+  {
+    "file": "psalms-read-41.html",
+    "translation": "web",
+    "repair": "Remove next-book/chapter heading appended to verse 13",
+    "source": "https://ebible.org/eng-web/PSA041.htm"
+  },
+  {
+    "file": "job-read-25.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-23.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "ecclesiastes-read-7.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "proverbs-read-13.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-27.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "proverbs-read-23.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "joshua-read.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-8.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "ecclesiastes-read-2.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-26.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-3.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "ecclesiastes-read-6.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "proverbs-read-14.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "jeremiah-read-33.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "joshua-read-18.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "songofsolomon-read-4.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "ecclesiastes-read-4.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "songofsolomon-read-6.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "joshua-read-13.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "joshua-read-2.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-20.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-9.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "joshua-read-7.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-17.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-11.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "proverbs-read-22.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "proverbs-read-24.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "joshua-read-17.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-5.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-10.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "joshua-read-6.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "joshua-read-3.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "ecclesiastes-read-12.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "proverbs-read-26.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-30.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-31.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "joshua-read-20.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "proverbs-read-12.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "joshua-read-10.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "songofsolomon-read.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-33.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "joshua-read-4.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-24.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "ecclesiastes-read-3.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-18.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "proverbs-read-31.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-4.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-28.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-15.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "proverbs-read-15.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-14.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-34.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "ecclesiastes-read-9.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "proverbs-read-30.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-16.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "joshua-read-14.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "1samuel-read-4.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "joshua-read-16.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-21.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "ecclesiastes-read-11.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "ecclesiastes-read-10.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-12.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "ecclesiastes-read.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "joshua-read-19.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-35.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-19.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "songofsolomon-read-7.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "joshua-read-15.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-29.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "proverbs-read-16.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-6.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "proverbs-read-25.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "joshua-read-11.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-22.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-13.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "psalms-read.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "proverbs-read-29.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "songofsolomon-read-2.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "songofsolomon-read-5.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "joshua-read-9.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-7.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "ecclesiastes-read-5.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-36.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "proverbs-read-11.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "joshua-read-5.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "proverbs-read-21.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "ecclesiastes-read-8.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "joshua-read-12.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "songofsolomon-read-8.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "songofsolomon-read-3.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "joshua-read-8.html",
+    "translation": "web",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  },
+  {
+    "file": "job-read-32.html",
+    "translation": "kjv",
+    "repair": "Remove duplicate numeric prefix before verse-1 wording"
+  }
+]

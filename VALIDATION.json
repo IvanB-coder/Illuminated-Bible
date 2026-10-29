@@ -1,0 +1,58 @@
+{
+  "engine": {
+    "checks": 7229,
+    "chapters_each": 1189,
+    "translations": 2,
+    "errors": []
+  },
+  "deep_links": {
+    "scenarios": 16,
+    "checks": "Both templates; both saved preferences; both target translations; available/blocked storage; unique anchors; correct visibility; highlight/focus/scroll.",
+    "errors": []
+  },
+  "loading_ui": {
+    "checks": 67,
+    "errors": [],
+    "type": "Node VM with DOM model and actual worker/script execution; not a browser test"
+  },
+  "structure": {
+    "html_pages": 1256,
+    "reading_pages": 1189,
+    "books": 66,
+    "identical_shared_headers": 1256,
+    "unchanged_scripture_blocks": 2378,
+    "unchanged_inline_toggle_scripts": true,
+    "local_references_checked": 18368,
+    "legacy_titles_fixed": 10,
+    "errors": []
+  },
+  "layout": {
+    "type": "WeasyPrint offline approximation, explicit mobile rule expansion; not browser screenshots",
+    "cases": [
+      {
+        "width": 320,
+        "banner_height_px": 336.5,
+        "controls_within_viewport": true
+      },
+      {
+        "width": 375,
+        "banner_height_px": 336.5,
+        "controls_within_viewport": true
+      },
+      {
+        "width": 768,
+        "banner_height_px": 218.9,
+        "controls_within_viewport": true
+      },
+      {
+        "width": 1280,
+        "banner_height_px": 124.0,
+        "controls_within_viewport": true
+      }
+    ]
+  },
+  "release": "20261028-banner2",
+  "scripture_corpus": "20261027-search1 unchanged",
+  "live_browser_test": false,
+  "published": false
+}

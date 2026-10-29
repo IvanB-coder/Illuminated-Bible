@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Revelation 8 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Revelation chapter 8 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Revelation 8 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Revelation chapter 8 in the King James Version or World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-revelation">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Revelation <span style="color:var(--burgundy);">&middot; Chapter 8</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">New Testament &middot; Chapter 8 of 22</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Revelation <span class="chnum">&middot; Chapter 8</span></h1>
+<p class="chapter-position">Chapter 8 of 22</p>
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="revelation-read-7.html">&larr; Chapter 7</a>
-<span class="chapter-indicator">Chapter 8 of 22</span>
-<a class="btn btn-primary shimmer" href="revelation-read-9.html">Chapter 9 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="revelation-read-7.html" rel="prev" aria-label="Previous chapter: Revelation 7">&larr; Previous: Chapter 7</a>
+<a class="btn btn-ghost" href="revelation.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="revelation-read-9.html" rel="next" aria-label="Next chapter: Revelation 9">Next: Chapter 9 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd when he had opened the seventh seal, there was silence in heaven about the space of half an hour.</p>
             <p><sup>2</sup>And I saw the seven angels which stood before God; and to them were given seven trumpets.</p>
             <p><sup>3</sup>And another angel came and stood at the altar, having a golden censer; and there was given unto him much incense, that he should offer it with the prayers of all saints upon the golden altar which was before the throne.</p>
@@ -43,12 +50,56 @@
             <p><sup>12</sup>And the fourth angel sounded, and the third part of the sun was smitten, and the third part of the moon, and the third part of the stars; so as the third part of them was darkened, and the day shone not for a third part of it, and the night likewise.</p>
             <p><sup>13</sup>And I beheld, and heard an angel flying through the midst of heaven, saying with a loud voice, Woe, woe, woe, to the inhabiters of the earth by reason of the other voices of the trumpet of the three angels, which are yet to sound!</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="revelation-read-7.html">&larr; Chapter 7</a>
-<a href="revelation.html">&uarr; Revelation summary</a>
-<a class="btn btn-primary shimmer" href="revelation-read-9.html">Chapter 9 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+<p><sup>1</sup>When he opened the seventh seal, there was silence in heaven for about half an hour.</p>
+<p><sup>2</sup>I saw the seven angels who stand before God, and seven trumpets were given to them.</p>
+<p><sup>3</sup>Another angel came and stood over the altar, having a golden censer. Much incense was given to him, that he should add it to the prayers of all the saints on the golden altar which was before the throne.</p>
+<p><sup>4</sup>The smoke of the incense, with the prayers of the saints, went up before God out of the angel's hand.</p>
+<p><sup>5</sup>The angel took the censer, and he filled it with the fire of the altar, then threw it on the earth. Thunders, sounds, lightnings, and an earthquake followed.</p>
+<p><sup>6</sup>The seven angels who had the seven trumpets prepared themselves to sound.</p>
+<p><sup>7</sup>The first sounded, and there followed hail and fire, mixed with blood, and they were thrown to the earth. One third of the earth was burned up, and one third of the trees were burned up, and all green grass was burned up.</p>
+<p><sup>8</sup>The second angel sounded, and something like a great burning mountain was thrown into the sea. One third of the sea became blood,</p>
+<p><sup>9</sup>and one third of the living creatures which were in the sea died. One third of the ships were destroyed.</p>
+<p><sup>10</sup>The third angel sounded, and a great star fell from the sky, burning like a torch, and it fell on one third of the rivers, and on the springs of water.</p>
+<p><sup>11</sup>The name of the star is "Wormwood." One third of the waters became wormwood. Many people died from the waters, because they were made bitter.</p>
+<p><sup>12</sup>The fourth angel sounded, and one third of the sun was struck, and one third of the moon, and one third of the stars, so that one third of them would be darkened; and the day wouldn't shine for one third of it, and the night in the same way.</p>
+<p><sup>13</sup>I saw, and I heard an eagle, flying in mid heaven, saying with a loud voice, "Woe! Woe! Woe to those who dwell on the earth, because of the other blasts of the trumpets of the three angels, who are yet to sound!"</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="revelation-read-7.html" rel="prev" aria-label="Previous chapter: Revelation 7">&larr; Previous: Chapter 7</a>
+<a class="btn btn-ghost" href="revelation.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="revelation-read-9.html" rel="next" aria-label="Next chapter: Revelation 9">Next: Chapter 9 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

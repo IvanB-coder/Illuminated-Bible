@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Revelation 19 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Revelation chapter 19 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Revelation 19 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Revelation chapter 19 in the King James Version or World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-revelation">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Revelation <span style="color:var(--burgundy);">&middot; Chapter 19</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">New Testament &middot; Chapter 19 of 22</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Revelation <span class="chnum">&middot; Chapter 19</span></h1>
+<p class="chapter-position">Chapter 19 of 22</p>
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="revelation-read-18.html">&larr; Chapter 18</a>
-<span class="chapter-indicator">Chapter 19 of 22</span>
-<a class="btn btn-primary shimmer" href="revelation-read-20.html">Chapter 20 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="revelation-read-18.html" rel="prev" aria-label="Previous chapter: Revelation 18">&larr; Previous: Chapter 18</a>
+<a class="btn btn-ghost" href="revelation.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="revelation-read-20.html" rel="next" aria-label="Next chapter: Revelation 20">Next: Chapter 20 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd after these things I heard a great voice of much people in heaven, saying, Alleluia; Salvation, and glory, and honour, and power, unto the Lord our God:</p>
             <p><sup>2</sup>For true and righteous are his judgments: for he hath judged the great whore, which did corrupt the earth with her fornication, and hath avenged the blood of his servants at her hand.</p>
             <p><sup>3</sup>And again they said, Alleluia And her smoke rose up for ever and ever.</p>
@@ -51,12 +58,64 @@
             <p><sup>20</sup>And the beast was taken, and with him the false prophet that wrought miracles before him, with which he deceived them that had received the mark of the beast, and them that worshipped his image. These both were cast alive into a lake of fire burning with brimstone.</p>
             <p><sup>21</sup>And the remnant were slain with the sword of him that sat upon the horse, which sword proceeded out of his mouth: and all the fowls were filled with their flesh.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="revelation-read-18.html">&larr; Chapter 18</a>
-<a href="revelation.html">&uarr; Revelation summary</a>
-<a class="btn btn-primary shimmer" href="revelation-read-20.html">Chapter 20 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+<p><sup>1</sup>After these things I heard something like a loud voice of a great multitude in heaven, saying, "Hallelujah! Salvation, power, and glory belong to our God;</p>
+<p><sup>2</sup>for his judgments are true and righteous. For he has judged the great prostitute who corrupted the earth with her sexual immorality, and he has avenged the blood of his servants at her hand."</p>
+<p><sup>3</sup>A second said, "Hallelujah! Her smoke goes up forever and ever."</p>
+<p><sup>4</sup>The twenty-four elders and the four living creatures fell down and worshiped God who sits on the throne, saying, "Amen! Hallelujah!"</p>
+<p><sup>5</sup>A voice came from the throne, saying, "Give praise to our God, all you his servants, you who fear him, the small and the great!"</p>
+<p><sup>6</sup>I heard something like the voice of a great multitude, and like the voice of many waters, and like the voice of mighty thunders, saying, "Hallelujah! For the Lord our God, the Almighty, reigns!</p>
+<p><sup>7</sup>Let's rejoice and be exceedingly glad, and let's give the glory to him. For the wedding of the Lamb has come, and his wife has made herself ready."</p>
+<p><sup>8</sup>It was given to her that she would array herself in bright, pure, fine linen, for the fine linen is the righteous acts of the saints.</p>
+<p><sup>9</sup>He said to me, "Write, 'Blessed are those who are invited to the wedding supper of the Lamb.'" He said to me, "These are true words of God."</p>
+<p><sup>10</sup>I fell down before his feet to worship him. He said to me, "Look! Don't do it! I am a fellow bondservant with you and with your brothers who hold the testimony of Jesus. Worship God, for the testimony of Jesus is the Spirit of Prophecy."</p>
+<p><sup>11</sup>I saw heaven opened, and behold, a white horse, and he who sat on it is called Faithful and True. In righteousness he judges and makes war.</p>
+<p><sup>12</sup>His eyes are a flame of fire, and on his head are many crowns. He has names written and a name written which no one knows but he himself.</p>
+<p><sup>13</sup>He is clothed in a garment sprinkled with blood. His name is called "The Word of God."</p>
+<p><sup>14</sup>The armies which are in heaven, clothed in white, pure, fine linen, followed him on white horses.</p>
+<p><sup>15</sup>Out of his mouth proceeds a sharp, double-edged sword that with it he should strike the nations. He will rule them with an iron rod. He treads the wine press of the fierceness of the wrath of God, the Almighty.</p>
+<p><sup>16</sup>He has on his garment and on his thigh a name written, "KING OF KINGS AND LORD OF LORDS."</p>
+<p><sup>17</sup>I saw an angel standing in the sun. He cried with a loud voice, saying to all the birds that fly in the sky, "Come! Be gathered together to the great supper of God,</p>
+<p><sup>18</sup>that you may eat the flesh of kings, the flesh of captains, the flesh of mighty men, and the flesh of horses and of those who sit on them, and the flesh of all men, both free and slave, small and great."</p>
+<p><sup>19</sup>I saw the beast, the kings of the earth, and their armies, gathered together to make war against him who sat on the horse and against his army.</p>
+<p><sup>20</sup>The beast was taken, and with him the false prophet who worked the signs in his sight, with which he deceived those who had received the mark of the beast and those who worshiped his image. These two were thrown alive into the lake of fire that burns with sulfur.</p>
+<p><sup>21</sup>The rest were killed with the sword of him who sat on the horse, the sword which came out of his mouth. So all the birds were filled with their flesh.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="revelation-read-18.html" rel="prev" aria-label="Previous chapter: Revelation 18">&larr; Previous: Chapter 18</a>
+<a class="btn btn-ghost" href="revelation.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="revelation-read-20.html" rel="next" aria-label="Next chapter: Revelation 20">Next: Chapter 20 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

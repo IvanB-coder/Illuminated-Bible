@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Revelation 12 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Revelation chapter 12 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Revelation 12 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Revelation chapter 12 in the King James Version or World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-revelation">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Revelation <span style="color:var(--burgundy);">&middot; Chapter 12</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">New Testament &middot; Chapter 12 of 22</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Revelation <span class="chnum">&middot; Chapter 12</span></h1>
+<p class="chapter-position">Chapter 12 of 22</p>
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="revelation-read-11.html">&larr; Chapter 11</a>
-<span class="chapter-indicator">Chapter 12 of 22</span>
-<a class="btn btn-primary shimmer" href="revelation-read-13.html">Chapter 13 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="revelation-read-11.html" rel="prev" aria-label="Previous chapter: Revelation 11">&larr; Previous: Chapter 11</a>
+<a class="btn btn-ghost" href="revelation.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="revelation-read-13.html" rel="next" aria-label="Next chapter: Revelation 13">Next: Chapter 13 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd there appeared a great wonder in heaven; a woman clothed with the sun, and the moon under her feet, and upon her head a crown of twelve stars:</p>
             <p><sup>2</sup>And she being with child cried, travailing in birth, and pained to be delivered.</p>
             <p><sup>3</sup>And there appeared another wonder in heaven; and behold a great red dragon, having seven heads and ten horns, and seven crowns upon his heads.</p>
@@ -47,12 +54,60 @@
             <p><sup>16</sup>And the earth helped the woman, and the earth opened her mouth, and swallowed up the flood which the dragon cast out of his mouth.</p>
             <p><sup>17</sup>And the dragon was wroth with the woman, and went to make war with the remnant of her seed, which keep the commandments of God, and have the testimony of Jesus Christ.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="revelation-read-11.html">&larr; Chapter 11</a>
-<a href="revelation.html">&uarr; Revelation summary</a>
-<a class="btn btn-primary shimmer" href="revelation-read-13.html">Chapter 13 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+<p><sup>1</sup>A great sign was seen in heaven: a woman clothed with the sun, and the moon under her feet, and on her head a crown of twelve stars.</p>
+<p><sup>2</sup>She was with child. She cried out in pain, laboring to give birth.</p>
+<p><sup>3</sup>Another sign was seen in heaven. Behold, a great red dragon, having seven heads and ten horns, and on his heads seven crowns.</p>
+<p><sup>4</sup>His tail drew one third of the stars of the sky, and threw them to the earth. The dragon stood before the woman who was about to give birth, so that when she gave birth he might devour her child.</p>
+<p><sup>5</sup>She gave birth to a son, a male child, who is to rule all the nations with a rod of iron. Her child was caught up to God and to his throne.</p>
+<p><sup>6</sup>The woman fled into the wilderness, where she has a place prepared by God, that there they may nourish her one thousand two hundred sixty days.</p>
+<p><sup>7</sup>There was war in the sky. Michael and his angels made war on the dragon. The dragon and his angels made war.</p>
+<p><sup>8</sup>They didn't prevail. No place was found for them any more in heaven.</p>
+<p><sup>9</sup>The great dragon was thrown down, the old serpent, he who is called the devil and Satan, the deceiver of the whole world. He was thrown down to the earth, and his angels were thrown down with him.</p>
+<p><sup>10</sup>I heard a loud voice in heaven, saying, "Now the salvation, the power, and the Kingdom of our God, and the authority of his Christ has come; for the accuser of our brothers has been thrown down, who accuses them before our God day and night.</p>
+<p><sup>11</sup>They overcame him because of the Lamb's blood, and because of the word of their testimony. They didn't love their life, even to death.</p>
+<p><sup>12</sup>Therefore rejoice, heavens, and you who dwell in them. Woe to the earth and to the sea, because the devil has gone down to you, having great wrath, knowing that he has but a short time."</p>
+<p><sup>13</sup>When the dragon saw that he was thrown down to the earth, he persecuted the woman who gave birth to the male child.</p>
+<p><sup>14</sup>Two wings of the great eagle were given to the woman, that she might fly into the wilderness to her place, so that she might be nourished for a time, times, and half a time, from the face of the serpent.</p>
+<p><sup>15</sup>The serpent spewed water out of his mouth after the woman like a river, that he might cause her to be carried away by the stream.</p>
+<p><sup>16</sup>The earth helped the woman, and the earth opened its mouth and swallowed up the river which the dragon spewed out of his mouth.</p>
+<p><sup>17</sup>The dragon grew angry with the woman, and went away to make war with the rest of her offspring, who keep God's commandments and hold Jesus' testimony.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="revelation-read-11.html" rel="prev" aria-label="Previous chapter: Revelation 11">&larr; Previous: Chapter 11</a>
+<a class="btn btn-ghost" href="revelation.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="revelation-read-13.html" rel="next" aria-label="Next chapter: Revelation 13">Next: Chapter 13 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>
