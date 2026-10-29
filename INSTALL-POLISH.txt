@@ -1,0 +1,19 @@
+ILLUMINATED WORD - SMALL SEARCH POLISH UPDATE
+
+Apply this ON TOP OF the search/banner/header update already installed.
+This is a small follow-up, NOT a complete website or cumulative code release.
+
+1. Extract this ZIP into your existing website folder.
+2. Replace matching files. Keep all other files and paintings.
+3. Upload the changed index.html and scripture-search.css to GitHub to publish.
+4. Refresh the homepage without cache (Ctrl+Shift+R or Cmd+Shift+R).
+
+Changes: 14px rounded search banner, fields, buttons and results panel to match
+About; removed the requested AI-generated-interpretations clause from About.
+Search behavior, verse data, all book pages and artwork are unchanged.
+Do not apply an older full-code package after this patch.
+
+The updated MANIFEST.sha256 covers the full existing site after this overlay.
+The ZIP only includes the two changed runtime files and supporting records.
+Code/content and CSS syntax checks passed. No live-browser test or GitHub
+publication was performed for this cosmetic update.

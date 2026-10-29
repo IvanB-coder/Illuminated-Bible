@@ -4,18 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Illuminated Word — The Bible, Beautifully Explored</title>
-<meta name="description" content="A colourful, illuminated-manuscript inspired guide to every book of the Bible, with summaries and full King James Version text.">
-<link rel="stylesheet" href="styles.css">
+<meta name="description" content="Search specific Bible verses in KJV and WEB, or explore all 66 books with artwork, summaries and complete reading pages.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
+<link rel="stylesheet" href="scripture-search.css?v=rounded-polish1">
+<script src="scripture-search-core.js?v=20261028-banner2" defer></script>
+<script src="scripture-search.js?v=20261028-banner2" defer></script>
 </head>
 <body class="home-page">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-  <a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-  <nav class="site-nav">
-    <a href="index.html#old-testament">Old Testament</a>
-    <a href="index.html#new-testament">New Testament</a>
-    <a href="index.html#about">About</a>
-  </nav>
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
+<a href="index.html#old-testament">Old Testament</a>
+<a href="index.html#new-testament">New Testament</a>
+<a href="index.html#about">About</a>
+</nav>
 </header>
 
 <main id="main">
@@ -23,9 +27,7 @@
     <p class="eyebrow">Old &amp; New Testament &middot; 66 Books</p>
     <h1>The <span class="gold-text">Illuminated</span> Word</h1>
     <hr class="divider">
-    <p class="lede">Every book of the Bible, introduced with a classical painting and a clear summary,
-    before you open the King James Version text itself. Begin with Genesis, Psalms, John, or Revelation &mdash;
-    now live as our founding pilot.</p>
+    <p class="lede">Explore all 66 books through classical artwork, clear summaries and complete King James Version and World English Bible reading pages. Browse a book below, or search for a specific verse.</p>
     <div class="hero-visual">
       <span class="hero-chip">&#10022; Creation to Revelation</span>
       <span class="hero-chip">&#10022; 66 Books, One Journey</span>
@@ -33,7 +35,36 @@
     </div>
   </section>
 
-  <section class="testament" id="old-testament">
+  <section class="scripture-search" id="scripture-search" aria-labelledby="scripture-search-heading">
+<div class="search-panel">
+<form id="scripture-search-form" role="search" action="index.html#scripture-search" method="get" aria-label="Search Bible verses">
+<div class="search-query-row">
+<h2 id="scripture-search-heading">Find a verse</h2>
+<label class="search-sr-only" for="verse-query">Scripture reference or keywords</label>
+<input type="search" id="verse-query" name="q" placeholder="John 3:16, keywords, or a phrase" maxlength="200" required autocomplete="off" enterkeyhint="search" aria-describedby="search-help">
+<label class="search-sr-only" for="search-translation">Translation</label>
+<select id="search-translation" name="translation" aria-label="Translation"><option value="kjv">KJV</option><option value="web">WEB</option></select>
+<button type="submit" class="search-submit" id="search-submit">Search verses</button>
+<button type="button" class="search-secondary" id="search-clear">Clear</button>
+</div>
+<details class="search-options" id="search-options"><summary>Search options &amp; tips</summary>
+<div class="search-filters">
+<div class="search-filter"><label for="search-scope">Search within</label><select id="search-scope" name="scope"><option value="all">All books</option><option value="ot">Old Testament</option><option value="nt">New Testament</option><optgroup label="Old Testament books"><option value="genesis">Genesis</option><option value="exodus">Exodus</option><option value="leviticus">Leviticus</option><option value="numbers">Numbers</option><option value="deuteronomy">Deuteronomy</option><option value="joshua">Joshua</option><option value="judges">Judges</option><option value="ruth">Ruth</option><option value="1samuel">1 Samuel</option><option value="2samuel">2 Samuel</option><option value="1kings">1 Kings</option><option value="2kings">2 Kings</option><option value="1chronicles">1 Chronicles</option><option value="2chronicles">2 Chronicles</option><option value="ezra">Ezra</option><option value="nehemiah">Nehemiah</option><option value="esther">Esther</option><option value="job">Job</option><option value="psalms">Psalms</option><option value="proverbs">Proverbs</option><option value="ecclesiastes">Ecclesiastes</option><option value="songofsolomon">Song of Solomon</option><option value="isaiah">Isaiah</option><option value="jeremiah">Jeremiah</option><option value="lamentations">Lamentations</option><option value="ezekiel">Ezekiel</option><option value="daniel">Daniel</option><option value="hosea">Hosea</option><option value="joel">Joel</option><option value="amos">Amos</option><option value="obadiah">Obadiah</option><option value="jonah">Jonah</option><option value="micah">Micah</option><option value="nahum">Nahum</option><option value="habakkuk">Habakkuk</option><option value="zephaniah">Zephaniah</option><option value="haggai">Haggai</option><option value="zechariah">Zechariah</option><option value="malachi">Malachi</option></optgroup><optgroup label="New Testament books"><option value="matthew">Matthew</option><option value="mark">Mark</option><option value="luke">Luke</option><option value="john">John</option><option value="acts">Acts</option><option value="romans">Romans</option><option value="1corinthians">1 Corinthians</option><option value="2corinthians">2 Corinthians</option><option value="galatians">Galatians</option><option value="ephesians">Ephesians</option><option value="philippians">Philippians</option><option value="colossians">Colossians</option><option value="1thessalonians">1 Thessalonians</option><option value="2thessalonians">2 Thessalonians</option><option value="1timothy">1 Timothy</option><option value="2timothy">2 Timothy</option><option value="titus">Titus</option><option value="philemon">Philemon</option><option value="hebrews">Hebrews</option><option value="james">James</option><option value="1peter">1 Peter</option><option value="2peter">2 Peter</option><option value="1john">1 John</option><option value="2john">2 John</option><option value="3john">3 John</option><option value="jude">Jude</option><option value="revelation">Revelation</option></optgroup></select></div>
+<div class="search-filter"><label for="search-mode">Match</label><select id="search-mode" name="mode"><option value="all">All words</option><option value="phrase">Exact phrase</option><option value="any">Any word</option></select></div>
+<div class="search-filter"><label for="search-sort">Order</label><select id="search-sort" name="sort"><option value="relevance">Best text match</option><option value="bible">Bible order</option></select></div></div>
+<p class="search-help" id="search-help">Search all 66 books by reference or whole words. Put an exact phrase in quotation marks, such as &quot;be still&quot;. Try John 3:16-18 or 1 Cor 13:4-7. Press / to focus the search.</p>
+<div class="search-examples" aria-label="Example searches"><span>Try:</span><button class="search-example" type="button" data-verse-example="John 3:16">John 3:16</button><button class="search-example" type="button" data-verse-example='"be still"'>&ldquo;be still&rdquo;</button><button class="search-example" type="button" data-verse-example="love enemies">love enemies</button></div>
+</details></form>
+<noscript><p>Enable JavaScript to search individual verses. You can still browse all books below.</p></noscript>
+</div>
+<div class="search-region" hidden id="search-region"><p hidden="" id="search-summary" tabindex="-1"></p>
+<p aria-atomic="true" aria-live="polite" class="search-status" id="search-status" role="status">Enter a reference, keywords or a phrase to see matching verses.</p>
+<div class="search-error" hidden="" id="search-error"><p id="search-error-text" role="alert"></p><button class="search-secondary" id="search-retry" type="button">Try again</button></div>
+<ol aria-busy="false" aria-label="Matching Bible verses" class="verse-results" id="verse-results"></ol>
+<nav aria-label="Search result pages" class="search-pagination" hidden="" id="search-pagination"><button class="search-secondary" id="search-previous" type="button">← Previous page</button><span id="search-page"></span><button class="search-secondary" id="search-next" type="button">Next page →</button></nav>
+<p aria-live="polite" class="search-sr-only" id="copy-status" role="status"></p></div>
+</section>
+<section class="testament" id="old-testament">
     <h2 class="testament-title">Old Testament <span style="font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.9rem;color:#7a6b53;">&nbsp;39 books</span></h2>
     <div class="book-grid">
       <a class="book-card live shimmer" href="genesis.html"><span class="name">Genesis</span><span class="status">Read now &rarr;</span></a>
@@ -47,85 +78,77 @@
 <a class="book-card live shimmer" href="1samuel.html"><span class="name">1 Samuel</span><span class="status">Read now &rarr;</span></a>
 <a class="book-card live shimmer" href="2samuel.html"><span class="name">2 Samuel</span><span class="status">Read now &rarr;</span></a>
 <a class="book-card live shimmer" href="1kings.html"><span class="name">1 Kings</span><span class="status">Read now &rarr;</span></a>
-<div class="book-card soon" aria-disabled="true"><span class="name">2 Kings</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">1 Chronicles</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">2 Chronicles</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Ezra</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Nehemiah</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Esther</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Job</span><span class="status">Coming soon</span></div>
+<a class="book-card live shimmer" href="2kings.html"><span class="name">2 Kings</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="1chronicles.html"><span class="name">1 Chronicles</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="2chronicles.html"><span class="name">2 Chronicles</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="ezra.html"><span class="name">Ezra</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="nehemiah.html"><span class="name">Nehemiah</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="esther.html"><span class="name">Esther</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="job.html"><span class="name">Job</span><span class="status">Read now &rarr;</span></a>
 <a class="book-card live shimmer" href="psalms.html"><span class="name">Psalms</span><span class="status">Read now &rarr;</span></a>
-<div class="book-card soon" aria-disabled="true"><span class="name">Proverbs</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Ecclesiastes</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Song of Solomon</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Isaiah</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Jeremiah</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Lamentations</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Ezekiel</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Daniel</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Hosea</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Joel</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Amos</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Obadiah</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Jonah</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Micah</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Nahum</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Habakkuk</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Zephaniah</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Haggai</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Zechariah</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Malachi</span><span class="status">Coming soon</span></div>
+<a class="book-card live shimmer" href="proverbs.html"><span class="name">Proverbs</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="ecclesiastes.html"><span class="name">Ecclesiastes</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="songofsolomon.html"><span class="name">Song of Solomon</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="isaiah.html"><span class="name">Isaiah</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="jeremiah.html"><span class="name">Jeremiah</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="lamentations.html"><span class="name">Lamentations</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="ezekiel.html"><span class="name">Ezekiel</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="daniel.html"><span class="name">Daniel</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="hosea.html"><span class="name">Hosea</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="joel.html"><span class="name">Joel</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="amos.html"><span class="name">Amos</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="obadiah.html"><span class="name">Obadiah</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="jonah.html"><span class="name">Jonah</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="micah.html"><span class="name">Micah</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="nahum.html"><span class="name">Nahum</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="habakkuk.html"><span class="name">Habakkuk</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="zephaniah.html"><span class="name">Zephaniah</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="haggai.html"><span class="name">Haggai</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="zechariah.html"><span class="name">Zechariah</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="malachi.html"><span class="name">Malachi</span><span class="status">Read now &rarr;</span></a>
     </div>
   </section>
 
   <section class="testament" id="new-testament">
     <h2 class="testament-title">New Testament <span style="font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.9rem;color:#7a6b53;">&nbsp;27 books</span></h2>
     <div class="book-grid">
-      <div class="book-card soon" aria-disabled="true"><span class="name">Matthew</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Mark</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Luke</span><span class="status">Coming soon</span></div>
+      <a class="book-card live shimmer" href="matthew.html"><span class="name">Matthew</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="mark.html"><span class="name">Mark</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="luke.html"><span class="name">Luke</span><span class="status">Read now &rarr;</span></a>
 <a class="book-card live shimmer" href="john.html"><span class="name">John</span><span class="status">Read now &rarr;</span></a>
-<div class="book-card soon" aria-disabled="true"><span class="name">Acts</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Romans</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">1 Corinthians</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">2 Corinthians</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Galatians</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Ephesians</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Philippians</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Colossians</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">1 Thessalonians</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">2 Thessalonians</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">1 Timothy</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">2 Timothy</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Titus</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Philemon</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Hebrews</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">James</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">1 Peter</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">2 Peter</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">1 John</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">2 John</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">3 John</span><span class="status">Coming soon</span></div>
-<div class="book-card soon" aria-disabled="true"><span class="name">Jude</span><span class="status">Coming soon</span></div>
+<a class="book-card live shimmer" href="acts.html"><span class="name">Acts</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="romans.html"><span class="name">Romans</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="1corinthians.html"><span class="name">1 Corinthians</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="2corinthians.html"><span class="name">2 Corinthians</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="galatians.html"><span class="name">Galatians</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="ephesians.html"><span class="name">Ephesians</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="philippians.html"><span class="name">Philippians</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="colossians.html"><span class="name">Colossians</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="1thessalonians.html"><span class="name">1 Thessalonians</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="2thessalonians.html"><span class="name">2 Thessalonians</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="1timothy.html"><span class="name">1 Timothy</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="2timothy.html"><span class="name">2 Timothy</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="titus.html"><span class="name">Titus</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="philemon.html"><span class="name">Philemon</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="hebrews.html"><span class="name">Hebrews</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="james.html"><span class="name">James</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="1peter.html"><span class="name">1 Peter</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="2peter.html"><span class="name">2 Peter</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="1john.html"><span class="name">1 John</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="2john.html"><span class="name">2 John</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="3john.html"><span class="name">3 John</span><span class="status">Read now &rarr;</span></a>
+<a class="book-card live shimmer" href="jude.html"><span class="name">Jude</span><span class="status">Read now &rarr;</span></a>
 <a class="book-card live shimmer" href="revelation.html"><span class="name">Revelation</span><span class="status">Read now &rarr;</span></a>
     </div>
   </section>
 
   <section class="testament" id="about">
-    <h2 class="testament-title">About this pilot</h2>
-    <p style="max-width:760px;">Illuminated Word is a reading path, not a translation library. Scripture text displayed in full is the
-    King James Version (KJV), which is in the public domain and free to republish. Five further long-loved
-    translations &mdash; New King James Version, New Living Translation, The Passion Translation, The Message, and
-    the Amplified Bible &mdash; are each under active publisher copyright, so instead of reproducing their text here,
-    each verse page names them as further reading to explore through their publishers. Every book begins with a
-    classical painting and a short, plain-language summary, so you always know what you're about to read before you read it.</p>
+    <h2 class="testament-title">About Illuminated Word</h2>
+    <p style="max-width:760px;">Illuminated Word brings together all 66 books of the Bible, with classical artwork, book summaries and KJV / Classic WEB reading pages. Search a reference, phrase or keywords to find specific verses, then open the chapter to read them in context. Search results reproduce the selected translation.</p>
   </section>
 </main>
 
-<footer class="site-footer">
-  Illuminated Word &mdash; Scripture text: King James Version (public domain). Book summaries are original editorial content.<br>
-  A pilot design for Genesis, Psalms, John &amp; Revelation &mdash; the remaining 62 books are coming soon.
-</footer>
+<footer class="site-footer">Illuminated Word &mdash; King James Version &amp; Classic World English Bible. All 66 books.<br>Book summaries are editorial content; search results quote scripture.</footer>
 </body>
 </html>
 

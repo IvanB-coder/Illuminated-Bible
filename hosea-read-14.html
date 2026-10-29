@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hosea 14 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Hosea chapter 14 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
+</head>
+<body class="read-page book-hosea">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
+<a href="index.html#old-testament">Old Testament</a>
+<a href="index.html#new-testament">New Testament</a>
+<a href="index.html#about">About</a>
+</nav>
+</header>
+<main id="main">
+<div class="read-header">
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Hosea <span class="chnum">&middot; Chapter 14</span></h1>
+<p class="chapter-position">Chapter 14 of 14</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
+</div>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+</div>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="hosea-read-13.html" rel="prev" aria-label="Previous chapter: Hosea 13">&larr; Previous: Chapter 13</a>
+<a class="btn btn-ghost" href="hosea.html#chapters">All Chapters</a>
+<a class="btn btn-ghost" href="hosea.html">Book Summary &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">O</span> Israel, return unto the LORD thy God; for thou hast fallen by thine iniquity.</p>
+            <p><sup>2</sup>Take with you words, and turn to the LORD: say unto him, Take away all iniquity, and receive us graciously: so will we render the calves of our lips.</p>
+            <p><sup>3</sup>Asshur shall not save us; we will not ride upon horses: neither will we say any more to the work of our hands, Ye are our gods: for in thee the fatherless findeth mercy.</p>
+            <p><sup>4</sup>I will heal their backsliding, I will love them freely: for mine anger is turned away from him.</p>
+            <p><sup>5</sup>I will be as the dew unto Israel: he shall grow as the lily, and cast forth his roots as Lebanon.</p>
+            <p><sup>6</sup>His branches shall spread, and his beauty shall be as the olive tree, and his smell as Lebanon.</p>
+            <p><sup>7</sup>They that dwell under his shadow shall return; they shall revive as the corn, and grow as the vine: the scent thereof shall be as the wine of Lebanon.</p>
+            <p><sup>8</sup>Ephraim shall say, What have I to do any more with idols? I have heard him, and observed him: I am like a green fir tree. From me is thy fruit found.</p>
+            <p><sup>9</sup>Who is wise, and he shall understand these things? prudent, and he shall know them? for the ways of the LORD are right, and the just shall walk in them: but the transgressors shall fall therein.</p>
+</div>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">I</span>srael, return to Yahweh your God; for you have fallen because of your sin.</p>
+            <p><sup>2</sup>Take words with you, and return to Yahweh. Tell him, “Forgive all our sins, and accept that which is good; so we offer bulls as we vowed of our lips.</p>
+            <p><sup>3</sup>Assyria can’t save us. We won’t ride on horses; neither will we say any more to the work of our hands, ‘Our gods!’ for in you the fatherless finds mercy.”</p>
+            <p><sup>4</sup>“I will heal their waywardness. I will love them freely; for my anger is turned away from them.</p>
+            <p><sup>5</sup>I will be like the dew to Israel. He will blossom like the lily, and send down his roots like Lebanon.</p>
+            <p><sup>6</sup>His branches will spread, and his beauty will be like the olive tree, and his fragrance like Lebanon.</p>
+            <p><sup>7</sup>Men will dwell in his shade. They will revive like the grain, and blossom like the vine. Their fragrance will be like the wine of Lebanon.</p>
+            <p><sup>8</sup>Ephraim, what have I to do any more with idols? I answer, and will take care of him. I am like a green cypress tree; from me your fruit is found.”</p>
+            <p><sup>9</sup>Who is wise, that he may understand these things? Who is prudent, that he may know them? For the ways of Yahweh are right, and the righteous walk in them, but the rebellious stumble in them.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="hosea-read-13.html" rel="prev" aria-label="Previous chapter: Hosea 13">&larr; Previous: Chapter 13</a>
+<a class="btn btn-ghost" href="hosea.html#chapters">All Chapters</a>
+<a class="btn btn-ghost" href="hosea.html">Book Summary &rarr;</a>
+</div>
+</main>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
+</body>
+</html>

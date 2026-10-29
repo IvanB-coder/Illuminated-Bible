@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Isaiah 20 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Isaiah chapter 20 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
+</head>
+<body class="read-page ot-book">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
+<a href="index.html#old-testament">Old Testament</a>
+<a href="index.html#new-testament">New Testament</a>
+<a href="index.html#about">About</a>
+</nav>
+</header>
+<main id="main">
+<div class="read-header">
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Isaiah <span class="chnum">&middot; Chapter 20</span></h1>
+<p class="chapter-position">Chapter 20 of 66</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
+</div>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+</div>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="isaiah-read-19.html" rel="prev" aria-label="Previous chapter: Isaiah 19">&larr; Previous: Chapter 19</a>
+<a class="btn btn-ghost" href="isaiah.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="isaiah-read-21.html" rel="next" aria-label="Next chapter: Isaiah 21">Next: Chapter 21 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">I</span>n the year that Tartan came unto Ashdod, (when Sargon the king of Assyria sent him,) and fought against Ashdod, and took it;</p>
+            <p><sup>2</sup>At the same time spake the LORD by Isaiah the son of Amoz, saying, Go and loose the sackcloth from off thy loins, and put off thy shoe from thy foot. And he did so, walking naked and barefoot.</p>
+            <p><sup>3</sup>And the LORD said, Like as my servant Isaiah hath walked naked and barefoot three years for a sign and wonder upon Egypt and upon Ethiopia;</p>
+            <p><sup>4</sup>So shall the king of Assyria lead away the Egyptians prisoners, and the Ethiopians captives, young and old, naked and barefoot, even with their buttocks uncovered, to the shame of Egypt.</p>
+            <p><sup>5</sup>And they shall be afraid and ashamed of Ethiopia their expectation, and of Egypt their glory.</p>
+            <p><sup>6</sup>And the inhabitant of this isle shall say in that day, Behold, such is our expectation, whither we flee for help to be delivered from the king of Assyria: and how shall we escape?</p>
+</div>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">I</span>n the year that Tartan came to Ashdod, when Sargon the king of Assyria sent him, and he fought against Ashdod and took it;</p>
+            <p><sup>2</sup>at that time Yahweh spoke by Isaiah the son of Amoz, saying, "Go, and loosen the sackcloth from off your waist, and take your sandals from off your feet." He did so, walking naked and barefoot.</p>
+            <p><sup>3</sup>Yahweh said, "As my servant Isaiah has walked naked and barefoot three years for a sign and a wonder concerning Egypt and concerning Ethiopia,</p>
+            <p><sup>4</sup>so the king of Assyria will lead away the captives of Egypt and the exiles of Ethiopia, young and old, naked and barefoot, and with buttocks uncovered, to the shame of Egypt.</p>
+            <p><sup>5</sup>They will be dismayed and confounded, because of Ethiopia their expectation, and of Egypt their glory.</p>
+            <p><sup>6</sup>The inhabitants of this coast land will say in that day, 'Behold, this is our expectation, where we fled for help to be delivered from the king of Assyria. And we, how will we escape?'"</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="isaiah-read-19.html" rel="prev" aria-label="Previous chapter: Isaiah 19">&larr; Previous: Chapter 19</a>
+<a class="btn btn-ghost" href="isaiah.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="isaiah-read-21.html" rel="next" aria-label="Next chapter: Isaiah 21">Next: Chapter 21 &rarr;</a>
+</div>
+</main>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
+</body>
+</html>
