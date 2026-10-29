@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Deuteronomy 6 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Deuteronomy chapter 6 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Deuteronomy 6 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Deuteronomy chapter 6 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-deuteronomy">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Deuteronomy <span style="color:var(--burgundy);">&middot; Chapter 6</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 6 of 34</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Deuteronomy <span class="chnum">&middot; Chapter 6</span></h1>
+<p class="chapter-position">Chapter 6 of 34</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="deuteronomy-read-5.html">&larr; Chapter 5</a>
-<span class="chapter-indicator">Chapter 6 of 34</span>
-<a class="btn btn-primary shimmer" href="deuteronomy-read-7.html">Chapter 7 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>Now these are the commandments, the statutes, and the judgments, which the LORD your God commanded to teach you, that ye might do them in the land whither ye go to possess it:</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="deuteronomy-read-5.html" rel="prev" aria-label="Previous chapter: Deuteronomy 5">&larr; Previous: Chapter 5</a>
+<a class="btn btn-ghost" href="deuteronomy.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="deuteronomy-read-7.html" rel="next" aria-label="Next chapter: Deuteronomy 7">Next: Chapter 7 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">N</span>ow these are the commandments, the statutes, and the judgments, which the LORD your God commanded to teach you, that ye might do them in the land whither ye go to possess it:</p>
             <p><sup>2</sup>That thou mightest fear the LORD thy God, to keep all his statutes and his commandments, which I command thee, thou, and thy son, and thy son's son, all the days of thy life; and that thy days may be prolonged.</p>
             <p><sup>3</sup>Hear therefore, O Israel, and observe to do it; that it may be well with thee, and that ye may increase mightily, as the LORD God of thy fathers hath promised thee, in the land that floweth with milk and honey.</p>
             <p><sup>4</sup>Hear, O Israel: The LORD our God is one LORD:</p>
@@ -55,12 +62,68 @@
             <p><sup>24</sup>And the LORD commanded us to do all these statutes, to fear the LORD our God, for our good always, that he might preserve us alive, as it is at this day.</p>
             <p><sup>25</sup>And it shall be our righteousness, if we observe to do all these commandments before the LORD our God, as he hath commanded us.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="deuteronomy-read-5.html">&larr; Chapter 5</a>
-<a href="deuteronomy.html">&uarr; Deuteronomy summary</a>
-<a class="btn btn-primary shimmer" href="deuteronomy-read-7.html">Chapter 7 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">N</span>ow these are the commandments, the statutes, and the ordinances, which Yahweh your God commanded to teach you, that you might do them in the land that you go over to possess;</p>
+            <p><sup>2</sup>that you might fear Yahweh your God, to keep all his statutes and his commandments, which I command you—you, your son, and your son's son, all the days of your life; and that your days may be prolonged.</p>
+            <p><sup>3</sup>Hear therefore, Israel, and observe to do it, that it may be well with you, and that you may increase mightily, as Yahweh, the God of your fathers, has promised to you, in a land flowing with milk and honey.</p>
+            <p><sup>4</sup>Hear, Israel: Yahweh is our God. Yahweh is one.</p>
+            <p><sup>5</sup>You shall love Yahweh your God with all your heart, with all your soul, and with all your might.</p>
+            <p><sup>6</sup>These words, which I command you today, shall be on your heart;</p>
+            <p><sup>7</sup>and you shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk by the way, and when you lie down, and when you rise up.</p>
+            <p><sup>8</sup>You shall bind them for a sign on your hand, and they shall be for frontlets between your eyes.</p>
+            <p><sup>9</sup>You shall write them on the door posts of your house and on your gates.</p>
+            <p><sup>10</sup>It shall be, when Yahweh your God brings you into the land which he swore to your fathers, to Abraham, to Isaac, and to Jacob, to give you, great and goodly cities which you didn't build,</p>
+            <p><sup>11</sup>and houses full of all good things which you didn't fill, and cisterns dug out which you didn't dig, vineyards and olive trees which you didn't plant, and you shall eat and be full;</p>
+            <p><sup>12</sup>then beware lest you forget Yahweh, who brought you out of the land of Egypt, out of the house of bondage.</p>
+            <p><sup>13</sup>You shall fear Yahweh your God; and you shall serve him, and shall swear by his name.</p>
+            <p><sup>14</sup>You shall not go after other gods, of the gods of the peoples who are around you,</p>
+            <p><sup>15</sup>for Yahweh your God among you is a jealous God, lest the anger of Yahweh your God be kindled against you, and he destroy you from off the face of the earth.</p>
+            <p><sup>16</sup>You shall not tempt Yahweh your God, as you tempted him in Massah.</p>
+            <p><sup>17</sup>You shall diligently keep the commandments of Yahweh your God, and his testimonies, and his statutes, which he has commanded you.</p>
+            <p><sup>18</sup>You shall do that which is right and good in Yahweh's sight, that it may be well with you and that you may go in and possess the good land which Yahweh swore to your fathers,</p>
+            <p><sup>19</sup>to thrust out all your enemies from before you, as Yahweh has spoken.</p>
+            <p><sup>20</sup>When your son asks you in time to come, saying, "What do the testimonies, the statutes, and the ordinances, which Yahweh our God has commanded you mean?"</p>
+            <p><sup>21</sup>then you shall tell your son, "We were Pharaoh's slaves in Egypt. Yahweh brought us out of Egypt with a mighty hand;</p>
+            <p><sup>22</sup>and Yahweh showed great and awesome signs and wonders on Egypt, on Pharaoh, and on all his house, before our eyes;</p>
+            <p><sup>23</sup>and he brought us out from there, that he might bring us in, to give us the land which he swore to our fathers.</p>
+            <p><sup>24</sup>Yahweh commanded us to do all these statutes, to fear Yahweh our God, for our good always, that he might preserve us alive, as we are today.</p>
+            <p><sup>25</sup>It shall be righteousness to us, if we observe to do all these commandments before Yahweh our God, as he has commanded us."</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="deuteronomy-read-5.html" rel="prev" aria-label="Previous chapter: Deuteronomy 5">&larr; Previous: Chapter 5</a>
+<a class="btn btn-ghost" href="deuteronomy.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="deuteronomy-read-7.html" rel="next" aria-label="Next chapter: Deuteronomy 7">Next: Chapter 7 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

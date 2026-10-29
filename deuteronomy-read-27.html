@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Deuteronomy 27 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Deuteronomy chapter 27 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Deuteronomy 27 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Deuteronomy chapter 27 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-deuteronomy">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Deuteronomy <span style="color:var(--burgundy);">&middot; Chapter 27</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 27 of 34</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Deuteronomy <span class="chnum">&middot; Chapter 27</span></h1>
+<p class="chapter-position">Chapter 27 of 34</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="deuteronomy-read-26.html">&larr; Chapter 26</a>
-<span class="chapter-indicator">Chapter 27 of 34</span>
-<a class="btn btn-primary shimmer" href="deuteronomy-read-28.html">Chapter 28 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>And Moses with the elders of Israel commanded the people, saying, Keep all the commandments which I command you this day.</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="deuteronomy-read-26.html" rel="prev" aria-label="Previous chapter: Deuteronomy 26">&larr; Previous: Chapter 26</a>
+<a class="btn btn-ghost" href="deuteronomy.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="deuteronomy-read-28.html" rel="next" aria-label="Next chapter: Deuteronomy 28">Next: Chapter 28 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">A</span>nd Moses with the elders of Israel commanded the people, saying, Keep all the commandments which I command you this day.</p>
             <p><sup>2</sup>And it shall be on the day when ye shall pass over Jordan unto the land which the LORD thy God giveth thee, that thou shalt set thee up great stones, and plaister them with plaister:</p>
             <p><sup>3</sup>And thou shalt write upon them all the words of this law, when thou art passed over, that thou mayest go in unto the land which the LORD thy God giveth thee, a land that floweth with milk and honey; as the LORD God of thy fathers hath promised thee.</p>
             <p><sup>4</sup>Therefore it shall be when ye be gone over Jordan, that ye shall set up these stones, which I command you this day, in mount Ebal, and thou shalt plaister them with plaister.</p>
@@ -56,12 +63,69 @@
             <p><sup>25</sup>Cursed be he that taketh reward to slay an innocent person. And all the people shall say, Amen.</p>
             <p><sup>26</sup>Cursed be he that confirmeth not all the words of this law to do them. And all the people shall say, Amen.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="deuteronomy-read-26.html">&larr; Chapter 26</a>
-<a href="deuteronomy.html">&uarr; Deuteronomy summary</a>
-<a class="btn btn-primary shimmer" href="deuteronomy-read-28.html">Chapter 28 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">M</span>oses and the elders of Israel commanded the people, saying, "Keep all the commandment which I command you today.</p>
+            <p><sup>2</sup>It shall be on the day when you shall pass over the Jordan to the land which Yahweh your God gives you, that you shall set yourself up great stones, and coat them with plaster.</p>
+            <p><sup>3</sup>You shall write on them all the words of this law, when you have passed over, that you may go in to the land which Yahweh your God gives you, a land flowing with milk and honey, as Yahweh, the God of your fathers, has promised you.</p>
+            <p><sup>4</sup>It shall be, when you have crossed over the Jordan, that you shall set up these stones, which I command you today, on Mount Ebal, and you shall coat them with plaster.</p>
+            <p><sup>5</sup>There you shall build an altar to Yahweh your God, an altar of stones. You shall not use any iron tool on them.</p>
+            <p><sup>6</sup>You shall build Yahweh your God's altar of uncut stones. You shall offer burnt offerings on it to Yahweh your God.</p>
+            <p><sup>7</sup>You shall sacrifice peace offerings, and shall eat there. You shall rejoice before Yahweh your God.</p>
+            <p><sup>8</sup>You shall write on the stones all the words of this law very plainly."</p>
+            <p><sup>9</sup>Moses and the Levitical priests spoke to all Israel, saying, "Be silent and listen, Israel! Today you have become the people of Yahweh your God.</p>
+            <p><sup>10</sup>You shall therefore obey Yahweh your God's voice, and do his commandments and his statutes, which I command you today."</p>
+            <p><sup>11</sup>Moses commanded the people the same day, saying,</p>
+            <p><sup>12</sup>"These shall stand on Mount Gerizim to bless the people, when you have crossed over the Jordan: Simeon, Levi, Judah, Issachar, Joseph, and Benjamin.</p>
+            <p><sup>13</sup>These shall stand on Mount Ebal for the curse: Reuben, Gad, Asher, Zebulun, Dan, and Naphtali.</p>
+            <p><sup>14</sup>With a loud voice, the Levites shall say to all the men of Israel,</p>
+            <p><sup>15</sup>'Cursed is the man who makes an engraved or molten image, an abomination to Yahweh, the work of the hands of the craftsman, and sets it up in secret.' All the people shall answer and say, 'Amen.'</p>
+            <p><sup>16</sup>'Cursed is he who dishonors his father or his mother.' All the people shall say, 'Amen.'</p>
+            <p><sup>17</sup>'Cursed is he who removes his neighbor's landmark.' All the people shall say, 'Amen.'</p>
+            <p><sup>18</sup>'Cursed is he who leads the blind astray on the road.' All the people shall say, 'Amen.'</p>
+            <p><sup>19</sup>'Cursed is he who withholds justice from the foreigner, fatherless, and widow.' All the people shall say, 'Amen.'</p>
+            <p><sup>20</sup>'Cursed is he who lies with his father's wife, because he dishonors his father's bed.' All the people shall say, 'Amen.'</p>
+            <p><sup>21</sup>'Cursed is he who lies with any kind of animal.' All the people shall say, 'Amen.'</p>
+            <p><sup>22</sup>'Cursed is he who lies with his sister, his father's daughter or his mother's daughter.' All the people shall say, 'Amen.'</p>
+            <p><sup>23</sup>'Cursed is he who lies with his mother-in-law.' All the people shall say, 'Amen.'</p>
+            <p><sup>24</sup>'Cursed is he who secretly kills his neighbor.' All the people shall say, 'Amen.'</p>
+            <p><sup>25</sup>'Cursed is he who takes a bribe to kill an innocent person.' All the people shall say, 'Amen.'</p>
+            <p><sup>26</sup>'Cursed is he who doesn't uphold the words of this law by doing them.' All the people shall say, 'Amen.'"</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="deuteronomy-read-26.html" rel="prev" aria-label="Previous chapter: Deuteronomy 26">&larr; Previous: Chapter 26</a>
+<a class="btn btn-ghost" href="deuteronomy.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="deuteronomy-read-28.html" rel="next" aria-label="Next chapter: Deuteronomy 28">Next: Chapter 28 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

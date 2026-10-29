@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Deuteronomy 33 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Deuteronomy chapter 33 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Deuteronomy 33 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Deuteronomy chapter 33 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-deuteronomy">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Deuteronomy <span style="color:var(--burgundy);">&middot; Chapter 33</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 33 of 34</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Deuteronomy <span class="chnum">&middot; Chapter 33</span></h1>
+<p class="chapter-position">Chapter 33 of 34</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="deuteronomy-read-32.html">&larr; Chapter 32</a>
-<span class="chapter-indicator">Chapter 33 of 34</span>
-<a class="btn btn-primary shimmer" href="deuteronomy-read-34.html">Chapter 34 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>And this is the blessing, wherewith Moses the man of God blessed the children of Israel before his death.</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="deuteronomy-read-32.html" rel="prev" aria-label="Previous chapter: Deuteronomy 32">&larr; Previous: Chapter 32</a>
+<a class="btn btn-ghost" href="deuteronomy.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="deuteronomy-read-34.html" rel="next" aria-label="Next chapter: Deuteronomy 34">Next: Chapter 34 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">A</span>nd this is the blessing, wherewith Moses the man of God blessed the children of Israel before his death.</p>
             <p><sup>2</sup>And he said, The LORD came from Sinai, and rose up from Seir unto them; he shined forth from mount Paran, and he came with ten thousands of saints: from his right hand went a fiery law for them.</p>
             <p><sup>3</sup>Yea, he loved the people; all his saints are in thy hand: and they sat down at thy feet; every one shall receive of thy words.</p>
             <p><sup>4</sup>Moses commanded us a law, even the inheritance of the congregation of Jacob.</p>
@@ -59,12 +66,72 @@
             <p><sup>28</sup>Israel then shall dwell in safety alone: the fountain of Jacob shall be upon a land of corn and wine; also his heavens shall drop down dew.</p>
             <p><sup>29</sup>Happy art thou, O Israel: who is like unto thee, O people saved by the LORD, the shield of thy help, and who is the sword of thy excellency! and thine enemies shall be found liars unto thee; and thou shalt tread upon their high places.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="deuteronomy-read-32.html">&larr; Chapter 32</a>
-<a href="deuteronomy.html">&uarr; Deuteronomy summary</a>
-<a class="btn btn-primary shimmer" href="deuteronomy-read-34.html">Chapter 34 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">T</span>his is the blessing with which Moses the man of God blessed the children of Israel before his death.</p>
+            <p><sup>2</sup>He said, "Yahweh came from Sinai, and rose from Seir to them. He shone from Mount Paran. He came from the ten thousands of holy ones. At his right hand was a fiery law for them.</p>
+            <p><sup>3</sup>Yes, he loves the people. All his saints are in your hand. They sat down at your feet. Each receives your words.</p>
+            <p><sup>4</sup>Moses commanded us a law, an inheritance for the assembly of Jacob.</p>
+            <p><sup>5</sup>He was king in Jeshurun, when the heads of the people were gathered, all the tribes of Israel together.</p>
+            <p><sup>6</sup>"Let Reuben live, and not die; Nor let his men be few."</p>
+            <p><sup>7</sup>This is for Judah. He said, "Hear, Yahweh, the voice of Judah. Bring him in to his people. With his hands he contended for himself. You shall be a help against his adversaries."</p>
+            <p><sup>8</sup>About Levi he said, "Your Thummim and your Urim are with your godly one, whom you proved at Massah, with whom you contended at the waters of Meribah.</p>
+            <p><sup>9</sup>He said of his father, and of his mother, 'I have not seen him.' He didn't acknowledge his brothers, nor did he know his own children; for they have observed your word, and keep your covenant.</p>
+            <p><sup>10</sup>They shall teach Jacob your ordinances, and Israel your law. They shall put incense before you, and whole burnt offering on your altar.</p>
+            <p><sup>11</sup>Yahweh, bless his skills. Accept the work of his hands. Strike through the hips of those who rise up against him, of those who hate him, that they not rise again."</p>
+            <p><sup>12</sup>About Benjamin he said, "The beloved of Yahweh will dwell in safety by him. He covers him all day long. He dwells between his shoulders."</p>
+            <p><sup>13</sup>About Joseph he said, "His land is blessed by Yahweh, for the precious things of the heavens, for the dew, for the deep that couches beneath,</p>
+            <p><sup>14</sup>for the precious things of the fruits of the sun, for the precious things that the moon can yield,</p>
+            <p><sup>15</sup>for the best things of the ancient mountains, for the precious things of the everlasting hills,</p>
+            <p><sup>16</sup>for the precious things of the earth and its fullness, the good will of him who lived in the bush. Let this come on the head of Joseph, on the crown of the head of him who was separated from his brothers.</p>
+            <p><sup>17</sup>Majesty belongs to the firstborn of his herd. His horns are the horns of the wild ox. With them he will push all the peoples to the ends of the earth. They are the ten thousands of Ephraim. They are the thousands of Manasseh."</p>
+            <p><sup>18</sup>About Zebulun he said, "Rejoice, Zebulun, in your going out; and Issachar, in your tents.</p>
+            <p><sup>19</sup>They will call the peoples to the mountain. There they will offer sacrifices of righteousness, for they will draw out the abundance of the seas, the hidden treasures of the sand."</p>
+            <p><sup>20</sup>About Gad he said, "He who enlarges Gad is blessed. He dwells as a lioness, and tears the arm and the crown of the head.</p>
+            <p><sup>21</sup>He provided the first part for himself, for the lawgiver's portion was reserved for him. He came with the heads of the people. He executed the righteousness of Yahweh, His ordinances with Israel."</p>
+            <p><sup>22</sup>About Dan he said, "Dan is a lion's cub that leaps out of Bashan."</p>
+            <p><sup>23</sup>About Naphtali he said, "Naphtali, satisfied with favor, full of Yahweh's blessing, Possess the west and the south."</p>
+            <p><sup>24</sup>About Asher he said, "Asher is blessed with children. Let him be acceptable to his brothers. Let him dip his foot in oil.</p>
+            <p><sup>25</sup>Your bars will be iron and bronze. As your days, so your strength will be.</p>
+            <p><sup>26</sup>"There is no one like God, Jeshurun, who rides on the heavens for your help, in his excellency on the skies.</p>
+            <p><sup>27</sup>The eternal God is your dwelling place. Underneath are the everlasting arms. He thrust out the enemy from before you, and said, 'Destroy!'</p>
+            <p><sup>28</sup>Israel dwells in safety, the fountain of Jacob alone, In a land of grain and new wine. Yes, his heavens drop down dew.</p>
+            <p><sup>29</sup>You are happy, Israel! Who is like you, a people saved by Yahweh, the shield of your help, the sword of your excellency? Your enemies will submit themselves to you. You will tread on their high places."</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="deuteronomy-read-32.html" rel="prev" aria-label="Previous chapter: Deuteronomy 32">&larr; Previous: Chapter 32</a>
+<a class="btn btn-ghost" href="deuteronomy.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="deuteronomy-read-34.html" rel="next" aria-label="Next chapter: Deuteronomy 34">Next: Chapter 34 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

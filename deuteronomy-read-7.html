@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Deuteronomy 7 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Deuteronomy chapter 7 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Deuteronomy 7 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Deuteronomy chapter 7 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-deuteronomy">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Deuteronomy <span style="color:var(--burgundy);">&middot; Chapter 7</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 7 of 34</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Deuteronomy <span class="chnum">&middot; Chapter 7</span></h1>
+<p class="chapter-position">Chapter 7 of 34</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="deuteronomy-read-6.html">&larr; Chapter 6</a>
-<span class="chapter-indicator">Chapter 7 of 34</span>
-<a class="btn btn-primary shimmer" href="deuteronomy-read-8.html">Chapter 8 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>When the LORD thy God shall bring thee into the land whither thou goest to possess it, and hath cast out many nations before thee, the Hittites, and the Girgashites, and the Amorites, and the Canaanites, and the Perizzites, and the Hivites, and the Jebusites, seven nations greater and mightier than thou;</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="deuteronomy-read-6.html" rel="prev" aria-label="Previous chapter: Deuteronomy 6">&larr; Previous: Chapter 6</a>
+<a class="btn btn-ghost" href="deuteronomy.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="deuteronomy-read-8.html" rel="next" aria-label="Next chapter: Deuteronomy 8">Next: Chapter 8 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">W</span>hen the LORD thy God shall bring thee into the land whither thou goest to possess it, and hath cast out many nations before thee, the Hittites, and the Girgashites, and the Amorites, and the Canaanites, and the Perizzites, and the Hivites, and the Jebusites, seven nations greater and mightier than thou;</p>
             <p><sup>2</sup>And when the LORD thy God shall deliver them before thee; thou shalt smite them, and utterly destroy them; thou shalt make no covenant with them, nor shew mercy unto them:</p>
             <p><sup>3</sup>Neither shalt thou make marriages with them; thy daughter thou shalt not give unto his son, nor his daughter shalt thou take unto thy son.</p>
             <p><sup>4</sup>For they will turn away thy son from following me, that they may serve other gods: so will the anger of the LORD be kindled against you, and destroy thee suddenly.</p>
@@ -56,12 +63,69 @@
             <p><sup>25</sup>The graven images of their gods shall ye burn with fire: thou shalt not desire the silver or gold that is on them, nor take it unto thee, lest thou be snared therein: for it is an abomination to the LORD thy God.</p>
             <p><sup>26</sup>Neither shalt thou bring an abomination into thine house, lest thou be a cursed thing like it: but thou shalt utterly detest it, and thou shalt utterly abhor it; for it is a cursed thing.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="deuteronomy-read-6.html">&larr; Chapter 6</a>
-<a href="deuteronomy.html">&uarr; Deuteronomy summary</a>
-<a class="btn btn-primary shimmer" href="deuteronomy-read-8.html">Chapter 8 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">W</span>hen Yahweh your God brings you into the land where you go to possess it, and casts out many nations before you—the Hittite, the Girgashite, the Amorite, the Canaanite, the Perizzite, the Hivite, and the Jebusite—seven nations greater and mightier than you;</p>
+            <p><sup>2</sup>and when Yahweh your God delivers them up before you, and you strike them, then you shall utterly destroy them. You shall make no covenant with them, nor show mercy to them.</p>
+            <p><sup>3</sup>You shall not make marriages with them. You shall not give your daughter to his son, nor shall you take his daughter for your son.</p>
+            <p><sup>4</sup>For that would turn away your sons from following me, that they may serve other gods. So Yahweh's anger would be kindled against you, and he would destroy you quickly.</p>
+            <p><sup>5</sup>But you shall deal with them like this: you shall break down their altars, dash their pillars in pieces, cut down their Asherah poles, and burn their engraved images with fire.</p>
+            <p><sup>6</sup>For you are a holy people to Yahweh your God. Yahweh your God has chosen you to be a people for his own possession, above all peoples who are on the face of the earth.</p>
+            <p><sup>7</sup>Yahweh didn't set his love on you nor choose you, because you were more in number than any people; for you were the fewest of all peoples;</p>
+            <p><sup>8</sup>but because Yahweh loves you, and because he desires to keep the oath which he swore to your fathers, Yahweh has brought you out with a mighty hand and redeemed you out of the house of bondage, from the hand of Pharaoh king of Egypt.</p>
+            <p><sup>9</sup>Know therefore that Yahweh your God himself is God, the faithful God, who keeps covenant and loving kindness to a thousand generations with those who love him and keep his commandments,</p>
+            <p><sup>10</sup>and repays those who hate him to their face, to destroy them. He will not be slack to him who hates him. He will repay him to his face.</p>
+            <p><sup>11</sup>You shall therefore keep the commandments, the statutes, and the ordinances which I command you today, to do them.</p>
+            <p><sup>12</sup>It shall happen, because you listen to these ordinances and keep and do them, that Yahweh your God will keep with you the covenant and the loving kindness which he swore to your fathers.</p>
+            <p><sup>13</sup>He will love you, bless you, and multiply you. He will also bless the fruit of your body and the fruit of your ground, your grain and your new wine and your oil, the increase of your livestock and the young of your flock, in the land which he swore to your fathers to give you.</p>
+            <p><sup>14</sup>You will be blessed above all peoples. There won't be male or female barren among you, or among your livestock.</p>
+            <p><sup>15</sup>Yahweh will take away from you all sickness; and he will put none of the evil diseases of Egypt, which you know, on you, but will lay them on all those who hate you.</p>
+            <p><sup>16</sup>You shall consume all the peoples whom Yahweh your God shall deliver to you. Your eye shall not pity them. You shall not serve their gods; for that would be a snare to you.</p>
+            <p><sup>17</sup>If you shall say in your heart, "These nations are more than I; how can I dispossess them?"</p>
+            <p><sup>18</sup>you shall not be afraid of them. You shall remember well what Yahweh your God did to Pharaoh and to all Egypt:</p>
+            <p><sup>19</sup>the great trials which your eyes saw, the signs, the wonders, the mighty hand, and the outstretched arm, by which Yahweh your God brought you out. So shall Yahweh your God do to all the peoples of whom you are afraid.</p>
+            <p><sup>20</sup>Moreover Yahweh your God will send the hornet among them, until those who are left, and hide themselves, perish from before you.</p>
+            <p><sup>21</sup>You shall not be scared of them; for Yahweh your God is among you, a great and awesome God.</p>
+            <p><sup>22</sup>Yahweh your God will cast out those nations before you little by little. You may not consume them at once, lest the animals of the field increase on you.</p>
+            <p><sup>23</sup>But Yahweh your God will deliver them up before you, and will confuse them with a great confusion, until they are destroyed.</p>
+            <p><sup>24</sup>He will deliver their kings into your hand, and you shall make their name perish from under the sky. No one will be able to stand before you until you have destroyed them.</p>
+            <p><sup>25</sup>You shall burn the engraved images of their gods with fire. You shall not covet the silver or the gold that is on them, nor take it for yourself, lest you be snared in it; for it is an abomination to Yahweh your God.</p>
+            <p><sup>26</sup>You shall not bring an abomination into your house and become a devoted thing like it. You shall utterly detest it. You shall utterly abhor it; for it is a devoted thing.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="deuteronomy-read-6.html" rel="prev" aria-label="Previous chapter: Deuteronomy 6">&larr; Previous: Chapter 6</a>
+<a class="btn btn-ghost" href="deuteronomy.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="deuteronomy-read-8.html" rel="next" aria-label="Next chapter: Deuteronomy 8">Next: Chapter 8 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

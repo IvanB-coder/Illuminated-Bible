@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Deuteronomy 18 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Deuteronomy chapter 18 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Deuteronomy 18 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Deuteronomy chapter 18 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-deuteronomy">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Deuteronomy <span style="color:var(--burgundy);">&middot; Chapter 18</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 18 of 34</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Deuteronomy <span class="chnum">&middot; Chapter 18</span></h1>
+<p class="chapter-position">Chapter 18 of 34</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="deuteronomy-read-17.html">&larr; Chapter 17</a>
-<span class="chapter-indicator">Chapter 18 of 34</span>
-<a class="btn btn-primary shimmer" href="deuteronomy-read-19.html">Chapter 19 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>The priests the Levites, and all the tribe of Levi, shall have no part nor inheritance with Israel: they shall eat the offerings of the LORD made by fire, and his inheritance.</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="deuteronomy-read-17.html" rel="prev" aria-label="Previous chapter: Deuteronomy 17">&larr; Previous: Chapter 17</a>
+<a class="btn btn-ghost" href="deuteronomy.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="deuteronomy-read-19.html" rel="next" aria-label="Next chapter: Deuteronomy 19">Next: Chapter 19 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">T</span>he priests the Levites, and all the tribe of Levi, shall have no part nor inheritance with Israel: they shall eat the offerings of the LORD made by fire, and his inheritance.</p>
             <p><sup>2</sup>Therefore shall they have no inheritance among their brethren: the LORD is their inheritance, as he hath said unto them.</p>
             <p><sup>3</sup>And this shall be the priest's due from the people, from them that offer a sacrifice, whether it be ox or sheep; and they shall give unto the priest the shoulder, and the two cheeks, and the maw.</p>
             <p><sup>4</sup>The firstfruit also of thy corn, of thy wine, and of thine oil, and the first of the fleece of thy sheep, shalt thou give him.</p>
@@ -52,12 +59,65 @@
             <p><sup>21</sup>And if thou say in thine heart, How shall we know the word which the LORD hath not spoken?</p>
             <p><sup>22</sup>When a prophet speaketh in the name of the LORD, if the thing follow not, nor come to pass, that is the thing which the LORD hath not spoken, but the prophet hath spoken it presumptuously: thou shalt not be afraid of him.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="deuteronomy-read-17.html">&larr; Chapter 17</a>
-<a href="deuteronomy.html">&uarr; Deuteronomy summary</a>
-<a class="btn btn-primary shimmer" href="deuteronomy-read-19.html">Chapter 19 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">T</span>he priests and the Levites -- all the tribe of Levi -- shall have no portion nor inheritance with Israel. They shall eat the offerings of Yahweh made by fire and his portion.</p>
+            <p><sup>2</sup>They shall have no inheritance among their brothers. Yahweh is their inheritance, as he has spoken to them.</p>
+            <p><sup>3</sup>This shall be the priests' due from the people, from those who offer a sacrifice, whether it be ox or sheep, that they shall give to the priest: the shoulder, the two cheeks, and the inner parts.</p>
+            <p><sup>4</sup>You shall give him the first fruits of your grain, of your new wine, and of your oil, and the first of the fleece of your sheep.</p>
+            <p><sup>5</sup>For Yahweh your God has chosen him out of all your tribes to stand to minister in Yahweh's name, him and his sons forever.</p>
+            <p><sup>6</sup>If a Levite comes from any of your gates out of all Israel where he lives, and comes with all the desire of his soul to the place which Yahweh shall choose,</p>
+            <p><sup>7</sup>then he shall minister in the name of Yahweh his God, as all his brothers the Levites do, who stand there before Yahweh.</p>
+            <p><sup>8</sup>They shall have like portions to eat, in addition to that which comes from the sale of his family possessions.</p>
+            <p><sup>9</sup>When you have come into the land which Yahweh your God gives you, you shall not learn to imitate the abominations of those nations.</p>
+            <p><sup>10</sup>There shall not be found with you anyone who makes his son or his daughter to pass through the fire, one who uses divination, one who tells fortunes, or an enchanter, or a sorcerer,</p>
+            <p><sup>11</sup>or a charmer, or someone who consults with a familiar spirit, or a wizard, or a necromancer.</p>
+            <p><sup>12</sup>For whoever does these things is an abomination to Yahweh. Because of these abominations, Yahweh your God drives them out from before you.</p>
+            <p><sup>13</sup>You shall be blameless with Yahweh your God.</p>
+            <p><sup>14</sup>For these nations that you shall dispossess listen to those who practice sorcery and to diviners; but as for you, Yahweh your God has not allowed you so to do.</p>
+            <p><sup>15</sup>Yahweh your God will raise up to you a prophet from among you, of your brothers, like me. You shall listen to him.</p>
+            <p><sup>16</sup>This is according to all that you desired of Yahweh your God in Horeb in the day of the assembly, saying, "Let me not hear again Yahweh my God's voice, neither let me see this great fire any more, that I not die."</p>
+            <p><sup>17</sup>Yahweh said to me, "They have well said that which they have spoken.</p>
+            <p><sup>18</sup>I will raise them up a prophet from among their brothers, like you. I will put my words in his mouth, and he shall speak to them all that I shall command him.</p>
+            <p><sup>19</sup>It shall happen, that whoever will not listen to my words which he shall speak in my name, I will require it of him.</p>
+            <p><sup>20</sup>But the prophet who speaks a word presumptuously in my name, which I have not commanded him to speak, or who speaks in the name of other gods, that same prophet shall die."</p>
+            <p><sup>21</sup>You may say in your heart, "How shall we know the word which Yahweh has not spoken?"</p>
+            <p><sup>22</sup>When a prophet speaks in Yahweh's name, if the thing doesn't follow, nor happen, that is the thing which Yahweh has not spoken. The prophet has spoken it presumptuously. You shall not be afraid of him.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="deuteronomy-read-17.html" rel="prev" aria-label="Previous chapter: Deuteronomy 17">&larr; Previous: Chapter 17</a>
+<a class="btn btn-ghost" href="deuteronomy.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="deuteronomy-read-19.html" rel="next" aria-label="Next chapter: Deuteronomy 19">Next: Chapter 19 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

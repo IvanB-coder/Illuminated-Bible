@@ -1,0 +1,48 @@
+ILLUMINATED WORD - SEARCH, BANNER AND HEADER UPDATE (28 OCTOBER 2026)
+
+ONE CUMULATIVE CODE UPDATE FOR YOUR EXISTING WEBSITE
+1. Back up your existing complete website folder.
+2. Extract this ZIP into that SAME folder, beside its existing index.html.
+3. Replace every matching file. Keep the existing paintings.
+4. To publish, upload/commit the extracted contents to the current GitHub Pages
+   publishing location. Do not upload the ZIP itself as the website.
+5. Apply NO older code/layout/search package afterwards.
+
+This includes all current HTML/CSS/JavaScript, both new search data scripts,
+and the original restored genesis-painting.jpg. It supersedes the earlier
+final search update. You do not need to apply older fixes first if the rest
+of your existing complete site and its paintings are already present.
+The other 65 paintings are deliberately not repeated. This is NOT a full
+standalone installation for an empty folder.
+
+SEARCH NOW SUPPORTS BOTH LOCAL AND PUBLISHED PAGES
+After extracting all files, open index.html. Enter John 3:16 and click
+Search verses. Results appear as individual verses below the compact banner.
+Select KJV/WEB alongside the query. Expand Search options & tips for book,
+match and sort filters. Clear hides the results again.
+
+Keep these files beside index.html:
+  scripture-search.js, scripture-search.css, scripture-search-core.js
+  scripture-search-worker.js, verse-link.js
+  search-data-kjv-20261028.js, search-data-web-20261028.js
+The new verse data scripts load without JSON fetch. Local file pages bypass
+workers; HTTP(S) uses a worker with a main-thread fallback. Old 20261027 JSON
+files may remain but are no longer referenced. Never rename .js data to .json.
+
+Test both translations, keywords, quoted phrases, page 2 of a common word,
+and Read in chapter. Check Micah 3, Esther and Genesis. Refresh the published
+page without cache after deployment (Ctrl+Shift+R / Cmd+Shift+R).
+If verse data is missing, extract/upload the complete update and use Try again.
+Restrictive browser policies can still block local scripts; use the published
+website in that case. JavaScript must be enabled.
+
+VALIDATION
+All 1,256 headers standardized across 66 books and 1,189 chapters. All scripture
+blocks and toggle logic unchanged. Engine, loading/UI and deep-link model tests
+pass. No live browser was available, and this package has not published itself.
+See AUDIT.md and VALIDATION.json for exact checks and limitations.
+
+RECOVERY CAUTION
+The matching baseline Part 1 is absent from the retained project folder.
+Do NOT build a fresh site using only Parts 2-4. Preserve the remaining backups,
+including audited Part 1. Do not delete source archives to install this update.

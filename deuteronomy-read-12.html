@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Deuteronomy 12 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Deuteronomy chapter 12 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Deuteronomy 12 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Deuteronomy chapter 12 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-deuteronomy">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Deuteronomy <span style="color:var(--burgundy);">&middot; Chapter 12</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 12 of 34</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Deuteronomy <span class="chnum">&middot; Chapter 12</span></h1>
+<p class="chapter-position">Chapter 12 of 34</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="deuteronomy-read-11.html">&larr; Chapter 11</a>
-<span class="chapter-indicator">Chapter 12 of 34</span>
-<a class="btn btn-primary shimmer" href="deuteronomy-read-13.html">Chapter 13 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>These are the statutes and judgments, which ye shall observe to do in the land, which the LORD God of thy fathers giveth thee to possess it, all the days that ye live upon the earth.</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="deuteronomy-read-11.html" rel="prev" aria-label="Previous chapter: Deuteronomy 11">&larr; Previous: Chapter 11</a>
+<a class="btn btn-ghost" href="deuteronomy.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="deuteronomy-read-13.html" rel="next" aria-label="Next chapter: Deuteronomy 13">Next: Chapter 13 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">T</span>hese are the statutes and judgments, which ye shall observe to do in the land, which the LORD God of thy fathers giveth thee to possess it, all the days that ye live upon the earth.</p>
             <p><sup>2</sup>Ye shall utterly destroy all the places, wherein the nations which ye shall possess served their gods, upon the high mountains, and upon the hills, and under every green tree:</p>
             <p><sup>3</sup>And ye shall overthrow their altars, and break their pillars, and burn their groves with fire; and ye shall hew down the graven images of their gods, and destroy the names of them out of that place.</p>
             <p><sup>4</sup>Ye shall not do so unto the LORD your God.</p>
@@ -62,12 +69,75 @@
             <p><sup>31</sup>Thou shalt not do so unto the LORD thy God: for every abomination to the LORD, which he hateth, have they done unto their gods; for even their sons and their daughters they have burnt in the fire to their gods.</p>
             <p><sup>32</sup>What thing soever I command you, observe to do it: thou shalt not add thereto, nor diminish from it.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="deuteronomy-read-11.html">&larr; Chapter 11</a>
-<a href="deuteronomy.html">&uarr; Deuteronomy summary</a>
-<a class="btn btn-primary shimmer" href="deuteronomy-read-13.html">Chapter 13 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">T</span>hese are the statutes and the ordinances which you shall observe to do in the land which Yahweh, the God of your fathers, has given you to possess all the days that you live on the earth.</p>
+            <p><sup>2</sup>You shall surely destroy all the places in which the nations that you shall dispossess served their gods: on the high mountains, and on the hills, and under every green tree.</p>
+            <p><sup>3</sup>You shall break down their altars, dash their pillars in pieces, and burn their Asherah poles with fire. You shall cut down the engraved images of their gods. You shall destroy their name out of that place.</p>
+            <p><sup>4</sup>You shall not do so to Yahweh your God.</p>
+            <p><sup>5</sup>But to the place which Yahweh your God shall choose out of all your tribes, to put his name there, you shall seek his habitation, and you shall come there.</p>
+            <p><sup>6</sup>You shall bring your burnt offerings, your sacrifices, your tithes, the wave offering of your hand, your vows, your free will offerings, and the firstborn of your herd and of your flock there.</p>
+            <p><sup>7</sup>There you shall eat before Yahweh your God, and you shall rejoice in all that you put your hand to, you and your households, in which Yahweh your God has blessed you.</p>
+            <p><sup>8</sup>You shall not do all the things that we do here today, every man whatever is right in his own eyes;</p>
+            <p><sup>9</sup>for you haven't yet come to the rest and to the inheritance which Yahweh your God gives you.</p>
+            <p><sup>10</sup>But when you go over the Jordan and dwell in the land which Yahweh your God causes you to inherit, and he gives you rest from all your enemies around you, so that you dwell in safety,</p>
+            <p><sup>11</sup>then it shall happen that to the place which Yahweh your God shall choose, to cause his name to dwell there, there you shall bring all that I command you: your burnt offerings, your sacrifices, your tithes, the wave offering of your hand, and all your choice vows which you vow to Yahweh.</p>
+            <p><sup>12</sup>You shall rejoice before Yahweh your God—you, and your sons, your daughters, your male servants, your female servants, and the Levite who is within your gates, because he has no portion nor inheritance with you.</p>
+            <p><sup>13</sup>Be careful that you don't offer your burnt offerings in every place that you see;</p>
+            <p><sup>14</sup>but in the place which Yahweh chooses in one of your tribes, there you shall offer your burnt offerings, and there you shall do all that I command you.</p>
+            <p><sup>15</sup>Yet you may kill and eat meat within all your gates, after all the desire of your soul, according to Yahweh your God's blessing which he has given you. The unclean and the clean may eat of it, as of the gazelle and the deer.</p>
+            <p><sup>16</sup>Only you shall not eat the blood. You shall pour it out on the earth like water.</p>
+            <p><sup>17</sup>You may not eat within your gates the tithe of your grain, or of your new wine, or of your oil, or the firstborn of your herd or of your flock, nor any of your vows which you vow, nor your free will offerings, nor the wave offering of your hand;</p>
+            <p><sup>18</sup>but you shall eat them before Yahweh your God in the place which Yahweh your God shall choose: you, your son, your daughter, your male servant, your female servant, and the Levite who is within your gates. You shall rejoice before Yahweh your God in all that you put your hand to.</p>
+            <p><sup>19</sup>Be careful that you don't forsake the Levite as long as you live in your land.</p>
+            <p><sup>20</sup>When Yahweh your God enlarges your border, as he has promised you, and you say, "I want to eat meat," because your soul desires to eat meat, you may eat meat, after all the desire of your soul.</p>
+            <p><sup>21</sup>If the place which Yahweh your God shall choose to put his name is too far from you, then you shall kill of your herd and of your flock, which Yahweh has given you, as I have commanded you; and you may eat within your gates, after all the desire of your soul.</p>
+            <p><sup>22</sup>Even as the gazelle and as the deer is eaten, so you shall eat of it. The unclean and the clean may eat of it alike.</p>
+            <p><sup>23</sup>Only be sure that you don't eat the blood; for the blood is the life. You shall not eat the life with the meat.</p>
+            <p><sup>24</sup>You shall not eat it. You shall pour it out on the earth like water.</p>
+            <p><sup>25</sup>You shall not eat it, that it may go well with you and with your children after you, when you do that which is right in Yahweh's eyes.</p>
+            <p><sup>26</sup>Only your holy things which you have, and your vows, you shall take and go to the place which Yahweh shall choose.</p>
+            <p><sup>27</sup>You shall offer your burnt offerings, the meat and the blood, on Yahweh your God's altar. The blood of your sacrifices shall be poured out on Yahweh your God's altar, and you shall eat the meat.</p>
+            <p><sup>28</sup>Observe and hear all these words which I command you, that it may go well with you and with your children after you forever, when you do that which is good and right in Yahweh your God's eyes.</p>
+            <p><sup>29</sup>When Yahweh your God cuts off the nations from before you where you go in to dispossess them, and you dispossess them and dwell in their land,</p>
+            <p><sup>30</sup>be careful that you are not ensnared to follow them after they are destroyed from before you, and that you not inquire after their gods, saying, "How do these nations serve their gods? I will do likewise."</p>
+            <p><sup>31</sup>You shall not do so to Yahweh your God; for every abomination to Yahweh, which he hates, they have done to their gods; for they even burn their sons and their daughters in the fire to their gods.</p>
+            <p><sup>32</sup>Whatever thing I command you, that you shall observe to do. You shall not add to it, nor take away from it.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="deuteronomy-read-11.html" rel="prev" aria-label="Previous chapter: Deuteronomy 11">&larr; Previous: Chapter 11</a>
+<a class="btn btn-ghost" href="deuteronomy.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="deuteronomy-read-13.html" rel="next" aria-label="Next chapter: Deuteronomy 13">Next: Chapter 13 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

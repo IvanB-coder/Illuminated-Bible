@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Deuteronomy 21 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Deuteronomy chapter 21 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Deuteronomy 21 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Deuteronomy chapter 21 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-deuteronomy">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Deuteronomy <span style="color:var(--burgundy);">&middot; Chapter 21</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 21 of 34</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Deuteronomy <span class="chnum">&middot; Chapter 21</span></h1>
+<p class="chapter-position">Chapter 21 of 34</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="deuteronomy-read-20.html">&larr; Chapter 20</a>
-<span class="chapter-indicator">Chapter 21 of 34</span>
-<a class="btn btn-primary shimmer" href="deuteronomy-read-22.html">Chapter 22 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>If one be found slain in the land which the LORD thy God giveth thee to possess it, lying in the field, and it be not known who hath slain him:</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="deuteronomy-read-20.html" rel="prev" aria-label="Previous chapter: Deuteronomy 20">&larr; Previous: Chapter 20</a>
+<a class="btn btn-ghost" href="deuteronomy.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="deuteronomy-read-22.html" rel="next" aria-label="Next chapter: Deuteronomy 22">Next: Chapter 22 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">I</span>f one be found slain in the land which the LORD thy God giveth thee to possess it, lying in the field, and it be not known who hath slain him:</p>
             <p><sup>2</sup>Then thy elders and thy judges shall come forth, and they shall measure unto the cities which are round about him that is slain:</p>
             <p><sup>3</sup>And it shall be, that the city which is next unto the slain man, even the elders of that city shall take an heifer, which hath not been wrought with, and which hath not drawn in the yoke;</p>
             <p><sup>4</sup>And the elders of that city shall bring down the heifer unto a rough valley, which is neither eared nor sown, and shall strike off the heifer's neck there in the valley:</p>
@@ -53,12 +60,66 @@
             <p><sup>22</sup>And if a man have committed a sin worthy of death, and he be to be put to death, and thou hang him on a tree:</p>
             <p><sup>23</sup>His body shall not remain all night upon the tree, but thou shalt in any wise bury him that day; (for he that is hanged is accursed of God;) that thy land be not defiled, which the LORD thy God giveth thee for an inheritance.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="deuteronomy-read-20.html">&larr; Chapter 20</a>
-<a href="deuteronomy.html">&uarr; Deuteronomy summary</a>
-<a class="btn btn-primary shimmer" href="deuteronomy-read-22.html">Chapter 22 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">I</span>f someone is found slain in the land which Yahweh your God gives you to possess, lying in the field, and it isn't known who has struck him,</p>
+            <p><sup>2</sup>then your elders and your judges shall come out, and they shall measure to the cities which are around him who is slain.</p>
+            <p><sup>3</sup>It shall be that the elders of the city which is nearest to the slain man shall take a heifer of the herd, which hasn't been worked with and which has not drawn in the yoke.</p>
+            <p><sup>4</sup>The elders of that city shall bring the heifer down to a valley with running water, which is neither plowed nor sown, and shall break the heifer's neck there in the valley.</p>
+            <p><sup>5</sup>The priests the sons of Levi shall come near, for them Yahweh your God has chosen to minister to him, and to bless in Yahweh's name; and according to their word shall every controversy and every assault be decided.</p>
+            <p><sup>6</sup>All the elders of that city which is nearest to the slain man shall wash their hands over the heifer whose neck was broken in the valley.</p>
+            <p><sup>7</sup>They shall answer and say, "Our hands have not shed this blood, neither have our eyes seen it.</p>
+            <p><sup>8</sup>Forgive, Yahweh, your people Israel, whom you have redeemed, and don't allow innocent blood among your people Israel." The blood shall be forgiven them.</p>
+            <p><sup>9</sup>So you shall put away the innocent blood from among you, when you shall do that which is right in Yahweh's eyes.</p>
+            <p><sup>10</sup>When you go out to battle against your enemies, and Yahweh your God delivers them into your hands and you carry them away captive,</p>
+            <p><sup>11</sup>and see among the captives a beautiful woman, and you are attracted to her, and desire to take her as your wife,</p>
+            <p><sup>12</sup>then you shall bring her home to your house. She shall shave her head and trim her nails.</p>
+            <p><sup>13</sup>She shall take off the clothing of her captivity, and shall remain in your house, and bewail her father and her mother a full month. After that you shall go in to her and be her husband, and she shall be your wife.</p>
+            <p><sup>14</sup>It shall be, if you have no delight in her, then you shall let her go where she desires; but you shall not sell her at all for money. You shall not deal with her as a slave, because you have humbled her.</p>
+            <p><sup>15</sup>If a man has two wives, the one beloved and the other hated, and they have borne him children, both the beloved and the hated, and if the firstborn son is hers who was hated,</p>
+            <p><sup>16</sup>then it shall be, in the day that he causes his sons to inherit that which he has, that he may not give the son of the beloved the rights of the firstborn before the son of the hated, who is the firstborn;</p>
+            <p><sup>17</sup>but he shall acknowledge the firstborn, the son of the hated, by giving him a double portion of all that he has; for he is the beginning of his strength. The right of the firstborn is his.</p>
+            <p><sup>18</sup>If a man has a stubborn and rebellious son who will not obey the voice of his father or the voice of his mother, and though they chasten him, will not listen to them,</p>
+            <p><sup>19</sup>then his father and his mother shall take hold of him and bring him out to the elders of his city and to the gate of his place.</p>
+            <p><sup>20</sup>They shall tell the elders of his city, "This our son is stubborn and rebellious. He will not obey our voice. He is a glutton and a drunkard."</p>
+            <p><sup>21</sup>All the men of his city shall stone him to death with stones. So you shall remove the evil from among you. All Israel shall hear, and fear.</p>
+            <p><sup>22</sup>If a man has committed a sin worthy of death, and he is put to death, and you hang him on a tree,</p>
+            <p><sup>23</sup>his body shall not remain all night on the tree, but you shall surely bury him the same day; for he who is hanged is accursed of God. Don't defile your land which Yahweh your God gives you for an inheritance.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="deuteronomy-read-20.html" rel="prev" aria-label="Previous chapter: Deuteronomy 20">&larr; Previous: Chapter 20</a>
+<a class="btn btn-ghost" href="deuteronomy.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="deuteronomy-read-22.html" rel="next" aria-label="Next chapter: Deuteronomy 22">Next: Chapter 22 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

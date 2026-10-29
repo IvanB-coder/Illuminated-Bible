@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Deuteronomy 13 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Deuteronomy chapter 13 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Deuteronomy 13 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Deuteronomy chapter 13 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-deuteronomy">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Deuteronomy <span style="color:var(--burgundy);">&middot; Chapter 13</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 13 of 34</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Deuteronomy <span class="chnum">&middot; Chapter 13</span></h1>
+<p class="chapter-position">Chapter 13 of 34</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="deuteronomy-read-12.html">&larr; Chapter 12</a>
-<span class="chapter-indicator">Chapter 13 of 34</span>
-<a class="btn btn-primary shimmer" href="deuteronomy-read-14.html">Chapter 14 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>If there arise among you a prophet, or a dreamer of dreams, and giveth thee a sign or a wonder,</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="deuteronomy-read-12.html" rel="prev" aria-label="Previous chapter: Deuteronomy 12">&larr; Previous: Chapter 12</a>
+<a class="btn btn-ghost" href="deuteronomy.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="deuteronomy-read-14.html" rel="next" aria-label="Next chapter: Deuteronomy 14">Next: Chapter 14 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">I</span>f there arise among you a prophet, or a dreamer of dreams, and giveth thee a sign or a wonder,</p>
             <p><sup>2</sup>And the sign or the wonder come to pass, whereof he spake unto thee, saying, Let us go after other gods, which thou hast not known, and let us serve them;</p>
             <p><sup>3</sup>Thou shalt not hearken unto the words of that prophet, or that dreamer of dreams: for the LORD your God proveth you, to know whether ye love the LORD your God with all your heart and with all your soul.</p>
             <p><sup>4</sup>Ye shall walk after the LORD your God, and fear him, and keep his commandments, and obey his voice, and ye shall serve him, and cleave unto him.</p>
@@ -48,12 +55,61 @@
             <p><sup>17</sup>And there shall cleave nought of the cursed thing to thine hand: that the LORD may turn from the fierceness of his anger, and shew thee mercy, and have compassion upon thee, and multiply thee, as he hath sworn unto thy fathers;</p>
             <p><sup>18</sup>When thou shalt hearken to the voice of the LORD thy God, to keep all his commandments which I command thee this day, to do that which is right in the eyes of the LORD thy God.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="deuteronomy-read-12.html">&larr; Chapter 12</a>
-<a href="deuteronomy.html">&uarr; Deuteronomy summary</a>
-<a class="btn btn-primary shimmer" href="deuteronomy-read-14.html">Chapter 14 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">I</span>f a prophet or a dreamer of dreams arises among you, and he gives you a sign or a wonder,</p>
+            <p><sup>2</sup>and the sign or the wonder comes to pass, of which he spoke to you, saying, "Let's go after other gods" (which you have not known) "and let's serve them,"</p>
+            <p><sup>3</sup>you shall not listen to the words of that prophet, or to that dreamer of dreams; for Yahweh your God is testing you, to know whether you love Yahweh your God with all your heart and with all your soul.</p>
+            <p><sup>4</sup>You shall walk after Yahweh your God, fear him, keep his commandments, and obey his voice. You shall serve him, and cling to him.</p>
+            <p><sup>5</sup>That prophet, or that dreamer of dreams, shall be put to death, because he has spoken rebellion against Yahweh your God, who brought you out of the land of Egypt and redeemed you out of the house of bondage, to draw you aside out of the way which Yahweh your God commanded you to walk in. So you shall remove the evil from among you.</p>
+            <p><sup>6</sup>If your brother, the son of your mother, or your son, or your daughter, or the wife of your bosom, or your friend who is as your own soul, entices you secretly, saying, "Let's go and serve other gods"—which you have not known, you, nor your fathers;</p>
+            <p><sup>7</sup>of the gods of the peoples who are around you, near to you, or far off from you, from the one end of the earth even to the other end of the earth—</p>
+            <p><sup>8</sup>you shall not consent to him nor listen to him; neither shall your eye pity him, neither shall you spare, neither shall you conceal him;</p>
+            <p><sup>9</sup>but you shall surely kill him. Your hand shall be first on him to put him to death, and afterwards the hands of all the people.</p>
+            <p><sup>10</sup>You shall stone him to death with stones, because he has sought to draw you away from Yahweh your God, who brought you out of the land of Egypt, out of the house of bondage.</p>
+            <p><sup>11</sup>All Israel shall hear, and fear, and shall not do any more wickedness like this among you.</p>
+            <p><sup>12</sup>If you hear about one of your cities, which Yahweh your God gives you to dwell there, that</p>
+            <p><sup>13</sup>certain wicked fellows have gone out from among you and have drawn away the inhabitants of their city, saying, "Let's go and serve other gods," which you have not known,</p>
+            <p><sup>14</sup>then you shall inquire, investigate, and ask diligently. Behold, if it is true, and the thing certain, that such abomination was done among you,</p>
+            <p><sup>15</sup>you shall surely strike the inhabitants of that city with the edge of the sword, destroying it utterly, with all that is therein and its livestock, with the edge of the sword.</p>
+            <p><sup>16</sup>You shall gather all its plunder into the middle of its street, and shall burn with fire the city, with all of its plunder, to Yahweh your God. It shall be a heap forever. It shall not be built again.</p>
+            <p><sup>17</sup>Nothing of the devoted thing shall cling to your hand, that Yahweh may turn from the fierceness of his anger and show you mercy, and have compassion on you and multiply you, as he has sworn to your fathers,</p>
+            <p><sup>18</sup>when you listen to Yahweh your God's voice, to keep all his commandments which I command you today, to do that which is right in Yahweh your God's eyes.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="deuteronomy-read-12.html" rel="prev" aria-label="Previous chapter: Deuteronomy 12">&larr; Previous: Chapter 12</a>
+<a class="btn btn-ghost" href="deuteronomy.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="deuteronomy-read-14.html" rel="next" aria-label="Next chapter: Deuteronomy 14">Next: Chapter 14 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

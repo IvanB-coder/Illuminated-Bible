@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Deuteronomy 8 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Deuteronomy chapter 8 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Deuteronomy 8 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Deuteronomy chapter 8 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-deuteronomy">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Deuteronomy <span style="color:var(--burgundy);">&middot; Chapter 8</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 8 of 34</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Deuteronomy <span class="chnum">&middot; Chapter 8</span></h1>
+<p class="chapter-position">Chapter 8 of 34</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="deuteronomy-read-7.html">&larr; Chapter 7</a>
-<span class="chapter-indicator">Chapter 8 of 34</span>
-<a class="btn btn-primary shimmer" href="deuteronomy-read-9.html">Chapter 9 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>All the commandments which I command thee this day shall ye observe to do, that ye may live, and multiply, and go in and possess the land which the LORD sware unto your fathers.</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="deuteronomy-read-7.html" rel="prev" aria-label="Previous chapter: Deuteronomy 7">&larr; Previous: Chapter 7</a>
+<a class="btn btn-ghost" href="deuteronomy.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="deuteronomy-read-9.html" rel="next" aria-label="Next chapter: Deuteronomy 9">Next: Chapter 9 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">A</span>ll the commandments which I command thee this day shall ye observe to do, that ye may live, and multiply, and go in and possess the land which the LORD sware unto your fathers.</p>
             <p><sup>2</sup>And thou shalt remember all the way which the LORD thy God led thee these forty years in the wilderness, to humble thee, and to prove thee, to know what was in thine heart, whether thou wouldest keep his commandments, or no.</p>
             <p><sup>3</sup>And he humbled thee, and suffered thee to hunger, and fed thee with manna, which thou knewest not, neither did thy fathers know; that he might make thee know that man doth not live by bread only, but by every word that proceedeth out of the mouth of the LORD doth man live.</p>
             <p><sup>4</sup>Thy raiment waxed not old upon thee, neither did thy foot swell, these forty years.</p>
@@ -50,12 +57,63 @@
             <p><sup>19</sup>And it shall be, if thou do at all forget the LORD thy God, and walk after other gods, and serve them, and worship them, I testify against you this day that ye shall surely perish.</p>
             <p><sup>20</sup>As the nations which the LORD destroyeth before your face, so shall ye perish; because ye would not be obedient unto the voice of the LORD your God.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="deuteronomy-read-7.html">&larr; Chapter 7</a>
-<a href="deuteronomy.html">&uarr; Deuteronomy summary</a>
-<a class="btn btn-primary shimmer" href="deuteronomy-read-9.html">Chapter 9 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">Y</span>ou shall observe to do all the commandments which I command you today, that you may live, and multiply, and go in and possess the land which Yahweh swore to your fathers.</p>
+            <p><sup>2</sup>You shall remember all the way which Yahweh your God has led you these forty years in the wilderness, that he might humble you, to test you, to know what was in your heart, whether you would keep his commandments or not.</p>
+            <p><sup>3</sup>He humbled you, allowed you to be hungry, and fed you with manna, which you didn't know, neither did your fathers know, that he might teach you that man does not live by bread only, but man lives by every word that proceeds out of Yahweh's mouth.</p>
+            <p><sup>4</sup>Your clothing didn't grow old on you, neither did your foot swell, these forty years.</p>
+            <p><sup>5</sup>You shall consider in your heart that as a man disciplines his son, so Yahweh your God disciplines you.</p>
+            <p><sup>6</sup>You shall keep the commandments of Yahweh your God, to walk in his ways, and to fear him.</p>
+            <p><sup>7</sup>For Yahweh your God brings you into a good land, a land of brooks of water, of springs, and underground water flowing into valleys and hills;</p>
+            <p><sup>8</sup>a land of wheat, barley, vines, fig trees, and pomegranates; a land of olive trees and honey;</p>
+            <p><sup>9</sup>a land in which you shall eat bread without scarcity, you shall not lack anything in it; a land whose stones are iron, and out of whose hills you may dig copper.</p>
+            <p><sup>10</sup>You shall eat and be full, and you shall bless Yahweh your God for the good land which he has given you.</p>
+            <p><sup>11</sup>Beware lest you forget Yahweh your God, in not keeping his commandments, his ordinances, and his statutes, which I command you today;</p>
+            <p><sup>12</sup>lest, when you have eaten and are full, and have built fine houses and lived in them;</p>
+            <p><sup>13</sup>and when your herds and your flocks multiply, and your silver and your gold is multiplied, and all that you have is multiplied;</p>
+            <p><sup>14</sup>then your heart might be lifted up, and you forget Yahweh your God, who brought you out of the land of Egypt, out of the house of bondage;</p>
+            <p><sup>15</sup>who led you through the great and terrible wilderness, with venomous snakes and scorpions, and thirsty ground where there was no water; who poured water for you out of the rock of flint;</p>
+            <p><sup>16</sup>who fed you in the wilderness with manna, which your fathers didn't know, that he might humble you, and that he might prove you, to do you good at your latter end;</p>
+            <p><sup>17</sup>and lest you say in your heart, "My power and the might of my hand has gotten me this wealth."</p>
+            <p><sup>18</sup>But you shall remember Yahweh your God, for it is he who gives you power to get wealth, that he may establish his covenant which he swore to your fathers, as it is today.</p>
+            <p><sup>19</sup>It shall be, if you shall forget Yahweh your God, and walk after other gods, and serve them and worship them, I testify against you today that you shall surely perish.</p>
+            <p><sup>20</sup>As the nations that Yahweh makes to perish before you, so you shall perish, because you wouldn't listen to Yahweh your God's voice.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="deuteronomy-read-7.html" rel="prev" aria-label="Previous chapter: Deuteronomy 7">&larr; Previous: Chapter 7</a>
+<a class="btn btn-ghost" href="deuteronomy.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="deuteronomy-read-9.html" rel="next" aria-label="Next chapter: Deuteronomy 9">Next: Chapter 9 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

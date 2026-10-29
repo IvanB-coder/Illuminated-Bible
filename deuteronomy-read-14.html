@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Deuteronomy 14 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Deuteronomy chapter 14 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Deuteronomy 14 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Deuteronomy chapter 14 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-deuteronomy">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Deuteronomy <span style="color:var(--burgundy);">&middot; Chapter 14</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 14 of 34</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Deuteronomy <span class="chnum">&middot; Chapter 14</span></h1>
+<p class="chapter-position">Chapter 14 of 34</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="deuteronomy-read-13.html">&larr; Chapter 13</a>
-<span class="chapter-indicator">Chapter 14 of 34</span>
-<a class="btn btn-primary shimmer" href="deuteronomy-read-15.html">Chapter 15 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>Ye are the children of the LORD your God: ye shall not cut yourselves, nor make any baldness between your eyes for the dead.</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="deuteronomy-read-13.html" rel="prev" aria-label="Previous chapter: Deuteronomy 13">&larr; Previous: Chapter 13</a>
+<a class="btn btn-ghost" href="deuteronomy.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="deuteronomy-read-15.html" rel="next" aria-label="Next chapter: Deuteronomy 15">Next: Chapter 15 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">Y</span>e are the children of the LORD your God: ye shall not cut yourselves, nor make any baldness between your eyes for the dead.</p>
             <p><sup>2</sup>For thou art an holy people unto the LORD thy God, and the LORD hath chosen thee to be a peculiar people unto himself, above all the nations that are upon the earth.</p>
             <p><sup>3</sup>Thou shalt not eat any abominable thing.</p>
             <p><sup>4</sup>These are the beasts which ye shall eat: the ox, the sheep, and the goat,</p>
@@ -59,12 +66,72 @@
             <p><sup>28</sup>At the end of three years thou shalt bring forth all the tithe of thine increase the same year, and shalt lay it up within thy gates:</p>
             <p><sup>29</sup>And the Levite, (because he hath no part nor inheritance with thee,) and the stranger, and the fatherless, and the widow, which are within thy gates, shall come, and shall eat and be satisfied; that the LORD thy God may bless thee in all the work of thine hand which thou doest.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="deuteronomy-read-13.html">&larr; Chapter 13</a>
-<a href="deuteronomy.html">&uarr; Deuteronomy summary</a>
-<a class="btn btn-primary shimmer" href="deuteronomy-read-15.html">Chapter 15 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">Y</span>ou are the children of Yahweh your God. You shall not cut yourselves, nor make any baldness between your eyes for the dead.</p>
+            <p><sup>2</sup>For you are a holy people to Yahweh your God, and Yahweh has chosen you to be a people for his own possession, above all peoples who are on the face of the earth.</p>
+            <p><sup>3</sup>You shall not eat any abominable thing.</p>
+            <p><sup>4</sup>These are the animals which you may eat: the ox, the sheep, the goat,</p>
+            <p><sup>5</sup>the deer, the gazelle, the roebuck, the wild goat, the ibex, the antelope, and the chamois.</p>
+            <p><sup>6</sup>Every animal that parts the hoof, and has the hoof split in two and chews the cud, among the animals, you may eat.</p>
+            <p><sup>7</sup>Nevertheless these you shall not eat of them that chew the cud, or of those who have the hoof split: the camel, the hare, and the rabbit. Because they chew the cud but don't part the hoof, they are unclean to you.</p>
+            <p><sup>8</sup>The pig, because it has a split hoof but doesn't chew the cud, is unclean to you. You shall not eat their meat. You shall not touch their carcasses.</p>
+            <p><sup>9</sup>These you may eat of all that are in the waters: you may eat whatever has fins and scales.</p>
+            <p><sup>10</sup>You shall not eat whatever doesn't have fins and scales. It is unclean to you.</p>
+            <p><sup>11</sup>Of all clean birds you may eat.</p>
+            <p><sup>12</sup>But these are they of which you shall not eat: the eagle, the vulture, the osprey,</p>
+            <p><sup>13</sup>the red kite, the falcon, the kite of any kind,</p>
+            <p><sup>14</sup>every raven of any kind,</p>
+            <p><sup>15</sup>the ostrich, the owl, the seagull, the hawk of any kind,</p>
+            <p><sup>16</sup>the little owl, the great owl, the horned owl,</p>
+            <p><sup>17</sup>the pelican, the vulture, the cormorant,</p>
+            <p><sup>18</sup>the stork, the heron after its kind, the hoopoe, and the bat.</p>
+            <p><sup>19</sup>All winged creeping things are unclean to you. They shall not be eaten.</p>
+            <p><sup>20</sup>Of all clean birds you may eat.</p>
+            <p><sup>21</sup>You shall not eat of anything that dies of itself. You may give it to the foreigner living among you who is within your gates, that he may eat it; or you may sell it to a foreigner; for you are a holy people to Yahweh your God. You shall not boil a young goat in its mother's milk.</p>
+            <p><sup>22</sup>You shall surely tithe all the increase of your seed, that which comes out of the field year by year.</p>
+            <p><sup>23</sup>You shall eat before Yahweh your God, in the place which he chooses to cause his name to dwell, the tithe of your grain, of your new wine, and of your oil, and the firstborn of your herd and of your flock; that you may learn to fear Yahweh your God always.</p>
+            <p><sup>24</sup>If the way is too long for you, so that you are not able to carry it because the place which Yahweh your God shall choose to set his name there is too far from you, when Yahweh your God blesses you,</p>
+            <p><sup>25</sup>then you shall turn it into money, bind up the money in your hand, and shall go to the place which Yahweh your God shall choose.</p>
+            <p><sup>26</sup>You shall trade the money for whatever your soul desires: for cattle, or for sheep, or for wine, or for strong drink, or for whatever your soul asks of you. You shall eat there before Yahweh your God, and you shall rejoice, you and your household.</p>
+            <p><sup>27</sup>You shall not forsake the Levite who is within your gates, for he has no portion nor inheritance with you.</p>
+            <p><sup>28</sup>At the end of every three years you shall bring all the tithe of your increase in the same year, and shall store it within your gates.</p>
+            <p><sup>29</sup>The Levite, because he has no portion nor inheritance with you, as well as the foreigner living among you, the fatherless, and the widow who are within your gates shall come, and shall eat and be satisfied; that Yahweh your God may bless you in all the work of your hand which you do.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="deuteronomy-read-13.html" rel="prev" aria-label="Previous chapter: Deuteronomy 13">&larr; Previous: Chapter 13</a>
+<a class="btn btn-ghost" href="deuteronomy.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="deuteronomy-read-15.html" rel="next" aria-label="Next chapter: Deuteronomy 15">Next: Chapter 15 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

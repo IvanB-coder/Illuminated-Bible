@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Deuteronomy 11 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read Deuteronomy chapter 11 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>Deuteronomy 11 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Deuteronomy chapter 11 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-deuteronomy">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,17 +20,23 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>Deuteronomy <span style="color:var(--burgundy);">&middot; Chapter 11</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 11 of 34</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Deuteronomy <span class="chnum">&middot; Chapter 11</span></h1>
+<p class="chapter-position">Chapter 11 of 34</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="deuteronomy-read-10.html">&larr; Chapter 10</a>
-<span class="chapter-indicator">Chapter 11 of 34</span>
-<a class="btn btn-primary shimmer" href="deuteronomy-read-12.html">Chapter 12 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
-            <p><sup>1</sup>Therefore thou shalt love the LORD thy God, and keep his charge, and his statutes, and his judgments, and his commandments, alway.</p>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="deuteronomy-read-10.html" rel="prev" aria-label="Previous chapter: Deuteronomy 10">&larr; Previous: Chapter 10</a>
+<a class="btn btn-ghost" href="deuteronomy.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="deuteronomy-read-12.html" rel="next" aria-label="Next chapter: Deuteronomy 12">Next: Chapter 12 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup><span class="dropcap">T</span>herefore thou shalt love the LORD thy God, and keep his charge, and his statutes, and his judgments, and his commandments, alway.</p>
             <p><sup>2</sup>And know ye this day: for I speak not with your children which have not known, and which have not seen the chastisement of the LORD your God, his greatness, his mighty hand, and his stretched out arm,</p>
             <p><sup>3</sup>And his miracles, and his acts, which he did in the midst of Egypt unto Pharaoh the king of Egypt, and unto all his land;</p>
             <p><sup>4</sup>And what he did unto the army of Egypt, unto their horses, and to their chariots; how he made the water of the Red sea to overflow them as they pursued after you, and how the LORD hath destroyed them unto this day;</p>
@@ -62,12 +69,75 @@
             <p><sup>31</sup>For ye shall pass over Jordan to go in to possess the land which the LORD your God giveth you, and ye shall possess it, and dwell therein.</p>
             <p><sup>32</sup>And ye shall observe to do all the statutes and judgments which I set before you this day.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="deuteronomy-read-10.html">&larr; Chapter 10</a>
-<a href="deuteronomy.html">&uarr; Deuteronomy summary</a>
-<a class="btn btn-primary shimmer" href="deuteronomy-read-12.html">Chapter 12 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">T</span>herefore you shall love Yahweh your God, and keep his instructions, his statutes, his ordinances, and his commandments, always.</p>
+            <p><sup>2</sup>Know this day—for I don't speak with your children who have not known, and who have not seen the chastisement of Yahweh your God, his greatness, his mighty hand, his outstretched arm,</p>
+            <p><sup>3</sup>his signs, and his works, which he did in the middle of Egypt to Pharaoh the king of Egypt, and to all his land;</p>
+            <p><sup>4</sup>and what he did to the army of Egypt, to their horses, and to their chariots; how he made the water of the Red Sea to overflow them as they pursued you, and how Yahweh has destroyed them to this day;</p>
+            <p><sup>5</sup>and what he did to you in the wilderness until you came to this place;</p>
+            <p><sup>6</sup>and what he did to Dathan and Abiram, the sons of Eliab, the son of Reuben—how the earth opened its mouth and swallowed them up, with their households, their tents, and every living thing that followed them, in the middle of all Israel;</p>
+            <p><sup>7</sup>but your eyes have seen all of Yahweh's great work which he did.</p>
+            <p><sup>8</sup>Therefore you shall keep the entire commandment which I command you today, that you may be strong, and go in and possess the land that you go over to possess;</p>
+            <p><sup>9</sup>and that you may prolong your days in the land which Yahweh swore to your fathers to give to them and to their offspring, a land flowing with milk and honey.</p>
+            <p><sup>10</sup>For the land, where you go in to possess isn't like the land of Egypt that you came out of, where you sowed your seed and watered it with your foot, as a garden of herbs;</p>
+            <p><sup>11</sup>but the land that you go over to possess is a land of hills and valleys which drinks water from the rain of the sky,</p>
+            <p><sup>12</sup>a land which Yahweh your God cares for. Yahweh your God's eyes are always on it, from the beginning of the year even to the end of the year.</p>
+            <p><sup>13</sup>It shall happen, if you shall listen diligently to my commandments which I command you today, to love Yahweh your God, and to serve him with all your heart and with all your soul,</p>
+            <p><sup>14</sup>that I will give the rain for your land in its season, the early rain and the latter rain, that you may gather in your grain, your new wine, and your oil.</p>
+            <p><sup>15</sup>I will give grass in your fields for your livestock, and you shall eat and be full.</p>
+            <p><sup>16</sup>Be careful, lest your heart be deceived, and you turn away to serve other gods and worship them;</p>
+            <p><sup>17</sup>and Yahweh's anger be kindled against you, and he shut up the sky so that there is no rain, and the land doesn't yield its fruit; and you perish quickly from off the good land which Yahweh gives you.</p>
+            <p><sup>18</sup>Therefore you shall lay up these words of mine in your heart and in your soul. You shall bind them for a sign on your hand, and they shall be for frontlets between your eyes.</p>
+            <p><sup>19</sup>You shall teach them to your children, talking of them when you sit in your house, when you walk by the way, when you lie down, and when you rise up.</p>
+            <p><sup>20</sup>You shall write them on the door posts of your house and on your gates;</p>
+            <p><sup>21</sup>that your days and your children's days may be multiplied in the land which Yahweh swore to your fathers to give them, as the days of the heavens above the earth.</p>
+            <p><sup>22</sup>For if you shall diligently keep all these commandments which I command you—to do them, to love Yahweh your God, to walk in all his ways, and to cling to him—</p>
+            <p><sup>23</sup>then Yahweh will drive out all these nations from before you, and you shall dispossess nations greater and mightier than yourselves.</p>
+            <p><sup>24</sup>Every place on which the sole of your foot treads shall be yours: from the wilderness and Lebanon, from the river, the river Euphrates, even to the western sea shall be your border.</p>
+            <p><sup>25</sup>No man will be able to stand before you. Yahweh your God will lay the fear of you and the dread of you on all the land that you tread on, as he has spoken to you.</p>
+            <p><sup>26</sup>Behold, I set before you today a blessing and a curse:</p>
+            <p><sup>27</sup>the blessing, if you listen to the commandments of Yahweh your God, which I command you today;</p>
+            <p><sup>28</sup>and the curse, if you do not listen to the commandments of Yahweh your God, but turn away out of the way which I command you today, to go after other gods which you have not known.</p>
+            <p><sup>29</sup>It shall happen, when Yahweh your God brings you into the land that you go to possess, that you shall set the blessing on Mount Gerizim, and the curse on Mount Ebal.</p>
+            <p><sup>30</sup>Aren't they beyond the Jordan, behind the way of the going down of the sun, in the land of the Canaanites who dwell in the Arabah near Gilgal, beside the oaks of Moreh?</p>
+            <p><sup>31</sup>For you are to pass over the Jordan to go in to possess the land which Yahweh your God gives you, and you shall possess it and dwell in it.</p>
+            <p><sup>32</sup>You shall observe to do all the statutes and the ordinances which I set before you today.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="deuteronomy-read-10.html" rel="prev" aria-label="Previous chapter: Deuteronomy 10">&larr; Previous: Chapter 10</a>
+<a class="btn btn-ghost" href="deuteronomy.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="deuteronomy-read-12.html" rel="next" aria-label="Next chapter: Deuteronomy 12">Next: Chapter 12 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>
