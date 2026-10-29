@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1 Samuel 8 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read 1 Samuel chapter 8 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>1 Samuel 8 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read 1 Samuel chapter 8 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-1samuel">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>1 Samuel <span style="color:var(--burgundy);">&middot; Chapter 8</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 8 of 31</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">1 Samuel <span class="chnum">&middot; Chapter 8</span></h1>
+<p class="chapter-position">Chapter 8 of 31</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="1samuel.html">&larr; Back to 1 Samuel summary</a>
-<span class="chapter-indicator">Chapter 8 of 31</span>
-<a class="btn btn-primary shimmer" href="1samuel-read-9.html">Chapter 9 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="1samuel-read-7.html" rel="prev" aria-label="Previous chapter: 1 Samuel 7">&larr; Previous: Chapter 7</a>
+<a class="btn btn-ghost" href="1samuel.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1samuel-read-9.html" rel="next" aria-label="Next chapter: 1 Samuel 9">Next: Chapter 9 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd it came to pass, when Samuel was old, that he made his sons judges over Israel.</p>
             <p><sup>2</sup>Now the name of his firstborn was Joel; and the name of his second, Abiah: they were judges in Beersheba.</p>
             <p><sup>3</sup>And his sons walked not in his ways, but turned aside after lucre, and took bribes, and perverted judgment.</p>
@@ -52,12 +59,65 @@
             <p><sup>21</sup>And Samuel heard all the words of the people, and he rehearsed them in the ears of the LORD.</p>
             <p><sup>22</sup>And the LORD said to Samuel, Hearken unto their voice, and make them a king. And Samuel said unto the men of Israel, Go ye every man unto his city. ?</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="1samuel.html">&larr; Back to 1 Samuel summary</a>
-<a href="1samuel.html">&uarr; 1 Samuel summary</a>
-<a class="btn btn-primary shimmer" href="1samuel-read-9.html">Chapter 9 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">W</span>hen Samuel was old, he made his sons judges over Israel.</p>
+            <p><sup>2</sup>Now the name of his firstborn was Joel, and the name of his second, Abijah. They were judges in Beersheba.</p>
+            <p><sup>3</sup>His sons didn't walk in his ways, but turned away after dishonest gain, took bribes, and perverted justice.</p>
+            <p><sup>4</sup>Then all the elders of Israel gathered themselves together and came to Samuel to Ramah.</p>
+            <p><sup>5</sup>They said to him, "Behold, you are old, and your sons don't walk in your ways. Now make us a king to judge us like all the nations."</p>
+            <p><sup>6</sup>But the thing displeased Samuel when they said, "Give us a king to judge us." Samuel prayed to Yahweh.</p>
+            <p><sup>7</sup>Yahweh said to Samuel, "Listen to the voice of the people in all that they tell you; for they have not rejected you, but they have rejected me as the king over them.</p>
+            <p><sup>8</sup>According to all the works which they have done since the day that I brought them up out of Egypt even to this day, in that they have forsaken me and served other gods, so they also do to you.</p>
+            <p><sup>9</sup>Now therefore, listen to their voice. However, you shall protest solemnly to them, and shall show them the way of the king who will reign over them."</p>
+            <p><sup>10</sup>Samuel told all Yahweh's words to the people who asked him for a king.</p>
+            <p><sup>11</sup>He said, "This will be the way of the king who shall reign over you: he will take your sons and appoint them as his servants, for his chariots and to be his horsemen; and they will run before his chariots.</p>
+            <p><sup>12</sup>He will appoint them to him for captains of thousands and captains of fifties; and he will assign some to plow his ground and to reap his harvest; and to make his instruments of war and the instruments of his chariots.</p>
+            <p><sup>13</sup>He will take your daughters to be perfumers, to be cooks, and to be bakers.</p>
+            <p><sup>14</sup>He will take your fields, your vineyards, and your olive groves, even your best, and give them to his servants.</p>
+            <p><sup>15</sup>He will take one tenth of your seed and of your vineyards, and give it to his officers and to his servants.</p>
+            <p><sup>16</sup>He will take your male servants, your female servants, your best young men, and your donkeys, and assign them to his own work.</p>
+            <p><sup>17</sup>He will take one tenth of your flocks; and you will be his servants.</p>
+            <p><sup>18</sup>You will cry out in that day because of your king whom you will have chosen for yourselves; and Yahweh will not answer you in that day."</p>
+            <p><sup>19</sup>But the people refused to listen to the voice of Samuel; and they said, "No, but we will have a king over us,</p>
+            <p><sup>20</sup>that we also may be like all the nations; and that our king may judge us, and go out before us, and fight our battles."</p>
+            <p><sup>21</sup>Samuel heard all the words of the people, and he rehearsed them in the ears of Yahweh.</p>
+            <p><sup>22</sup>Yahweh said to Samuel, "Listen to their voice, and make them a king." Samuel said to the men of Israel, "Everyone go to your own city."</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="1samuel-read-7.html" rel="prev" aria-label="Previous chapter: 1 Samuel 7">&larr; Previous: Chapter 7</a>
+<a class="btn btn-ghost" href="1samuel.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1samuel-read-9.html" rel="next" aria-label="Next chapter: 1 Samuel 9">Next: Chapter 9 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1 Kings 7 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read 1 Kings chapter 7 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>1 Kings 7 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read 1 Kings chapter 7 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-1kings">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>1 Kings <span style="color:var(--burgundy);">&middot; Chapter 7</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 7 of 22</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">1 Kings <span class="chnum">&middot; Chapter 7</span></h1>
+<p class="chapter-position">Chapter 7 of 22</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="1kings-read-6.html">&larr; Chapter 6</a>
-<span class="chapter-indicator">Chapter 7 of 22</span>
-<a class="btn btn-primary shimmer" href="1kings-read-8.html">Chapter 8 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="1kings-read-6.html" rel="prev" aria-label="Previous chapter: 1 Kings 6">&larr; Previous: Chapter 6</a>
+<a class="btn btn-ghost" href="1kings.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1kings-read-8.html" rel="next" aria-label="Next chapter: 1 Kings 8">Next: Chapter 8 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">B</span>ut Solomon was building his own house thirteen years, and he finished all his house.</p>
             <p><sup>2</sup>He built also the house of the forest of Lebanon; the length thereof was an hundred cubits, and the breadth thereof fifty cubits, and the height thereof thirty cubits, upon four rows of cedar pillars, with cedar beams upon the pillars.</p>
             <p><sup>3</sup>And it was covered with cedar above upon the beams, that lay on forty five pillars, fifteen in a row.</p>
@@ -81,12 +88,94 @@
             <p><sup>50</sup>And the bowls, and the snuffers, and the basons, and the spoons, and the censers of pure gold; and the hinges of gold, both for the doors of the inner house, the most holy place, and for the doors of the house, to wit, of the temple.</p>
             <p><sup>51</sup>So was ended all the work that king Solomon made for the house of the Lord. And Solomon brought in the things which David his father had dedicated; even the silver, and the gold, and the vessels, did he put among the treasures of the house of the Lord.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="1kings-read-6.html">&larr; Chapter 6</a>
-<a href="1kings.html">&uarr; 1 Kings summary</a>
-<a class="btn btn-primary shimmer" href="1kings-read-8.html">Chapter 8 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">S</span>olomon was building his own house thirteen years, and he finished all his house.</p>
+            <p><sup>2</sup>For he built the House of the Forest of Lebanon. Its length was one hundred cubits, its width fifty cubits, and its height thirty cubits, on four rows of cedar pillars, with cedar beams on the pillars.</p>
+            <p><sup>3</sup>It was covered with cedar above over the forty-five beams that were on the pillars, fifteen in a row.</p>
+            <p><sup>4</sup>There were beams in three rows, and window was facing window in three ranks.</p>
+            <p><sup>5</sup>All the doors and posts were made square with beams; and window was facing window in three ranks.</p>
+            <p><sup>6</sup>He made the hall of pillars. Its length was fifty cubits and its width thirty cubits, with a porch before them, and pillars and a threshold before them.</p>
+            <p><sup>7</sup>He made the porch of the throne where he was to judge, even the porch of judgment; and it was covered with cedar from floor to floor.</p>
+            <p><sup>8</sup>His house where he was to dwell, the other court within the porch, was of the same construction. He made also a house for Pharaoh's daughter (whom Solomon had taken as wife), like this porch.</p>
+            <p><sup>9</sup>All these were of costly stones, even of stone cut according to measure, sawed with saws, inside and outside, even from the foundation to the coping, and so on the outside to the great court.</p>
+            <p><sup>10</sup>The foundation was of costly stones, even great stones, stones of ten cubits and stones of eight cubits.</p>
+            <p><sup>11</sup>Above were costly stones, even cut stone, according to measure, and cedar wood.</p>
+            <p><sup>12</sup>The great court around had three courses of cut stone with a course of cedar beams, like the inner court of Yahweh's house and the porch of the house.</p>
+            <p><sup>13</sup>King Solomon sent and brought Hiram out of Tyre.</p>
+            <p><sup>14</sup>He was the son of a widow of the tribe of Naphtali, and his father was a man of Tyre, a worker in bronze; and he was filled with wisdom and understanding and skill to work all works in bronze. He came to King Solomon and performed all his work.</p>
+            <p><sup>15</sup>For he fashioned the two pillars of bronze, eighteen cubits high apiece; and a line of twelve cubits encircled either of them.</p>
+            <p><sup>16</sup>He made two capitals of molten bronze to set on the tops of the pillars. The height of the one capital was five cubits, and the height of the other capital was five cubits.</p>
+            <p><sup>17</sup>There were nets of checker work and wreaths of chain work for the capitals which were on the top of the pillars: seven for the one capital, and seven for the other capital.</p>
+            <p><sup>18</sup>So he made the pillars; and there were two rows of pomegranates around the one network, to cover the capitals that were on the top of the pillars; and he did so for the other capital.</p>
+            <p><sup>19</sup>The capitals that were on the top of the pillars in the porch were of lily work, four cubits.</p>
+            <p><sup>20</sup>There were capitals above also on the two pillars, close by the belly which was beside the network. There were two hundred pomegranates in rows around the other capital.</p>
+            <p><sup>21</sup>He set up the pillars at the porch of the temple. He set up the right pillar and called its name Jachin; and he set up the left pillar and called its name Boaz.</p>
+            <p><sup>22</sup>On the tops of the pillars was lily work. So the work of the pillars was finished.</p>
+            <p><sup>23</sup>He made the molten sea ten cubits from brim to brim, round in shape. Its height was five cubits; and a line of thirty cubits encircled it.</p>
+            <p><sup>24</sup>Under its brim around there were buds which encircled it for ten cubits, encircling the sea. The buds were in two rows, cast when it was cast.</p>
+            <p><sup>25</sup>It stood on twelve oxen, three looking toward the north, and three looking toward the west, and three looking toward the south, and three looking toward the east; and the sea was set on them above, and all their hindquarters were inward.</p>
+            <p><sup>26</sup>It was a hand width thick. Its brim was worked like the brim of a cup, like the flower of a lily. It held two thousand baths.</p>
+            <p><sup>27</sup>He made the ten bases of bronze. The length of one base was four cubits, four cubits its width, and three cubits its height.</p>
+            <p><sup>28</sup>The work of the bases was like this: they had panels; and there were panels between the ledges;</p>
+            <p><sup>29</sup>and on the panels that were between the ledges were lions, oxen, and cherubim; and on the ledges there was a pedestal above; and beneath the lions and oxen were wreaths of hanging work.</p>
+            <p><sup>30</sup>Every base had four bronze wheels and axles of bronze; and its four feet had supports. The supports were cast beneath the basin, with wreaths at the side of each.</p>
+            <p><sup>31</sup>Its opening within the capital and above was a cubit. Its opening was round like the work of a pedestal, a cubit and a half; and also on its opening were engravings, and their panels were square, not round.</p>
+            <p><sup>32</sup>The four wheels were underneath the panels; and the axles of the wheels were in the base. The height of a wheel was a cubit and half a cubit.</p>
+            <p><sup>33</sup>The work of the wheels was like the work of a chariot wheel. Their axles, their rims, their spokes, and their hubs were all of cast metal.</p>
+            <p><sup>34</sup>There were four supports at the four corners of each base. Its supports were of the base itself.</p>
+            <p><sup>35</sup>In the top of the base there was a round band half a cubit high; and on the top of the base its supports and its panels were the same.</p>
+            <p><sup>36</sup>On the plates of its supports and on its panels, he engraved cherubim, lions, and palm trees, each in its space, with wreaths all around.</p>
+            <p><sup>37</sup>He made the ten bases in this way: all of them had one casting, one measure, and one form.</p>
+            <p><sup>38</sup>He made ten basins of bronze. One basin contained forty baths. Every basin measured four cubits. One basin was on every one of the ten bases.</p>
+            <p><sup>39</sup>He set the bases, five on the right side of the house and five on the left side of the house. He set the sea on the right side of the house eastward and toward the south.</p>
+            <p><sup>40</sup>Hiram made the pots, the shovels, and the basins. So Hiram finished doing all the work that he worked for King Solomon in Yahweh's house:</p>
+            <p><sup>41</sup>the two pillars; the two bowls of the capitals that were on the top of the pillars; the two networks to cover the two bowls of the capitals that were on the top of the pillars;</p>
+            <p><sup>42</sup>the four hundred pomegranates for the two networks; two rows of pomegranates for each network, to cover the two bowls of the capitals that were on the pillars;</p>
+            <p><sup>43</sup>the ten bases; the ten basins on the bases;</p>
+            <p><sup>44</sup>the one sea; the twelve oxen under the sea;</p>
+            <p><sup>45</sup>the pots; the shovels; and the basins. All of these vessels, which Hiram made for King Solomon in Yahweh's house, were of burnished bronze.</p>
+            <p><sup>46</sup>The king cast them in the plain of the Jordan, in the clay ground between Succoth and Zarethan.</p>
+            <p><sup>47</sup>Solomon left all the vessels unweighed, because there were so many of them. The weight of the bronze could not be determined.</p>
+            <p><sup>48</sup>Solomon made all the vessels that were in Yahweh's house: the golden altar and the table that the show bread was on, of gold;</p>
+            <p><sup>49</sup>and the lamp stands, five on the right side and five on the left, in front of the inner sanctuary, of pure gold; and the flowers, the lamps, and the tongs, of gold;</p>
+            <p><sup>50</sup>the cups, the snuffers, the basins, the spoons, and the fire pans, of pure gold; and the hinges, both for the doors of the inner house, the most holy place, and for the doors of the house, of the temple, of gold.</p>
+            <p><sup>51</sup>Thus all the work that King Solomon did in Yahweh's house was finished. Solomon brought in the things which David his father had dedicated—the silver, the gold, and the vessels—and put them in the treasuries of Yahweh's house.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="1kings-read-6.html" rel="prev" aria-label="Previous chapter: 1 Kings 6">&larr; Previous: Chapter 6</a>
+<a class="btn btn-ghost" href="1kings.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1kings-read-8.html" rel="next" aria-label="Next chapter: 1 Kings 8">Next: Chapter 8 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

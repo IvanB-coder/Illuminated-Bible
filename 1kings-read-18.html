@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1 Kings 18 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read 1 Kings chapter 18 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>1 Kings 18 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read 1 Kings chapter 18 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-1kings">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>1 Kings <span style="color:var(--burgundy);">&middot; Chapter 18</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 18 of 22</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">1 Kings <span class="chnum">&middot; Chapter 18</span></h1>
+<p class="chapter-position">Chapter 18 of 22</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="1kings-read-17.html">&larr; Chapter 17</a>
-<span class="chapter-indicator">Chapter 18 of 22</span>
-<a class="btn btn-primary shimmer" href="1kings-read-19.html">Chapter 19 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="1kings-read-17.html" rel="prev" aria-label="Previous chapter: 1 Kings 17">&larr; Previous: Chapter 17</a>
+<a class="btn btn-ghost" href="1kings.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1kings-read-19.html" rel="next" aria-label="Next chapter: 1 Kings 19">Next: Chapter 19 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd it came to pass after many days, that the word of the Lord came to Elijah in the third year, saying, Go, shew thyself unto Ahab; and I will send rain upon the earth.</p>
             <p><sup>2</sup>And Elijah went to shew himself unto Ahab. And there was a sore famine in Samaria.</p>
             <p><sup>3</sup>And Ahab called Obadiah, which was the governor of his house. (Now Obadiah feared the Lord greatly:</p>
@@ -76,12 +83,89 @@
             <p><sup>45</sup>And it came to pass in the mean while, that the heaven was black with clouds and wind, and there was a great rain. And Ahab rode, and went to Jezreel.</p>
             <p><sup>46</sup>And the hand of the Lord was on Elijah; and he girded up his loins, and ran before Ahab to the entrance of Jezreel.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="1kings-read-17.html">&larr; Chapter 17</a>
-<a href="1kings.html">&uarr; 1 Kings summary</a>
-<a class="btn btn-primary shimmer" href="1kings-read-19.html">Chapter 19 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">A</span>fter many days, Yahweh's word came to Elijah, in the third year, saying, "Go, show yourself to Ahab; and I will send rain on the earth."</p>
+            <p><sup>2</sup>Elijah went to show himself to Ahab. The famine was severe in Samaria.</p>
+            <p><sup>3</sup>Ahab called Obadiah, who was over the household. (Now Obadiah feared Yahweh greatly;</p>
+            <p><sup>4</sup>for when Jezebel cut off Yahweh's prophets, Obadiah took one hundred prophets, and hid them fifty to a cave, and fed them with bread and water.)</p>
+            <p><sup>5</sup>Ahab said to Obadiah, "Go through the land, to all the springs of water, and to all the brooks. Perhaps we may find grass and save the horses and mules alive, that we not lose all the animals."</p>
+            <p><sup>6</sup>So they divided the land between them to pass throughout it. Ahab went one way by himself, and Obadiah went another way by himself.</p>
+            <p><sup>7</sup>As Obadiah was on the way, behold, Elijah met him. He recognized him, and fell on his face, and said, "Is it you, my lord Elijah?"</p>
+            <p><sup>8</sup>He answered him, "It is I. Go, tell your lord, 'Behold, Elijah is here!'"</p>
+            <p><sup>9</sup>He said, "How have I sinned, that you would deliver your servant into the hand of Ahab, to kill me?</p>
+            <p><sup>10</sup>As Yahweh your God lives, there is no nation or kingdom where my lord has not sent to seek you. When they said, 'He is not here,' he took an oath of the kingdom and nation that they didn't find you.</p>
+            <p><sup>11</sup>Now you say, 'Go, tell your lord, "Behold, Elijah is here."'</p>
+            <p><sup>12</sup>It will happen, as soon as I leave you, that Yahweh's Spirit will carry you I don't know where; and so when I come and tell Ahab, and he can't find you, he will kill me. But I, your servant, have feared Yahweh from my youth.</p>
+            <p><sup>13</sup>Wasn't it told my lord what I did when Jezebel killed Yahweh's prophets, how I hid one hundred men of Yahweh's prophets with fifty to a cave, and fed them with bread and water?</p>
+            <p><sup>14</sup>Now you say, 'Go, tell your lord, "Behold, Elijah is here".' He will kill me."</p>
+            <p><sup>15</sup>Elijah said, "As Yahweh of Armies lives, before whom I stand, I will surely show myself to him today."</p>
+            <p><sup>16</sup>So Obadiah went to meet Ahab, and told him; and Ahab went to meet Elijah.</p>
+            <p><sup>17</sup>When Ahab saw Elijah, Ahab said to him, "Is that you, you troubler of Israel?"</p>
+            <p><sup>18</sup>He answered, "I have not troubled Israel, but you and your father's house, in that you have forsaken Yahweh's commandments and you have followed the Baals.</p>
+            <p><sup>19</sup>Now therefore send, and gather to me all Israel to Mount Carmel, and four hundred fifty of the prophets of Baal, and four hundred of the prophets of the Asherah, who eat at Jezebel's table."</p>
+            <p><sup>20</sup>So Ahab sent to all the children of Israel, and gathered the prophets together to Mount Carmel.</p>
+            <p><sup>21</sup>Elijah came near to all the people, and said, "How long will you waver between the two sides? If Yahweh is God, follow him; but if Baal, then follow him." The people didn't say a word.</p>
+            <p><sup>22</sup>Then Elijah said to the people, "I, even I only, am left as a prophet of Yahweh; but Baal's prophets are four hundred fifty men.</p>
+            <p><sup>23</sup>Let them therefore give us two bulls; and let them choose one bull for themselves, and cut it in pieces, and lay it on the wood, and put no fire under; and I will dress the other bull, and lay it on the wood, and put no fire under it.</p>
+            <p><sup>24</sup>You call on the name of your god, and I will call on Yahweh's name. The God who answers by fire, let him be God." All the people answered, "What you say is good."</p>
+            <p><sup>25</sup>Elijah said to the prophets of Baal, "Choose one bull for yourselves, and dress it first, for you are many; and call on the name of your god, but put no fire under it."</p>
+            <p><sup>26</sup>They took the bull which was given them, and they dressed it, and called on the name of Baal from morning even until noon, saying, "Baal, hear us!" But there was no voice, and nobody answered. They leaped about the altar which was made.</p>
+            <p><sup>27</sup>At noon, Elijah mocked them, and said, "Cry aloud, for he is a god. Either he is deep in thought, or he has gone somewhere, or he is on a journey, or perhaps he sleeps and must be awakened."</p>
+            <p><sup>28</sup>They cried aloud, and cut themselves in their way with knives and lances until the blood gushed out on them.</p>
+            <p><sup>29</sup>When midday was past, they prophesied until the time of the evening offering; but there was no voice, no answer, and nobody paid attention.</p>
+            <p><sup>30</sup>Elijah said to all the people, "Come near to me!"; and all the people came near to him. He repaired Yahweh's altar that had been thrown down.</p>
+            <p><sup>31</sup>Elijah took twelve stones, according to the number of the tribes of the sons of Jacob, to whom Yahweh's word came, saying, "Israel shall be your name."</p>
+            <p><sup>32</sup>With the stones he built an altar in Yahweh's name. He made a trench around the altar large enough to contain two seahs of seed.</p>
+            <p><sup>33</sup>He put the wood in order, and cut the bull in pieces and laid it on the wood. He said, "Fill four jars with water, and pour it on the burnt offering and on the wood."</p>
+            <p><sup>34</sup>He said, "Do it a second time;" and they did it the second time. He said, "Do it a third time;" and they did it the third time.</p>
+            <p><sup>35</sup>The water ran around the altar; and he also filled the trench with water.</p>
+            <p><sup>36</sup>At the time of the evening offering, Elijah the prophet came near and said, "Yahweh, the God of Abraham, of Isaac, and of Israel, let it be known today that you are God in Israel and that I am your servant, and that I have done all these things at your word.</p>
+            <p><sup>37</sup>Hear me, Yahweh, hear me, that this people may know that you, Yahweh, are God, and that you have turned their heart back again."</p>
+            <p><sup>38</sup>Then Yahweh's fire fell and consumed the burnt offering, the wood, the stones, and the dust; and it licked up the water that was in the trench.</p>
+            <p><sup>39</sup>When all the people saw it, they fell on their faces. They said, "Yahweh, he is God! Yahweh, he is God!"</p>
+            <p><sup>40</sup>Elijah said to them, "Seize the prophets of Baal! Don't let one of them escape!" They seized them; and Elijah brought them down to the brook Kishon, and killed them there.</p>
+            <p><sup>41</sup>Elijah said to Ahab, "Get up, eat and drink; for there is the sound of abundance of rain."</p>
+            <p><sup>42</sup>So Ahab went up to eat and to drink. Elijah went up to the top of Carmel; and he bowed himself down on the earth, and put his face between his knees.</p>
+            <p><sup>43</sup>He said to his servant, "Go up now and look toward the sea." He went up and looked, then said, "There is nothing." He said, "Go again" seven times.</p>
+            <p><sup>44</sup>On the seventh time, he said, "Behold, a small cloud, like a man's hand, is rising out of the sea." He said, "Go up, tell Ahab, 'Get ready and go down, so that the rain doesn't stop you.'"</p>
+            <p><sup>45</sup>In a little while, the sky grew black with clouds and wind, and there was a great rain. Ahab rode, and went to Jezreel.</p>
+            <p><sup>46</sup>Yahweh's hand was on Elijah; and he tucked his cloak into his belt and ran before Ahab to the entrance of Jezreel.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="1kings-read-17.html" rel="prev" aria-label="Previous chapter: 1 Kings 17">&larr; Previous: Chapter 17</a>
+<a class="btn btn-ghost" href="1kings.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1kings-read-19.html" rel="next" aria-label="Next chapter: 1 Kings 19">Next: Chapter 19 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1 Kings 19 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read 1 Kings chapter 19 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>1 Kings 19 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read 1 Kings chapter 19 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-1kings">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>1 Kings <span style="color:var(--burgundy);">&middot; Chapter 19</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 19 of 22</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">1 Kings <span class="chnum">&middot; Chapter 19</span></h1>
+<p class="chapter-position">Chapter 19 of 22</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="1kings-read-18.html">&larr; Chapter 18</a>
-<span class="chapter-indicator">Chapter 19 of 22</span>
-<a class="btn btn-primary shimmer" href="1kings-read-20.html">Chapter 20 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="1kings-read-18.html" rel="prev" aria-label="Previous chapter: 1 Kings 18">&larr; Previous: Chapter 18</a>
+<a class="btn btn-ghost" href="1kings.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1kings-read-20.html" rel="next" aria-label="Next chapter: 1 Kings 20">Next: Chapter 20 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd Ahab told Jezebel all that Elijah had done, and withal how he had slain all the prophets with the sword.</p>
             <p><sup>2</sup>Then Jezebel sent a messenger unto Elijah, saying, So let the gods do to me, and more also, if I make not thy life as the life of one of them by to morrow about this time.</p>
             <p><sup>3</sup>And when he saw that, he arose, and went for his life, and came to Beersheba, which belongeth to Judah, and left his servant there.</p>
@@ -51,12 +58,64 @@
             <p><sup>20</sup>And he left the oxen, and ran after Elijah, and said, Let me, I pray thee, kiss my father and my mother, and then I will follow thee. And he said unto him, Go back again: for what have I done to thee?</p>
             <p><sup>21</sup>And he returned back from him, and took a yoke of oxen, and slew them, and boiled their flesh with the instruments of the oxen, and gave unto the people, and they did eat. Then he arose, and went after Elijah, and ministered unto him.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="1kings-read-18.html">&larr; Chapter 18</a>
-<a href="1kings.html">&uarr; 1 Kings summary</a>
-<a class="btn btn-primary shimmer" href="1kings-read-20.html">Chapter 20 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">A</span>hab told Jezebel all that Elijah had done, and how he had killed all the prophets with the sword.</p>
+            <p><sup>2</sup>Then Jezebel sent a messenger to Elijah, saying, "So let the gods do to me, and more also, if I don't make your life as the life of one of them by tomorrow about this time!"</p>
+            <p><sup>3</sup>When he saw that, he arose and ran for his life, and came to Beersheba, which belongs to Judah, and left his servant there.</p>
+            <p><sup>4</sup>But he himself went a day's journey into the wilderness, and came and sat down under a juniper tree. Then he requested for himself that he might die, and said, "It is enough. Now, O Yahweh, take away my life; for I am not better than my fathers."</p>
+            <p><sup>5</sup>He lay down and slept under a juniper tree; and behold, an angel touched him, and said to him, "Arise and eat!"</p>
+            <p><sup>6</sup>He looked, and behold, there was at his head a cake baked on the coals, and a jar of water. He ate and drank, and lay down again.</p>
+            <p><sup>7</sup>Yahweh's angel came again the second time, and touched him, and said, "Arise and eat, because the journey is too great for you."</p>
+            <p><sup>8</sup>He arose, and ate and drank, and went in the strength of that food forty days and forty nights to Horeb, God's Mountain.</p>
+            <p><sup>9</sup>He came to a cave there, and camped there; and behold, Yahweh's word came to him, and he said to him, "What are you doing here, Elijah?"</p>
+            <p><sup>10</sup>He said, "I have been very jealous for Yahweh, the God of Armies; for the children of Israel have forsaken your covenant, thrown down your altars, and killed your prophets with the sword. I, even I only, am left; and they seek my life, to take it away."</p>
+            <p><sup>11</sup>He said, "Go out and stand on the mountain before Yahweh." Behold, Yahweh passed by, and a great and strong wind tore the mountains and broke in pieces the rocks before Yahweh; but Yahweh was not in the wind. After the wind there was an earthquake; but Yahweh was not in the earthquake.</p>
+            <p><sup>12</sup>After the earthquake a fire passed; but Yahweh was not in the fire. After the fire, there was a still small voice.</p>
+            <p><sup>13</sup>When Elijah heard it, he wrapped his face in his mantle, went out, and stood in the entrance of the cave. Behold, a voice came to him, and said, "What are you doing here, Elijah?"</p>
+            <p><sup>14</sup>He said, "I have been very jealous for Yahweh, the God of Armies; for the children of Israel have forsaken your covenant, thrown down your altars, and killed your prophets with the sword. I, even I only, am left; and they seek my life, to take it away."</p>
+            <p><sup>15</sup>Yahweh said to him, "Go, return on your way to the wilderness of Damascus. When you arrive, anoint Hazael to be king over Syria.</p>
+            <p><sup>16</sup>Anoint Jehu the son of Nimshi to be king over Israel; and anoint Elisha the son of Shaphat of Abel Meholah to be prophet in your place.</p>
+            <p><sup>17</sup>He who escapes from the sword of Hazael, Jehu will kill; and he who escapes from the sword of Jehu, Elisha will kill.</p>
+            <p><sup>18</sup>Yet I reserved seven thousand in Israel, all the knees of which have not bowed to Baal, and every mouth which has not kissed him."</p>
+            <p><sup>19</sup>So he departed from there and found Elisha the son of Shaphat, who was plowing with twelve yoke of oxen before him, and he with the twelfth. Elijah went over to him and put his mantle on him.</p>
+            <p><sup>20</sup>Elisha left the oxen and ran after Elijah, and said, "Let me please kiss my father and my mother, and then I will follow you." He said to him, "Go back again; for what have I done to you?"</p>
+            <p><sup>21</sup>He returned from following him, and took the yoke of oxen, killed them, and boiled their meat with the oxen's equipment, and gave to the people; and they ate. Then he arose, and went after Elijah, and served him.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="1kings-read-18.html" rel="prev" aria-label="Previous chapter: 1 Kings 18">&larr; Previous: Chapter 18</a>
+<a class="btn btn-ghost" href="1kings.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1kings-read-20.html" rel="next" aria-label="Next chapter: 1 Kings 20">Next: Chapter 20 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1 Kings 4 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read 1 Kings chapter 4 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>1 Kings 4 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read 1 Kings chapter 4 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-1kings">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>1 Kings <span style="color:var(--burgundy);">&middot; Chapter 4</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 4 of 22</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">1 Kings <span class="chnum">&middot; Chapter 4</span></h1>
+<p class="chapter-position">Chapter 4 of 22</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="1kings-read-3.html">&larr; Chapter 3</a>
-<span class="chapter-indicator">Chapter 4 of 22</span>
-<a class="btn btn-primary shimmer" href="1kings-read-5.html">Chapter 5 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="1kings-read-3.html" rel="prev" aria-label="Previous chapter: 1 Kings 3">&larr; Previous: Chapter 3</a>
+<a class="btn btn-ghost" href="1kings.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1kings-read-5.html" rel="next" aria-label="Next chapter: 1 Kings 5">Next: Chapter 5 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">S</span>o king Solomon was king over all Israel.</p>
             <p><sup>2</sup>And these were the princes which he had; Azariah the son of Zadok the priest,</p>
             <p><sup>3</sup>Elihoreph and Ahiah, the sons of Shisha, scribes; Jehoshaphat the son of Ahilud, the recorder.</p>
@@ -64,12 +71,77 @@
             <p><sup>33</sup>And he spake of trees, from the cedar tree that is in Lebanon even unto the hyssop that springeth out of the wall: he spake also of beasts, and of fowl, and of creeping things, and of fishes.</p>
             <p><sup>34</sup>And there came of all people to hear the wisdom of Solomon, from all kings of the earth, which had heard of his wisdom.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="1kings-read-3.html">&larr; Chapter 3</a>
-<a href="1kings.html">&uarr; 1 Kings summary</a>
-<a class="btn btn-primary shimmer" href="1kings-read-5.html">Chapter 5 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">K</span>ing Solomon was king over all Israel.</p>
+            <p><sup>2</sup>These were the princes whom he had: Azariah the son of Zadok, the priest;</p>
+            <p><sup>3</sup>Elihoreph and Ahijah, the sons of Shisha, scribes; Jehoshaphat the son of Ahilud, the recorder;</p>
+            <p><sup>4</sup>Benaiah the son of Jehoiada was over the army; Zadok and Abiathar were priests;</p>
+            <p><sup>5</sup>Azariah the son of Nathan was over the officers; Zabud the son of Nathan was chief minister, the king's friend;</p>
+            <p><sup>6</sup>Ahishar was over the household; and Adoniram the son of Abda was over the men subject to forced labor.</p>
+            <p><sup>7</sup>Solomon had twelve officers over all Israel, who provided food for the king and his household. Each man had to make provision for a month in the year.</p>
+            <p><sup>8</sup>These are their names: Ben Hur, in the hill country of Ephraim;</p>
+            <p><sup>9</sup>Ben Deker, in Makaz, in Shaalbim, Beth Shemesh, and Elon Beth Hanan;</p>
+            <p><sup>10</sup>Ben Hesed, in Arubboth (Socoh and all the land of Hepher belonged to him);</p>
+            <p><sup>11</sup>Ben Abinadab, in all the height of Dor (he had Taphath, Solomon's daughter, as wife);</p>
+            <p><sup>12</sup>Baana the son of Ahilud, in Taanach and Megiddo, and all Beth Shean which is beside Zarethan, beneath Jezreel, from Beth Shean to Abel Meholah, as far as beyond Jokmeam;</p>
+            <p><sup>13</sup>Ben Geber, in Ramoth Gilead (the towns of Jair the son of Manasseh, which are in Gilead, belonged to him; and the region of Argob, which is in Bashan, sixty great cities with walls and bronze bars, belonged to him);</p>
+            <p><sup>14</sup>Ahinadab the son of Iddo, in Mahanaim;</p>
+            <p><sup>15</sup>Ahimaaz, in Naphtali (he also took Basemath the daughter of Solomon as wife);</p>
+            <p><sup>16</sup>Baana the son of Hushai, in Asher and Bealoth;</p>
+            <p><sup>17</sup>Jehoshaphat the son of Paruah, in Issachar;</p>
+            <p><sup>18</sup>Shimei the son of Ela, in Benjamin;</p>
+            <p><sup>19</sup>Geber the son of Uri, in the land of Gilead, the country of Sihon king of the Amorites and of Og king of Bashan; and he was the only officer who was in the land.</p>
+            <p><sup>20</sup>Judah and Israel were numerous as the sand which is by the sea in multitude, eating and drinking and making merry.</p>
+            <p><sup>21</sup>Solomon ruled over all the kingdoms from the River to the land of the Philistines, and to the border of Egypt. They brought tribute and served Solomon all the days of his life.</p>
+            <p><sup>22</sup>Solomon's provision for one day was thirty cors of fine flour, sixty measures of meal,</p>
+            <p><sup>23</sup>ten head of fat cattle, twenty head of cattle out of the pastures, and one hundred sheep, in addition to deer, gazelles, roebucks, and fattened fowl.</p>
+            <p><sup>24</sup>For he had dominion over all on this side the River, from Tiphsah even to Gaza, over all the kings on this side the River; and he had peace on all sides around him.</p>
+            <p><sup>25</sup>Judah and Israel lived safely, every man under his vine and under his fig tree, from Dan even to Beersheba, all the days of Solomon.</p>
+            <p><sup>26</sup>Solomon had forty thousand stalls of horses for his chariots, and twelve thousand horsemen.</p>
+            <p><sup>27</sup>Those officers provided food for King Solomon, and for all who came to King Solomon's table, every man in his month. They let nothing be lacking.</p>
+            <p><sup>28</sup>They also brought barley and straw for the horses and swift steeds to the place where the officers were, each man according to his duty.</p>
+            <p><sup>29</sup>God gave Solomon abundant wisdom, understanding, and breadth of mind like the sand that is on the seashore.</p>
+            <p><sup>30</sup>Solomon's wisdom excelled the wisdom of all the children of the east and all the wisdom of Egypt.</p>
+            <p><sup>31</sup>For he was wiser than all men—wiser than Ethan the Ezrahite, Heman, Calcol, and Darda, the sons of Mahol; and his fame was in all the nations all around.</p>
+            <p><sup>32</sup>He spoke three thousand proverbs, and his songs numbered one thousand five.</p>
+            <p><sup>33</sup>He spoke of trees, from the cedar that is in Lebanon even to the hyssop that grows out of the wall; he also spoke of animals, of birds, of creeping things, and of fish.</p>
+            <p><sup>34</sup>People of all nations came to hear the wisdom of Solomon, sent by all kings of the earth who had heard of his wisdom.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="1kings-read-3.html" rel="prev" aria-label="Previous chapter: 1 Kings 3">&larr; Previous: Chapter 3</a>
+<a class="btn btn-ghost" href="1kings.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1kings-read-5.html" rel="next" aria-label="Next chapter: 1 Kings 5">Next: Chapter 5 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

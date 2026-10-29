@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1 Kings 5 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read 1 Kings chapter 5 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>1 Kings 5 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read 1 Kings chapter 5 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-1kings">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>1 Kings <span style="color:var(--burgundy);">&middot; Chapter 5</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 5 of 22</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">1 Kings <span class="chnum">&middot; Chapter 5</span></h1>
+<p class="chapter-position">Chapter 5 of 22</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="1kings-read-4.html">&larr; Chapter 4</a>
-<span class="chapter-indicator">Chapter 5 of 22</span>
-<a class="btn btn-primary shimmer" href="1kings-read-6.html">Chapter 6 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="1kings-read-4.html" rel="prev" aria-label="Previous chapter: 1 Kings 4">&larr; Previous: Chapter 4</a>
+<a class="btn btn-ghost" href="1kings.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1kings-read-6.html" rel="next" aria-label="Next chapter: 1 Kings 6">Next: Chapter 6 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd Hiram king of Tyre sent his servants unto Solomon; for he had heard that they had anointed him king in the room of his father: for Hiram was ever a lover of David.</p>
             <p><sup>2</sup>And Solomon sent to Hiram, saying,</p>
             <p><sup>3</sup>Thou knowest how that David my father could not build an house unto the name of the Lord his God for the wars which were about him on every side, until the Lord put them under the soles of his feet.</p>
@@ -48,12 +55,61 @@
             <p><sup>17</sup>And the king commanded, and they brought great stones, costly stones, and hewed stones, to lay the foundation of the house.</p>
             <p><sup>18</sup>And Solomon's builders and Hiram's builders did hew them, and the stonesquarers: so they prepared timber and stones to build the house.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="1kings-read-4.html">&larr; Chapter 4</a>
-<a href="1kings.html">&uarr; 1 Kings summary</a>
-<a class="btn btn-primary shimmer" href="1kings-read-6.html">Chapter 6 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">H</span>iram king of Tyre sent his servants to Solomon, for he had heard that they had anointed him king in the place of his father, and Hiram had always loved David.</p>
+            <p><sup>2</sup>Solomon sent to Hiram, saying,</p>
+            <p><sup>3</sup>"You know that David my father could not build a house for the name of Yahweh his God because of the wars which were around him on every side, until Yahweh put his enemies under the soles of his feet.</p>
+            <p><sup>4</sup>But now Yahweh my God has given me rest on every side. There is no enemy and no evil occurrence.</p>
+            <p><sup>5</sup>Behold, I intend to build a house for the name of Yahweh my God, as Yahweh spoke to David my father, saying, 'Your son, whom I will set on your throne in your place shall build the house for my name.'</p>
+            <p><sup>6</sup>Now therefore command that cedar trees be cut for me out of Lebanon. My servants will be with your servants; and I will give you wages for your servants according to all that you say. For you know that there is nobody among us who knows how to cut timber like the Sidonians."</p>
+            <p><sup>7</sup>When Hiram heard the words of Solomon, he rejoiced greatly, and said, "Blessed is Yahweh today, who has given to David a wise son to rule over this great people."</p>
+            <p><sup>8</sup>Hiram sent to Solomon, saying, "I have heard the message which you have sent to me. I will do all your desire concerning timber of cedar, and concerning cypress timber.</p>
+            <p><sup>9</sup>My servants will bring them down from Lebanon to the sea. I will make them into rafts to go by sea to the place that you specify to me, and will cause them to be broken up there, and you will receive them. You will accomplish my desire, in giving food for my household."</p>
+            <p><sup>10</sup>So Hiram gave Solomon cedar timber and cypress timber according to all his desire.</p>
+            <p><sup>11</sup>Solomon gave Hiram twenty thousand cors of wheat for food to his household, and twenty cors of pure oil. Solomon gave this to Hiram year by year.</p>
+            <p><sup>12</sup>Yahweh gave Solomon wisdom, as he promised him. There was peace between Hiram and Solomon, and the two of them made a treaty together.</p>
+            <p><sup>13</sup>King Solomon raised a levy out of all Israel; and the levy was thirty thousand men.</p>
+            <p><sup>14</sup>He sent them to Lebanon, ten thousand a month by courses: for a month they were in Lebanon, and two months at home; and Adoniram was over the men subject to forced labor.</p>
+            <p><sup>15</sup>Solomon had seventy thousand who bore burdens, and eighty thousand who were stone cutters in the mountains,</p>
+            <p><sup>16</sup>besides Solomon's chief officers who were over the work: three thousand three hundred who ruled over the people who labored in the work.</p>
+            <p><sup>17</sup>The king commanded, and they cut out large stones, costly stones, to lay the foundation of the house with worked stone.</p>
+            <p><sup>18</sup>Solomon's builders and Hiram's builders and the Gebalites cut them, and prepared the timber and the stones to build the house.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="1kings-read-4.html" rel="prev" aria-label="Previous chapter: 1 Kings 4">&larr; Previous: Chapter 4</a>
+<a class="btn btn-ghost" href="1kings.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1kings-read-6.html" rel="next" aria-label="Next chapter: 1 Kings 6">Next: Chapter 6 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

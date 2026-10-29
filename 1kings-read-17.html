@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1 Kings 17 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read 1 Kings chapter 17 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>1 Kings 17 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read 1 Kings chapter 17 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-1kings">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>1 Kings <span style="color:var(--burgundy);">&middot; Chapter 17</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 17 of 22</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">1 Kings <span class="chnum">&middot; Chapter 17</span></h1>
+<p class="chapter-position">Chapter 17 of 22</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="1kings-read-16.html">&larr; Chapter 16</a>
-<span class="chapter-indicator">Chapter 17 of 22</span>
-<a class="btn btn-primary shimmer" href="1kings-read-18.html">Chapter 18 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="1kings-read-16.html" rel="prev" aria-label="Previous chapter: 1 Kings 16">&larr; Previous: Chapter 16</a>
+<a class="btn btn-ghost" href="1kings.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1kings-read-18.html" rel="next" aria-label="Next chapter: 1 Kings 18">Next: Chapter 18 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd Elijah the Tishbite, who was of the inhabitants of Gilead, said unto Ahab, As the Lord God of Israel liveth, before whom I stand, there shall not be dew nor rain these years, but according to my word.</p>
             <p><sup>2</sup>And the word of the Lord came unto him, saying,</p>
             <p><sup>3</sup>Get thee hence, and turn thee eastward, and hide thyself by the brook Cherith, that is before Jordan.</p>
@@ -54,12 +61,67 @@
             <p><sup>23</sup>And Elijah took the child, and brought him down out of the chamber into the house, and delivered him unto his mother: and Elijah said, See, thy son liveth.</p>
             <p><sup>24</sup>And the woman said to Elijah, Now by this I know that thou art a man of God, and that the word of the Lord in thy mouth is truth.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="1kings-read-16.html">&larr; Chapter 16</a>
-<a href="1kings.html">&uarr; 1 Kings summary</a>
-<a class="btn btn-primary shimmer" href="1kings-read-18.html">Chapter 18 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">E</span>lijah the Tishbite, who was one of the settlers of Gilead, said to Ahab, "As Yahweh, the God of Israel, lives, before whom I stand, there shall not be dew nor rain these years, but according to my word."</p>
+            <p><sup>2</sup>Then Yahweh's word came to him, saying,</p>
+            <p><sup>3</sup>"Go away from here, turn eastward, and hide yourself by the brook Cherith, that is before the Jordan.</p>
+            <p><sup>4</sup>You shall drink from the brook. I have commanded the ravens to feed you there."</p>
+            <p><sup>5</sup>So he went and did according to Yahweh's word, for he went and lived by the brook Cherith that is before the Jordan.</p>
+            <p><sup>6</sup>The ravens brought him bread and meat in the morning, and bread and meat in the evening; and he drank from the brook.</p>
+            <p><sup>7</sup>After a while, the brook dried up, because there was no rain in the land.</p>
+            <p><sup>8</sup>Yahweh's word came to him, saying,</p>
+            <p><sup>9</sup>"Arise, go to Zarephath, which belongs to Sidon, and stay there. Behold, I have commanded a widow there to sustain you."</p>
+            <p><sup>10</sup>So he arose and went to Zarephath; and when he came to the gate of the city, behold, a widow was there gathering sticks. He called to her and said, "Please get me a little water in a jar, that I may drink."</p>
+            <p><sup>11</sup>As she was going to get it, he called to her and said, "Please bring me a morsel of bread in your hand."</p>
+            <p><sup>12</sup>She said, "As Yahweh your God lives, I don't have anything baked, but only a handful of meal in a jar and a little oil in a jar. Behold, I am gathering two sticks, that I may go in and bake it for me and my son, that we may eat it, and die."</p>
+            <p><sup>13</sup>Elijah said to her, "Don't be afraid. Go and do as you have said; but make me a little cake from it first, and bring it out to me, and afterward make some for you and for your son.</p>
+            <p><sup>14</sup>For Yahweh, the God of Israel, says, 'The jar of meal will not run out, and the jar of oil will not fail, until the day that Yahweh sends rain on the earth.'"</p>
+            <p><sup>15</sup>She went and did according to the saying of Elijah; and she, he, and her household ate many days.</p>
+            <p><sup>16</sup>The jar of meal didn't run out and the jar of oil didn't fail, according to Yahweh's word, which he spoke by Elijah.</p>
+            <p><sup>17</sup>After these things, the son of the woman, the mistress of the house, became sick; and his sickness was so severe that there was no breath left in him.</p>
+            <p><sup>18</sup>She said to Elijah, "What have I to do with you, you man of God? You have come to me to bring my sin to memory, and to kill my son!"</p>
+            <p><sup>19</sup>He said to her, "Give me your son." He took him out of her bosom, and carried him up into the room where he stayed, and laid him on his own bed.</p>
+            <p><sup>20</sup>He cried to Yahweh and said, "Yahweh my God, have you also brought evil on the widow with whom I am staying, by killing her son?"</p>
+            <p><sup>21</sup>He stretched himself on the child three times, and cried to Yahweh and said, "Yahweh my God, please let this child's soul come into him again."</p>
+            <p><sup>22</sup>Yahweh listened to the voice of Elijah; and the soul of the child came into him again, and he revived.</p>
+            <p><sup>23</sup>Elijah took the child and brought him down out of the room into the house, and delivered him to his mother; and Elijah said, "Behold, your son lives."</p>
+            <p><sup>24</sup>The woman said to Elijah, "Now I know that you are a man of God, and that Yahweh's word in your mouth is truth."</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="1kings-read-16.html" rel="prev" aria-label="Previous chapter: 1 Kings 16">&larr; Previous: Chapter 16</a>
+<a class="btn btn-ghost" href="1kings.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1kings-read-18.html" rel="next" aria-label="Next chapter: 1 Kings 18">Next: Chapter 18 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

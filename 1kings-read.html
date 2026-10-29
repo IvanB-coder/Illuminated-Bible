@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1 Kings 1 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read 1 Kings chapter 1 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>1 Kings 1 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read 1 Kings chapter 1 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-1kings">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>1 Kings <span style="color:var(--burgundy);">&middot; Chapter 1</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 1 of 22</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">1 Kings <span class="chnum">&middot; Chapter 1</span></h1>
+<p class="chapter-position">Chapter 1 of 22</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="1kings.html">&larr; Back to 1 Kings summary</a>
-<span class="chapter-indicator">Chapter 1 of 22</span>
-<a class="btn btn-primary shimmer" href="1kings-read-2.html">Chapter 2 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="1kings.html">&larr; Book Summary</a>
+<a class="btn btn-ghost" href="1kings.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1kings-read-2.html" rel="next" aria-label="Next chapter: 1 Kings 2">Next: Chapter 2 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">N</span>ow king David was old and stricken in years; and they covered him with clothes, but he gat no heat.</p>
             <p><sup>2</sup>Wherefore his servants said unto him, Let there be sought for my lord the king a young virgin: and let her stand before the king, and let her cherish him, and let her lie in thy bosom, that my lord the king may get heat.</p>
             <p><sup>3</sup>So they sought for a fair damsel throughout all the coasts of Israel, and found Abishag a Shunammite, and brought her to the king.</p>
@@ -83,12 +90,96 @@
             <p><sup>52</sup>And Solomon said, If he will shew himself a worthy man, there shall not an hair of him fall to the earth: but if wickedness shall be found in him, he shall die.</p>
             <p><sup>53</sup>So king Solomon sent, and they brought him down from the altar. And he came and bowed himself to king Solomon: and Solomon said unto him, Go to thine house.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="1kings.html">&larr; Back to 1 Kings summary</a>
-<a href="1kings.html">&uarr; 1 Kings summary</a>
-<a class="btn btn-primary shimmer" href="1kings-read-2.html">Chapter 2 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">N</span>ow King David was old and advanced in years; and they covered him with clothes, but he couldn't keep warm.</p>
+            <p><sup>2</sup>Therefore his servants said to him, "Let a young virgin be sought for my lord the king. Let her stand before the king, and cherish him; and let her lie in your bosom, that my lord the king may keep warm."</p>
+            <p><sup>3</sup>So they sought for a beautiful young lady throughout all the borders of Israel, and found Abishag the Shunammite, and brought her to the king.</p>
+            <p><sup>4</sup>The young lady was very beautiful; and she cherished the king, and served him; but the king didn't know her intimately.</p>
+            <p><sup>5</sup>Then Adonijah the son of Haggith exalted himself, saying, "I will be king." Then he prepared him chariots and horsemen, and fifty men to run before him.</p>
+            <p><sup>6</sup>His father had not displeased him at any time in saying, "Why have you done so?" and he was also a very handsome man; and he was born after Absalom.</p>
+            <p><sup>7</sup>He conferred with Joab the son of Zeruiah and with Abiathar the priest; and they followed Adonijah and helped him.</p>
+            <p><sup>8</sup>But Zadok the priest, Benaiah the son of Jehoiada, Nathan the prophet, Shimei, Rei, and the mighty men who belonged to David, were not with Adonijah.</p>
+            <p><sup>9</sup>Adonijah killed sheep, cattle, and fatlings by the stone of Zoheleth, which is beside En Rogel; and he called all his brothers, the king's sons, and all the men of Judah, the king's servants;</p>
+            <p><sup>10</sup>but he didn't call Nathan the prophet, and Benaiah, and the mighty men, and Solomon his brother.</p>
+            <p><sup>11</sup>Then Nathan spoke to Bathsheba the mother of Solomon, saying, "Haven't you heard that Adonijah the son of Haggith reigns, and David our lord doesn't know it?</p>
+            <p><sup>12</sup>Now therefore come, please let me give you counsel, that you may save your own life and your son Solomon's life.</p>
+            <p><sup>13</sup>Go in to King David, and tell him, 'Didn't you, my lord the king, swear to your servant, saying, "Assuredly Solomon your son shall reign after me, and he shall sit on my throne"? Why then does Adonijah reign?'</p>
+            <p><sup>14</sup>Behold, while you are still talking there with the king, I will also come in after you and confirm your words."</p>
+            <p><sup>15</sup>Bathsheba went in to the king in his room. The king was very old; and Abishag the Shunammite was serving the king.</p>
+            <p><sup>16</sup>Bathsheba bowed and showed respect to the king. The king said, "What would you like?"</p>
+            <p><sup>17</sup>She said to him, "My lord, you swore by Yahweh your God to your servant, 'Assuredly Solomon your son shall reign after me, and he shall sit on my throne.'</p>
+            <p><sup>18</sup>Now, behold, Adonijah reigns; and you, my lord the king, don't know it.</p>
+            <p><sup>19</sup>He has slain cattle and fatlings and sheep in abundance, and has called all the sons of the king, Abiathar the priest, and Joab the captain of the army; but he hasn't called Solomon your servant.</p>
+            <p><sup>20</sup>You, my lord the king, the eyes of all Israel are on you, that you should tell them who will sit on the throne of my lord the king after him.</p>
+            <p><sup>21</sup>Otherwise it will happen, when my lord the king sleeps with his fathers, that I and my son Solomon will be considered criminals."</p>
+            <p><sup>22</sup>Behold, while she was still talking with the king, Nathan the prophet came in.</p>
+            <p><sup>23</sup>They told the king, saying, "Behold, Nathan the prophet!" When he had come in before the king, he bowed himself before the king with his face to the ground.</p>
+            <p><sup>24</sup>Nathan said, "My lord, King, have you said, 'Adonijah shall reign after me, and he shall sit on my throne'?</p>
+            <p><sup>25</sup>For he has gone down today, and has slain cattle, fatlings, and sheep in abundance, and has called all the king's sons, the captains of the army, and Abiathar the priest. Behold, they are eating and drinking before him, and saying, 'Long live King Adonijah!'</p>
+            <p><sup>26</sup>But he hasn't called me, even me your servant, Zadok the priest, Benaiah the son of Jehoiada, and your servant Solomon.</p>
+            <p><sup>27</sup>Was this thing done by my lord the king, and you haven't shown to your servants who should sit on the throne of my lord the king after him?"</p>
+            <p><sup>28</sup>Then King David answered, "Call Bathsheba in to me." She came into the king's presence and stood before the king.</p>
+            <p><sup>29</sup>The king vowed and said, "As Yahweh lives, who has redeemed my soul out of all adversity,</p>
+            <p><sup>30</sup>most certainly as I swore to you by Yahweh, the God of Israel, saying, 'Assuredly Solomon your son shall reign after me, and he shall sit on my throne in my place;' I will most certainly do this today."</p>
+            <p><sup>31</sup>Then Bathsheba bowed with her face to the earth and showed respect to the king, and said, "Let my lord King David live forever!"</p>
+            <p><sup>32</sup>King David said, "Call to me Zadok the priest, Nathan the prophet, and Benaiah the son of Jehoiada." They came before the king.</p>
+            <p><sup>33</sup>The king said to them, "Take with you the servants of your lord, and cause Solomon my son to ride on my own mule, and bring him down to Gihon.</p>
+            <p><sup>34</sup>Let Zadok the priest and Nathan the prophet anoint him there king over Israel. Blow the trumpet, and say, 'Long live King Solomon!'</p>
+            <p><sup>35</sup>Then come up after him, and he shall come and sit on my throne; for he shall be king in my place. I have appointed him to be prince over Israel and over Judah."</p>
+            <p><sup>36</sup>Benaiah the son of Jehoiada answered the king, and said, "Amen. May Yahweh, the God of my lord the king, say so.</p>
+            <p><sup>37</sup>As Yahweh has been with my lord the king, even so may he be with Solomon, and make his throne greater than the throne of my lord King David."</p>
+            <p><sup>38</sup>So Zadok the priest, Nathan the prophet, Benaiah the son of Jehoiada, and the Cherethites and the Pelethites went down and had Solomon ride on King David's mule, and brought him to Gihon.</p>
+            <p><sup>39</sup>Zadok the priest took the horn of oil from the Tent, and anointed Solomon. They blew the trumpet; and all the people said, "Long live King Solomon!"</p>
+            <p><sup>40</sup>All the people came up after him, and the people piped with pipes, and rejoiced with great joy, so that the earth shook with their sound.</p>
+            <p><sup>41</sup>Adonijah and all the guests who were with him heard it as they had finished eating. When Joab heard the sound of the trumpet, he said, "Why is this noise of the city being in an uproar?"</p>
+            <p><sup>42</sup>While he yet spoke, behold, Jonathan the son of Abiathar the priest came; and Adonijah said, "Come in; for you are a worthy man, and bring good news."</p>
+            <p><sup>43</sup>Jonathan answered Adonijah, "Most certainly our lord King David has made Solomon king.</p>
+            <p><sup>44</sup>The king has sent with him Zadok the priest, Nathan the prophet, Benaiah the son of Jehoiada, and the Cherethites and the Pelethites; and they have caused him to ride on the king's mule.</p>
+            <p><sup>45</sup>Zadok the priest and Nathan the prophet have anointed him king in Gihon. They have come up from there rejoicing, so that the city rang again. This is the noise that you have heard.</p>
+            <p><sup>46</sup>Also, Solomon sits on the throne of the kingdom.</p>
+            <p><sup>47</sup>Moreover the king's servants came to bless our lord King David, saying, 'May your God make the name of Solomon better than your name, and make his throne greater than your throne;' and the king bowed himself on the bed.</p>
+            <p><sup>48</sup>Also thus said the king, 'Blessed be Yahweh, the God of Israel, who has given one to sit on my throne today, my eyes even seeing it.'"</p>
+            <p><sup>49</sup>All the guests of Adonijah were afraid, and rose up, and each man went his way.</p>
+            <p><sup>50</sup>Adonijah was afraid because of Solomon; and he arose, and went, and hung onto the horns of the altar.</p>
+            <p><sup>51</sup>Solomon was told, "Behold, Adonijah fears King Solomon; for, behold, he is hanging onto the horns of the altar, saying, 'Let King Solomon swear to me first that he will not kill his servant with the sword.'"</p>
+            <p><sup>52</sup>Solomon said, "If he shows himself a worthy man, not a hair of his shall fall to the earth; but if wickedness is found in him, he shall die."</p>
+            <p><sup>53</sup>So King Solomon sent, and they brought him down from the altar. He came and bowed down to King Solomon; and Solomon said to him, "Go to your house."</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="1kings.html">&larr; Book Summary</a>
+<a class="btn btn-ghost" href="1kings.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1kings-read-2.html" rel="next" aria-label="Next chapter: 1 Kings 2">Next: Chapter 2 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

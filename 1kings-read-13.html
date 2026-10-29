@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1 Kings 13 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read 1 Kings chapter 13 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>1 Kings 13 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read 1 Kings chapter 13 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-1kings">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>1 Kings <span style="color:var(--burgundy);">&middot; Chapter 13</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 13 of 22</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">1 Kings <span class="chnum">&middot; Chapter 13</span></h1>
+<p class="chapter-position">Chapter 13 of 22</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="1kings-read-12.html">&larr; Chapter 12</a>
-<span class="chapter-indicator">Chapter 13 of 22</span>
-<a class="btn btn-primary shimmer" href="1kings-read-14.html">Chapter 14 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="1kings-read-12.html" rel="prev" aria-label="Previous chapter: 1 Kings 12">&larr; Previous: Chapter 12</a>
+<a class="btn btn-ghost" href="1kings.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1kings-read-14.html" rel="next" aria-label="Next chapter: 1 Kings 14">Next: Chapter 14 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd, behold, there came a man of God out of Judah by the word of the Lord unto Bethel: and Jeroboam stood by the altar to burn incense.</p>
             <p><sup>2</sup>And he cried against the altar in the word of the Lord, and said, O altar, altar, thus saith the Lord; Behold, a child shall be born unto the house of David, Josiah by name; and upon thee shall he offer the priests of the high places that burn incense upon thee, and men's bones shall be burnt upon thee.</p>
             <p><sup>3</sup>And he gave a sign the same day, saying, This is the sign which the Lord hath spoken; Behold, the altar shall be rent, and the ashes that are upon it shall be poured out.</p>
@@ -64,12 +71,77 @@
             <p><sup>33</sup>After this thing Jeroboam returned not from his evil way, but made again of the lowest of the people priests of the high places: whosoever would, he consecrated him, and he became one of the priests of the high places.</p>
             <p><sup>34</sup>And this thing became sin unto the house of Jeroboam, even to cut it off, and to destroy it from off the face of the earth.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="1kings-read-12.html">&larr; Chapter 12</a>
-<a href="1kings.html">&uarr; 1 Kings summary</a>
-<a class="btn btn-primary shimmer" href="1kings-read-14.html">Chapter 14 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">B</span>ehold, a man of God came out of Judah by Yahweh's word to Bethel; and Jeroboam was standing by the altar to burn incense.</p>
+            <p><sup>2</sup>He cried against the altar by Yahweh's word, and said, "Altar! Altar! Yahweh says: 'Behold, a son will be born to David's house, Josiah by name. On you he will sacrifice the priests of the high places who burn incense on you, and they will burn men's bones on you.'"</p>
+            <p><sup>3</sup>He gave a sign the same day, saying, "This is the sign which Yahweh has spoken: Behold, the altar will be split apart, and the ashes that are on it will be poured out."</p>
+            <p><sup>4</sup>When the king heard the saying of the man of God, which he cried against the altar in Bethel, Jeroboam put out his hand from the altar, saying, "Seize him!" His hand, which he put out against him, dried up, so that he could not draw it back again to himself.</p>
+            <p><sup>5</sup>The altar was also split apart, and the ashes poured out from the altar, according to the sign which the man of God had given by Yahweh's word.</p>
+            <p><sup>6</sup>The king answered the man of God, "Now intercede for the favor of Yahweh your God, and pray for me, that my hand may be restored me again." The man of God interceded with Yahweh, and the king's hand was restored to him again, and became as it was before.</p>
+            <p><sup>7</sup>The king said to the man of God, "Come home with me and refresh yourself, and I will give you a reward."</p>
+            <p><sup>8</sup>The man of God said to the king, "Even if you gave me half of your house, I would not go in with you, neither would I eat bread nor drink water in this place;</p>
+            <p><sup>9</sup>for so was it commanded me by Yahweh's word, saying, 'You shall eat no bread, drink no water, and don't return by the way that you came.'"</p>
+            <p><sup>10</sup>So he went another way, and didn't return by the way that he came to Bethel.</p>
+            <p><sup>11</sup>Now an old prophet lived in Bethel, and one of his sons came and told him all the works that the man of God had done that day in Bethel. They also told their father the words which he had spoken to the king.</p>
+            <p><sup>12</sup>Their father said to them, "Which way did he go?" Now his sons had seen which way the man of God went, who came from Judah.</p>
+            <p><sup>13</sup>He said to his sons, "Saddle the donkey for me." So they saddled the donkey for him; and he rode on it.</p>
+            <p><sup>14</sup>He went after the man of God, and found him sitting under an oak. He said to him, "Are you the man of God who came from Judah?" He said, "I am."</p>
+            <p><sup>15</sup>Then he said to him, "Come home with me and eat bread."</p>
+            <p><sup>16</sup>He said, "I may not return with you, nor go in with you. I will not eat bread or drink water with you in this place.</p>
+            <p><sup>17</sup>For it was said to me by Yahweh's word, 'You shall eat no bread or drink water there, and don't turn again to go by the way that you came.'"</p>
+            <p><sup>18</sup>He said to him, "I also am a prophet as you are; and an angel spoke to me by Yahweh's word, saying, 'Bring him back with you into your house, that he may eat bread and drink water.'" He lied to him.</p>
+            <p><sup>19</sup>So he went back with him, ate bread in his house, and drank water.</p>
+            <p><sup>20</sup>As they sat at the table, Yahweh's word came to the prophet who brought him back;</p>
+            <p><sup>21</sup>and he cried out to the man of God who came from Judah, saying, "Yahweh says, 'Because you have been disobedient to Yahweh's word, and have not kept the commandment which Yahweh your God commanded you,</p>
+            <p><sup>22</sup>but came back, and have eaten bread and drank water in the place of which he said to you, "Eat no bread, and drink no water," your body will not come to the tomb of your fathers.'"</p>
+            <p><sup>23</sup>After he had eaten bread and after he drank, he saddled the donkey for the prophet whom he had brought back.</p>
+            <p><sup>24</sup>When he had gone, a lion met him by the way and killed him. His body was thrown on the path, and the donkey stood by it. The lion also stood by the body.</p>
+            <p><sup>25</sup>Behold, men passed by and saw the body thrown on the path, and the lion standing by the body; and they came and told it in the city where the old prophet lived.</p>
+            <p><sup>26</sup>When the prophet who brought him back from the way heard of it, he said, "It is the man of God who was disobedient to Yahweh's word. Therefore Yahweh has delivered him to the lion, which has mauled him and slain him, according to Yahweh's word which he spoke to him."</p>
+            <p><sup>27</sup>He said to his sons, saying, "Saddle the donkey for me," and they saddled it.</p>
+            <p><sup>28</sup>He went and found his body thrown on the path, and the donkey and the lion standing by the body. The lion had not eaten the body nor mauled the donkey.</p>
+            <p><sup>29</sup>The prophet took up the body of the man of God, and laid it on the donkey, and brought it back. He came to the city of the old prophet to mourn, and to bury him.</p>
+            <p><sup>30</sup>He laid his body in his own grave; and they mourned over him, saying, "Alas, my brother!"</p>
+            <p><sup>31</sup>After he had buried him, he spoke to his sons, saying, "When I am dead, bury me in the tomb in which the man of God is buried. Lay my bones beside his bones.</p>
+            <p><sup>32</sup>For the saying which he cried by Yahweh's word against the altar in Bethel, and against all the houses of the high places which are in the cities of Samaria, will surely happen."</p>
+            <p><sup>33</sup>After this thing, Jeroboam didn't turn from his evil way, but again made priests of the high places from among all the people. Whoever wanted to, he consecrated him, that there might be priests of the high places.</p>
+            <p><sup>34</sup>This thing became sin to the house of Jeroboam, even to cut it off and to destroy it from off the surface of the earth.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="1kings-read-12.html" rel="prev" aria-label="Previous chapter: 1 Kings 12">&larr; Previous: Chapter 12</a>
+<a class="btn btn-ghost" href="1kings.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1kings-read-14.html" rel="next" aria-label="Next chapter: 1 Kings 14">Next: Chapter 14 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

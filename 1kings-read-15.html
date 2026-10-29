@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1 Kings 15 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read 1 Kings chapter 15 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>1 Kings 15 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read 1 Kings chapter 15 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-1kings">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>1 Kings <span style="color:var(--burgundy);">&middot; Chapter 15</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 15 of 22</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">1 Kings <span class="chnum">&middot; Chapter 15</span></h1>
+<p class="chapter-position">Chapter 15 of 22</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="1kings-read-14.html">&larr; Chapter 14</a>
-<span class="chapter-indicator">Chapter 15 of 22</span>
-<a class="btn btn-primary shimmer" href="1kings-read-16.html">Chapter 16 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="1kings-read-14.html" rel="prev" aria-label="Previous chapter: 1 Kings 14">&larr; Previous: Chapter 14</a>
+<a class="btn btn-ghost" href="1kings.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1kings-read-16.html" rel="next" aria-label="Next chapter: 1 Kings 16">Next: Chapter 16 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">N</span>ow in the eighteenth year of king Jeroboam the son of Nebat reigned Abijam over Judah.</p>
             <p><sup>2</sup>Three years reigned he in Jerusalem. and his mother's name was Maachah, the daughter of Abishalom.</p>
             <p><sup>3</sup>And he walked in all the sins of his father, which he had done before him: and his heart was not perfect with the Lord his God, as the heart of David his father.</p>
@@ -64,12 +71,77 @@
             <p><sup>33</sup>In the third year of Asa king of Judah began Baasha the son of Ahijah to reign over all Israel in Tirzah, twenty and four years.</p>
             <p><sup>34</sup>And he did evil in the sight of the Lord, and walked in the way of Jeroboam, and in his sin wherewith he made Israel to sin.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="1kings-read-14.html">&larr; Chapter 14</a>
-<a href="1kings.html">&uarr; 1 Kings summary</a>
-<a class="btn btn-primary shimmer" href="1kings-read-16.html">Chapter 16 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">N</span>ow in the eighteenth year of King Jeroboam the son of Nebat, Abijam began to reign over Judah.</p>
+            <p><sup>2</sup>He reigned three years in Jerusalem. His mother's name was Maacah the daughter of Abishalom.</p>
+            <p><sup>3</sup>He walked in all the sins of his father, which he had done before him; and his heart was not perfect with Yahweh his God, as the heart of David his father.</p>
+            <p><sup>4</sup>Nevertheless for David's sake, Yahweh his God gave him a lamp in Jerusalem, to set up his son after him and to establish Jerusalem;</p>
+            <p><sup>5</sup>because David did that which was right in Yahweh's eyes, and didn't turn away from anything that he commanded him all the days of his life, except only in the matter of Uriah the Hittite.</p>
+            <p><sup>6</sup>Now there was war between Rehoboam and Jeroboam all the days of his life.</p>
+            <p><sup>7</sup>The rest of the acts of Abijam, and all that he did, aren't they written in the book of the chronicles of the kings of Judah? There was war between Abijam and Jeroboam.</p>
+            <p><sup>8</sup>Abijam slept with his fathers, and they buried him in David's city; and Asa his son reigned in his place.</p>
+            <p><sup>9</sup>In the twentieth year of Jeroboam king of Israel, Asa began to reign over Judah.</p>
+            <p><sup>10</sup>He reigned forty-one years in Jerusalem. His mother's name was Maacah the daughter of Abishalom.</p>
+            <p><sup>11</sup>Asa did that which was right in Yahweh's eyes, as David his father did.</p>
+            <p><sup>12</sup>He put away the sodomites out of the land, and removed all the idols that his fathers had made.</p>
+            <p><sup>13</sup>He also removed Maacah his mother from being queen, because she had made an abominable image for an Asherah. Asa cut down her image and burned it at the brook Kidron.</p>
+            <p><sup>14</sup>But the high places were not taken away. Nevertheless the heart of Asa was perfect with Yahweh all his days.</p>
+            <p><sup>15</sup>He brought into Yahweh's house the things that his father had dedicated, and the things that he himself had dedicated: silver, gold, and utensils.</p>
+            <p><sup>16</sup>There was war between Asa and Baasha king of Israel all their days.</p>
+            <p><sup>17</sup>Baasha king of Israel went up against Judah, and built Ramah, that he might not allow anyone to go out or come in to Asa king of Judah.</p>
+            <p><sup>18</sup>Then Asa took all the silver and the gold that was left in the treasures of Yahweh's house, and the treasures of the king's house, and delivered it into the hand of his servants. Then King Asa sent them to Ben Hadad, the son of Tabrimmon, the son of Hezion, king of Syria, who lived at Damascus, saying,</p>
+            <p><sup>19</sup>"Let there be a treaty between me and you, like that between my father and your father. Behold, I have sent to you a present of silver and gold. Go, break your treaty with Baasha king of Israel, that he may depart from me."</p>
+            <p><sup>20</sup>Ben Hadad listened to King Asa, and sent the captains of his armies against the cities of Israel, and struck Ijon, and Dan, and Abel Beth Maacah, and all Chinneroth, with all the land of Naphtali.</p>
+            <p><sup>21</sup>When Baasha heard of it, he stopped building Ramah, and lived in Tirzah.</p>
+            <p><sup>22</sup>Then King Asa made a proclamation to all Judah. No one was exempted. They carried away the stones of Ramah, and its timber, with which Baasha had built; and King Asa used it to build Geba of Benjamin, and Mizpah.</p>
+            <p><sup>23</sup>Now the rest of all the acts of Asa, and all his might, and all that he did, and the cities which he built, aren't they written in the book of the chronicles of the kings of Judah? But in the time of his old age he was diseased in his feet.</p>
+            <p><sup>24</sup>Asa slept with his fathers, and was buried with his fathers in his father David's city; and Jehoshaphat his son reigned in his place.</p>
+            <p><sup>25</sup>Nadab the son of Jeroboam began to reign over Israel in the second year of Asa king of Judah; and he reigned over Israel two years.</p>
+            <p><sup>26</sup>He did that which was evil in Yahweh's sight, and walked in the way of his father, and in his sin with which he made Israel to sin.</p>
+            <p><sup>27</sup>Baasha the son of Ahijah, of the house of Issachar, conspired against him; and Baasha struck him at Gibbethon, which belonged to the Philistines; for Nadab and all Israel were besieging Gibbethon.</p>
+            <p><sup>28</sup>Even in the third year of Asa king of Judah, Baasha killed him and reigned in his place.</p>
+            <p><sup>29</sup>As soon as he was king, he struck all the house of Jeroboam. He didn't leave to Jeroboam any who breathed, until he had destroyed him, according to the saying of Yahweh, which he spoke by his servant Ahijah the Shilonite;</p>
+            <p><sup>30</sup>for the sins of Jeroboam which he sinned, and with which he made Israel to sin, because of his provocation with which he provoked Yahweh, the God of Israel, to anger.</p>
+            <p><sup>31</sup>Now the rest of the acts of Nadab, and all that he did, aren't they written in the book of the chronicles of the kings of Israel?</p>
+            <p><sup>32</sup>There was war between Asa and Baasha king of Israel all their days.</p>
+            <p><sup>33</sup>In the third year of Asa king of Judah, Baasha the son of Ahijah began to reign over all Israel in Tirzah for twenty-four years.</p>
+            <p><sup>34</sup>He did that which was evil in Yahweh's sight, and walked in the way of Jeroboam, and in his sin with which he made Israel to sin.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="1kings-read-14.html" rel="prev" aria-label="Previous chapter: 1 Kings 14">&larr; Previous: Chapter 14</a>
+<a class="btn btn-ghost" href="1kings.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1kings-read-16.html" rel="next" aria-label="Next chapter: 1 Kings 16">Next: Chapter 16 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>

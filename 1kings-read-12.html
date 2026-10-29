@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1 Kings 12 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read 1 Kings chapter 12 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>1 Kings 12 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read 1 Kings chapter 12 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-1kings">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>1 Kings <span style="color:var(--burgundy);">&middot; Chapter 12</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 12 of 22</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">1 Kings <span class="chnum">&middot; Chapter 12</span></h1>
+<p class="chapter-position">Chapter 12 of 22</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="1kings-read-11.html">&larr; Chapter 11</a>
-<span class="chapter-indicator">Chapter 12 of 22</span>
-<a class="btn btn-primary shimmer" href="1kings-read-13.html">Chapter 13 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="1kings-read-11.html" rel="prev" aria-label="Previous chapter: 1 Kings 11">&larr; Previous: Chapter 11</a>
+<a class="btn btn-ghost" href="1kings.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1kings-read-13.html" rel="next" aria-label="Next chapter: 1 Kings 13">Next: Chapter 13 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">A</span>nd Rehoboam went to Shechem: for all Israel were come to Shechem to make him king.</p>
             <p><sup>2</sup>And it came to pass, when Jeroboam the son of Nebat, who was yet in Egypt, heard of it, (for he was fled from the presence of king Solomon, and Jeroboam dwelt in Egypt;)</p>
             <p><sup>3</sup>That they sent and called him. And Jeroboam and all the congregation of Israel came, and spake unto Rehoboam, saying,</p>
@@ -63,12 +70,76 @@
             <p><sup>32</sup>And Jeroboam ordained a feast in the eighth month, on the fifteenth day of the month, like unto the feast that is in Judah, and he offered upon the altar. So did he in Bethel, sacrificing unto the calves that he had made: and he placed in Bethel the priests of the high places which he had made.</p>
             <p><sup>33</sup>So he offered upon the altar which he had made in Bethel the fifteenth day of the eighth month, even in the month which he had devised of his own heart; and ordained a feast unto the children of Israel: and he offered upon the altar, and burnt incense.</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="1kings-read-11.html">&larr; Chapter 11</a>
-<a href="1kings.html">&uarr; 1 Kings summary</a>
-<a class="btn btn-primary shimmer" href="1kings-read-13.html">Chapter 13 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">R</span>ehoboam went to Shechem, for all Israel had come to Shechem to make him king.</p>
+            <p><sup>2</sup>When Jeroboam the son of Nebat heard of it (for he was yet in Egypt, where he had fled from the presence of King Solomon, and Jeroboam lived in Egypt;</p>
+            <p><sup>3</sup>and they sent and called him), Jeroboam and all the assembly of Israel came, and spoke to Rehoboam, saying,</p>
+            <p><sup>4</sup>"Your father made our yoke difficult. Now therefore make the hard service of your father, and his heavy yoke which he put on us, lighter, and we will serve you."</p>
+            <p><sup>5</sup>He said to them, "Depart for three days, then come back to me." So the people departed.</p>
+            <p><sup>6</sup>King Rehoboam took counsel with the old men who had stood before Solomon his father while he yet lived, saying, "What counsel do you give me to answer these people?"</p>
+            <p><sup>7</sup>They replied, "If you will be a servant to this people today, and will serve them, and answer them with good words, then they will be your servants forever."</p>
+            <p><sup>8</sup>But he abandoned the counsel of the old men which they had given him, and took counsel with the young men who had grown up with him, who stood before him.</p>
+            <p><sup>9</sup>He said to them, "What counsel do you give, that we may answer these people who have spoken to me, saying, 'Make the yoke that your father put on us lighter'?"</p>
+            <p><sup>10</sup>The young men who had grown up with him said to him, "Tell these people who spoke to you, saying, 'Your father made our yoke heavy, but make it lighter to us'-tell them, 'My little finger is thicker than my father's waist.</p>
+            <p><sup>11</sup>Now my father burdened you with a heavy yoke, but I will add to your yoke. My father chastised you with whips, but I will chastise you with scorpions.'"</p>
+            <p><sup>12</sup>So Jeroboam and all the people came to Rehoboam the third day, as the king asked, saying, "Come to me again the third day."</p>
+            <p><sup>13</sup>The king answered the people roughly, and abandoned the counsel of the old men which they had given him,</p>
+            <p><sup>14</sup>and spoke to them according to the counsel of the young men, saying, "My father made your yoke heavy, but I will add to your yoke. My father chastised you with whips, but I will chastise you with scorpions."</p>
+            <p><sup>15</sup>So the king didn't listen to the people; for it was a thing brought about from Yahweh, that he might establish his word, which Yahweh spoke by Ahijah the Shilonite to Jeroboam the son of Nebat.</p>
+            <p><sup>16</sup>When all Israel saw that the king didn't listen to them, the people answered the king, saying, "What portion have we in David? We don't have an inheritance in the son of Jesse. To your tents, Israel! Now see to your own house, David." So Israel departed to their tents.</p>
+            <p><sup>17</sup>But as for the children of Israel who lived in the cities of Judah, Rehoboam reigned over them.</p>
+            <p><sup>18</sup>Then King Rehoboam sent Adoram, who was over the men subject to forced labor; and all Israel stoned him to death with stones. King Rehoboam hurried to get himself up to his chariot, to flee to Jerusalem.</p>
+            <p><sup>19</sup>So Israel rebelled against David's house to this day.</p>
+            <p><sup>20</sup>When all Israel heard that Jeroboam had returned, they sent and called him to the congregation, and made him king over all Israel. There was no one who followed David's house, except for the tribe of Judah only.</p>
+            <p><sup>21</sup>When Rehoboam had come to Jerusalem, he assembled all the house of Judah and the tribe of Benjamin, a hundred and eighty thousand chosen men who were warriors, to fight against the house of Israel, to bring the kingdom again to Rehoboam the son of Solomon.</p>
+            <p><sup>22</sup>But the word of God came to Shemaiah the man of God, saying,</p>
+            <p><sup>23</sup>"Speak to Rehoboam the son of Solomon, king of Judah, and to all the house of Judah and Benjamin, and to the rest of the people, saying,</p>
+            <p><sup>24</sup>'Yahweh says, "You shall not go up or fight against your brothers, the children of Israel. Everyone return to his house; for this thing is from me."'" So they listened to Yahweh's word, and returned and went their way, according to Yahweh's word.</p>
+            <p><sup>25</sup>Then Jeroboam built Shechem in the hill country of Ephraim, and lived in it; and he went out from there and built Penuel.</p>
+            <p><sup>26</sup>Jeroboam said in his heart, "Now the kingdom will return to David's house.</p>
+            <p><sup>27</sup>If this people goes up to offer sacrifices in Yahweh's house at Jerusalem, then the heart of this people will turn again to their lord, even to Rehoboam king of Judah; and they will kill me, and return to Rehoboam king of Judah."</p>
+            <p><sup>28</sup>So the king took counsel, and made two calves of gold; and he said to them, "It is too much for you to go up to Jerusalem. Look and behold your gods, Israel, which brought you up out of the land of Egypt!"</p>
+            <p><sup>29</sup>He set the one in Bethel, and the other he put in Dan.</p>
+            <p><sup>30</sup>This thing became a sin, for the people went even as far as Dan to worship before the one there.</p>
+            <p><sup>31</sup>He made houses of high places, and made priests from among all the people, who were not of the sons of Levi.</p>
+            <p><sup>32</sup>Jeroboam ordained a feast in the eighth month, on the fifteenth day of the month, like the feast that is in Judah, and he went up to the altar. He did so in Bethel, sacrificing to the calves that he had made, and he placed in Bethel the priests of the high places that he had made.</p>
+            <p><sup>33</sup>He went up to the altar which he had made in Bethel on the fifteenth day in the eighth month, even in the month which he had devised of his own heart; and he ordained a feast for the children of Israel, and went up to the altar to burn incense.</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="1kings-read-11.html" rel="prev" aria-label="Previous chapter: 1 Kings 11">&larr; Previous: Chapter 11</a>
+<a class="btn btn-ghost" href="1kings.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="1kings-read-13.html" rel="next" aria-label="Next chapter: 1 Kings 13">Next: Chapter 13 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>
