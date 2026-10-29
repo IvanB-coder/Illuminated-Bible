@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Job 25 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read Job chapter 25 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
+</head>
+<body class="read-page book-job">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
+<a href="index.html#old-testament">Old Testament</a>
+<a href="index.html#new-testament">New Testament</a>
+<a href="index.html#about">About</a>
+</nav>
+</header>
+<main id="main">
+<div class="read-header">
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">Job <span class="chnum">&middot; Chapter 25</span></h1>
+<p class="chapter-position">Chapter 25 of 42</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
+</div>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
+</div>
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="job-read-24.html" rel="prev" aria-label="Previous chapter: Job 24">&larr; Previous: Chapter 24</a>
+<a class="btn btn-ghost" href="job.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="job-read-26.html" rel="next" aria-label="Next chapter: Job 26">Next: Chapter 26 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
+            <p><sup>1</sup>Then answered Bildad the Shuhite, and said,</p>
+            <p><sup>2</sup>Dominion and fear are with him, he maketh peace in his high places.</p>
+            <p><sup>3</sup>Is there any number of his armies? and upon whom doth not his light arise?</p>
+            <p><sup>4</sup>How then can man be justified with God? or how can he be clean that is born of a woman?</p>
+            <p><sup>5</sup>Behold even to the moon, and it shineth not; yea, the stars are not pure in his sight.</p>
+            <p><sup>6</sup>How much less man, that is a worm? and the son of man, which is a worm?</p>
+</div>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">T</span>hen Bildad the Shuhite answered,</p>
+            <p><sup>2</sup>"Dominion and fear are with him. He makes peace in his high places.</p>
+            <p><sup>3</sup>Can his armies be counted? On whom does his light not arise?</p>
+            <p><sup>4</sup>How then can man be just with God? Or how can he who is born of a woman be clean?</p>
+            <p><sup>5</sup>Behold, even the moon has no brightness, and the stars are not pure in his sight;</p>
+            <p><sup>6</sup>How much less man, who is a worm, and the son of man, who is a worm!"</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="job-read-24.html" rel="prev" aria-label="Previous chapter: Job 24">&larr; Previous: Chapter 24</a>
+<a class="btn btn-ghost" href="job.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="job-read-26.html" rel="next" aria-label="Next chapter: Job 26">Next: Chapter 26 &rarr;</a>
+</div>
+</main>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
+</body>
+</html>
