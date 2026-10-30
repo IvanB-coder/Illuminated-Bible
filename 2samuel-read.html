@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>2 Samuel 1 (KJV) | Illuminated Word</title>
-<meta name="description" content="Read 2 Samuel chapter 1 in the King James Version.">
-<link rel="stylesheet" href="styles.css">
+<title>2 Samuel 1 (KJV / WEB) | Illuminated Word</title>
+<meta name="description" content="Read 2 Samuel chapter 1 in the King James Version or the World English Bible.">
+<link rel="stylesheet" href="styles.css?v=20261028-banner2">
 </head>
 <body class="read-page book-2samuel">
 <a href="#main" class="skip-link">Skip to content</a>
-<header class="site-header">
-<a href="index.html" class="brand shimmer"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
-<nav class="site-nav">
+<header class="site-header iw-standard-header">
+<a class="brand shimmer" href="index.html" aria-label="Illuminated Word home"><span class="mark" aria-hidden="true"></span> Illuminated Word</a>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html#scripture-search">Search</a>
 <a href="index.html#old-testament">Old Testament</a>
 <a href="index.html#new-testament">New Testament</a>
 <a href="index.html#about">About</a>
@@ -19,16 +20,22 @@
 </header>
 <main id="main">
 <div class="read-header">
-<span class="version-pill">King James Version &middot; Public Domain</span>
-<h1>2 Samuel <span style="color:var(--burgundy);">&middot; Chapter 1</span></h1>
-<p style="font-family:'DM Sans',sans-serif;color:#6b5c44;font-size:0.9rem;">Old Testament &middot; Chapter 1 of 24</p>
+<span class="version-pill" id="version-pill">King James Version &middot; Public Domain</span>
+<h1 class="read-title">2 Samuel <span class="chnum">&middot; Chapter 1</span></h1>
+<p class="chapter-position">Chapter 1 of 24</p>
+
+<div class="translation-toggle" role="group" aria-label="Choose translation">
+<button type="button" id="btn-kjv" class="active" onclick="showTranslation('kjv')" aria-pressed="true">KJV</button>
+<button type="button" id="btn-web" onclick="showTranslation('web')" aria-pressed="false">WEB</button>
 </div>
-<div class="chapter-nav">
-<a class="btn btn-ghost" href="2samuel.html">&larr; Back to 2 Samuel summary</a>
-<span class="chapter-indicator">Chapter 1 of 24</span>
-<a class="btn btn-primary shimmer" href="2samuel-read-2.html">Chapter 2 &rarr;</a>
+<p class="translation-note">Both the King James Version and the World English Bible are in the public domain and free to read in full.</p>
 </div>
-<div class="scripture">
+<div class="chapter-nav" role="navigation" aria-label="Top chapter navigation">
+<a class="btn btn-ghost" href="2samuel.html">&larr; Book Summary</a>
+<a class="btn btn-ghost" href="2samuel.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="2samuel-read-2.html" rel="next" aria-label="Next chapter: 2 Samuel 2">Next: Chapter 2 &rarr;</a>
+</div>
+<div class="scripture" id="text-kjv">
             <p><sup>1</sup><span class="dropcap">N</span>ow it came to pass after the death of Saul, when David was returned from the slaughter of the Amalekites, and David had abode two days in Ziklag;</p>
             <p><sup>2</sup>It came even to pass on the third day, that, behold, a man came out of the camp from Saul with his clothes rent, and earth upon his head: and so it was, when he came to David, that he fell to the earth, and did obeisance.</p>
             <p><sup>3</sup>And David said unto him, From whence comest thou? And he said unto him, Out of the camp of Israel am I escaped.</p>
@@ -57,12 +64,70 @@
             <p><sup>26</sup>I am distressed for thee, my brother Jonathan: very pleasant hast thou been unto me: thy love to me was wonderful, passing the love of women.</p>
             <p><sup>27</sup>How are the mighty fallen, and the weapons of war perished!</p>
 </div>
-<div class="chapter-nav chapter-nav-bottom">
-<a class="btn btn-ghost" href="2samuel.html">&larr; Back to 2 Samuel summary</a>
-<a href="2samuel.html">&uarr; 2 Samuel summary</a>
-<a class="btn btn-primary shimmer" href="2samuel-read-2.html">Chapter 2 &rarr;</a>
+<div class="scripture is-hidden" id="text-web">
+            <p><sup>1</sup><span class="dropcap">A</span>fter the death of Saul, when David had returned from the slaughter of the Amalekites, and David had stayed two days in Ziklag,</p>
+            <p><sup>2</sup>on the third day, behold, a man came out of the camp from Saul, with his clothes torn and earth on his head. When he came to David, he fell to the earth and showed respect.</p>
+            <p><sup>3</sup>David said to him, "Where do you come from?" He said to him, "I have escaped out of the camp of Israel."</p>
+            <p><sup>4</sup>David said to him, "How did it go? Please tell me." He answered, "The people have fled from the battle, and many of the people also have fallen and are dead. Saul and Jonathan his son are dead also."</p>
+            <p><sup>5</sup>David said to the young man who told him, "How do you know that Saul and Jonathan his son are dead?"</p>
+            <p><sup>6</sup>The young man who told him said, "As I happened by chance on Mount Gilboa, behold, Saul was leaning on his spear; and behold, the chariots and the horsemen followed close behind him.</p>
+            <p><sup>7</sup>When he looked behind him, he saw me and called to me. I answered, 'Here I am.'</p>
+            <p><sup>8</sup>He said to me, 'Who are you?' I answered him, 'I am an Amalekite.'</p>
+            <p><sup>9</sup>He said to me, 'Please stand beside me, and kill me, for anguish has taken hold of me because my life lingers in me.'</p>
+            <p><sup>10</sup>So I stood beside him and killed him, because I was sure that he could not live after he had fallen. I took the crown that was on his head and the bracelet that was on his arm, and have brought them here to my lord."</p>
+            <p><sup>11</sup>Then David took hold on his clothes and tore them; and all the men who were with him did likewise.</p>
+            <p><sup>12</sup>They mourned, wept, and fasted until evening for Saul and for Jonathan his son, and for the people of Yahweh, and for the house of Israel, because they had fallen by the sword.</p>
+            <p><sup>13</sup>David said to the young man who told him, "Where are you from?" He answered, "I am the son of a foreigner, an Amalekite."</p>
+            <p><sup>14</sup>David said to him, "Why were you not afraid to stretch out your hand to destroy Yahweh's anointed?"</p>
+            <p><sup>15</sup>David called one of the young men and said, "Go near, and cut him down!" He struck him so that he died.</p>
+            <p><sup>16</sup>David said to him, "Your blood be on your head, for your mouth has testified against you, saying, 'I have slain Yahweh's anointed.'"</p>
+            <p><sup>17</sup>David lamented with this lamentation over Saul and over Jonathan his son</p>
+            <p><sup>18</sup>(and he commanded them to teach the children of Judah the song of the bow; behold, it is written in the book of Jashar):</p>
+            <p><sup>19</sup>"Your glory, Israel, was slain on your high places! How the mighty have fallen!</p>
+            <p><sup>20</sup>Don't tell it in Gath. Don't publish it in the streets of Ashkelon, lest the daughters of the Philistines rejoice, lest the daughters of the uncircumcised triumph.</p>
+            <p><sup>21</sup>You mountains of Gilboa, let there be no dew or rain on you, and no fields of offerings; for there the shield of the mighty was defiled and cast away, the shield of Saul was not anointed with oil.</p>
+            <p><sup>22</sup>From the blood of the slain, from the fat of the mighty, Jonathan's bow didn't turn back. Saul's sword didn't return empty.</p>
+            <p><sup>23</sup>Saul and Jonathan were lovely and pleasant in their lives. In their death, they were not divided. They were swifter than eagles. They were stronger than lions.</p>
+            <p><sup>24</sup>You daughters of Israel, weep over Saul, who clothed you delicately in scarlet, who put ornaments of gold on your clothing.</p>
+            <p><sup>25</sup>How the mighty have fallen in the middle of the battle! Jonathan was slain on your high places.</p>
+            <p><sup>26</sup>I am distressed for you, my brother Jonathan. You have been very pleasant to me. Your love to me was wonderful, surpassing the love of women.</p>
+            <p><sup>27</sup>How the mighty have fallen, and the weapons of war have perished!"</p>
+</div>
+<div class="chapter-nav chapter-nav-bottom" role="navigation" aria-label="Bottom chapter navigation">
+<a class="btn btn-ghost" href="2samuel.html">&larr; Book Summary</a>
+<a class="btn btn-ghost" href="2samuel.html#chapters">All Chapters</a>
+<a class="btn btn-primary shimmer" href="2samuel-read-2.html" rel="next" aria-label="Next chapter: 2 Samuel 2">Next: Chapter 2 &rarr;</a>
 </div>
 </main>
-<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version (public domain).</footer>
+<footer class="site-footer">Illuminated Word &mdash; Scripture text: King James Version &amp; World English Bible (both public domain).</footer>
+<script>
+function showTranslation(v){
+  v = (v === 'web') ? 'web' : 'kjv';
+  var kjv = document.getElementById('text-kjv');
+  var web = document.getElementById('text-web');
+  var bk = document.getElementById('btn-kjv');
+  var bw = document.getElementById('btn-web');
+  var pill = document.getElementById('version-pill');
+  bk.setAttribute('aria-pressed', v === 'kjv' ? 'true' : 'false');
+  bw.setAttribute('aria-pressed', v === 'web' ? 'true' : 'false');
+  if(v === 'web'){
+    kjv.classList.add('is-hidden'); web.classList.remove('is-hidden');
+    bw.classList.add('active'); bk.classList.remove('active');
+    pill.innerHTML = 'World English Bible &middot; Public Domain';
+  } else {
+    web.classList.add('is-hidden'); kjv.classList.remove('is-hidden');
+    bk.classList.add('active'); bw.classList.remove('active');
+    pill.innerHTML = 'King James Version &middot; Public Domain';
+  }
+  try{ localStorage.setItem('illuminated-word-version', v); }catch(e){}
+}
+(function(){
+  try{
+    var saved = localStorage.getItem('illuminated-word-version');
+    if(saved === 'web'){ showTranslation('web'); }
+  }catch(e){}
+})();
+</script>
+<script src="verse-link.js?v=20261028-banner2" defer></script>
 </body>
 </html>
